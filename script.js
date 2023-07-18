@@ -2,22 +2,18 @@ let jsonData = [];  // We will load our JSON data into this variable
 let sortDirection = true;  // Keep track of the direction of sorting
 let visibleHeaders = [];  // Keep track of the headers that are currently visible
 
-let propertyMapping = {
-    "pill_type": "Type",
-    "brand": "Brand",
-    "price": "Price",
-    "serving_size": "Serving Size",
-    "added_sugar": "Added Sugar",
-};
+let fdaData = {};  // We will load our FDA RDV data into this variable
 
 // Load the JSON data
-fetch('prenatal-vitamins.json')
-    .then(response => response.json())
-    .then(data => {
-        jsonData = data;
-        visibleHeaders = Object.keys(jsonData[0].general_info).concat(jsonData[0].vitamins.map(v => v.name)).concat(['url']);
-        populateTable();
-    });
+Promise.all([
+    fetch('prenatal-vitamins.json').then(response => response.json()),
+    fetch('fda-rdv.json').then(response => response.json()),
+]).then(([vitaminData, fdaRdvData]) => {
+    jsonData = vitaminData;
+    fdaData = fdaRdvData;
+    visibleHeaders = Object.keys(jsonData[0].general_info).concat(jsonData[0].vitamins.map(v => v.name)).concat(['url']);
+    populateTable();
+});
 
 // Function to populate the table with data
 function populateTable() {
@@ -31,7 +27,7 @@ function populateTable() {
     let headerRow = document.createElement('tr');
     visibleHeaders.forEach(header => {
         let th = document.createElement('th');
-        th.textContent = propertyMapping[header] || header;  // Use the formatted name if available
+        th.textContent = header;
         th.onclick = function () { sortTable(header); };
         headerRow.appendChild(th);
     });
@@ -49,6 +45,9 @@ function populateTable() {
             } else {
                 let vitamin = item.vitamins.find(v => v.name == header);
                 td.textContent = vitamin ? vitamin.amount : '-';
+            }
+            if (fdaData[header] && td.textContent != '-' && parseFloat(td.textContent) < fdaData[header]) {
+                td.className = 'low';
             }
             if (td.textContent == '0') {
                 td.className = 'zero';

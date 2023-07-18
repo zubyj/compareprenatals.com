@@ -13,6 +13,11 @@ table {
     margin-top: 50px;
 }
 
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
 h1 {
     color: lightcyan;
     margin-bottom: 50px;
@@ -64,6 +69,13 @@ input[type=text] {
     opacity: 80%;
     font-weight: bold;
     color: white;
+}
+
+.low {
+    background-color: #ffff00;
+    opacity: 80%;
+    font-weight: bold;
+    color: black;
 }
 
 @media screen and (max-width: 600px) {
