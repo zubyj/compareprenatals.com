@@ -1,7 +1,7 @@
 [
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "One A Day - (Standard)",
+        "Retail Best Seller (Brands)": "OneADay-(Standard)",
         "PRICE": "$21/$13",
         "Serving Size": "1",
         "Vitamin A": "650",
@@ -25,11 +25,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "235",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.cvs.com/shop/one-a-day-women-s-prenatal-1-multivitamin-softgels-prodid-967926"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "One A Day - Advanced",
+        "Retail Best Seller (Brands)": "OneADay-Advanced",
         "PRICE": "$27/$19",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -53,11 +54,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "235",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.cvs.com/shop/one-a-day-prenatal-advanced-multivitamin-softgels-tablets-prodid-437078"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "One A Day - Gummy",
+        "Retail Best Seller (Brands)": "OneADay-Gummy",
         "PRICE": "$22/$15",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -81,11 +83,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "50",
-        "Added SUGAR": "2"
+        "Added SUGAR": "2",
+        "url": "https://www.cvs.com/shop/one-a-day-prenatal-multivitamin-gummies-prodid-1260460"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Vitafusion - Gummy (45 day)",
+        "Retail Best Seller (Brands)": "Vitafusion-Gummy(45day)",
         "PRICE": "$12/$9",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -109,11 +112,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "65",
-        "Added SUGAR": "4"
+        "Added SUGAR": "4",
+        "url": "https://www.cvs.com/shop/vitafusion-prenatal-gummy-vitamins-assorted-flavor-prodid-800388"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Olly - Gummy",
+        "Retail Best Seller (Brands)": "Olly-Gummy",
         "PRICE": "$15/$13",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -137,11 +141,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "70",
-        "Added SUGAR": "4"
+        "Added SUGAR": "4",
+        "url": "https://www.cvs.com/shop/olly-the-essential-prenatal-multivitamin-60ct-vibrant-citrus-prodid-1020801"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Nature's Bounty - Gummy (25 day)",
+        "Retail Best Seller (Brands)": "Nature'sBounty-Gummy(25day)",
         "PRICE": "$16/$11",
         "Serving Size": "2",
         "Vitamin A": "1300",
@@ -165,11 +170,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "60",
-        "Added SUGAR": "3"
+        "Added SUGAR": "3",
+        "url": "https://www.walgreens.com/store/c/nature%27s-bounty-optimal-solutions-essential-prenatal-gummies-mixed-berry/ID=300394699-product"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Nature's Way Alive - Gummy (45 day)",
+        "Retail Best Seller (Brands)": "Nature'sWayAlive-Gummy(45day)",
         "PRICE": "$14",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -193,11 +199,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "50",
-        "Added SUGAR": "4"
+        "Added SUGAR": "4",
+        "url": "https://www.amazon.com/Natures-Way-Prenatal-Multivitamin-serving/dp/B01KGLIVCQ/ref=sr_1_7?crid=1Q3FSPQ5QFZV5&keywords=nature%27s+way+prenatal&qid=1676139320&rdc=1&sprefix=nature%27s+way+prenatal%2Caps%2C104&sr=8-7"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Smarty Pants (Organic) - Gummy",
+        "Retail Best Seller (Brands)": "SmartyPants(Organic)-Gummy",
         "PRICE": "$28",
         "Serving Size": "4",
         "Vitamin A": "520",
@@ -221,11 +228,12 @@
         "Manganese": "0",
         "Vitamin K": "18",
         "Omega-3": "171",
-        "Added SUGAR": "7"
+        "Added SUGAR": "7",
+        "url": "https://www.target.com/p/smartypants-organics-prenatal-formula-multivitamin-gummies-90ct/-/A-75665111#lnk=sametab"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Smarty Pants - Gummy (20 day)",
+        "Retail Best Seller (Brands)": "SmartyPants-Gummy(20day)",
         "PRICE": "$31",
         "Serving Size": "4",
         "Vitamin A": "520",
@@ -249,11 +257,12 @@
         "Manganese": "0",
         "Vitamin K": "24+16",
         "Omega-3": "132",
-        "Added SUGAR": "6"
+        "Added SUGAR": "6",
+        "url": "https://www.target.com/p/smartypants-prenatal-formula-multivitamin-gummies/-/A-87694203?preselect=17387874#lnk=sametab"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Smarty Pants - Capsules",
+        "Retail Best Seller (Brands)": "SmartyPants-Capsules",
         "PRICE": "$14/$11",
         "Serving Size": "1",
         "Vitamin A": "650",
@@ -277,11 +286,12 @@
         "Manganese": "0",
         "Vitamin K": "24",
         "Omega-3": "100",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.amazon.com/SmartyPants-Prenatal-Multivitamin-Development-Immunity/dp/B08W3LY883/ref=sr_1_5?crid=27663GV9X12ZA&keywords=smarty+pants+prenatal&qid=1676139618&sprefix=smarty+pants+prenatal%2Caps%2C75&sr=8-5"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Nature Made + DHA (60/90 day)",
+        "Retail Best Seller (Brands)": "NatureMade+DHA(60/90day)",
         "PRICE": "$16/$6",
         "Serving Size": "1",
         "Vitamin A": "770",
@@ -305,11 +315,12 @@
         "Manganese": "0",
         "Vitamin K": "90",
         "Omega-3": "260",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.target.com/p/nature-made-prenatal-with-folic-acid-dha-prenatal-vitamin-and-mineral-supplement-softgels/-/A-15665982?preselect=13283521#lnk=sametab"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Nature Made (Standard) (250 day)",
+        "Retail Best Seller (Brands)": "NatureMade(Standard)(250day)",
         "PRICE": "$5/3",
         "Serving Size": "1",
         "Vitamin A": "770",
@@ -333,11 +344,12 @@
         "Manganese": "0",
         "Vitamin K": "90",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.amazon.com/Nature-Made-Multi-Prenatal-Tablets/dp/B001F1G6SI/ref=sr_1_1_sspa?crid=1DAICV2DBN9NG&keywords=nature%2Bmade%2Bprenatal&qid=1676139916&sprefix=nature%2Bmade%2Bprenatal%2Caps%2C85&sr=8-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzSDVPWEM4NEw1REM2JmVuY3J5cHRlZElkPUEwMjcxOTg2MloxNkZETkpJODRVOCZlbmNyeXB0ZWRBZElkPUEwNDU1MzczMVRCME9FVEM1R1NNJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Nature Made Gummy",
+        "Retail Best Seller (Brands)": "NatureMadeGummy",
         "PRICE": "$9/$7",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -361,11 +373,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "70",
-        "Added SUGAR": "5"
+        "Added SUGAR": "5",
+        "url": "https://www.target.com/p/nature-made-prenatal-gummies-with-dha-and-folic-acid-prenatal-vitamin-and-mineral-supplement-60ct/-/A-75665704#lnk=sametab"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Garden of Life - Standard",
+        "Retail Best Seller (Brands)": "GardenofLife-Standard",
         "PRICE": "$22",
         "Serving Size": "1",
         "Vitamin A": "1300",
@@ -389,11 +402,12 @@
         "Manganese": "0",
         "Vitamin K": "90",
         "Omega-3": "400",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.target.com/p/garden-of-life-dr-formulated-prenatal-multi-dha-softgels-30ct/-/A-80317892#lnk=sametab"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Garden of Life My Kind, aka Once Daily",
+        "Retail Best Seller (Brands)": "GardenofLifeMyKind,akaOnceDaily",
         "PRICE": "$23",
         "Serving Size": "1",
         "Vitamin A": "1300",
@@ -417,11 +431,12 @@
         "Manganese": "0.6",
         "Vitamin K": "90",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.target.com/p/garden-of-life-my-kind-organic-vegan-prenatal-daily-multivitamin-tablets-30ct/-/A-53205427#lnk=sametab"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Rainbow Light (Standard) (45 day)",
+        "Retail Best Seller (Brands)": "RainbowLight(Standard)(45day)",
         "PRICE": "$22",
         "Serving Size": "1",
         "Vitamin A": "1300",
@@ -445,11 +460,12 @@
         "Manganese": "2",
         "Vitamin K": "90",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.target.com/p/rainbow-light-prenatal-one-multivitamin-tablets-60ct/-/A-86906204#lnk=sametab"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Rainbow Light (Daily Duo)",
+        "Retail Best Seller (Brands)": "RainbowLight(DailyDuo)",
         "PRICE": "$34",
         "Serving Size": "2",
         "Vitamin A": "1300",
@@ -473,7 +489,8 @@
         "Manganese": "2",
         "Vitamin K": "90",
         "Omega-3": "346",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.target.com/p/rainbow-light-prenatal-daily-duo-multivitamin-dietary-supplement-tablets-and-softgels-60ct/-/A-50058877#lnk=sametab"
     },
     {
         "Pill Type": "Pill",
@@ -501,11 +518,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "235",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.cvs.com/shop/enfamom-prenatal-vitamin-mineral-supplement-softgels-for-women-30-ct-prodid-452917"
     },
     {
         "Pill Type": null,
-        "Retail Best Seller (Brands)": "Retail Best Seller (Private Label)",
+        "Retail Best Seller (Brands)": "RetailBestSeller(PrivateLabel)",
         "PRICE": null,
         "Serving Size": null,
         "Vitamin A": null,
@@ -533,7 +551,7 @@
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Target - Tablet (100 day)",
+        "Retail Best Seller (Brands)": "Target-Tablet(100day)",
         "PRICE": "$2",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -557,11 +575,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.target.com/p/prenatal-vitamin-dietary-supplement-tablets-up-up/-/A-16292263?preselect=11004435#lnk=sametab"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Target - Gummy (45 day)",
+        "Retail Best Seller (Brands)": "Target-Gummy(45day)",
         "PRICE": "$8",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -585,11 +604,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "65",
-        "Added SUGAR": "3"
+        "Added SUGAR": "3",
+        "url": "https://www.target.com/p/prenatal-multivitamin-gummies-fruit-flavors-90ct-up-38-up-8482/-/A-13579345#lnk=sametab"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Target - Duo",
+        "Retail Best Seller (Brands)": "Target-Duo",
         "PRICE": "$8",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -613,11 +633,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.target.com/p/women-39-s-daily-prenatal-combo-pack-dietary-supplement-tablets-38-softgels-60ct-up-38-up-8482/-/A-11868347#lnk=sametab"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "CVS - Gummy (75 day)",
+        "Retail Best Seller (Brands)": "CVS-Gummy(75day)",
         "PRICE": "$7",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -641,11 +662,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "70",
-        "Added SUGAR": "3"
+        "Added SUGAR": "3",
+        "url": "https://www.cvs.com/shop/cvs-health-prenatal-fruit-flavored-gummies-with-dha-folic-acid-150ct-prodid-238709"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "CVS- Softgel (90 day)",
+        "Retail Best Seller (Brands)": "CVS-Softgel(90day)",
         "PRICE": "$9",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -669,11 +691,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "250",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.cvs.com/shop/cvs-health-prenatal-multivitamin-with-250mg-algal-dha-90-ct-prodid-428513"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "CVS - Softgel + DHA ",
+        "Retail Best Seller (Brands)": "CVS-Softgel+DHA",
         "PRICE": "$18",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -697,11 +720,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "200",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.cvs.com/shop/cvs-health-once-daily-prenatal-multi-dha-softgels-30ct-prodid-1020679"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "CVS- Tablet (100 day)",
+        "Retail Best Seller (Brands)": "CVS-Tablet(100day)",
         "PRICE": "$4",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -725,11 +749,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.cvs.com/shop/cvs-health-prenatal-vitamin-with-minerals-tablets-prodid-252577"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "CVS - Duo (60 day)",
+        "Retail Best Seller (Brands)": "CVS-Duo(60day)",
         "PRICE": "$13",
         "Serving Size": "2",
         "Vitamin A": "1200",
@@ -753,11 +778,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "200",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.cvs.com/shop/cvs-health-prenatal-multi-dha-softgels-120ct-prodid-1020651"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Walgreens - Softgel",
+        "Retail Best Seller (Brands)": "Walgreens-Softgel",
         "PRICE": "$16",
         "Serving Size": "1",
         "Vitamin A": "650",
@@ -781,11 +807,12 @@
         "Manganese": "0",
         "Vitamin K": "90",
         "Omega-3": "235",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.walgreens.com/store/c/walgreens-once-daily-prenatal-multivitamin/ID=300428269-product"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Walgreens - Nature Made Copycat",
+        "Retail Best Seller (Brands)": "Walgreens-NatureMadeCopycat",
         "PRICE": "$11",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -809,11 +836,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "250",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.walgreens.com/store/c/walgreens-prenatal-multivitamin-plus-dha-softgels/ID=prod6255947-product"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Walgreens - Mini Softgel",
+        "Retail Best Seller (Brands)": "Walgreens-MiniSoftgel",
         "PRICE": "$20",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -837,11 +865,12 @@
         "Manganese": "0",
         "Vitamin K": "90",
         "Omega-3": "235",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.walgreens.com/store/c/walgreens-easy-to-swallow-complete-prenatal-mini/ID=300432950-product"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Walgreens - Tablets",
+        "Retail Best Seller (Brands)": "Walgreens-Tablets",
         "PRICE": "$2",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -865,11 +894,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.walgreens.com/store/c/walgreens-prenatal-multivitamin/ID=300414693-product"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Walgreens - Duo (One a day copycat)",
+        "Retail Best Seller (Brands)": "Walgreens-Duo(Oneadaycopycat)",
         "PRICE": "$15",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -893,11 +923,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "235",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.walgreens.com/store/c/walgreens-two-step-prenatal-multivitamin-with-dha-%26-choline/ID=300425970-product"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Walgreens - Gummy (45 day)",
+        "Retail Best Seller (Brands)": "Walgreens-Gummy(45day)",
         "PRICE": "$9",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -925,7 +956,7 @@
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Walgreens - Gummy Algal ",
+        "Retail Best Seller (Brands)": "Walgreens-GummyAlgal",
         "PRICE": "$16",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -949,11 +980,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "50",
-        "Added SUGAR": "2"
+        "Added SUGAR": "2",
+        "url": "https://www.walgreens.com/store/c/walgreens-prenatal-gummies---algal-dha-raspberry,-lemon/ID=300407264-product"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Rite Aid - Tablet",
+        "Retail Best Seller (Brands)": "RiteAid-Tablet",
         "PRICE": "$3",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -977,11 +1009,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.riteaid.com/shop/rite-aid-prenatal-tablets-with-folic-acid-tablets-value-size-225-tablets-0308911"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Rite Aid - Gummy",
+        "Retail Best Seller (Brands)": "RiteAid-Gummy",
         "PRICE": "$10",
         "Serving Size": "2",
         "Vitamin A": "1200",
@@ -1005,11 +1038,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "0",
-        "Added SUGAR": "3"
+        "Added SUGAR": "3",
+        "url": "https://www.riteaid.com/shop/rite-aid-pectin-based-prenatal-gummy-strawberry-raspberry-60-count"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Alb/Sfy - Tablet (180 day)",
+        "Retail Best Seller (Brands)": "Alb/Sfy-Tablet(180day)",
         "PRICE": "$3",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -1033,11 +1067,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.safeway.com/shop/product-details.156010005.html"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Alb/Sfy - Gummy (45 day)",
+        "Retail Best Seller (Brands)": "Alb/Sfy-Gummy(45day)",
         "PRICE": "$9",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -1061,11 +1096,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "70",
-        "Added SUGAR": "3"
+        "Added SUGAR": "3",
+        "url": "https://www.safeway.com/shop/product-details.960309022.html"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Kroger - Tablet (100 day)",
+        "Retail Best Seller (Brands)": "Kroger-Tablet(100day)",
         "PRICE": "$2",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -1089,11 +1125,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.kroger.com/p/kroger-prenatal-vitamin-tablets-100-count/0001111035353?fulfillment=SHIP&searchType=suggestions"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Kroger - Softgel (60 day)",
+        "Retail Best Seller (Brands)": "Kroger-Softgel(60day)",
         "PRICE": "$10",
         "Serving Size": "1",
         "Vitamin A": "650",
@@ -1117,11 +1154,12 @@
         "Manganese": "0",
         "Vitamin K": "90",
         "Omega-3": "235",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.kroger.com/p/kroger-once-daily-complete-prenatal-vitamin-softgels/0004126001514?fulfillment=SHIP&searchType=suggestions"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Kroger - Softgel DHA Duo (60 day)",
+        "Retail Best Seller (Brands)": "Kroger-SoftgelDHADuo(60day)",
         "PRICE": "$9",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -1145,11 +1183,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "235",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.kroger.com/p/kroger-prenatal-multi-dha-vitamin-tablets-softgels/0004126038558?fulfillment=SHIP&searchType=suggestions"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Kroger - Gummy (45 day)",
+        "Retail Best Seller (Brands)": "Kroger-Gummy(45day)",
         "PRICE": "$6",
         "Serving Size": "2",
         "Vitamin A": "650",
@@ -1173,11 +1212,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "65",
-        "Added SUGAR": "3"
+        "Added SUGAR": "3",
+        "url": "https://www.kroger.com/p/kroger-prenatal-raspberry-lime-multivitamin-gummies/0004126001513?fulfillment=SHIP&searchType=suggestions"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Kroger Softgel (60 day)",
+        "Retail Best Seller (Brands)": "KrogerSoftgel(60day)",
         "PRICE": "$7",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -1201,11 +1241,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "279",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.kroger.com/p/kroger-one-per-day-prenatal-multi-with-omega-3-softgels/0004126036757?fulfillment=SHIP&searchType=suggestions"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Dollar General - Gummy (12 day)",
+        "Retail Best Seller (Brands)": "DollarGeneral-Gummy(12day)",
         "PRICE": "$17",
         "Serving Size": "3",
         "Vitamin A": "1200",
@@ -1229,11 +1270,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "80",
-        "Added SUGAR": "5"
+        "Added SUGAR": "5",
+        "url": "https://www.dollargeneral.com/p/oh-good-prenatal-dha-gummies-ct/850037842179"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Meijer Tablet (100 day)",
+        "Retail Best Seller (Brands)": "MeijerTablet(100day)",
         "PRICE": "$3",
         "Serving Size": "1",
         "Vitamin A": "1200",
@@ -1257,7 +1299,8 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.meijer.com/shopping/product/meijer-prenatal-supplement-with-folic-acid-100-ct/70882055481.html"
     },
     {
         "Pill Type": "Pill",
@@ -1285,11 +1328,12 @@
         "Manganese": "5",
         "Vitamin K": "100",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.amazon.com/Thorne-Research-Prenatal-Multivitamin-Lactating/dp/B00O59SH3E/ref=zg_bs_6936725011_sccl_5/131-0919695-5677337?psc=1"
     },
     {
         "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Garden of Life My Kind -  Gummy",
+        "Retail Best Seller (Brands)": "GardenofLifeMyKind-Gummy",
         "PRICE": "$26",
         "Serving Size": "4",
         "Vitamin A": "450",
@@ -1313,11 +1357,12 @@
         "Manganese": "0.2",
         "Vitamin K": "120",
         "Omega-3": "0",
-        "Added SUGAR": "4"
+        "Added SUGAR": "4",
+        "url": "https://www.amazon.com/Garden-Life-Organics-Prenatal-Vitamins/dp/B06XSD99V3/ref=zg_bs_6936725011_sccl_7/131-0919695-5677337?psc=1"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Eu Natural - Conception For Her",
+        "Retail Best Seller (Brands)": "EuNatural-ConceptionForHer",
         "PRICE": "$35",
         "Serving Size": "2",
         "Vitamin A": "0",
@@ -1341,11 +1386,12 @@
         "Manganese": "2.3",
         "Vitamin K": "0",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.amazon.com/Conception-Fertility-Prenatal-Vitamins-Myo-Inositol/dp/B013RMKCV4/ref=zg_bs_6936725011_sccl_8/131-0919695-5677337?psc=1"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Baby & Me 2",
+        "Retail Best Seller (Brands)": "Baby&Me2",
         "PRICE": "$27",
         "Serving Size": "2",
         "Vitamin A": "750",
@@ -1369,11 +1415,12 @@
         "Manganese": "1",
         "Vitamin K": "60+30",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.amazon.com/MegaFood-Baby-Prenatal-Vitamins-Multivitamin/dp/B01CQ3E4AK/ref=zg_bs_6936725011_sccl_13/131-0919695-5677337?psc=1"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Pink Stork Total Prenatal",
+        "Retail Best Seller (Brands)": "PinkStorkTotalPrenatal",
         "PRICE": "$29",
         "Serving Size": "2",
         "Vitamin A": "1300",
@@ -1397,11 +1444,12 @@
         "Manganese": "0",
         "Vitamin K": "0",
         "Omega-3": "200",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.amazon.com/Pink-Stork-Recommended-Nutrition-Vegetarian/dp/B07G4C85XX/ref=zg_bs_6936725011_sccl_14/131-0919695-5677337?psc=1"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Garden of Life (Vitamin Code)",
+        "Retail Best Seller (Brands)": "GardenofLife(VitaminCode)",
         "PRICE": "$60/$50",
         "Serving Size": "3",
         "Vitamin A": "1300",
@@ -1425,11 +1473,12 @@
         "Manganese": "2.6",
         "Vitamin K": "90+50",
         "Omega-3": "0",
-        "Added SUGAR": null
+        "Added SUGAR": null,
+        "url": "https://www.amazon.com/Garden-Life-Vegetarian-Multivitamin-Supplement/dp/B005JAT3TU/ref=zg_bs_6936725011_sccl_15/131-0919695-5677337?psc=1"
     },
     {
         "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Ritual - Prenatal",
+        "Retail Best Seller (Brands)": "Ritual-Prenatal",
         "PRICE": "$43",
         "Serving Size": "2",
         "Vitamin A": "0",
@@ -1453,62 +1502,6 @@
         "Manganese": "0",
         "Vitamin K": "90",
         "Omega-3": "350",
-        "Added SUGAR": null
-    },
-    {
-        "Pill Type": null,
-        "Retail Best Seller (Brands)": null,
-        "PRICE": null,
-        "Serving Size": null,
-        "Vitamin A": null,
-        "Vitamin C": null,
-        "Vitamin D": null,
-        "Vitamin E": null,
-        "Thiamin - B1": null,
-        "Riboflavin - B2": null,
-        "Niacinamide - B3": null,
-        "Vitamin B6": null,
-        "Folate (DFE)": null,
-        "Vitamin B12": null,
-        "Biotin": null,
-        "Pantothenic": null,
-        "Choline": null,
-        "Calcium": null,
-        "Iron": null,
-        "Iodine": null,
-        "Magnesium": null,
-        "Zinc": null,
-        "Manganese": null,
-        "Vitamin K": null,
-        "Omega-3": null,
-        "Added SUGAR": null
-    },
-    {
-        "Pill Type": null,
-        "Retail Best Seller (Brands)": null,
-        "PRICE": null,
-        "Serving Size": null,
-        "Vitamin A": null,
-        "Vitamin C": null,
-        "Vitamin D": null,
-        "Vitamin E": null,
-        "Thiamin - B1": null,
-        "Riboflavin - B2": null,
-        "Niacinamide - B3": null,
-        "Vitamin B6": null,
-        "Folate (DFE)": null,
-        "Vitamin B12": null,
-        "Biotin": null,
-        "Pantothenic": null,
-        "Choline": null,
-        "Calcium": null,
-        "Iron": null,
-        "Iodine": null,
-        "Magnesium": null,
-        "Zinc": null,
-        "Manganese": null,
-        "Vitamin K": null,
-        "Omega-3": null,
         "Added SUGAR": null
     }
 ]
