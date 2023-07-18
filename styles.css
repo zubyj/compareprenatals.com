@@ -4,7 +4,6 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: hsl(0, 0%, 20%);
     color: #fff;
-    width: 100%;
 }
 
 table {
@@ -40,6 +39,8 @@ tr:nth-child(even) {
 
 input[type=text] {
     width: 480px;
+    height: 50px;
+    border-radius: 10px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -52,18 +53,8 @@ input[type=text] {
     align-items: center;
 }
 
-#checkboxes {
-    width: 70%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#checkboxes input {
-    border: 1px solid lightcyan;
+#vitaminTable {
+    width: 80%;
 }
 
 .zero {
@@ -71,9 +62,6 @@ input[type=text] {
     opacity: 80%;
     font-weight: bold;
     color: white;
-    /* background-color: darkred;
-    opacity: 70%;
-    font-weight: bold; */
 }
 
 @media screen and (max-width: 600px) {

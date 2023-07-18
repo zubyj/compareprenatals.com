@@ -2,6 +2,14 @@ let jsonData = [];  // We will load our JSON data into this variable
 let sortDirection = true;  // Keep track of the direction of sorting
 let visibleHeaders = [];  // Keep track of the headers that are currently visible
 
+let propertyMapping = {
+    "pill_type": "Type",
+    "brand": "Brand",
+    "price": "Price",
+    "serving_size": "Serving Size",
+    "added_sugar": "Added Sugar",
+};
+
 // Load the JSON data
 fetch('prenatal-vitamins.json')
     .then(response => response.json())
@@ -23,7 +31,7 @@ function populateTable() {
     let headerRow = document.createElement('tr');
     visibleHeaders.forEach(header => {
         let th = document.createElement('th');
-        th.textContent = header;
+        th.textContent = propertyMapping[header] || header;  // Use the formatted name if available
         th.onclick = function () { sortTable(header); };
         headerRow.appendChild(th);
     });
