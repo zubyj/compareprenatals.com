@@ -2,13 +2,16 @@
 
 let jsonData = [];  // We will load our JSON data into this variable
 let sortDirection = true;  // Keep track of the direction of sorting
+let visibleHeaders = [];  // Keep track of the headers that are currently visible
 
 // Load the JSON data
 fetch('prenatal-vitamins.json')
     .then(response => response.json())
     .then(data => {
         jsonData = data;
+        visibleHeaders = Object.keys(jsonData[0]).slice(0, 12);
         populateTable();
+        populateCheckboxes();
     });
 
 // Function to populate the table with data
@@ -16,10 +19,12 @@ function populateTable() {
     // Get the table element
     let table = document.getElementById('vitaminTable');
 
+    // Clear the table
+    table.innerHTML = '';
+
     // Add table headers
-    let headers = Object.keys(jsonData[0]);
     let headerRow = document.createElement('tr');
-    headers.forEach(header => {
+    visibleHeaders.forEach(header => {
         let th = document.createElement('th');
         th.textContent = header;
         th.onclick = function () { sortTable(header); };
@@ -30,7 +35,7 @@ function populateTable() {
     // Add table data
     jsonData.forEach(item => {
         let row = document.createElement('tr');
-        headers.forEach(header => {
+        visibleHeaders.forEach(header => {
             let td = document.createElement('td');
             td.textContent = item[header] ? item[header] : '-';
             row.appendChild(td);
@@ -38,6 +43,40 @@ function populateTable() {
         table.appendChild(row);
     });
 }
+
+// Function to populate the checkboxes
+function populateCheckboxes() {
+    let headers = Object.keys(jsonData[0]);
+    let checkboxesDiv = document.getElementById('checkboxes');
+    headers.slice(12).forEach(header => {
+        let checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = header;
+        checkbox.onchange = function () { toggleHeader(header); };
+        checkboxesDiv.appendChild(checkbox);
+
+        let label = document.createElement('label');
+        label.for = header;
+        label.textContent = header;
+        checkboxesDiv.appendChild(label);
+
+        checkboxesDiv.appendChild(document.createElement('br'));
+    });
+}
+
+// Function to show or hide a header
+function toggleHeader(header) {
+    let checkbox = document.getElementById(header);
+    if (checkbox.checked) {
+        visibleHeaders.push(header);
+    } else {
+        visibleHeaders = visibleHeaders.filter(h => h !== header);
+    }
+    populateTable();
+}
+
+// Rest of the code...
+
 
 // Function to sort the table
 function sortTable(header) {

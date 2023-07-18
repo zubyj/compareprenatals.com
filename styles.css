@@ -1,12 +1,25 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: hsl(0, 0%, 20%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
+    margin-top: 50px;
+}
+
+h1 {
+    color: lightcyan;
+    margin-bottom: 50px;
+    font-weight: 400;
 }
 
 th,
@@ -16,18 +29,48 @@ td {
 }
 
 th {
-    background-color: #4CAF50;
-    color: white;
+    color: lightcyan;
     cursor: pointer;
+    border: 2px solid lightblue;
+}
+
+th:hover {
+    background-color: #555;
+    color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #555;
 }
 
 input[type=text] {
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+    border: 2px solid white;
+}
+
+#checkboxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#checkboxes input {
+    border: 1px solid lightcyan;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
 }
