@@ -1,5 +1,3 @@
-// script.js
-
 let jsonData = [];  // We will load our JSON data into this variable
 let sortDirection = true;  // Keep track of the direction of sorting
 let visibleHeaders = [];  // Keep track of the headers that are currently visible
@@ -9,7 +7,7 @@ fetch('prenatal-vitamins.json')
     .then(response => response.json())
     .then(data => {
         jsonData = data;
-        visibleHeaders = Object.keys(jsonData[0]).slice(0, 12);
+        visibleHeaders = Object.keys(jsonData[0]).slice(0, 17);
         populateTable();
         populateCheckboxes();
     });
@@ -38,6 +36,9 @@ function populateTable() {
         visibleHeaders.forEach(header => {
             let td = document.createElement('td');
             td.textContent = item[header] ? item[header] : '-';
+            if (td.textContent == '0') {
+                td.className = 'zero';
+            }
             row.appendChild(td);
         });
         table.appendChild(row);
@@ -48,7 +49,7 @@ function populateTable() {
 function populateCheckboxes() {
     let headers = Object.keys(jsonData[0]);
     let checkboxesDiv = document.getElementById('checkboxes');
-    headers.slice(12).forEach(header => {
+    headers.slice(17).forEach(header => {
         let checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.id = header;
