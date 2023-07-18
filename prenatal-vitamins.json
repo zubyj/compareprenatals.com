@@ -1,1507 +1,4994 @@
 [
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "OneADay-(Standard)",
-        "PRICE": "$21/$13",
-        "Serving Size": "1",
-        "Vitamin A": "650",
-        "Vitamin C": "85",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "7",
-        "Choline": "0",
-        "Calcium": "150",
-        "Iron": "27",
-        "Iodine": "150",
-        "Magnesium": "40",
-        "Zinc": "13",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "235",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "One A Day - (Standard)",
+            "price": "$21/$13",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "85"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "150"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "40"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "235"
+            }
+        ],
         "url": "https://www.cvs.com/shop/one-a-day-women-s-prenatal-1-multivitamin-softgels-prodid-967926"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "OneADay-Advanced",
-        "PRICE": "$27/$19",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "85",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "7",
-        "Choline": "110",
-        "Calcium": "150",
-        "Iron": "27",
-        "Iodine": "150",
-        "Magnesium": "40",
-        "Zinc": "13",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "235",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "One A Day - Advanced",
+            "price": "$27/$19",
+            "serving_size": "2",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "85"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "110"
+            },
+            {
+                "name": "Calcium",
+                "amount": "150"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "40"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "235"
+            }
+        ],
         "url": "https://www.cvs.com/shop/one-a-day-prenatal-advanced-multivitamin-softgels-tablets-prodid-437078"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "OneADay-Gummy",
-        "PRICE": "$22/$15",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "60",
-        "Vitamin D": "30",
-        "Vitamin E": "13",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "7",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "150",
-        "Magnesium": "0",
-        "Zinc": "2.6",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "50",
-        "Added SUGAR": "2",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "One A Day - Gummy",
+            "price": "$22/$15",
+            "serving_size": "2",
+            "added_sugar": "2"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "60"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "30"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "13"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "2.6"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "50"
+            }
+        ],
         "url": "https://www.cvs.com/shop/one-a-day-prenatal-multivitamin-gummies-prodid-1260460"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Vitafusion-Gummy(45day)",
-        "PRICE": "$12/$9",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "20",
-        "Vitamin D": "                                                                                                          ",
-        "Vitamin E": "19",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "220",
-        "Magnesium": "0",
-        "Zinc": "4",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "65",
-        "Added SUGAR": "4",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Vitafusion - Gummy (45 day)",
+            "price": "$12/$9",
+            "serving_size": "2",
+            "added_sugar": "4"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "                                                                                                          "
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "220"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "4"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "65"
+            }
+        ],
         "url": "https://www.cvs.com/shop/vitafusion-prenatal-gummy-vitamins-assorted-flavor-prodid-800388"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Olly-Gummy",
-        "PRICE": "$15/$13",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "30",
-        "Vitamin D": "20",
-        "Vitamin E": "14",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "665",
-        "Vitamin B12": "3.5",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "10",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "150",
-        "Magnesium": "0",
-        "Zinc": "3",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "70",
-        "Added SUGAR": "4",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Olly - Gummy",
+            "price": "$15/$13",
+            "serving_size": "2",
+            "added_sugar": "4"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "30"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "14"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "665"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "3.5"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "10"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "70"
+            }
+        ],
         "url": "https://www.cvs.com/shop/olly-the-essential-prenatal-multivitamin-60ct-vibrant-citrus-prodid-1020801"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Nature'sBounty-Gummy(25day)",
-        "PRICE": "$16/$11",
-        "Serving Size": "2",
-        "Vitamin A": "1300",
-        "Vitamin C": "40",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "2.8",
-        "Biotin": "70",
-        "Pantothenic": "0",
-        "Choline": "11",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "290",
-        "Magnesium": "0",
-        "Zinc": "3.2",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "60",
-        "Added SUGAR": "3",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Nature's Bounty - Gummy (25 day)",
+            "price": "$16/$11",
+            "serving_size": "2",
+            "added_sugar": "3"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1300"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "40"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "70"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "11"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3.2"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "60"
+            }
+        ],
         "url": "https://www.walgreens.com/store/c/nature%27s-bounty-optimal-solutions-essential-prenatal-gummies-mixed-berry/ID=300394699-product"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Nature'sWayAlive-Gummy(45day)",
-        "PRICE": "$14",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "60",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "0.35",
-        "Riboflavin - B2": "0.4",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "1.75",
-        "Choline": "11",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "290",
-        "Magnesium": "0",
-        "Zinc": "3.25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "50",
-        "Added SUGAR": "4",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Nature's Way Alive - Gummy (45 day)",
+            "price": "$14",
+            "serving_size": "2",
+            "added_sugar": "4"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "60"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0.35"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0.4"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "1.75"
+            },
+            {
+                "name": "Choline",
+                "amount": "11"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3.25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "50"
+            }
+        ],
         "url": "https://www.amazon.com/Natures-Way-Prenatal-Multivitamin-serving/dp/B01KGLIVCQ/ref=sr_1_7?crid=1Q3FSPQ5QFZV5&keywords=nature%27s+way+prenatal&qid=1676139320&rdc=1&sprefix=nature%27s+way+prenatal%2Caps%2C104&sr=8-7"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "SmartyPants(Organic)-Gummy",
-        "PRICE": "$28",
-        "Serving Size": "4",
-        "Vitamin A": "520",
-        "Vitamin C": "48",
-        "Vitamin D": "30",
-        "Vitamin E": "14",
-        "Thiamin - B1": "0.14",
-        "Riboflavin - B2": "0.16",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "3.5",
-        "Biotin": "17.5",
-        "Pantothenic": "7",
-        "Choline": "11",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "290",
-        "Magnesium": "0",
-        "Zinc": "3.9",
-        "Manganese": "0",
-        "Vitamin K": "18",
-        "Omega-3": "171",
-        "Added SUGAR": "7",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Smarty Pants (Organic) - Gummy",
+            "price": "$28",
+            "serving_size": "4",
+            "added_sugar": "7"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "520"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "48"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "30"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "14"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0.14"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0.16"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "3.5"
+            },
+            {
+                "name": "Biotin",
+                "amount": "17.5"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "11"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3.9"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "18"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "171"
+            }
+        ],
         "url": "https://www.target.com/p/smartypants-organics-prenatal-formula-multivitamin-gummies-90ct/-/A-75665111#lnk=sametab"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "SmartyPants-Gummy(20day)",
-        "PRICE": "$31",
-        "Serving Size": "4",
-        "Vitamin A": "520",
-        "Vitamin C": "48",
-        "Vitamin D": "30",
-        "Vitamin E": "14.3",
-        "Thiamin - B1": "0.14",
-        "Riboflavin - B2": "0.16",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "4.7",
-        "Biotin": "17.5",
-        "Pantothenic": "0",
-        "Choline": "55",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "290",
-        "Magnesium": "0",
-        "Zinc": "3.9",
-        "Manganese": "0",
-        "Vitamin K": "24+16",
-        "Omega-3": "132",
-        "Added SUGAR": "6",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Smarty Pants - Gummy (20 day)",
+            "price": "$31",
+            "serving_size": "4",
+            "added_sugar": "6"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "520"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "48"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "30"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "14.3"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0.14"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0.16"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "4.7"
+            },
+            {
+                "name": "Biotin",
+                "amount": "17.5"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "55"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3.9"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "24+16"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "132"
+            }
+        ],
         "url": "https://www.target.com/p/smartypants-prenatal-formula-multivitamin-gummies/-/A-87694203?preselect=17387874#lnk=sametab"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "SmartyPants-Capsules",
-        "PRICE": "$14/$11",
-        "Serving Size": "1",
-        "Vitamin A": "650",
-        "Vitamin C": "70",
-        "Vitamin D": "50",
-        "Vitamin E": "12",
-        "Thiamin - B1": "1.5",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "4",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "4.5",
-        "Biotin": "35",
-        "Pantothenic": "1.5",
-        "Choline": "25",
-        "Calcium": "0",
-        "Iron": "6.7",
-        "Iodine": "290",
-        "Magnesium": "8.4",
-        "Zinc": "4.5",
-        "Manganese": "0",
-        "Vitamin K": "24",
-        "Omega-3": "100",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Smarty Pants - Capsules",
+            "price": "$14/$11",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "70"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "50"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "12"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.5"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "4"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "4.5"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "1.5"
+            },
+            {
+                "name": "Choline",
+                "amount": "25"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "6.7"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "8.4"
+            },
+            {
+                "name": "Zinc",
+                "amount": "4.5"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "24"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "100"
+            }
+        ],
         "url": "https://www.amazon.com/SmartyPants-Prenatal-Multivitamin-Development-Immunity/dp/B08W3LY883/ref=sr_1_5?crid=27663GV9X12ZA&keywords=smarty+pants+prenatal&qid=1676139618&sprefix=smarty+pants+prenatal%2Caps%2C75&sr=8-5"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "NatureMade+DHA(60/90day)",
-        "PRICE": "$16/$6",
-        "Serving Size": "1",
-        "Vitamin A": "770",
-        "Vitamin C": "85",
-        "Vitamin D": "25",
-        "Vitamin E": "15",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.4",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "1.9",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "5.2",
-        "Biotin": "30",
-        "Pantothenic": "6",
-        "Choline": "0",
-        "Calcium": "150",
-        "Iron": "27",
-        "Iodine": "150",
-        "Magnesium": "45",
-        "Zinc": "11",
-        "Manganese": "0",
-        "Vitamin K": "90",
-        "Omega-3": "260",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Nature Made + DHA (60/90 day)",
+            "price": "$16/$6",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "770"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "85"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "25"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "15"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.4"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "1.9"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "5.2"
+            },
+            {
+                "name": "Biotin",
+                "amount": "30"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "6"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "150"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "45"
+            },
+            {
+                "name": "Zinc",
+                "amount": "11"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "260"
+            }
+        ],
         "url": "https://www.target.com/p/nature-made-prenatal-with-folic-acid-dha-prenatal-vitamin-and-mineral-supplement-softgels/-/A-15665982?preselect=13283521#lnk=sametab"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "NatureMade(Standard)(250day)",
-        "PRICE": "$5/3",
-        "Serving Size": "1",
-        "Vitamin A": "770",
-        "Vitamin C": "85",
-        "Vitamin D": "25",
-        "Vitamin E": "15",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.4",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "1.9",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "5.2",
-        "Biotin": "30",
-        "Pantothenic": "6",
-        "Choline": "0",
-        "Calcium": "250",
-        "Iron": "27",
-        "Iodine": "150",
-        "Magnesium": "45",
-        "Zinc": "11",
-        "Manganese": "0",
-        "Vitamin K": "90",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Nature Made (Standard) (250 day)",
+            "price": "$5/3",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "770"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "85"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "25"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "15"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.4"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "1.9"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "5.2"
+            },
+            {
+                "name": "Biotin",
+                "amount": "30"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "6"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "250"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "45"
+            },
+            {
+                "name": "Zinc",
+                "amount": "11"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.amazon.com/Nature-Made-Multi-Prenatal-Tablets/dp/B001F1G6SI/ref=sr_1_1_sspa?crid=1DAICV2DBN9NG&keywords=nature%2Bmade%2Bprenatal&qid=1676139916&sprefix=nature%2Bmade%2Bprenatal%2Caps%2C85&sr=8-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzSDVPWEM4NEw1REM2JmVuY3J5cHRlZElkPUEwMjcxOTg2MloxNkZETkpJODRVOCZlbmNyeXB0ZWRBZElkPUEwNDU1MzczMVRCME9FVEM1R1NNJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "NatureMadeGummy",
-        "PRICE": "$9/$7",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "30",
-        "Vitamin D": "25",
-        "Vitamin E": "15",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "5.2",
-        "Biotin": "35",
-        "Pantothenic": "0",
-        "Choline": "55",
-        "Calcium": "130",
-        "Iron": "0",
-        "Iodine": "150",
-        "Magnesium": "40",
-        "Zinc": "2.6",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "70",
-        "Added SUGAR": "5",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Nature Made Gummy",
+            "price": "$9/$7",
+            "serving_size": "2",
+            "added_sugar": "5"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "30"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "25"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "15"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "5.2"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "55"
+            },
+            {
+                "name": "Calcium",
+                "amount": "130"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "40"
+            },
+            {
+                "name": "Zinc",
+                "amount": "2.6"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "70"
+            }
+        ],
         "url": "https://www.target.com/p/nature-made-prenatal-gummies-with-dha-and-folic-acid-prenatal-vitamin-and-mineral-supplement-60ct/-/A-75665704#lnk=sametab"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "GardenofLife-Standard",
-        "PRICE": "$22",
-        "Serving Size": "1",
-        "Vitamin A": "1300",
-        "Vitamin C": "120",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "9",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "2.8",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "27",
-        "Iodine": "145",
-        "Magnesium": "0",
-        "Zinc": "13",
-        "Manganese": "0",
-        "Vitamin K": "90",
-        "Omega-3": "400",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Garden of Life - Standard",
+            "price": "$22",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1300"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "9"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "145"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "400"
+            }
+        ],
         "url": "https://www.target.com/p/garden-of-life-dr-formulated-prenatal-multi-dha-softgels-30ct/-/A-80317892#lnk=sametab"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "GardenofLifeMyKind,akaOnceDaily",
-        "PRICE": "$23",
-        "Serving Size": "1",
-        "Vitamin A": "1300",
-        "Vitamin C": "120",
-        "Vitamin D": "22.5",
-        "Vitamin E": "19",
-        "Thiamin - B1": "0.9",
-        "Riboflavin - B2": "1",
-        "Niacinamide - B3": "12",
-        "Vitamin B6": "6",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "2.8",
-        "Biotin": "140",
-        "Pantothenic": "6",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "13.5",
-        "Iodine": "145",
-        "Magnesium": "0",
-        "Zinc": "3",
-        "Manganese": "0.6",
-        "Vitamin K": "90",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Garden of Life My Kind, aka Once Daily",
+            "price": "$23",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1300"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "22.5"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0.9"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "12"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "140"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "6"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "13.5"
+            },
+            {
+                "name": "Iodine",
+                "amount": "145"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0.6"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.target.com/p/garden-of-life-my-kind-organic-vegan-prenatal-daily-multivitamin-tablets-30ct/-/A-53205427#lnk=sametab"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "RainbowLight(Standard)(45day)",
-        "PRICE": "$22",
-        "Serving Size": "1",
-        "Vitamin A": "1300",
-        "Vitamin C": "120",
-        "Vitamin D": "15",
-        "Vitamin E": "9.5",
-        "Thiamin - B1": "6",
-        "Riboflavin - B2": "5.6",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "10",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "9",
-        "Biotin": "35",
-        "Pantothenic": "10",
-        "Choline": "55",
-        "Calcium": "50",
-        "Iron": "27",
-        "Iodine": "290",
-        "Magnesium": "50",
-        "Zinc": "13",
-        "Manganese": "2",
-        "Vitamin K": "90",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Rainbow Light (Standard) (45 day)",
+            "price": "$22",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1300"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "9.5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "6"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "5.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "10"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "9"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "10"
+            },
+            {
+                "name": "Choline",
+                "amount": "55"
+            },
+            {
+                "name": "Calcium",
+                "amount": "50"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "50"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "2"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.target.com/p/rainbow-light-prenatal-one-multivitamin-tablets-60ct/-/A-86906204#lnk=sametab"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "RainbowLight(DailyDuo)",
-        "PRICE": "$34",
-        "Serving Size": "2",
-        "Vitamin A": "1300",
-        "Vitamin C": "120",
-        "Vitamin D": "15",
-        "Vitamin E": "9.5",
-        "Thiamin - B1": "8",
-        "Riboflavin - B2": "8",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "10",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "9",
-        "Biotin": "35",
-        "Pantothenic": "10",
-        "Choline": "55",
-        "Calcium": "50",
-        "Iron": "27",
-        "Iodine": "290",
-        "Magnesium": "50",
-        "Zinc": "13",
-        "Manganese": "2",
-        "Vitamin K": "90",
-        "Omega-3": "346",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Rainbow Light (Daily Duo)",
+            "price": "$34",
+            "serving_size": "2",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1300"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "9.5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "8"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "8"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "10"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "9"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "10"
+            },
+            {
+                "name": "Choline",
+                "amount": "55"
+            },
+            {
+                "name": "Calcium",
+                "amount": "50"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "50"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "2"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "346"
+            }
+        ],
         "url": "https://www.target.com/p/rainbow-light-prenatal-daily-duo-multivitamin-dietary-supplement-tablets-and-softgels-60ct/-/A-50058877#lnk=sametab"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Enfamom",
-        "PRICE": "$20",
-        "Serving Size": "1",
-        "Vitamin A": "650",
-        "Vitamin C": "60",
-        "Vitamin D": "10",
-        "Vitamin E": "20",
-        "Thiamin - B1": "1.7",
-        "Riboflavin - B2": "2",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.5",
-        "Folate (DFE)": "595",
-        "Vitamin B12": "8",
-        "Biotin": "300",
-        "Pantothenic": "10",
-        "Choline": "0",
-        "Calcium": "250",
-        "Iron": "28",
-        "Iodine": "150",
-        "Magnesium": "50",
-        "Zinc": "15",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "235",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Enfamom",
+            "price": "$20",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "60"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "20"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.7"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "2"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.5"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "595"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "300"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "10"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "250"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "50"
+            },
+            {
+                "name": "Zinc",
+                "amount": "15"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "235"
+            }
+        ],
         "url": "https://www.cvs.com/shop/enfamom-prenatal-vitamin-mineral-supplement-softgels-for-women-30-ct-prodid-452917"
     },
     {
-        "Pill Type": null,
-        "Retail Best Seller (Brands)": "RetailBestSeller(PrivateLabel)",
-        "PRICE": null,
-        "Serving Size": null,
-        "Vitamin A": null,
-        "Vitamin C": null,
-        "Vitamin D": null,
-        "Vitamin E": null,
-        "Thiamin - B1": null,
-        "Riboflavin - B2": null,
-        "Niacinamide - B3": null,
-        "Vitamin B6": null,
-        "Folate (DFE)": null,
-        "Vitamin B12": null,
-        "Biotin": null,
-        "Pantothenic": null,
-        "Choline": null,
-        "Calcium": null,
-        "Iron": null,
-        "Iodine": null,
-        "Magnesium": null,
-        "Zinc": null,
-        "Manganese": null,
-        "Vitamin K": null,
-        "Omega-3": null,
-        "Added SUGAR": null
+        "general_info": {
+            "pill_type": null,
+            "brand": "Retail Best Seller (Private Label)",
+            "price": null,
+            "serving_size": null,
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": null
+            },
+            {
+                "name": "Vitamin C",
+                "amount": null
+            },
+            {
+                "name": "Vitamin D",
+                "amount": null
+            },
+            {
+                "name": "Vitamin E",
+                "amount": null
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": null
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": null
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": null
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": null
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": null
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": null
+            },
+            {
+                "name": "Biotin",
+                "amount": null
+            },
+            {
+                "name": "Pantothenic",
+                "amount": null
+            },
+            {
+                "name": "Choline",
+                "amount": null
+            },
+            {
+                "name": "Calcium",
+                "amount": null
+            },
+            {
+                "name": "Iron",
+                "amount": null
+            },
+            {
+                "name": "Iodine",
+                "amount": null
+            },
+            {
+                "name": "Magnesium",
+                "amount": null
+            },
+            {
+                "name": "Zinc",
+                "amount": null
+            },
+            {
+                "name": "Manganese",
+                "amount": null
+            },
+            {
+                "name": "Vitamin K",
+                "amount": null
+            },
+            {
+                "name": "Omega-3",
+                "amount": null
+            }
+        ],
+        "url": null
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Target-Tablet(100day)",
-        "PRICE": "$2",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "120",
-        "Vitamin D": "10",
-        "Vitamin E": "13.5",
-        "Thiamin - B1": "1.8",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.6",
-        "Folate (DFE)": "1360",
-        "Vitamin B12": "8",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "200",
-        "Iron": "28",
-        "Iodine": "150",
-        "Magnesium": "0",
-        "Zinc": "25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Target - Tablet (100 day)",
+            "price": "$2",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "13.5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.8"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1360"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "200"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.target.com/p/prenatal-vitamin-dietary-supplement-tablets-up-up/-/A-16292263?preselect=11004435#lnk=sametab"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Target-Gummy(45day)",
-        "PRICE": "$8",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "20",
-        "Vitamin D": "20",
-        "Vitamin E": "91",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "220",
-        "Magnesium": "0",
-        "Zinc": "3.8",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "65",
-        "Added SUGAR": "3",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Target - Gummy (45 day)",
+            "price": "$8",
+            "serving_size": "2",
+            "added_sugar": "3"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "91"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "220"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3.8"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "65"
+            }
+        ],
         "url": "https://www.target.com/p/prenatal-multivitamin-gummies-fruit-flavors-90ct-up-38-up-8482/-/A-13579345#lnk=sametab"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Target-Duo",
-        "PRICE": "$8",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "60",
-        "Vitamin D": "10",
-        "Vitamin E": "13.5",
-        "Thiamin - B1": "1.7",
-        "Riboflavin - B2": "2",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.5",
-        "Folate (DFE)": "1360",
-        "Vitamin B12": "8",
-        "Biotin": "300",
-        "Pantothenic": "10",
-        "Choline": "0",
-        "Calcium": "300",
-        "Iron": "28",
-        "Iodine": "150",
-        "Magnesium": "50",
-        "Zinc": "15",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Target - Duo",
+            "price": "$8",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "60"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "13.5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.7"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "2"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.5"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1360"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "300"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "10"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "300"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "50"
+            },
+            {
+                "name": "Zinc",
+                "amount": "15"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.target.com/p/women-39-s-daily-prenatal-combo-pack-dietary-supplement-tablets-38-softgels-60ct-up-38-up-8482/-/A-11868347#lnk=sametab"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "CVS-Gummy(75day)",
-        "PRICE": "$7",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "20",
-        "Vitamin D": "20",
-        "Vitamin E": "19",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "220",
-        "Magnesium": "0",
-        "Zinc": "3.8",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "70",
-        "Added SUGAR": "3",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "CVS - Gummy (75 day)",
+            "price": "$7",
+            "serving_size": "2",
+            "added_sugar": "3"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "220"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3.8"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "70"
+            }
+        ],
         "url": "https://www.cvs.com/shop/cvs-health-prenatal-fruit-flavored-gummies-with-dha-folic-acid-150ct-prodid-238709"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "CVS-Softgel(90day)",
-        "PRICE": "$9",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "60",
-        "Vitamin D": "10",
-        "Vitamin E": "5",
-        "Thiamin - B1": "1.5",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2.6",
-        "Folate (DFE)": "1360",
-        "Vitamin B12": "4",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "38",
-        "Iron": "27",
-        "Iodine": "0",
-        "Magnesium": "0",
-        "Zinc": "25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "250",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "CVS- Softgel (90 day)",
+            "price": "$9",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "60"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.5"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1360"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "4"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "38"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "0"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "250"
+            }
+        ],
         "url": "https://www.cvs.com/shop/cvs-health-prenatal-multivitamin-with-250mg-algal-dha-90-ct-prodid-428513"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "CVS-Softgel+DHA",
-        "PRICE": "$18",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "60",
-        "Vitamin D": "10",
-        "Vitamin E": "20",
-        "Thiamin - B1": "1.7",
-        "Riboflavin - B2": "2",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.5",
-        "Folate (DFE)": "1333",
-        "Vitamin B12": "8",
-        "Biotin": "300",
-        "Pantothenic": "10",
-        "Choline": "0",
-        "Calcium": "200",
-        "Iron": "28",
-        "Iodine": "150",
-        "Magnesium": "50",
-        "Zinc": "15",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "200",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "CVS - Softgel + DHA ",
+            "price": "$18",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "60"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "20"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.7"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "2"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.5"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1333"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "300"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "10"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "200"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "50"
+            },
+            {
+                "name": "Zinc",
+                "amount": "15"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "200"
+            }
+        ],
         "url": "https://www.cvs.com/shop/cvs-health-once-daily-prenatal-multi-dha-softgels-30ct-prodid-1020679"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "CVS-Tablet(100day)",
-        "PRICE": "$4",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "100",
-        "Vitamin D": "10",
-        "Vitamin E": "5",
-        "Thiamin - B1": "1.5",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2.6",
-        "Folate (DFE)": "1360",
-        "Vitamin B12": "4",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "200",
-        "Iron": "27",
-        "Iodine": "0",
-        "Magnesium": "0",
-        "Zinc": "25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "CVS- Tablet (100 day)",
+            "price": "$4",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "100"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.5"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1360"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "4"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "200"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "0"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.cvs.com/shop/cvs-health-prenatal-vitamin-with-minerals-tablets-prodid-252577"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "CVS-Duo(60day)",
-        "PRICE": "$13",
-        "Serving Size": "2",
-        "Vitamin A": "1200",
-        "Vitamin C": "60",
-        "Vitamin D": "10",
-        "Vitamin E": "20",
-        "Thiamin - B1": "1.7",
-        "Riboflavin - B2": "2",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.5",
-        "Folate (DFE)": "1658",
-        "Vitamin B12": "8",
-        "Biotin": "300",
-        "Pantothenic": "10",
-        "Choline": "0",
-        "Calcium": "300",
-        "Iron": "28",
-        "Iodine": "150",
-        "Magnesium": "50",
-        "Zinc": "15",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "200",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "CVS - Duo (60 day)",
+            "price": "$13",
+            "serving_size": "2",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "60"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "20"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.7"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "2"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.5"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1658"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "300"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "10"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "300"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "50"
+            },
+            {
+                "name": "Zinc",
+                "amount": "15"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "200"
+            }
+        ],
         "url": "https://www.cvs.com/shop/cvs-health-prenatal-multi-dha-softgels-120ct-prodid-1020651"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Walgreens-Softgel",
-        "PRICE": "$16",
-        "Serving Size": "1",
-        "Vitamin A": "650",
-        "Vitamin C": "85",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "7",
-        "Choline": "0",
-        "Calcium": "150",
-        "Iron": "27",
-        "Iodine": "150",
-        "Magnesium": "40",
-        "Zinc": "13",
-        "Manganese": "0",
-        "Vitamin K": "90",
-        "Omega-3": "235",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Walgreens - Softgel",
+            "price": "$16",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "85"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "150"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "40"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "235"
+            }
+        ],
         "url": "https://www.walgreens.com/store/c/walgreens-once-daily-prenatal-multivitamin/ID=300428269-product"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Walgreens-NatureMadeCopycat",
-        "PRICE": "$11",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "60",
-        "Vitamin D": "10",
-        "Vitamin E": "5",
-        "Thiamin - B1": "1.5",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2.6",
-        "Folate (DFE)": "1360",
-        "Vitamin B12": "4",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "38",
-        "Iron": "27",
-        "Iodine": "0",
-        "Magnesium": "0",
-        "Zinc": "25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "250",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Walgreens - Nature Made Copycat",
+            "price": "$11",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "60"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.5"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1360"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "4"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "38"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "0"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "250"
+            }
+        ],
         "url": "https://www.walgreens.com/store/c/walgreens-prenatal-multivitamin-plus-dha-softgels/ID=prod6255947-product"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Walgreens-MiniSoftgel",
-        "PRICE": "$20",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "85",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "7",
-        "Choline": "0",
-        "Calcium": "150",
-        "Iron": "27",
-        "Iodine": "150",
-        "Magnesium": "40",
-        "Zinc": "13",
-        "Manganese": "0",
-        "Vitamin K": "90",
-        "Omega-3": "235",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Walgreens - Mini Softgel",
+            "price": "$20",
+            "serving_size": "2",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "85"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "150"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "40"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "235"
+            }
+        ],
         "url": "https://www.walgreens.com/store/c/walgreens-easy-to-swallow-complete-prenatal-mini/ID=300432950-product"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Walgreens-Tablets",
-        "PRICE": "$2",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "120",
-        "Vitamin D": "10",
-        "Vitamin E": "13.5",
-        "Thiamin - B1": "1.8",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.6",
-        "Folate (DFE)": "1360",
-        "Vitamin B12": "8",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "200",
-        "Iron": "28",
-        "Iodine": "150",
-        "Magnesium": "0",
-        "Zinc": "25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Walgreens - Tablets",
+            "price": "$2",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "13.5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.8"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1360"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "200"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.walgreens.com/store/c/walgreens-prenatal-multivitamin/ID=300414693-product"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Walgreens-Duo(Oneadaycopycat)",
-        "PRICE": "$15",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "85",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "7",
-        "Choline": "110",
-        "Calcium": "181",
-        "Iron": "27",
-        "Iodine": "150",
-        "Magnesium": "40",
-        "Zinc": "13",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "235",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Walgreens - Duo (One a day copycat)",
+            "price": "$15",
+            "serving_size": "2",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "85"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "110"
+            },
+            {
+                "name": "Calcium",
+                "amount": "181"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "40"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "235"
+            }
+        ],
         "url": "https://www.walgreens.com/store/c/walgreens-two-step-prenatal-multivitamin-with-dha-%26-choline/ID=300425970-product"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Walgreens-Gummy(45day)",
-        "PRICE": "$9",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "20",
-        "Vitamin D": "20",
-        "Vitamin E": "19",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "220",
-        "Magnesium": "0",
-        "Zinc": "3.8",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "65",
-        "Added SUGAR": "4"
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Walgreens - Gummy (45 day)",
+            "price": "$9",
+            "serving_size": "2",
+            "added_sugar": "4"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "220"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3.8"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "65"
+            }
+        ],
+        "url": null
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Walgreens-GummyAlgal",
-        "PRICE": "$16",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "60",
-        "Vitamin D": "30",
-        "Vitamin E": "12.7",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "7",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "150",
-        "Magnesium": "0",
-        "Zinc": "2.6",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "50",
-        "Added SUGAR": "2",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Walgreens - Gummy Algal ",
+            "price": "$16",
+            "serving_size": "2",
+            "added_sugar": "2"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "60"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "30"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "12.7"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "2.6"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "50"
+            }
+        ],
         "url": "https://www.walgreens.com/store/c/walgreens-prenatal-gummies---algal-dha-raspberry,-lemon/ID=300407264-product"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "RiteAid-Tablet",
-        "PRICE": "$3",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "120",
-        "Vitamin D": "10",
-        "Vitamin E": "15",
-        "Thiamin - B1": "1.8",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.6",
-        "Folate (DFE)": "1333",
-        "Vitamin B12": "8",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "200",
-        "Iron": "28",
-        "Iodine": "0",
-        "Magnesium": "0",
-        "Zinc": "25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Rite Aid - Tablet",
+            "price": "$3",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "15"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.8"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1333"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "200"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "0"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.riteaid.com/shop/rite-aid-prenatal-tablets-with-folic-acid-tablets-value-size-225-tablets-0308911"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "RiteAid-Gummy",
-        "PRICE": "$10",
-        "Serving Size": "2",
-        "Vitamin A": "1200",
-        "Vitamin C": "60",
-        "Vitamin D": "20",
-        "Vitamin E": "14",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.5",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "5.6",
-        "Biotin": "70",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "1.3",
-        "Iodine": "58",
-        "Magnesium": "0",
-        "Zinc": "2",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "0",
-        "Added SUGAR": "3",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Rite Aid - Gummy",
+            "price": "$10",
+            "serving_size": "2",
+            "added_sugar": "3"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "60"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "14"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.5"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "5.6"
+            },
+            {
+                "name": "Biotin",
+                "amount": "70"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "1.3"
+            },
+            {
+                "name": "Iodine",
+                "amount": "58"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "2"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.riteaid.com/shop/rite-aid-pectin-based-prenatal-gummy-strawberry-raspberry-60-count"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Alb/Sfy-Tablet(180day)",
-        "PRICE": "$3",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "120",
-        "Vitamin D": "10",
-        "Vitamin E": "13.5",
-        "Thiamin - B1": "1.8",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.6",
-        "Folate (DFE)": "1360",
-        "Vitamin B12": "8",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "200",
-        "Iron": "28",
-        "Iodine": "0",
-        "Magnesium": "0",
-        "Zinc": "25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Alb/Sfy - Tablet (180 day)",
+            "price": "$3",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "13.5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.8"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1360"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "200"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "0"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.safeway.com/shop/product-details.156010005.html"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Alb/Sfy-Gummy(45day)",
-        "PRICE": "$9",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "20",
-        "Vitamin D": "20",
-        "Vitamin E": "19",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "220",
-        "Magnesium": "0",
-        "Zinc": "3.8",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "70",
-        "Added SUGAR": "3",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Alb/Sfy - Gummy (45 day)",
+            "price": "$9",
+            "serving_size": "2",
+            "added_sugar": "3"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "220"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3.8"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "70"
+            }
+        ],
         "url": "https://www.safeway.com/shop/product-details.960309022.html"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Kroger-Tablet(100day)",
-        "PRICE": "$2",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "120",
-        "Vitamin D": "10",
-        "Vitamin E": "13",
-        "Thiamin - B1": "1.8",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.6",
-        "Folate (DFE)": "1360",
-        "Vitamin B12": "8",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "200",
-        "Iron": "28",
-        "Iodine": "150",
-        "Magnesium": "0",
-        "Zinc": "25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Kroger - Tablet (100 day)",
+            "price": "$2",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "13"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.8"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1360"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "200"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.kroger.com/p/kroger-prenatal-vitamin-tablets-100-count/0001111035353?fulfillment=SHIP&searchType=suggestions"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Kroger-Softgel(60day)",
-        "PRICE": "$10",
-        "Serving Size": "1",
-        "Vitamin A": "650",
-        "Vitamin C": "85",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "7",
-        "Choline": "0",
-        "Calcium": "150",
-        "Iron": "27",
-        "Iodine": "150",
-        "Magnesium": "40",
-        "Zinc": "13",
-        "Manganese": "0",
-        "Vitamin K": "90",
-        "Omega-3": "235",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Kroger - Softgel (60 day)",
+            "price": "$10",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "85"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "150"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "40"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "235"
+            }
+        ],
         "url": "https://www.kroger.com/p/kroger-once-daily-complete-prenatal-vitamin-softgels/0004126001514?fulfillment=SHIP&searchType=suggestions"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Kroger-SoftgelDHADuo(60day)",
-        "PRICE": "$9",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "85",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "1330",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "7",
-        "Choline": "0",
-        "Calcium": "150",
-        "Iron": "27",
-        "Iodine": "150",
-        "Magnesium": "40",
-        "Zinc": "13",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "235",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Kroger - Softgel DHA Duo (60 day)",
+            "price": "$9",
+            "serving_size": "2",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "85"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1330"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "150"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "40"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "235"
+            }
+        ],
         "url": "https://www.kroger.com/p/kroger-prenatal-multi-dha-vitamin-tablets-softgels/0004126038558?fulfillment=SHIP&searchType=suggestions"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "Kroger-Gummy(45day)",
-        "PRICE": "$6",
-        "Serving Size": "2",
-        "Vitamin A": "650",
-        "Vitamin C": "20",
-        "Vitamin D": "20",
-        "Vitamin E": "19",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "220",
-        "Magnesium": "0",
-        "Zinc": "3.8",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "65",
-        "Added SUGAR": "3",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Kroger - Gummy (45 day)",
+            "price": "$6",
+            "serving_size": "2",
+            "added_sugar": "3"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "650"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "220"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "3.8"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "65"
+            }
+        ],
         "url": "https://www.kroger.com/p/kroger-prenatal-raspberry-lime-multivitamin-gummies/0004126001513?fulfillment=SHIP&searchType=suggestions"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "KrogerSoftgel(60day)",
-        "PRICE": "$7",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "100",
-        "Vitamin D": "10",
-        "Vitamin E": "20",
-        "Thiamin - B1": "1.8",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.6",
-        "Folate (DFE)": "1333",
-        "Vitamin B12": "8",
-        "Biotin": "100",
-        "Pantothenic": "10",
-        "Choline": "0",
-        "Calcium": "175",
-        "Iron": "28",
-        "Iodine": "0",
-        "Magnesium": "0",
-        "Zinc": "25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "279",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Kroger Softgel (60 day)",
+            "price": "$7",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "100"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "20"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.8"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1333"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "100"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "10"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "175"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "0"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "279"
+            }
+        ],
         "url": "https://www.kroger.com/p/kroger-one-per-day-prenatal-multi-with-omega-3-softgels/0004126036757?fulfillment=SHIP&searchType=suggestions"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "DollarGeneral-Gummy(12day)",
-        "PRICE": "$17",
-        "Serving Size": "3",
-        "Vitamin A": "1200",
-        "Vitamin C": "30",
-        "Vitamin D": "25",
-        "Vitamin E": "10.2",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.5",
-        "Folate (DFE)": "666",
-        "Vitamin B12": "5",
-        "Biotin": "10",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "0",
-        "Magnesium": "0",
-        "Zinc": "2.6",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "80",
-        "Added SUGAR": "5",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Dollar General - Gummy (12 day)",
+            "price": "$17",
+            "serving_size": "3",
+            "added_sugar": "5"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "30"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "25"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "10.2"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.5"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "666"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "5"
+            },
+            {
+                "name": "Biotin",
+                "amount": "10"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "0"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "2.6"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "80"
+            }
+        ],
         "url": "https://www.dollargeneral.com/p/oh-good-prenatal-dha-gummies-ct/850037842179"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "MeijerTablet(100day)",
-        "PRICE": "$3",
-        "Serving Size": "1",
-        "Vitamin A": "1200",
-        "Vitamin C": "120",
-        "Vitamin D": "10",
-        "Vitamin E": "13.5",
-        "Thiamin - B1": "1.8",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "2.6",
-        "Folate (DFE)": "1334",
-        "Vitamin B12": "8",
-        "Biotin": "0",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "200",
-        "Iron": "28",
-        "Iodine": "0",
-        "Magnesium": "0",
-        "Zinc": "25",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Meijer Tablet (100 day)",
+            "price": "$3",
+            "serving_size": "1",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1200"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "10"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "13.5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.8"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2.6"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1334"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "200"
+            },
+            {
+                "name": "Iron",
+                "amount": "28"
+            },
+            {
+                "name": "Iodine",
+                "amount": "0"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.meijer.com/shopping/product/meijer-prenatal-supplement-with-folic-acid-100-ct/70882055481.html"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Thorne",
-        "PRICE": "$29",
-        "Serving Size": "3",
-        "Vitamin A": "1050",
-        "Vitamin C": "150",
-        "Vitamin D": "25",
-        "Vitamin E": "33.5",
-        "Thiamin - B1": "5",
-        "Riboflavin - B2": "5",
-        "Niacinamide - B3": "30",
-        "Vitamin B6": "12",
-        "Folate (DFE)": "1700",
-        "Vitamin B12": "200",
-        "Biotin": "50",
-        "Pantothenic": "18",
-        "Choline": "110",
-        "Calcium": "180",
-        "Iron": "45",
-        "Iodine": "150",
-        "Magnesium": "90",
-        "Zinc": "25",
-        "Manganese": "5",
-        "Vitamin K": "100",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Thorne",
+            "price": "$29",
+            "serving_size": "3",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1050"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "150"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "25"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "33.5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "5"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "5"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "30"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "12"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1700"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "200"
+            },
+            {
+                "name": "Biotin",
+                "amount": "50"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "18"
+            },
+            {
+                "name": "Choline",
+                "amount": "110"
+            },
+            {
+                "name": "Calcium",
+                "amount": "180"
+            },
+            {
+                "name": "Iron",
+                "amount": "45"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "90"
+            },
+            {
+                "name": "Zinc",
+                "amount": "25"
+            },
+            {
+                "name": "Manganese",
+                "amount": "5"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "100"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.amazon.com/Thorne-Research-Prenatal-Multivitamin-Lactating/dp/B00O59SH3E/ref=zg_bs_6936725011_sccl_5/131-0919695-5677337?psc=1"
     },
     {
-        "Pill Type": "Gummy",
-        "Retail Best Seller (Brands)": "GardenofLifeMyKind-Gummy",
-        "PRICE": "$26",
-        "Serving Size": "4",
-        "Vitamin A": "450",
-        "Vitamin C": "90",
-        "Vitamin D": "20",
-        "Vitamin E": "11.5",
-        "Thiamin - B1": "0.6",
-        "Riboflavin - B2": "1.2",
-        "Niacinamide - B3": "8",
-        "Vitamin B6": "3.4",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "4.8",
-        "Biotin": "105",
-        "Pantothenic": "4",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "0",
-        "Iodine": "0",
-        "Magnesium": "0",
-        "Zinc": "1.5",
-        "Manganese": "0.2",
-        "Vitamin K": "120",
-        "Omega-3": "0",
-        "Added SUGAR": "4",
+        "general_info": {
+            "pill_type": "Gummy",
+            "brand": "Garden of Life My Kind -  Gummy",
+            "price": "$26",
+            "serving_size": "4",
+            "added_sugar": "4"
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "450"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "90"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "11.5"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0.6"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.2"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "8"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "3.4"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "4.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "105"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "4"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "0"
+            },
+            {
+                "name": "Iodine",
+                "amount": "0"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "1.5"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0.2"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "120"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.amazon.com/Garden-Life-Organics-Prenatal-Vitamins/dp/B06XSD99V3/ref=zg_bs_6936725011_sccl_7/131-0919695-5677337?psc=1"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "EuNatural-ConceptionForHer",
-        "PRICE": "$35",
-        "Serving Size": "2",
-        "Vitamin A": "0",
-        "Vitamin C": "0",
-        "Vitamin D": "100",
-        "Vitamin E": "0",
-        "Thiamin - B1": "12",
-        "Riboflavin - B2": "13",
-        "Niacinamide - B3": "8",
-        "Vitamin B6": "8.5",
-        "Folate (DFE)": "800",
-        "Vitamin B12": "48",
-        "Biotin": "0",
-        "Pantothenic": "5",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "9",
-        "Iodine": "150",
-        "Magnesium": "0",
-        "Zinc": "11",
-        "Manganese": "2.3",
-        "Vitamin K": "0",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Eu Natural - Conception For Her",
+            "price": "$35",
+            "serving_size": "2",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "100"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "0"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "12"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "13"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "8"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "8.5"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "800"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "48"
+            },
+            {
+                "name": "Biotin",
+                "amount": "0"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "5"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "9"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "11"
+            },
+            {
+                "name": "Manganese",
+                "amount": "2.3"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.amazon.com/Conception-Fertility-Prenatal-Vitamins-Myo-Inositol/dp/B013RMKCV4/ref=zg_bs_6936725011_sccl_8/131-0919695-5677337?psc=1"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Baby&Me2",
-        "PRICE": "$27",
-        "Serving Size": "2",
-        "Vitamin A": "750",
-        "Vitamin C": "100",
-        "Vitamin D": "15",
-        "Vitamin E": "20",
-        "Thiamin - B1": "1.5",
-        "Riboflavin - B2": "1.7",
-        "Niacinamide - B3": "20",
-        "Vitamin B6": "8",
-        "Folate (DFE)": "1020",
-        "Vitamin B12": "8",
-        "Biotin": "300",
-        "Pantothenic": "10",
-        "Choline": "300",
-        "Calcium": "0",
-        "Iron": "18",
-        "Iodine": "150",
-        "Magnesium": "0",
-        "Zinc": "15",
-        "Manganese": "1",
-        "Vitamin K": "60+30",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Baby & Me 2",
+            "price": "$27",
+            "serving_size": "2",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "750"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "100"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "20"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.5"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.7"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "20"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "8"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1020"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "300"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "10"
+            },
+            {
+                "name": "Choline",
+                "amount": "300"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "18"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "15"
+            },
+            {
+                "name": "Manganese",
+                "amount": "1"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "60+30"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.amazon.com/MegaFood-Baby-Prenatal-Vitamins-Multivitamin/dp/B01CQ3E4AK/ref=zg_bs_6936725011_sccl_13/131-0919695-5677337?psc=1"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "PinkStorkTotalPrenatal",
-        "PRICE": "$29",
-        "Serving Size": "2",
-        "Vitamin A": "1300",
-        "Vitamin C": "120",
-        "Vitamin D": "15",
-        "Vitamin E": "19",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "600",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "0",
-        "Choline": "0",
-        "Calcium": "195",
-        "Iron": "27",
-        "Iodine": "290",
-        "Magnesium": "50",
-        "Zinc": "13",
-        "Manganese": "0",
-        "Vitamin K": "0",
-        "Omega-3": "200",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Pink Stork Total Prenatal",
+            "price": "$29",
+            "serving_size": "2",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1300"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "15"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "600"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "195"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "50"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "0"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "200"
+            }
+        ],
         "url": "https://www.amazon.com/Pink-Stork-Recommended-Nutrition-Vegetarian/dp/B07G4C85XX/ref=zg_bs_6936725011_sccl_14/131-0919695-5677337?psc=1"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "GardenofLife(VitaminCode)",
-        "PRICE": "$60/$50",
-        "Serving Size": "3",
-        "Vitamin A": "1300",
-        "Vitamin C": "120",
-        "Vitamin D": "35",
-        "Vitamin E": "19",
-        "Thiamin - B1": "1.4",
-        "Riboflavin - B2": "1.6",
-        "Niacinamide - B3": "18",
-        "Vitamin B6": "2",
-        "Folate (DFE)": "800",
-        "Vitamin B12": "2.8",
-        "Biotin": "35",
-        "Pantothenic": "7",
-        "Choline": "0",
-        "Calcium": "0",
-        "Iron": "27",
-        "Iodine": "290",
-        "Magnesium": "0",
-        "Zinc": "13",
-        "Manganese": "2.6",
-        "Vitamin K": "90+50",
-        "Omega-3": "0",
-        "Added SUGAR": null,
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Garden of Life (Vitamin Code)",
+            "price": "$60/$50",
+            "serving_size": "3",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "1300"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "120"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "35"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "1.6"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "2"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "800"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "2.8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "35"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "7"
+            },
+            {
+                "name": "Choline",
+                "amount": "0"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "27"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "0"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13"
+            },
+            {
+                "name": "Manganese",
+                "amount": "2.6"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90+50"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "0"
+            }
+        ],
         "url": "https://www.amazon.com/Garden-Life-Vegetarian-Multivitamin-Supplement/dp/B005JAT3TU/ref=zg_bs_6936725011_sccl_15/131-0919695-5677337?psc=1"
     },
     {
-        "Pill Type": "Pill",
-        "Retail Best Seller (Brands)": "Ritual-Prenatal",
-        "PRICE": "$43",
-        "Serving Size": "2",
-        "Vitamin A": "0",
-        "Vitamin C": "0",
-        "Vitamin D": "50",
-        "Vitamin E": "7",
-        "Thiamin - B1": "0",
-        "Riboflavin - B2": "0",
-        "Niacinamide - B3": "0",
-        "Vitamin B6": "0",
-        "Folate (DFE)": "1000",
-        "Vitamin B12": "8",
-        "Biotin": "150",
-        "Pantothenic": "0",
-        "Choline": "55",
-        "Calcium": "0",
-        "Iron": "18",
-        "Iodine": "150",
-        "Magnesium": "32",
-        "Zinc": "0",
-        "Manganese": "0",
-        "Vitamin K": "90",
-        "Omega-3": "350",
-        "Added SUGAR": null
+        "general_info": {
+            "pill_type": "Pill",
+            "brand": "Ritual - Prenatal",
+            "price": "$43",
+            "serving_size": "2",
+            "added_sugar": null
+        },
+        "vitamins": [
+            {
+                "name": "Vitamin A",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "50"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "7"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "0"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "0"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "0"
+            },
+            {
+                "name": "Folate (DFE)",
+                "amount": "1000"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "8"
+            },
+            {
+                "name": "Biotin",
+                "amount": "150"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "0"
+            },
+            {
+                "name": "Choline",
+                "amount": "55"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0"
+            },
+            {
+                "name": "Iron",
+                "amount": "18"
+            },
+            {
+                "name": "Iodine",
+                "amount": "150"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "32"
+            },
+            {
+                "name": "Zinc",
+                "amount": "0"
+            },
+            {
+                "name": "Manganese",
+                "amount": "0"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90"
+            },
+            {
+                "name": "Omega-3",
+                "amount": "350"
+            }
+        ],
+        "url": null
     }
 ]

@@ -7,9 +7,8 @@ fetch('prenatal-vitamins.json')
     .then(response => response.json())
     .then(data => {
         jsonData = data;
-        visibleHeaders = Object.keys(jsonData[0]).slice(0, 17);
+        visibleHeaders = Object.keys(jsonData[0].general_info).concat(jsonData[0].vitamins.map(v => v.name)).concat(['url']);
         populateTable();
-        populateCheckboxes();
     });
 
 // Function to populate the table with data
@@ -35,7 +34,14 @@ function populateTable() {
         let row = document.createElement('tr');
         visibleHeaders.forEach(header => {
             let td = document.createElement('td');
-            td.textContent = item[header] ? item[header] : '-';
+            if (header in item.general_info) {
+                td.textContent = item.general_info[header] ? item.general_info[header] : '-';
+            } else if (header == 'url') {
+                td.textContent = item.url;
+            } else {
+                let vitamin = item.vitamins.find(v => v.name == header);
+                td.textContent = vitamin ? vitamin.amount : '-';
+            }
             if (td.textContent == '0') {
                 td.className = 'zero';
             }
@@ -45,45 +51,13 @@ function populateTable() {
     });
 }
 
-// Function to populate the checkboxes
-function populateCheckboxes() {
-    let headers = Object.keys(jsonData[0]);
-    let checkboxesDiv = document.getElementById('checkboxes');
-    headers.slice(17).forEach(header => {
-        let checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.id = header;
-        checkbox.onchange = function () { toggleHeader(header); };
-        checkboxesDiv.appendChild(checkbox);
-
-        let label = document.createElement('label');
-        label.for = header;
-        label.textContent = header;
-        checkboxesDiv.appendChild(label);
-
-        checkboxesDiv.appendChild(document.createElement('br'));
-    });
-}
-
-// Function to show or hide a header
-function toggleHeader(header) {
-    let checkbox = document.getElementById(header);
-    if (checkbox.checked) {
-        visibleHeaders.push(header);
-    } else {
-        visibleHeaders = visibleHeaders.filter(h => h !== header);
-    }
-    populateTable();
-}
-
-// Rest of the code...
-
-
 // Function to sort the table
 function sortTable(header) {
     jsonData.sort((a, b) => {
-        if (a[header] < b[header]) return sortDirection ? -1 : 1;
-        if (a[header] > b[header]) return sortDirection ? 1 : -1;
+        let aValue = header in a.general_info ? a.general_info[header] : (header == 'url' ? a.url : a.vitamins.find(v => v.name == header).amount);
+        let bValue = header in b.general_info ? b.general_info[header] : (header == 'url' ? b.url : b.vitamins.find(v => v.name == header).amount);
+        if (aValue < bValue) return sortDirection ? -1 : 1;
+        if (aValue > bValue) return sortDirection ? 1 : -1;
         return 0;
     });
 
