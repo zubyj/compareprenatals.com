@@ -22,7 +22,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Vitamin CSS Chart -->
-    <link href="vitamin-chart.css" rel="stylesheet" />
+    <link href="css/vitamin-chart.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -87,15 +87,47 @@
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xl-8">
-                    <div class="h2 fs-1 text-white mb-4">"CareNatal is amazing. It gives all the nutrients I need!"
+                    <div class="h2 fs-1 text-white mb-4">"If I were a woman and pregnant, this woulda been clutch"
                         <br />
-                        <hr /> - John Doe
+                        <hr /> - Zuby J
                     </div>
                 </div>
             </div>
         </div>
     </aside>
-    <!-- Basic features section-->
+    <!-- Call to action section-->
+    <section class="cta">
+        <div class="cta-content">
+            <div class="container px-5">
+                <h2 class="text-white display-1 lh-1 mb-4">
+                    Try our new
+                    <br />
+                    CareNatal Pills
+                </h2>
+                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#" target="_blank">Coming Summer 2023</a>
+                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#" target="_blank">Check nutrition</a>
+            </div>
+        </div>
+    </section>
+    <!-- Spreadsheet -->
+    <section class="text-center">
+        <h1>Vitamin Chart 📝</h1>
+        <div id="chart">
+            <div class="table-responsive"> <!-- Added this div with class 'table-responsive' -->
+                <table id="vitaminTable" class="table"> <!-- Added class 'table' to the table -->
+                    <thead>
+                        <tr>
+                            <!-- Add table headers here based on the keys from the JSON file -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populate table rows here using the JSON file data -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- About section-->
     <section class="bg-light" id="about">
         <div class="container px-5">
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
@@ -115,41 +147,6 @@
             </div>
         </div>
     </section>
-    <!-- Call to action section-->
-    <section class="cta">
-        <div class="cta-content">
-            <div class="container px-5">
-                <h2 class="text-white display-1 lh-1 mb-4">
-                    Try our new
-                    <br />
-                    CareNatal Pills
-                </h2>
-                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#" target="_blank">Coming Summer 2023</a>
-                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#" target="_blank">Check nutrition</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Spreadsheet -->
-
-    <section class="text-center">
-        <h1>Vitamin Chart 📝</h1>
-        <div id="chart">
-            <div class="table-responsive"> <!-- Added this div with class 'table-responsive' -->
-                <table id="vitaminTable" class="table"> <!-- Added class 'table' to the table -->
-                    <thead>
-                        <tr>
-                            <!-- Add table headers here based on the keys from the JSON file -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Populate table rows here using the JSON file data -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
     <!-- App badge section-->
     <section class="bg-gradient-primary-to-secondary" id="socials">
         <div class="container px-5">
@@ -261,7 +258,6 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>
