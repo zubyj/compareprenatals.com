@@ -5,8 +5,8 @@ let fdaData = {};  // We will load our FDA RDV data into this variable
 
 // Load the JSON data
 Promise.all([
-    fetch('prenatal-vitamins.json').then(response => response.json()),
-    fetch('fda-rdv.json').then(response => response.json()),
+    fetch('assets/prenatal-vitamins.json').then(response => response.json()),
+    fetch('assets/fda-rdv.json').then(response => response.json()),
 ]).then(([vitaminData, fdaRdvData]) => {
     jsonData = vitaminData;
     fdaData = fdaRdvData;
