@@ -60,10 +60,6 @@ input[type=text] {
     align-items: center;
 }
 
-#vitaminTable {
-    width: 80%;
-}
-
 .zero {
     background-color: #ff474c;
     opacity: 80%;
