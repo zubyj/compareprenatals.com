@@ -1133,33 +1133,6 @@ textarea.form-control-lg {
   min-height: calc(1.5em + 1rem + 2px)
 }
 
-.form-control-color {
-  width: 3rem;
-  height: calc(1.5em + .75rem + 2px);
-  padding: .375rem
-}
-
-.form-control-color:not(:disabled):not([readonly]) {
-  cursor: pointer
-}
-
-.form-control-color::-moz-color-swatch {
-  border: 0 !important;
-  border-radius: .375rem
-}
-
-.form-control-color::-webkit-color-swatch {
-  border-radius: .375rem
-}
-
-.form-control-color.form-control-sm {
-  height: calc(1.5em + .5rem + 2px)
-}
-
-.form-control-color.form-control-lg {
-  height: calc(1.5em + 1rem + 2px)
-}
-
 .form-check {
   display: block;
   min-height: 1.5rem;
@@ -1358,10 +1331,6 @@ textarea.form-control.is-valid {
   background-position: top calc(.375em + .1875rem) right calc(.375em + .1875rem)
 }
 
-.form-control-color.is-valid {
-  width: calc(3rem + calc(1.5em + .75rem))
-}
-
 .form-check-input.is-valid {
   border-color: #198754
 }
@@ -1407,10 +1376,6 @@ textarea.form-control.is-valid {
 textarea.form-control.is-invalid {
   padding-right: calc(1.5em + .75rem);
   background-position: top calc(.375em + .1875rem) right calc(.375em + .1875rem)
-}
-
-.form-control-color.is-invalid {
-  width: calc(3rem + calc(1.5em + .75rem))
 }
 
 .form-check-input.is-invalid {
@@ -4675,10 +4640,6 @@ section.cta:before {
   display: none
 }
 
-.features-device-mockup .circle .gradient-start-color {
-  stop-color: #2937f0
-}
-
 .features-device-mockup {
   max-width: 10rem
 }
@@ -4770,10 +4731,6 @@ footer a:hover {
   fill: url(#circleGradient);
   width: 70%;
   display: none
-}
-
-.masthead .masthead-device-mockup .circle .gradient-start-color {
-  stop-color: #2937f0
 }
 
 .masthead .masthead-device-mockup {
