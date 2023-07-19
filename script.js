@@ -24,54 +24,39 @@ let headerMapping = {
     "url": "Website"
 };
 
-let orderedHeaders = ["url", "pill_type", "brand", "price", "serving_size", "added_sugar"];
-
 function extractFirstWordFromUrl(url) {
     let urlObject = new URL(url);
     let hostParts = urlObject.hostname.split('.');
     return hostParts.length > 1 ? hostParts[1].charAt(0).toUpperCase() + hostParts[1].slice(1) : hostParts[0];
 }
 
-Promise.all([
-    fetch('prenatal-vitamins.json').then(response => response.json()),
-    fetch('fda-rdv.json').then(response => response.json()),
-]).then(([vitaminData, fdaRdvData]) => {
-    jsonData = vitaminData;
-    fdaData = fdaRdvData;
-
-    // Add the keys from the general_info and vitamins properties of the first item to orderedHeaders
-    let item = jsonData[0];
-    orderedHeaders = orderedHeaders.concat(Object.keys(item.general_info)).concat(item.vitamins.map(v => v.name));
-
-    populateTable();
-});
-
+// Function to populate the table with data
 function populateTable() {
+    // Get the table element
     let table = document.getElementById('vitaminTable');
-    table.innerHTML = '';
-    let headerRow = document.createElement('tr');
 
-    orderedHeaders.forEach(header => {
+    // Clear the table
+    table.innerHTML = '';
+
+    // Add table headers
+    let headerRow = document.createElement('tr');
+    visibleHeaders.forEach(header => {
         let th = document.createElement('th');
-        let mappedHeader = headerMapping[header] ? headerMapping[header] : header;
-        th.textContent = mappedHeader;
+        th.textContent = header;
         th.onclick = function () { sortTable(header); };
         headerRow.appendChild(th);
     });
-
     table.appendChild(headerRow);
 
+    // Add table data
     jsonData.forEach(item => {
         let row = document.createElement('tr');
-        orderedHeaders.forEach(header => {
+        visibleHeaders.forEach(header => {
             let td = document.createElement('td');
             if (header in item.general_info) {
                 td.textContent = item.general_info[header] ? item.general_info[header] : '-';
             } else if (header == 'url') {
-                let anchor = document.createElement('a');
-                anchor.href = item.url;
-                anchor.textContent = extractFirstWordFromUrl(item.url);
-                td.appendChild(anchor);
+                td.textContent = item.url;
             } else {
                 let vitamin = item.vitamins.find(v => v.name == header);
                 td.textContent = vitamin ? vitamin.amount : '-';
@@ -88,6 +73,7 @@ function populateTable() {
     });
 }
 
+// Function to sort the table
 function sortTable(header) {
     jsonData.sort((a, b) => {
         let aValue = header in a.general_info ? a.general_info[header] : (header == 'url' ? a.url : a.vitamins.find(v => v.name == header).amount);
