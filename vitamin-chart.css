@@ -1,15 +1,18 @@
 #chart {
     background-color: #ffffff;
-    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    margin: 20px;
-    font-size: 1.1em;
+    font-size: 1em;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 90vw;
+    margin-left: 5vw;
+    height: 70vh;
 }
 
 #vitaminTable {
-    width: 100%;
     border-collapse: collapse;
+    width: 500px !important;
 }
 
 #vitaminTable thead {
@@ -21,7 +24,7 @@
 }
 
 #vitaminTable thead th {
-    padding: 10px;
+    padding: 5px;
     text-align: left;
 }
 
