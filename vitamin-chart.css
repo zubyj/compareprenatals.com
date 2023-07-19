@@ -1,27 +1,38 @@
-/* vitamin-chart.css */
+#chart {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin: 20px;
+    font-size: 1.1em;
+}
 
+#vitaminTable {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+#vitaminTable thead {
+    background-color: #f0f0f0;
+}
 
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: hsl(0, 0%, 20%);
-    color: #fff;
+#vitaminTable thead tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#vitaminTable thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+#vitaminTable tbody td {
+    padding: 10px;
+    text-align: left;
 }
 
 table {
     border-collapse: collapse;
     margin-top: 50px;
-}
-
-a {
-    color: lightblue;
-    text-decoration: none;
-}
-
-h1 {
-    color: lightcyan;
-    margin-bottom: 50px;
-    font-weight: 400;
 }
 
 th,
@@ -30,7 +41,6 @@ td {
 }
 
 th {
-    color: lightcyan;
     cursor: pointer;
     border: 1px solid lightblue;
 }
@@ -41,7 +51,7 @@ th:hover {
 }
 
 tr:nth-child(even) {
-    background-color: #555;
+    background-color: lightgrey;
 }
 
 input[type=text] {
@@ -72,10 +82,4 @@ input[type=text] {
     opacity: 80%;
     font-weight: bold;
     color: black;
-}
-
-@media screen and (max-width: 600px) {
-    table {
-        width: 90%;
-    }
 }

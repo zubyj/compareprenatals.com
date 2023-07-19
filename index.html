@@ -21,6 +21,7 @@
         rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="vitamin-chart.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -35,8 +36,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#features">About</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#socials">Socials</a></li>
                 </ul>
                 <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
                     data-bs-target="#feedbackModal">
@@ -60,7 +61,7 @@
                             prenatal vitamins.</p>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
                             <a class="me-lg-3 mb-4 mb-lg-0 btn btn-outline-dark py-3 px-4 rounded-pill"
-                                href="vitamin-chart.html" target="_blank">Open Vitamin Chart
+                                href="#chart">Open Vitamin Chart
                             </a>
                             <a class="me-lg-3 mb-4 mb-lg-0 btn btn-outline-dark py-3 px-4 rounded-pill"
                                 href="vitamin-chart.html" target="_blank">Order CareNatal Pills
@@ -86,13 +87,12 @@
                 <div class="col-xl-8">
                     <div class="h2 fs-1 text-white mb-4">"CareNatal is amazing. It gives all the nutrients I need! Much
                         wow very cool!"</div>
-                    <img class="rounded-circle mb-3" src="assets/img/quote-avatar.jpg" alt="..." />
                 </div>
             </div>
         </div>
     </aside>
     <!-- Basic features section-->
-    <section class="bg-light">
+    <section class="bg-light" id="about">
         <div class="container px-5">
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-12 col-lg-5">
@@ -116,17 +116,33 @@
         <div class="cta-content">
             <div class="container px-5">
                 <h2 class="text-white display-1 lh-1 mb-4">
-                    CareNatal 💊
+                    Try our new
                     <br />
-                    (Summer 2023)
+                    CareNatal 💊
                 </h2>
-                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#" target="_blank">Coming Soon</a>
+                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#" target="_blank">Coming Summer 2023</a>
                 <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#" target="_blank">Check nutrition</a>
             </div>
         </div>
     </section>
+
+    <!-- Spreadsheet -->
+    <section class="text-center" id="chart">
+        <h1>Vitamin Chart</h1>
+        <table id="vitaminTable">
+            <thead>
+                <tr>
+                    <!-- Add table headers here based on the keys from the JSON file -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Populate table rows here using the JSON file data -->
+            </tbody>
+        </table>
+    </section>
+
     <!-- App badge section-->
-    <section class="bg-gradient-primary-to-secondary" id="download">
+    <section class="bg-gradient-primary-to-secondary" id="socials">
         <div class="container px-5">
             <h2 class="text-center text-white font-alt mb-4">Socials</h2>
             <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
@@ -236,6 +252,7 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
