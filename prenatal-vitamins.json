@@ -1,9 +1,13 @@
 [
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.cvs.com/shop/one-a-day-women-s-prenatal-1-multivitamin-softgels-prodid-967926",
             "brand": "One A Day - (Standard)",
-            "price": "$21/$13",
+            "pill_type": "Pill",
+            "price": [
+                "21",
+                "13"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -97,9 +101,13 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.cvs.com/shop/one-a-day-prenatal-advanced-multivitamin-softgels-tablets-prodid-437078",
             "brand": "One A Day - Advanced",
-            "price": "$27/$19",
+            "pill_type": "Pill",
+            "price": [
+                "27",
+                "19"
+            ],
             "serving_size": "2",
             "added_sugar": null
         },
@@ -193,9 +201,13 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.cvs.com/shop/one-a-day-prenatal-multivitamin-gummies-prodid-1260460",
             "brand": "One A Day - Gummy",
-            "price": "$22/$15",
+            "pill_type": "Gummy",
+            "price": [
+                "22",
+                "15"
+            ],
             "serving_size": "2",
             "added_sugar": "2"
         },
@@ -289,9 +301,13 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.cvs.com/shop/vitafusion-prenatal-gummy-vitamins-assorted-flavor-prodid-800388",
             "brand": "Vitafusion - Gummy (45 day)",
-            "price": "$12/$9",
+            "pill_type": "Gummy",
+            "price": [
+                "12",
+                "9"
+            ],
             "serving_size": "2",
             "added_sugar": "4"
         },
@@ -385,9 +401,13 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.cvs.com/shop/olly-the-essential-prenatal-multivitamin-60ct-vibrant-citrus-prodid-1020801",
             "brand": "Olly - Gummy",
-            "price": "$15/$13",
+            "pill_type": "Gummy",
+            "price": [
+                "15",
+                "13"
+            ],
             "serving_size": "2",
             "added_sugar": "4"
         },
@@ -481,9 +501,13 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.walgreens.com/store/c/nature%27s-bounty-optimal-solutions-essential-prenatal-gummies-mixed-berry/ID=300394699-product",
             "brand": "Nature's Bounty - Gummy (25 day)",
-            "price": "$16/$11",
+            "pill_type": "Gummy",
+            "price": [
+                "16",
+                "11"
+            ],
             "serving_size": "2",
             "added_sugar": "3"
         },
@@ -577,9 +601,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.amazon.com/Natures-Way-Prenatal-Multivitamin-serving/dp/B01KGLIVCQ/ref=sr_1_7?crid=1Q3FSPQ5QFZV5&keywords=nature%27s+way+prenatal&qid=1676139320&rdc=1&sprefix=nature%27s+way+prenatal%2Caps%2C104&sr=8-7",
             "brand": "Nature's Way Alive - Gummy (45 day)",
-            "price": "$14",
+            "pill_type": "Gummy",
+            "price": [
+                "14"
+            ],
             "serving_size": "2",
             "added_sugar": "4"
         },
@@ -673,9 +700,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.target.com/p/smartypants-organics-prenatal-formula-multivitamin-gummies-90ct/-/A-75665111#lnk=sametab",
             "brand": "Smarty Pants (Organic) - Gummy",
-            "price": "$28",
+            "pill_type": "Gummy",
+            "price": [
+                "28"
+            ],
             "serving_size": "4",
             "added_sugar": "7"
         },
@@ -769,9 +799,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.target.com/p/smartypants-prenatal-formula-multivitamin-gummies/-/A-87694203?preselect=17387874#lnk=sametab",
             "brand": "Smarty Pants - Gummy (20 day)",
-            "price": "$31",
+            "pill_type": "Gummy",
+            "price": [
+                "31"
+            ],
             "serving_size": "4",
             "added_sugar": "6"
         },
@@ -865,9 +898,13 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.amazon.com/SmartyPants-Prenatal-Multivitamin-Development-Immunity/dp/B08W3LY883/ref=sr_1_5?crid=27663GV9X12ZA&keywords=smarty+pants+prenatal&qid=1676139618&sprefix=smarty+pants+prenatal%2Caps%2C75&sr=8-5",
             "brand": "Smarty Pants - Capsules",
-            "price": "$14/$11",
+            "pill_type": "Pill",
+            "price": [
+                "14",
+                "11"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -961,9 +998,13 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.target.com/p/nature-made-prenatal-with-folic-acid-dha-prenatal-vitamin-and-mineral-supplement-softgels/-/A-15665982?preselect=13283521#lnk=sametab",
             "brand": "Nature Made + DHA (60/90 day)",
-            "price": "$16/$6",
+            "pill_type": "Pill",
+            "price": [
+                "16",
+                "6"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -1057,9 +1098,13 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.amazon.com/Nature-Made-Multi-Prenatal-Tablets/dp/B001F1G6SI/ref=sr_1_1_sspa?crid=1DAICV2DBN9NG&keywords=nature%2Bmade%2Bprenatal&qid=1676139916&sprefix=nature%2Bmade%2Bprenatal%2Caps%2C85&sr=8-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzSDVPWEM4NEw1REM2JmVuY3J5cHRlZElkPUEwMjcxOTg2MloxNkZETkpJODRVOCZlbmNyeXB0ZWRBZElkPUEwNDU1MzczMVRCME9FVEM1R1NNJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1",
             "brand": "Nature Made (Standard) (250 day)",
-            "price": "$5/3",
+            "pill_type": "Pill",
+            "price": [
+                "5",
+                "3"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -1153,9 +1198,13 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.target.com/p/nature-made-prenatal-gummies-with-dha-and-folic-acid-prenatal-vitamin-and-mineral-supplement-60ct/-/A-75665704#lnk=sametab",
             "brand": "Nature Made Gummy",
-            "price": "$9/$7",
+            "pill_type": "Gummy",
+            "price": [
+                "9",
+                "7"
+            ],
             "serving_size": "2",
             "added_sugar": "5"
         },
@@ -1249,9 +1298,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.target.com/p/garden-of-life-dr-formulated-prenatal-multi-dha-softgels-30ct/-/A-80317892#lnk=sametab",
             "brand": "Garden of Life - Standard",
-            "price": "$22",
+            "pill_type": "Pill",
+            "price": [
+                "22"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -1345,9 +1397,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.target.com/p/garden-of-life-my-kind-organic-vegan-prenatal-daily-multivitamin-tablets-30ct/-/A-53205427#lnk=sametab",
             "brand": "Garden of Life My Kind, aka Once Daily",
-            "price": "$23",
+            "pill_type": "Pill",
+            "price": [
+                "23"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -1441,9 +1496,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.target.com/p/rainbow-light-prenatal-one-multivitamin-tablets-60ct/-/A-86906204#lnk=sametab",
             "brand": "Rainbow Light (Standard) (45 day)",
-            "price": "$22",
+            "pill_type": "Pill",
+            "price": [
+                "22"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -1537,9 +1595,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.target.com/p/rainbow-light-prenatal-daily-duo-multivitamin-dietary-supplement-tablets-and-softgels-60ct/-/A-50058877#lnk=sametab",
             "brand": "Rainbow Light (Daily Duo)",
-            "price": "$34",
+            "pill_type": "Pill",
+            "price": [
+                "34"
+            ],
             "serving_size": "2",
             "added_sugar": null
         },
@@ -1633,9 +1694,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.cvs.com/shop/enfamom-prenatal-vitamin-mineral-supplement-softgels-for-women-30-ct-prodid-452917",
             "brand": "Enfamom",
-            "price": "$20",
+            "pill_type": "Pill",
+            "price": [
+                "20"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -1729,9 +1793,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.target.com/p/prenatal-vitamin-dietary-supplement-tablets-up-up/-/A-16292263?preselect=11004435#lnk=sametab",
             "brand": "Target - Tablet (100 day)",
-            "price": "$2",
+            "pill_type": "Pill",
+            "price": [
+                "2"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -1825,9 +1892,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.target.com/p/prenatal-multivitamin-gummies-fruit-flavors-90ct-up-38-up-8482/-/A-13579345#lnk=sametab",
             "brand": "Target - Gummy (45 day)",
-            "price": "$8",
+            "pill_type": "Gummy",
+            "price": [
+                "8"
+            ],
             "serving_size": "2",
             "added_sugar": "3"
         },
@@ -1921,9 +1991,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.target.com/p/women-39-s-daily-prenatal-combo-pack-dietary-supplement-tablets-38-softgels-60ct-up-38-up-8482/-/A-11868347#lnk=sametab",
             "brand": "Target - Duo",
-            "price": "$8",
+            "pill_type": "Pill",
+            "price": [
+                "8"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -2017,9 +2090,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.cvs.com/shop/cvs-health-prenatal-fruit-flavored-gummies-with-dha-folic-acid-150ct-prodid-238709",
             "brand": "CVS - Gummy (75 day)",
-            "price": "$7",
+            "pill_type": "Gummy",
+            "price": [
+                "7"
+            ],
             "serving_size": "2",
             "added_sugar": "3"
         },
@@ -2113,9 +2189,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.cvs.com/shop/cvs-health-prenatal-multivitamin-with-250mg-algal-dha-90-ct-prodid-428513",
             "brand": "CVS- Softgel (90 day)",
-            "price": "$9",
+            "pill_type": "Pill",
+            "price": [
+                "9"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -2209,9 +2288,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.cvs.com/shop/cvs-health-once-daily-prenatal-multi-dha-softgels-30ct-prodid-1020679",
             "brand": "CVS - Softgel + DHA ",
-            "price": "$18",
+            "pill_type": "Pill",
+            "price": [
+                "18"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -2305,9 +2387,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.cvs.com/shop/cvs-health-prenatal-vitamin-with-minerals-tablets-prodid-252577",
             "brand": "CVS- Tablet (100 day)",
-            "price": "$4",
+            "pill_type": "Pill",
+            "price": [
+                "4"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -2401,9 +2486,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.cvs.com/shop/cvs-health-prenatal-multi-dha-softgels-120ct-prodid-1020651",
             "brand": "CVS - Duo (60 day)",
-            "price": "$13",
+            "pill_type": "Pill",
+            "price": [
+                "13"
+            ],
             "serving_size": "2",
             "added_sugar": null
         },
@@ -2497,9 +2585,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.walgreens.com/store/c/walgreens-once-daily-prenatal-multivitamin/ID=300428269-product",
             "brand": "Walgreens - Softgel",
-            "price": "$16",
+            "pill_type": "Pill",
+            "price": [
+                "16"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -2593,9 +2684,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.walgreens.com/store/c/walgreens-prenatal-multivitamin-plus-dha-softgels/ID=prod6255947-product",
             "brand": "Walgreens - Nature Made Copycat",
-            "price": "$11",
+            "pill_type": "Pill",
+            "price": [
+                "11"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -2689,9 +2783,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.walgreens.com/store/c/walgreens-easy-to-swallow-complete-prenatal-mini/ID=300432950-product",
             "brand": "Walgreens - Mini Softgel",
-            "price": "$20",
+            "pill_type": "Pill",
+            "price": [
+                "20"
+            ],
             "serving_size": "2",
             "added_sugar": null
         },
@@ -2785,9 +2882,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.walgreens.com/store/c/walgreens-prenatal-multivitamin/ID=300414693-product",
             "brand": "Walgreens - Tablets",
-            "price": "$2",
+            "pill_type": "Pill",
+            "price": [
+                "2"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -2881,9 +2981,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.walgreens.com/store/c/walgreens-two-step-prenatal-multivitamin-with-dha-%26-choline/ID=300425970-product",
             "brand": "Walgreens - Duo (One a day copycat)",
-            "price": "$15",
+            "pill_type": "Pill",
+            "price": [
+                "15"
+            ],
             "serving_size": "2",
             "added_sugar": null
         },
@@ -2977,9 +3080,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": null,
             "brand": "Walgreens - Gummy (45 day)",
-            "price": "$9",
+            "pill_type": "Gummy",
+            "price": [
+                "9"
+            ],
             "serving_size": "2",
             "added_sugar": "4"
         },
@@ -3073,9 +3179,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.walgreens.com/store/c/walgreens-prenatal-gummies---algal-dha-raspberry,-lemon/ID=300407264-product",
             "brand": "Walgreens - Gummy Algal ",
-            "price": "$16",
+            "pill_type": "Gummy",
+            "price": [
+                "16"
+            ],
             "serving_size": "2",
             "added_sugar": "2"
         },
@@ -3169,9 +3278,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.riteaid.com/shop/rite-aid-prenatal-tablets-with-folic-acid-tablets-value-size-225-tablets-0308911",
             "brand": "Rite Aid - Tablet",
-            "price": "$3",
+            "pill_type": "Pill",
+            "price": [
+                "3"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -3265,9 +3377,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.riteaid.com/shop/rite-aid-pectin-based-prenatal-gummy-strawberry-raspberry-60-count",
             "brand": "Rite Aid - Gummy",
-            "price": "$10",
+            "pill_type": "Gummy",
+            "price": [
+                "10"
+            ],
             "serving_size": "2",
             "added_sugar": "3"
         },
@@ -3361,9 +3476,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.safeway.com/shop/product-details.156010005.html",
             "brand": "Alb/Sfy - Tablet (180 day)",
-            "price": "$3",
+            "pill_type": "Pill",
+            "price": [
+                "3"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -3457,9 +3575,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.safeway.com/shop/product-details.960309022.html",
             "brand": "Alb/Sfy - Gummy (45 day)",
-            "price": "$9",
+            "pill_type": "Gummy",
+            "price": [
+                "9"
+            ],
             "serving_size": "2",
             "added_sugar": "3"
         },
@@ -3553,9 +3674,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.kroger.com/p/kroger-prenatal-vitamin-tablets-100-count/0001111035353?fulfillment=SHIP&searchType=suggestions",
             "brand": "Kroger - Tablet (100 day)",
-            "price": "$2",
+            "pill_type": "Pill",
+            "price": [
+                "2"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -3649,9 +3773,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.kroger.com/p/kroger-once-daily-complete-prenatal-vitamin-softgels/0004126001514?fulfillment=SHIP&searchType=suggestions",
             "brand": "Kroger - Softgel (60 day)",
-            "price": "$10",
+            "pill_type": "Pill",
+            "price": [
+                "10"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -3745,9 +3872,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.kroger.com/p/kroger-prenatal-multi-dha-vitamin-tablets-softgels/0004126038558?fulfillment=SHIP&searchType=suggestions",
             "brand": "Kroger - Softgel DHA Duo (60 day)",
-            "price": "$9",
+            "pill_type": "Pill",
+            "price": [
+                "9"
+            ],
             "serving_size": "2",
             "added_sugar": null
         },
@@ -3841,9 +3971,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.kroger.com/p/kroger-prenatal-raspberry-lime-multivitamin-gummies/0004126001513?fulfillment=SHIP&searchType=suggestions",
             "brand": "Kroger - Gummy (45 day)",
-            "price": "$6",
+            "pill_type": "Gummy",
+            "price": [
+                "6"
+            ],
             "serving_size": "2",
             "added_sugar": "3"
         },
@@ -3937,9 +4070,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.kroger.com/p/kroger-one-per-day-prenatal-multi-with-omega-3-softgels/0004126036757?fulfillment=SHIP&searchType=suggestions",
             "brand": "Kroger Softgel (60 day)",
-            "price": "$7",
+            "pill_type": "Pill",
+            "price": [
+                "7"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -4033,9 +4169,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.dollargeneral.com/p/oh-good-prenatal-dha-gummies-ct/850037842179",
             "brand": "Dollar General - Gummy (12 day)",
-            "price": "$17",
+            "pill_type": "Gummy",
+            "price": [
+                "17"
+            ],
             "serving_size": "3",
             "added_sugar": "5"
         },
@@ -4129,9 +4268,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.meijer.com/shopping/product/meijer-prenatal-supplement-with-folic-acid-100-ct/70882055481.html",
             "brand": "Meijer Tablet (100 day)",
-            "price": "$3",
+            "pill_type": "Pill",
+            "price": [
+                "3"
+            ],
             "serving_size": "1",
             "added_sugar": null
         },
@@ -4225,9 +4367,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.amazon.com/Thorne-Research-Prenatal-Multivitamin-Lactating/dp/B00O59SH3E/ref=zg_bs_6936725011_sccl_5/131-0919695-5677337?psc=1",
             "brand": "Thorne",
-            "price": "$29",
+            "pill_type": "Pill",
+            "price": [
+                "29"
+            ],
             "serving_size": "3",
             "added_sugar": null
         },
@@ -4321,9 +4466,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Gummy",
+            "url": "https://www.amazon.com/Garden-Life-Organics-Prenatal-Vitamins/dp/B06XSD99V3/ref=zg_bs_6936725011_sccl_7/131-0919695-5677337?psc=1",
             "brand": "Garden of Life My Kind -  Gummy",
-            "price": "$26",
+            "pill_type": "Gummy",
+            "price": [
+                "26"
+            ],
             "serving_size": "4",
             "added_sugar": "4"
         },
@@ -4417,9 +4565,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.amazon.com/Conception-Fertility-Prenatal-Vitamins-Myo-Inositol/dp/B013RMKCV4/ref=zg_bs_6936725011_sccl_8/131-0919695-5677337?psc=1",
             "brand": "Eu Natural - Conception For Her",
-            "price": "$35",
+            "pill_type": "Pill",
+            "price": [
+                "35"
+            ],
             "serving_size": "2",
             "added_sugar": null
         },
@@ -4513,9 +4664,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.amazon.com/MegaFood-Baby-Prenatal-Vitamins-Multivitamin/dp/B01CQ3E4AK/ref=zg_bs_6936725011_sccl_13/131-0919695-5677337?psc=1",
             "brand": "Baby & Me 2",
-            "price": "$27",
+            "pill_type": "Pill",
+            "price": [
+                "27"
+            ],
             "serving_size": "2",
             "added_sugar": null
         },
@@ -4609,9 +4763,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.amazon.com/Pink-Stork-Recommended-Nutrition-Vegetarian/dp/B07G4C85XX/ref=zg_bs_6936725011_sccl_14/131-0919695-5677337?psc=1",
             "brand": "Pink Stork Total Prenatal",
-            "price": "$29",
+            "pill_type": "Pill",
+            "price": [
+                "29"
+            ],
             "serving_size": "2",
             "added_sugar": null
         },
@@ -4705,9 +4862,13 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": "https://www.amazon.com/Garden-Life-Vegetarian-Multivitamin-Supplement/dp/B005JAT3TU/ref=zg_bs_6936725011_sccl_15/131-0919695-5677337?psc=1",
             "brand": "Garden of Life (Vitamin Code)",
-            "price": "$60/$50",
+            "pill_type": "Pill",
+            "price": [
+                "60",
+                "50"
+            ],
             "serving_size": "3",
             "added_sugar": null
         },
@@ -4801,9 +4962,12 @@
     },
     {
         "general_info": {
-            "pill_type": "Pill",
+            "url": null,
             "brand": "Ritual - Prenatal",
-            "price": "$43",
+            "pill_type": "Pill",
+            "price": [
+                "43"
+            ],
             "serving_size": "2",
             "added_sugar": null
         },

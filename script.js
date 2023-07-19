@@ -1,7 +1,6 @@
 let jsonData = [];  // We will load our JSON data into this variable
 let sortDirection = true;  // Keep track of the direction of sorting
 let visibleHeaders = [];  // Keep track of the headers that are currently visible
-
 let fdaData = {};  // We will load our FDA RDV data into this variable
 
 // Load the JSON data
@@ -29,6 +28,7 @@ function extractFirstWordFromUrl(url) {
     let hostParts = urlObject.hostname.split('.');
     return hostParts.length > 1 ? hostParts[1].charAt(0).toUpperCase() + hostParts[1].slice(1) : hostParts[0];
 }
+
 function populateTable() {
     let table = document.getElementById('vitaminTable');
     table.innerHTML = '';
@@ -49,12 +49,16 @@ function populateTable() {
         visibleHeaders.forEach(header => {
             let td = document.createElement('td');
             if (header in item.general_info) {
-                td.textContent = item.general_info[header] ? item.general_info[header] : '-';
-            } else if (header == 'url') {
-                let anchor = document.createElement('a');
-                anchor.href = item.url;
-                anchor.textContent = extractFirstWordFromUrl(item.url);
-                td.appendChild(anchor);
+                if (header === 'url') {
+                    let anchor = document.createElement('a');
+                    anchor.href = item.general_info.url;
+                    anchor.textContent = extractFirstWordFromUrl(item.general_info.url);
+                    td.appendChild(anchor);
+                } else if (Array.isArray(item.general_info[header])) {
+                    td.textContent = item.general_info[header].join('/');
+                } else {
+                    td.textContent = item.general_info[header] ? item.general_info[header] : '-';
+                }
             } else {
                 let vitamin = item.vitamins.find(v => v.name == header);
                 td.textContent = vitamin ? vitamin.amount : '-';
