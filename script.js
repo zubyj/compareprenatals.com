@@ -30,33 +30,34 @@ function extractFirstWordFromUrl(url) {
     return hostParts.length > 1 ? hostParts[1].charAt(0).toUpperCase() + hostParts[1].slice(1) : hostParts[0];
 }
 
-// Function to populate the table with data
 function populateTable() {
-    // Get the table element
     let table = document.getElementById('vitaminTable');
-
-    // Clear the table
     table.innerHTML = '';
-
-    // Add table headers
     let headerRow = document.createElement('tr');
+
     visibleHeaders.forEach(header => {
         let th = document.createElement('th');
-        th.textContent = header;
+        let mappedHeader = headerMapping[header] ? headerMapping[header] : header;
+        th.textContent = mappedHeader;
         th.onclick = function () { sortTable(header); };
         headerRow.appendChild(th);
     });
+
     table.appendChild(headerRow);
 
-    // Add table data
     jsonData.forEach(item => {
         let row = document.createElement('tr');
+        let urlTd = null;
         visibleHeaders.forEach(header => {
             let td = document.createElement('td');
             if (header in item.general_info) {
                 td.textContent = item.general_info[header] ? item.general_info[header] : '-';
             } else if (header == 'url') {
-                td.textContent = item.url;
+                let anchor = document.createElement('a');
+                anchor.href = item.url;
+                anchor.textContent = extractFirstWordFromUrl(item.url);
+                td.appendChild(anchor);
+                urlTd = td;
             } else {
                 let vitamin = item.vitamins.find(v => v.name == header);
                 td.textContent = vitamin ? vitamin.amount : '-';
@@ -67,11 +68,13 @@ function populateTable() {
             if (td.textContent == '0') {
                 td.className = 'zero';
             }
-            row.appendChild(td);
+            if (header !== 'url') row.appendChild(td);
         });
+        if (urlTd) row.insertBefore(urlTd, row.firstChild);
         table.appendChild(row);
     });
 }
+
 
 // Function to sort the table
 function sortTable(header) {
