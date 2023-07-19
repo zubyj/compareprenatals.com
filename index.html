@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#chart">Chart</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#chartSection">Chart</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#socials">Socials</a></li>
                 </ul>
                 <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
@@ -63,10 +63,10 @@
                             prenatal vitamins.</p>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
                             <a class="me-lg-3 mb-4 mb-lg-0 btn btn-outline-dark py-3 px-4 rounded-pill"
-                                href="#chart">Open Vitamin Chart
+                                href="#chartSection">Open Vitamin Chart
                             </a>
                             <a class="me-lg-3 mb-4 mb-lg-0 btn btn-outline-dark py-3 px-4 rounded-pill"
-                                href="vitamin-chart.html" target="_blank">Order CareNatal Pills
+                                href="#chartSection" target="_blank">Order CareNatal Pills
                             </a>
                         </div>
                     </div>
@@ -98,21 +98,19 @@
         <div class="cta-content">
             <div class="container px-5">
                 <h2 class="text-white display-1 lh-1 mb-4">
-                    Try our new
-                    <br />
                     CareNatal Pills
+                    <br />
+                    (Summer 2023)
                 </h2>
-                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#" target="_blank">Coming Summer 2023</a>
                 <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#" target="_blank">Check nutrition</a>
             </div>
         </div>
     </section>
     <!-- Chart / Spreadsheet-->
-    <section class="text-center">
+    <section class="text-center" id="chartSection">
         <h1>Vitamin Chart 📝</h1>
         <input type="text" id="searchBar" onkeyup="filterTable()" placeholder="Search for vitamins..">
         <div id="chart">
-            <!-- Add this line -->
             <div class="table-responsive"> <!-- Added this div with class 'table-responsive' -->
                 <table id="vitaminTable" class="table"> <!-- Added class 'table' to the table -->
                     <thead>
@@ -152,9 +150,9 @@
         <div class="container px-5">
             <h2 class="text-center text-white font-alt mb-4">Socials</h2>
             <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                <a class="me-lg-3 mb-4 mb-lg-0 bg-light" href="https://www.tiktok.com/@carenatal.vitamin"><img
-                        class="app-badge" src="assets/img/tiktok-100.png" alt="..." /></a>
-                <a href="#!"><img class="app-badge bg-light" src="assets/img/email-100.png" alt="..." /></a>
+                <a class="me-lg-3 mb-4 mb-lg-0" href="https://www.tiktok.com/@carenatal.vitamin"><img class="app-badge"
+                        src="assets/img/tiktok-100.png" alt="..." /></a>
+                <a href="#!"><img class="app-badge" src=" assets/img/email-100.png" alt="..." /></a>
             </div>
         </div>
     </section>
