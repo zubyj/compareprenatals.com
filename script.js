@@ -11,7 +11,7 @@ Promise.all([
 ]).then(([vitaminData, fdaRdvData]) => {
     jsonData = vitaminData;
     fdaData = fdaRdvData;
-    visibleHeaders = Object.keys(jsonData[0].general_info).concat(jsonData[0].vitamins.map(v => v.name)).concat(['url']);
+    visibleHeaders = ['url'].concat(Object.keys(jsonData[0].general_info)).concat(jsonData[0].vitamins.map(v => v.name));
     populateTable();
 });
 
@@ -29,7 +29,6 @@ function extractFirstWordFromUrl(url) {
     let hostParts = urlObject.hostname.split('.');
     return hostParts.length > 1 ? hostParts[1].charAt(0).toUpperCase() + hostParts[1].slice(1) : hostParts[0];
 }
-
 function populateTable() {
     let table = document.getElementById('vitaminTable');
     table.innerHTML = '';
@@ -47,7 +46,6 @@ function populateTable() {
 
     jsonData.forEach(item => {
         let row = document.createElement('tr');
-        let urlTd = null;
         visibleHeaders.forEach(header => {
             let td = document.createElement('td');
             if (header in item.general_info) {
@@ -57,7 +55,6 @@ function populateTable() {
                 anchor.href = item.url;
                 anchor.textContent = extractFirstWordFromUrl(item.url);
                 td.appendChild(anchor);
-                urlTd = td;
             } else {
                 let vitamin = item.vitamins.find(v => v.name == header);
                 td.textContent = vitamin ? vitamin.amount : '-';
@@ -68,22 +65,36 @@ function populateTable() {
             if (td.textContent == '0') {
                 td.className = 'zero';
             }
-            if (header !== 'url') row.appendChild(td);
+            row.appendChild(td);
         });
-        if (urlTd) row.insertBefore(urlTd, row.firstChild);
         table.appendChild(row);
     });
 }
 
-
-// Function to sort the table
 function sortTable(header) {
     jsonData.sort((a, b) => {
-        let aValue = header in a.general_info ? a.general_info[header] : (header == 'url' ? a.url : a.vitamins.find(v => v.name == header).amount);
-        let bValue = header in b.general_info ? b.general_info[header] : (header == 'url' ? b.url : b.vitamins.find(v => v.name == header).amount);
-        if (aValue < bValue) return sortDirection ? -1 : 1;
-        if (aValue > bValue) return sortDirection ? 1 : -1;
-        return 0;
+        let aValue, bValue;
+        if (header in a.general_info) {
+            aValue = a.general_info[header];
+            bValue = b.general_info[header];
+        } else if (header == 'url') {
+            aValue = extractFirstWordFromUrl(a.url);
+            bValue = extractFirstWordFromUrl(b.url);
+        } else {
+            aValue = a.vitamins.find(v => v.name == header)?.amount;
+            bValue = b.vitamins.find(v => v.name == header)?.amount;
+        }
+        // Handle null or undefined values
+        if (aValue == null && bValue == null) return 0;
+        if (aValue == null) return sortDirection ? -1 : 1;
+        if (bValue == null) return sortDirection ? 1 : -1;
+
+        // Perform the actual comparison
+        if (typeof aValue === 'string' && typeof bValue === 'string') {
+            return sortDirection ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+        } else {
+            return sortDirection ? aValue - bValue : bValue - aValue;
+        }
     });
 
     // Reverse the direction for the next sort
