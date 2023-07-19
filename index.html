@@ -109,10 +109,12 @@
             </div>
         </div>
     </section>
-    <!-- Spreadsheet -->
+    <!-- Chart / Spreadsheet-->
     <section class="text-center">
         <h1>Vitamin Chart 📝</h1>
+        <input type="text" id="searchBar" onkeyup="filterTable()" placeholder="Search for vitamins..">
         <div id="chart">
+            <!-- Add this line -->
             <div class="table-responsive"> <!-- Added this div with class 'table-responsive' -->
                 <table id="vitaminTable" class="table"> <!-- Added class 'table' to the table -->
                     <thead>
@@ -147,7 +149,7 @@
             </div>
         </div>
     </section>
-    <!-- App badge section-->
+    <!-- Socials-->
     <section class="bg-gradient-primary-to-secondary" id="socials">
         <div class="container px-5">
             <h2 class="text-center text-white font-alt mb-4">Socials</h2>
