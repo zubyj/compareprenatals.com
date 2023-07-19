@@ -10,7 +10,7 @@ Promise.all([
 ]).then(([vitaminData, fdaRdvData]) => {
     jsonData = vitaminData;
     fdaData = fdaRdvData;
-    visibleHeaders = ['url'].concat(Object.keys(jsonData[0].general_info)).concat(jsonData[0].vitamins.map(v => v.name));
+    visibleHeaders = Object.keys(jsonData[0].general_info).concat(jsonData[0].vitamins.map(v => v.name));
     populateTable();
 });
 

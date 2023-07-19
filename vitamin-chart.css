@@ -3,37 +3,22 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     font-size: .8em;
-    min-width: 500px;
-    max-width: 80vw;
-    margin-left: 10vw;
+
     height: 70vh;
     margin-bottom: 50px;
     overflow-x: scroll;
     overflow-y: scroll;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    border: 2px solid green;
+    border: 2px solid lightblue;
+
+    max-width: 95vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
 }
 
 #vitaminTable {
     border-collapse: collapse;
-}
-
-thead th {
-    position: sticky;
-    top: 0;
-    background: white;
-    z-index: 2;
-}
-
-tbody th:first-child,
-tbody td:first-child,
-tbody th:nth-child(2),
-tbody td:nth-child(2) {
-    position: sticky;
-    left: 0;
-    background: white;
-    z-index: 1;
 }
 
 #vitaminTable thead {
@@ -119,4 +104,11 @@ input[type=text] {
     opacity: 80%;
     font-weight: bold;
     color: black;
+}
+
+@media (min-width:1200px) {
+    #chart {
+        width: 60vw;
+        margin-left: 20vw;
+    }
 }

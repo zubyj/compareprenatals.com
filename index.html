@@ -131,19 +131,22 @@
     </section>
 
     <!-- Spreadsheet -->
-    <section class="text-center" id="chart">
-        <div class="table-responsive">
-            <h1>Vitamin Chart 📝</h1>
-            <table id="vitaminTable">
-                <thead>
-                    <tr>
-                        <!-- Add table headers here based on the keys from the JSON file -->
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Populate table rows here using the JSON file data -->
-                </tbody>
-            </table>
+
+    <section class="text-center">
+        <h1>Vitamin Chart 📝</h1>
+        <div id="chart">
+            <div class="table-responsive"> <!-- Added this div with class 'table-responsive' -->
+                <table id="vitaminTable" class="table"> <!-- Added class 'table' to the table -->
+                    <thead>
+                        <tr>
+                            <!-- Add table headers here based on the keys from the JSON file -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populate table rows here using the JSON file data -->
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
