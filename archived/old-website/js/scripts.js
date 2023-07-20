@@ -180,6 +180,7 @@ function populateCarousel() {
     }
 
     document.querySelector('.carousel-control-next').addEventListener('click', nextSlide);
+    document.querySelector('.carousel-control-prev').classList.add('rounded-pill')
     document.querySelector('.carousel-control-prev').addEventListener('click', previousSlide);
 
     carouselInner.parentNode.appendChild(prevControl);
