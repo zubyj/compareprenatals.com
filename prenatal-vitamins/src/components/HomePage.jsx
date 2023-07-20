@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { Box } from '@mui/material';
 
 import VitaminList from './VitaminList';
 import Pagination from './Pagination';
 import FilterBar from './FilterBar';
+import { Typography } from '@mui/material';
 
 function HomePage() {
     const [vitamins, setVitamins] = useState([]);
@@ -47,7 +49,15 @@ function HomePage() {
     const vitaminOptions = [...new Set(vitamins.flatMap(vitamin => vitamin.vitamins.map(v => v.name)))];
 
     return (
-        <>
+        <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '100vw',
+            height: '100vh',
+        }}>
+            <Typography variant="h4">Prenatal Vitamins</Typography>
             <FilterBar
                 searchTerm={searchTerm}
                 onSearchChange={(e) => setSearchTerm(e.target.value)}
@@ -60,7 +70,7 @@ function HomePage() {
             />
             <VitaminList vitamins={selectedVitamins} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
-        </>
+        </Box>
     );
 }
 
