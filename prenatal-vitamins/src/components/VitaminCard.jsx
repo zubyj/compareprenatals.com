@@ -7,7 +7,8 @@ function VitaminCard({ vitamin }) {
             <CardContent>
                 <Typography variant="h5">{vitamin.general_info.brand}</Typography>
                 <Typography variant="subtitle1">{vitamin.general_info.pill_type}</Typography>
-                {/* Add more fields as needed */}
+
+
             </CardContent>
         </Card>
     );
