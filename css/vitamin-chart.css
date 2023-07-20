@@ -97,3 +97,24 @@ tr:nth-child(even) {
         margin-left: 20vw;
     }
 }
+
+
+/* Carousel */
+#carousel {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {}
+
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}

@@ -3,7 +3,6 @@ let sortDirection = true;  // Keep track of the direction of sorting
 let visibleHeaders = [];  // Keep track of the headers that are currently visible
 let fdaData = {};  // We will load our FDA RDV data into this variable
 
-// Load the JSON data
 Promise.all([
     fetch('assets/prenatal-vitamins.json').then(response => response.json()),
     fetch('assets/fda-rdv.json').then(response => response.json()),
@@ -12,6 +11,7 @@ Promise.all([
     fdaData = fdaRdvData;
     visibleHeaders = Object.keys(jsonData[0].general_info).concat(jsonData[0].vitamins.map(v => v.name));
     populateTable();
+    populateCarousel();
 });
 
 let headerMapping = {
@@ -24,10 +24,16 @@ let headerMapping = {
 };
 
 function extractFirstWordFromUrl(url) {
-    let urlObject = new URL(url);
-    let hostParts = urlObject.hostname.split('.');
-    return hostParts.length > 1 ? hostParts[1].charAt(0).toUpperCase() + hostParts[1].slice(1) : hostParts[0];
+    try {
+        let urlObject = new URL(url);
+        let hostParts = urlObject.hostname.split('.');
+        return hostParts.length > 1 ? hostParts[1].charAt(0).toUpperCase() + hostParts[1].slice(1) : hostParts[0];
+    } catch (error) {
+        console.warn(`Invalid URL: ${url}`);
+        return url;  // Return the original string if it's not a valid URL
+    }
 }
+
 
 function populateTable() {
     let table = document.getElementById('vitaminTable');
@@ -130,6 +136,54 @@ function filterTable() {
             }
         }
     }
+}
+
+function populateCarousel() {
+    let carouselInner = document.querySelector('#vitaminCarousel .carousel-inner');
+    jsonData.forEach((item, index) => {
+        let carouselItem = document.createElement('div');
+        carouselItem.className = 'carousel-item' + (index === 0 ? ' active' : '');
+
+        let carouselContent = document.createElement('div');
+        carouselContent.className = 'carousel-content';
+
+        let title = document.createElement('h3');
+        title.textContent = item.general_info.brand;
+        carouselContent.appendChild(title);
+
+        let list = document.createElement('ul');
+        item.vitamins.forEach(vitamin => {
+            let listItem = document.createElement('li');
+            listItem.textContent = `${vitamin.name}: ${vitamin.amount}`;
+            list.appendChild(listItem);
+        });
+        carouselContent.appendChild(list);
+
+        carouselItem.appendChild(carouselContent);
+        carouselInner.appendChild(carouselItem);
+    });
+
+    let currentIndex = 0; // Global index to keep track of the current slide
+
+    function nextSlide() {
+        let items = document.querySelectorAll('.carousel-item');
+        items[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % items.length; // Wrap around to the start
+        items[currentIndex].classList.add('active');
+    }
+
+    function previousSlide() {
+        let items = document.querySelectorAll('.carousel-item');
+        items[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex - 1 + items.length) % items.length; // Wrap around to the end
+        items[currentIndex].classList.add('active');
+    }
+
+    document.querySelector('.carousel-control-next').addEventListener('click', nextSlide);
+    document.querySelector('.carousel-control-prev').addEventListener('click', previousSlide);
+
+    carouselInner.parentNode.appendChild(prevControl);
+    carouselInner.parentNode.appendChild(nextControl);
 }
 
 
