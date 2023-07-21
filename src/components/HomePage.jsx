@@ -19,7 +19,9 @@ function HomePage() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('prenatal-vitamins.json');
+            // fetch the prenatal_vitamins.json from the src/assets folder
+            const jsonFilePath = process.env.NODE_ENV === 'development' ? 'test/prenatal-vitamins.json' : 'prenatal_vitamins.json';
+            const response = await fetch(jsonFilePath);
             const data = await response.json();
             setVitamins(data);
         };
