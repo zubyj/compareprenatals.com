@@ -55,7 +55,9 @@ function HomePage() {
             alignItems: 'center',
             justifyContent: 'center',
             width: '100vw',
-            height: '100vh',
+            minHeight: '100vh',
+            paddingTop: '10vh',
+            paddingBottom: '10vh',
         }}>
             <Typography variant="h4">Prenatal Vitamins</Typography>
             <FilterBar
