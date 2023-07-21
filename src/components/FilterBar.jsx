@@ -1,7 +1,8 @@
 import React from 'react';
 import { TextField, Button, Select, MenuItem, InputLabel, FormControl, Box } from '@mui/material';
+import FilterTag from './FilterTag';
 
-function FilterBar({ searchTerm, onSearchChange, selectedVitamin, onVitaminChange, amount, onAmountChange, onFilterClick, vitaminOptions }) {
+function FilterBar({ searchTerm, onSearchChange, selectedVitamin, onVitaminChange, amount, onAmountChange, onFilterClick, vitaminOptions, filters, onFilterTagRemove }) {
     return (
         <Box sx={{
             display: 'flex',
@@ -28,7 +29,13 @@ function FilterBar({ searchTerm, onSearchChange, selectedVitamin, onVitaminChang
                 <Button variant="contained" color="primary" onClick={onFilterClick} sx={{ mt: { xs: 2, sm: 0 } }}>Filter</Button>
             </Box>
             <TextField label="Search" variant="outlined" value={searchTerm} onChange={onSearchChange} fullWidth />
+            <Box>
+                {filters.map((filter, index) => (
+                    <FilterTag key={index} filter={filter} onRemove={onFilterTagRemove} /> // Add the filter tags
+                ))}
+            </Box>
         </Box >
+
     );
 }
 

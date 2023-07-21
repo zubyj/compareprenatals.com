@@ -30,8 +30,9 @@ function VitaminCard({ vitamin, selectedVitamin }) {
                                 {selectedVitamin && <Button variant="outlined" color="secondary">{selectedVitamin}: {vitamin.vitamins.find(v => v.name === selectedVitamin).amount}</Button>}
                             </Box>
                             <Button variant="contained" color="success" href={vitamin.general_info.url} target="_blank">
+                                Buy for $
                                 {vitamin.general_info.price.map((price, index) => (
-                                    <Typography key={index} variant="body2" >Buy for ${price} </Typography>
+                                    <Typography key={index} variant="body2" >{price} , </Typography >
                                 ))}
                                 At {extractFirstWordFromUrl(vitamin.general_info.url)}
                             </Button>
