@@ -29,7 +29,7 @@ function VitaminCard({ vitamin, selectedVitamin }) {
                                 <Typography variant="h5">{vitamin.general_info.brand}</Typography>
                                 {selectedVitamin && <Button variant="outlined" color="secondary">{selectedVitamin}: {vitamin.vitamins.find(v => v.name === selectedVitamin).amount}</Button>}
                             </Box>
-                            <Button variant="contained" href={vitamin.general_info.url} target="_blank">
+                            <Button variant="contained" color="success" href={vitamin.general_info.url} target="_blank">
                                 {vitamin.general_info.price.map((price, index) => (
                                     <Typography key={index} variant="body2" >Buy for ${price} </Typography>
                                 ))}
