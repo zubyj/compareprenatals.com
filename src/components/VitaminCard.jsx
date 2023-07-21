@@ -27,27 +27,24 @@ function VitaminCard({ vitamin, selectedVitamin }) {
                         <Box display="flex" flexDirection="column" height="100%">
                             <Box mb="auto">
                                 <Typography variant="h5">{vitamin.general_info.brand}</Typography>
-                                {selectedVitamin && <Button variant="outlined">{selectedVitamin}: {vitamin.vitamins.find(v => v.name === selectedVitamin).amount}</Button>}
+                                {selectedVitamin && <Button variant="outlined" color="secondary">{selectedVitamin}: {vitamin.vitamins.find(v => v.name === selectedVitamin).amount}</Button>}
                             </Box>
-                            <Box>
-                                <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
-                            </Box>
+                            <Button variant="contained" href={vitamin.general_info.url} target="_blank">
+                                {vitamin.general_info.price.map((price, index) => (
+                                    <Typography key={index} variant="body2" >Buy for ${price} </Typography>
+                                ))}
+                                At {extractFirstWordFromUrl(vitamin.general_info.url)}
+                            </Button>
+
                         </Box>
                     </Grid>
                     <Grid item xs={6} >
-                        <Box display="flex" flexDirection="column" height="100%">
-                            <Box mb="auto" display="flex" flexDirection="row" gap={3}>
+                        <Box display="flex" flexDirection="column" height="100%" gap={3} px={3}>
+                            <Box mb="auto" display="flex" flexDirection="column" gap={1}>
                                 <Button variant="outlined">Type: {vitamin.general_info.pill_type}</Button>
                                 <Button variant="outlined">Serving Size: {vitamin.general_info.serving_size}</Button>
-                                <Button variant="outlined">
-                                    {vitamin.general_info.price.map((price, index) => (
-                                        <Typography key={index} variant="body2">${price}</Typography>
-                                    ))}
-                                </Button>
                             </Box>
-                            <Box>
-                                <Button variant="contained" href={vitamin.general_info.url} target="_blank">Order From {extractFirstWordFromUrl(vitamin.general_info.url)}</Button>
-                            </Box>
+                            <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
                         </Box>
                     </Grid>
                 </Grid>
@@ -57,6 +54,7 @@ function VitaminCard({ vitamin, selectedVitamin }) {
                     ))}
                 </Collapse>
             </CardContent>
+
         </Card >
     );
 }
