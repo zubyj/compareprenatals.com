@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, Typography, Button, Collapse, Grid, Box } from '@mui/material';
 
-function VitaminCard({ vitamin }) {
+function VitaminCard({ vitamin, selectedVitamin }) {
     const [showVitamins, setShowVitamins] = useState(false);
 
     const handleToggleVitamins = () => {
@@ -27,6 +27,7 @@ function VitaminCard({ vitamin }) {
                         <Box display="flex" flexDirection="column" height="100%">
                             <Box mb="auto">
                                 <Typography variant="h5">{vitamin.general_info.brand}</Typography>
+
                             </Box>
                             <Box>
                                 <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
@@ -36,9 +37,12 @@ function VitaminCard({ vitamin }) {
                     <Grid item xs={6}>
                         <Box display="flex" flexDirection="column" height="100%">
                             <Box mb="auto">
+                                {selectedVitamin && <Typography variant="subtitle1">{selectedVitamin}: {vitamin.vitamins.find(v => v.name === selectedVitamin).amount}</Typography>}
                                 <Typography variant="subtitle1">Type: {vitamin.general_info.pill_type}</Typography>
                                 <Typography variant="subtitle2">Serving Size: {vitamin.general_info.serving_size}</Typography>
                                 <Typography variant="subtitle2">Price: ${vitamin.general_info.price}</Typography>
+                                {/* Show the selected Vitamin */}
+                                {/* <Typography variant="subtitle2">{vitamin.vitamin.</Typography> */}
                             </Box>
                             <Box>
                                 <Button variant="contained" href={vitamin.general_info.url} target="_blank">Order From {extractFirstWordFromUrl(vitamin.general_info.url)}</Button>

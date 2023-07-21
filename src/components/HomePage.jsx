@@ -72,7 +72,7 @@ function HomePage() {
                 onFilterClick={() => setFilteredVitamins(vitamins)}
                 vitaminOptions={vitaminOptions}
             />
-            <VitaminList vitamins={selectedVitamins} />
+            <VitaminList vitamins={selectedVitamins} selectedVitamin={selectedVitamin} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
         </Box>
     );
