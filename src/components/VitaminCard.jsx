@@ -27,17 +27,16 @@ function VitaminCard({ vitamin, selectedVitamin }) {
                         <Box display="flex" flexDirection="column" height="100%">
                             <Box mb="auto">
                                 <Typography variant="h5">{vitamin.general_info.brand}</Typography>
-
+                                {selectedVitamin && <Typography variant="subtitle1">{selectedVitamin}: {vitamin.vitamins.find(v => v.name === selectedVitamin).amount}</Typography>}
                             </Box>
                             <Box>
                                 <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={6} >
                         <Box display="flex" flexDirection="column" height="100%">
                             <Box mb="auto">
-                                {selectedVitamin && <Typography variant="subtitle1">{selectedVitamin}: {vitamin.vitamins.find(v => v.name === selectedVitamin).amount}</Typography>}
                                 <Typography variant="subtitle1">Type: {vitamin.general_info.pill_type}</Typography>
                                 <Typography variant="subtitle2">Serving Size: {vitamin.general_info.serving_size}</Typography>
                                 <Typography variant="subtitle2">Price: ${vitamin.general_info.price}</Typography>
@@ -50,9 +49,6 @@ function VitaminCard({ vitamin, selectedVitamin }) {
                         </Box>
                     </Grid>
                 </Grid>
-
-                <br />
-
                 <Collapse in={showVitamins}>
                     {vitamin.vitamins.map((vitaminInfo, index) => (
                         <Typography key={index} variant="body2">{vitaminInfo.name}: {vitaminInfo.amount}</Typography>
