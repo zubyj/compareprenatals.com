@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardContent, Typography, Button, Collapse, Grid, Box } from '@mui/material';
+import { Card, CardContent, Typography, Button, Collapse, Grid, Box, Table, TableRow, TableCell, TableBody } from '@mui/material';
 
 function VitaminCard({ vitamin, vitaminSwitches }) {
     const [showVitamins, setShowVitamins] = useState(false);
@@ -8,16 +8,19 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
         setShowVitamins(!showVitamins);
     };
 
-    function extractFirstWordFromUrl(url) {
-        try {
-            let urlObject = new URL(url);
-            let hostParts = urlObject.hostname.split('.');
-            return hostParts.length > 1 ? hostParts[1].charAt(0).toUpperCase() + hostParts[1].slice(1) : hostParts[0];
-        } catch (error) {
-            console.warn(`Invalid URL: ${url}`);
-            return url;  // Return the original string if it's not a valid URL
+    // Function to divide an array into chunks of 3 vitamins
+    const chunk = (arr, len) => {
+        var chunks = [],
+            i = 0,
+            n = arr.length;
+        while (i < n) {
+            chunks.push(arr.slice(i, i += len));
         }
+        return chunks;
     }
+
+    // Divide vitamin array into chunks of 3
+    const vitaminChunks = chunk(vitamin.vitamins, 3);
 
     return (
         <Card>
@@ -32,7 +35,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                                         const vitaminInfo = vitamin.vitamins.find(v => v.name.toLowerCase() === key);
                                         if (vitaminInfo) {
                                             return (
-                                                <Button key={key} variant="outlined">
+                                                <Button key={key} variant="text">
                                                     {key.charAt(0).toUpperCase() + key.slice(1)}: {vitaminInfo.amount}
                                                 </Button>
                                             );
@@ -47,21 +50,34 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                         <Box display="flex" flexDirection="column" height="100%" gap={1}>
                             <Box mb="auto" display="flex" flexDirection="column" gap={1}>
                                 <Button variant="contained" color="secondary">{vitamin.general_info.product_name}</Button>
-                                <Button variant="outlined">Type: {vitamin.general_info.format}</Button>
-                                <Button variant="outlined">Serving Size: {vitamin.general_info.serving_size}</Button>
+                                <Button variant="text">Type: {vitamin.general_info.format}</Button>
+                                <Button variant="text">Serving Size: {vitamin.general_info.serving_size}</Button>
                             </Box>
                             <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
                         </Box>
                     </Grid>
                 </Grid>
                 <Collapse in={showVitamins}>
-                    {vitamin.vitamins.map((vitaminInfo, index) => (
-                        <Typography key={index} variant="body2">{vitaminInfo.name}: {vitaminInfo.amount}</Typography>
-                    ))}
+                    <Card sx={{ backgroundColor: 'white', border: '1px solid black', padding: '5px', marginTop: '10px' }}>
+                        <Typography variant="h6" sx={{ textAlign: 'center', fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif" }}>Vitamins</Typography>
+                        <Table>
+                            <TableBody>
+                                {vitaminChunks.map((vitaminChunk, index) => (
+                                    <TableRow key={index}>
+                                        {vitaminChunk.map((vitaminInfo, subIndex) => (
+                                            <>
+                                                <TableCell sx={{ border: 'none', fontFamily: "'Arial Black','Helvetica Bold',sans-serif", fontSize: '10pt' }}>{vitaminInfo.name}</TableCell>
+                                                <TableCell sx={{ border: 'none', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '10pt' }}>{vitaminInfo.amount}</TableCell>
+                                            </>
+                                        ))}
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </Card>
                 </Collapse>
             </CardContent>
-
-        </Card >
+        </Card>
     );
 }
 

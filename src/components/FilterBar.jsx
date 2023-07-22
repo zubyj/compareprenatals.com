@@ -20,10 +20,46 @@ function FilterBar({
             gap: 2,
             m: 2
         }}>
-            <TextField label="Search" variant="outlined" value={searchTerm} onChange={onSearchChange} fullWidth />
+
+            <Box sx={{
+                display: 'flex',
+                flexDirection: { xs: 'column', md: 'row' },
+                justifyContent: { xs: 'center', md: 'space-between' },
+                alignItems: { xs: 'center', md: 'flex-start' },
+                width: '100%'
+            }}>
+                <FormControl component="fieldset" sx={{ width: '45%' }}>
+                    <FormLabel component="legend">Max Vitamins per day</FormLabel>
+                    <Slider
+                        value={servingSize}
+                        min={1}
+                        max={3}
+                        step={1}
+                        onChange={(_, value) => onServingSizeChange(value)}
+                        valueLabelDisplay="auto"
+                        getAriaValueText={value => `${value[0]} - ${value[1]} servings`}
+                        sx={{ width: '100%' }}
+                    />
+                </FormControl>
+                <FormControl component="fieldset" sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}>
+                    <RadioGroup row name="format" value={format} onChange={(e, value) => onFormatChange(value)}>
+                        <FormControlLabel value="pill" control={<Radio />} label="Pill" />
+                        <FormControlLabel value="gummy" control={<Radio />} label="Gummy" />
+                        <FormControlLabel value="powder" control={<Radio />} label="Powder" />
+                    </RadioGroup>
+                </FormControl>
+            </Box>
 
             {/* Added VitaminSwitches functionality */}
-            <FormGroup row>
+            <FormGroup sx={{
+                display: 'flex',
+                flexDirection: { xs: 'column', md: 'row' }
+            }}>
                 <FormControlLabel
                     control={<Switch checked={switches.choline} onChange={onSwitchChange} name="choline" />}
                     label="Choline > 300mg"
@@ -42,28 +78,7 @@ function FilterBar({
                 />
             </FormGroup>
 
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-                <FormControl component="fieldset" sx={{ width: '45%' }}>
-                    <FormLabel component="legend">Max Vitamins per day</FormLabel>
-                    <Slider
-                        value={servingSize}
-                        min={1}
-                        max={3}
-                        step={1}
-                        onChange={(_, value) => onServingSizeChange(value)}
-                        valueLabelDisplay="auto"
-                        getAriaValueText={value => `${value[0]} - ${value[1]} servings`}
-                        sx={{ width: '60%' }} // Set width to 100%
-                    />
-                </FormControl>
-                <FormControl component="fieldset" sx={{ width: '45%' }}>
-                    <RadioGroup row name="format" value={format} onChange={(e, value) => onFormatChange(value)}>
-                        <FormControlLabel value="pill" control={<Radio />} label="Pill" />
-                        <FormControlLabel value="gummy" control={<Radio />} label="Gummy" />
-                        <FormControlLabel value="powder" control={<Radio />} label="Powder" />
-                    </RadioGroup>
-                </FormControl>
-            </Box>
+            <TextField label="Search" variant="outlined" value={searchTerm} onChange={onSearchChange} fullWidth />
         </Box>
     );
 }

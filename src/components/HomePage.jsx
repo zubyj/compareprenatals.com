@@ -102,16 +102,14 @@ function HomePage() {
 
     return (
         <Box sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
             justifyContent: 'center',
-            width: '100vw',
-            minHeight: '100vh',
-            paddingTop: '10vh',
-            paddingBottom: '10vh',
+            textAlign: 'center',
+            padding: '0',
+            margin: 'auto',
+            marginTop: '5vh',
+            marginBottom: '5vh',
         }}>
-            <Typography variant="h4">Prenatal Vitamins</Typography>
+            <Typography variant="h4" paddingBottom="20px">Prenatal Vitamins</Typography>
             <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained">
                 {showFilterBar ? 'Hide Filters' : 'Show Filters'}
             </Button>
