@@ -57,7 +57,6 @@ function FilterBar({
                     />
                 </FormControl>
                 <FormControl component="fieldset" sx={{ width: '45%' }}>
-                    <FormLabel component="legend">Pill Type</FormLabel>
                     <RadioGroup row name="pillType" value={pillType} onChange={(e, value) => onPillTypeChange(value)}>
                         <FormControlLabel value="pill" control={<Radio />} label="Pill" />
                         <FormControlLabel value="gummy" control={<Radio />} label="Gummy" />
