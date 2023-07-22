@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-
 import { Box } from '@mui/material';
 import { Typography } from '@mui/material';
 
 import VitaminList from './VitaminList';
 import Pagination from './Pagination';
 import FilterBar from './FilterBar';
+import VitaminSwitches from './VitaminSwitches'; // new component
 
 function HomePage() {
     const [vitamins, setVitamins] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredVitamins, setFilteredVitamins] = useState([]);
-    const [searchParams] = useSearchParams();
+    const [searchParams, setSearchParams] = useSearchParams();
+    const [vitaminSwitches, setVitaminSwitches] = useState({
+        choline: false,
+        omega3: false,
+        iron: false,
+        folate: false,
+    });
     const page = parseInt(searchParams.get('page')) || 1;
     const vitaminsPerPage = 5;
 
@@ -30,16 +36,50 @@ function HomePage() {
         let newFilteredVitamins = vitamins;
 
         if (searchTerm) {
-            newFilteredVitamins = newFilteredVitamins.filter(vitamin => vitamin.general_info.brand.toLowerCase().includes(searchTerm.toLowerCase()));
+            newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
+                vitamin.general_info.brand.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+        }
+
+        // apply filter based on vitamin switches
+        if (vitaminSwitches.choline) {
+            newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
+                vitamin.vitamins.some(v => v.name.toLowerCase() === 'choline' && parseInt(v.amount) > 300)
+            );
+        }
+        if (vitaminSwitches.omega3) {
+            newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
+                vitamin.vitamins.some(v => v.name.toLowerCase() === 'omega-3' && parseInt(v.amount) > 200)
+            );
+        }
+        if (vitaminSwitches.iron) {
+            newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
+                vitamin.vitamins.some(v => v.name.toLowerCase() === 'iron' && parseInt(v.amount) > 18)
+            );
+        }
+        if (vitaminSwitches.folate) {
+            newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
+                vitamin.vitamins.some(v => v.name.toLowerCase() === 'folate' && parseInt(v.amount) > 600)
+            );
         }
 
         setFilteredVitamins(newFilteredVitamins);
-    }, [vitamins, searchTerm]);
+    }, [vitamins, searchTerm, vitaminSwitches]);
 
-    // calculate starting and ending index for pagination
+    useEffect(() => {
+        setSearchParams({ page: 1 }, "push");
+    }, [searchTerm]);
+
     const startIndex = (page - 1) * vitaminsPerPage;
     const endIndex = startIndex + vitaminsPerPage;
     const displayedVitamins = filteredVitamins.slice(startIndex, endIndex);
+
+    const handleSwitchChange = (event) => {
+        setVitaminSwitches({
+            ...vitaminSwitches,
+            [event.target.name]: event.target.checked
+        });
+    };
 
     return (
         <Box sx={{
@@ -57,6 +97,7 @@ function HomePage() {
                 searchTerm={searchTerm}
                 onSearchChange={(e) => setSearchTerm(e.target.value)}
             />
+            <VitaminSwitches switches={vitaminSwitches} onSwitchChange={handleSwitchChange} />
             <VitaminList vitamins={displayedVitamins} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
         </Box>
