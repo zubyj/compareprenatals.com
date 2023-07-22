@@ -15,11 +15,16 @@ function HomePage() {
     const [amount, setAmount] = useState('');
     const [filteredVitamins, setFilteredVitamins] = useState([]);
     const [searchParams] = useSearchParams();
+    const [servingSize, setServingSize] = useState(1);
     const page = parseInt(searchParams.get('page')) || 1;
     const vitaminsPerPage = 5;
 
-    const [filters, setFilters] = useState([]);
-
+    const [filters, setFilters] = useState([
+        { vitamin: 'Choline', amount: '300' },
+        { vitamin: 'Omega-3', amount: '200' },
+        { vitamin: 'Iron', amount: '18' },
+        { vitamin: 'Folate', amount: '600' }
+    ]);
     useEffect(() => {
         const fetchData = async () => {
             const jsonFilePath = process.env.NODE_ENV === 'development' ? 'test/prenatal-vitamins.json' : 'prenatal_vitamins.json';
@@ -44,8 +49,13 @@ function HomePage() {
             });
         });
 
+        // Filter vitamins by serving size
+        newFilteredVitamins = newFilteredVitamins.filter(vitamin => {
+            return parseInt(vitamin.general_info.serving_size) === servingSize;
+        });
+
         setFilteredVitamins(newFilteredVitamins);
-    }, [vitamins, searchTerm, filters]);
+    }, [vitamins, searchTerm, filters, servingSize]);
 
     const addFilter = () => {
         if (selectedVitamin && amount) {
@@ -94,6 +104,7 @@ function HomePage() {
                 vitaminOptions={vitaminOptions}
                 filters={filters}
                 onFilterTagRemove={handleFilterTagRemove}
+                onServingSizeChange={setServingSize}
             />
             <VitaminList vitamins={selectedVitamins} selectedVitamin={selectedVitamin} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
