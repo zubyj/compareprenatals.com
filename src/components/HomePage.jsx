@@ -17,7 +17,7 @@ function HomePage() {
         iron: false,
         folate: false,
     });
-    const [pillType, setPillType] = useState('');
+    const [format, setPillType] = useState('');
     const [showFilterBar, setShowFilterBar] = useState(false);
     const [servingSize, setServingSize] = useState([1, 3]);
     const page = parseInt(searchParams.get('page')) || 1;
@@ -38,7 +38,7 @@ function HomePage() {
 
         if (searchTerm) {
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
-                vitamin.general_info.brand.toLowerCase().includes(searchTerm.toLowerCase())
+                vitamin.general_info.brand_name.toLowerCase().includes(searchTerm.toLowerCase())
             );
         }
 
@@ -68,14 +68,14 @@ function HomePage() {
         }
         if (vitaminSwitches.folate) {
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
-                vitamin.vitamins.some(v => v.name.toLowerCase() === 'folate' && parseInt(v.amount) > 600)
+                vitamin.vitamins.some(v => v.name.toLowerCase() === 'folate, dfe' && parseInt(v.amount) > 600)
             );
         }
 
         // apply filter based on pill type
-        if (pillType) {
+        if (format) {
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
-                vitamin.general_info.pill_type.toLowerCase() === pillType.toLowerCase()
+                vitamin.general_info.format.toLowerCase() === format.toLowerCase()
             );
         }
 
@@ -83,7 +83,7 @@ function HomePage() {
 
         // Reset the page to 1 when a filter changes
         setSearchParams({ page: 1 }, "push");
-    }, [vitamins, searchTerm, vitaminSwitches, pillType, servingSize]); // add servingSize
+    }, [vitamins, searchTerm, vitaminSwitches, format, servingSize]); // add servingSize
 
     useEffect(() => {
         setSearchParams({ page: 1 }, "push");
@@ -122,8 +122,8 @@ function HomePage() {
                         onSearchChange={(e) => setSearchTerm(e.target.value)}
                         switches={vitaminSwitches} // Passed switches to FilterBar
                         onSwitchChange={handleSwitchChange} // Passed handleSwitchChange to FilterBar
-                        pillType={pillType} // Passed pillType to FilterBar
-                        onPillTypeChange={(e) => setPillType(e)} // Passed a function that sets pillType based on event value
+                        format={format} // Passed format to FilterBar
+                        onPillTypeChange={(e) => setPillType(e)} // Passed a function that sets format based on event value
                         servingSize={servingSize} // Passed servingSize to FilterBar
                         onServingSizeChange={(value) => setServingSize(value)}
                     />

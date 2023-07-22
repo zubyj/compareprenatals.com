@@ -44,7 +44,7 @@ function FilterBar({
 
             <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
                 <FormControl component="fieldset" sx={{ width: '45%' }}>
-                    <FormLabel component="legend">Max Pills/Gummies per day</FormLabel>
+                    <FormLabel component="legend">Max Vitamins per day</FormLabel>
                     <Slider
                         value={servingSize}
                         min={1}

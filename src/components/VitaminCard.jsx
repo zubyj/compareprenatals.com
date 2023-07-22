@@ -22,29 +22,24 @@ function VitaminCard({ vitamin, selectedVitamin }) {
     return (
         <Card>
             <CardContent>
-                <Grid container>
-                    <Grid item xs={6} >
+                <Grid container width="400px">
+                    <Grid item xs={6}>
                         <Box display="flex" flexDirection="column" height="100%">
                             <Box mb="auto">
-                                <Typography variant="h5">{vitamin.general_info.brand}</Typography>
+                                <Typography variant="h5">{vitamin.general_info.brand_name}</Typography>
                                 {selectedVitamin && <Button variant="outlined" color="secondary">{selectedVitamin}: {vitamin.vitamins.find(v => v.name === selectedVitamin).amount}</Button>}
                             </Box>
                             <Button variant="contained" color="success" href={vitamin.general_info.url} target="_blank">
-                                Buy for $
-                                {vitamin.general_info.price.map((price, index) => (
-                                    <>
-                                        <Typography key={index} variant="body2" >{price} ..  </Typography >
-                                    </>
-                                ))}
-                                At {extractFirstWordFromUrl(vitamin.general_info.url)}
+                                ${vitamin.general_info.price} At {extractFirstWordFromUrl(vitamin.general_info.url)}
                             </Button>
 
                         </Box>
                     </Grid>
                     <Grid item xs={6} >
-                        <Box display="flex" flexDirection="column" height="100%" gap={3} px={3}>
+                        <Box display="flex" flexDirection="column" height="100%" gap={1}>
                             <Box mb="auto" display="flex" flexDirection="column" gap={1}>
-                                <Button variant="outlined">Type: {vitamin.general_info.pill_type}</Button>
+                                <Button variant="contained" color="secondary">{vitamin.general_info.product_name}</Button>
+                                <Button variant="outlined">Type: {vitamin.general_info.format}</Button>
                                 <Button variant="outlined">Serving Size: {vitamin.general_info.serving_size}</Button>
                             </Box>
                             <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
