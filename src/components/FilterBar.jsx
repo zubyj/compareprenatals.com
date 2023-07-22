@@ -6,8 +6,8 @@ function FilterBar({
     onSearchChange,
     switches, // New prop
     onSwitchChange, // New prop
-    pillType, // New prop
-    onPillTypeChange, // New prop
+    format, // New prop
+    onFormatChange, // New prop
     servingSize, // New prop
     onServingSizeChange, // New prop
 }) {
@@ -29,7 +29,7 @@ function FilterBar({
                     label="Choline > 300mg"
                 />
                 <FormControlLabel
-                    control={<Switch checked={switches.omega3} onChange={onSwitchChange} name="omega3" />}
+                    control={<Switch checked={switches['omega-3']} onChange={onSwitchChange} name='omega-3' />}
                     label="Omega-3 > 200mg"
                 />
                 <FormControlLabel
@@ -37,7 +37,7 @@ function FilterBar({
                     label="Iron > 18mg"
                 />
                 <FormControlLabel
-                    control={<Switch checked={switches.folate} onChange={onSwitchChange} name="folate" />}
+                    control={<Switch checked={switches['folate, dfe']} onChange={onSwitchChange} name='folate, dfe' />}
                     label="Folate > 600mcg DFE"
                 />
             </FormGroup>
@@ -57,7 +57,7 @@ function FilterBar({
                     />
                 </FormControl>
                 <FormControl component="fieldset" sx={{ width: '45%' }}>
-                    <RadioGroup row name="pillType" value={pillType} onChange={(e, value) => onPillTypeChange(value)}>
+                    <RadioGroup row name="format" value={format} onChange={(e, value) => onFormatChange(value)}>
                         <FormControlLabel value="pill" control={<Radio />} label="Pill" />
                         <FormControlLabel value="gummy" control={<Radio />} label="Gummy" />
                         <FormControlLabel value="powder" control={<Radio />} label="Powder" />

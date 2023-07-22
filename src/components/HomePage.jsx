@@ -12,12 +12,12 @@ function HomePage() {
     const [filteredVitamins, setFilteredVitamins] = useState([]);
     const [searchParams, setSearchParams] = useSearchParams();
     const [vitaminSwitches, setVitaminSwitches] = useState({
-        choline: false,
-        omega3: false,
-        iron: false,
-        folate: false,
+        'choline': false,
+        'omega-3': false,
+        'iron': false,
+        'folate, dfe': false,
     });
-    const [format, setPillType] = useState('');
+    const [format, setFormat] = useState('');
     const [showFilterBar, setShowFilterBar] = useState(false);
     const [servingSize, setServingSize] = useState([1, 3]);
     const page = parseInt(searchParams.get('page')) || 1;
@@ -51,22 +51,22 @@ function HomePage() {
         }
 
         // apply filter based on vitamin switches
-        if (vitaminSwitches.choline) {
+        if (vitaminSwitches['choline']) {
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
                 vitamin.vitamins.some(v => v.name.toLowerCase() === 'choline' && parseInt(v.amount) > 300)
             );
         }
-        if (vitaminSwitches.omega3) {
+        if (vitaminSwitches['omega-3']) { // change 'omega3' to 'omega-3'
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
                 vitamin.vitamins.some(v => v.name.toLowerCase() === 'omega-3' && parseInt(v.amount) > 200)
             );
         }
-        if (vitaminSwitches.iron) {
+        if (vitaminSwitches['iron']) {
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
                 vitamin.vitamins.some(v => v.name.toLowerCase() === 'iron' && parseInt(v.amount) > 18)
             );
         }
-        if (vitaminSwitches.folate) {
+        if (vitaminSwitches['folate, dfe']) { // change 'folate' to 'folate, dfe'
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
                 vitamin.vitamins.some(v => v.name.toLowerCase() === 'folate, dfe' && parseInt(v.amount) > 600)
             );
@@ -123,13 +123,13 @@ function HomePage() {
                         switches={vitaminSwitches} // Passed switches to FilterBar
                         onSwitchChange={handleSwitchChange} // Passed handleSwitchChange to FilterBar
                         format={format} // Passed format to FilterBar
-                        onPillTypeChange={(e) => setPillType(e)} // Passed a function that sets format based on event value
+                        onFormatChange={(e) => setFormat(e)} // Passed a function that sets format based on event value
                         servingSize={servingSize} // Passed servingSize to FilterBar
                         onServingSizeChange={(value) => setServingSize(value)}
                     />
                 </>
             ) : null}
-            <VitaminList vitamins={displayedVitamins} />
+            <VitaminList vitamins={displayedVitamins} vitaminSwitches={vitaminSwitches} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
         </Box>
     );

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, Typography, Button, Collapse, Grid, Box } from '@mui/material';
 
-function VitaminCard({ vitamin, selectedVitamin }) {
+function VitaminCard({ vitamin, vitaminSwitches }) {
     const [showVitamins, setShowVitamins] = useState(false);
 
     const handleToggleVitamins = () => {
@@ -27,12 +27,20 @@ function VitaminCard({ vitamin, selectedVitamin }) {
                         <Box display="flex" flexDirection="column" height="100%">
                             <Box mb="auto">
                                 <Typography variant="h5">{vitamin.general_info.brand_name}</Typography>
-                                {selectedVitamin && <Button variant="outlined" color="secondary">{selectedVitamin}: {vitamin.vitamins.find(v => v.name === selectedVitamin).amount}</Button>}
+                                {Object.keys(vitaminSwitches).map(key => {
+                                    if (vitaminSwitches[key]) {
+                                        const vitaminInfo = vitamin.vitamins.find(v => v.name.toLowerCase() === key);
+                                        if (vitaminInfo) {
+                                            return (
+                                                <Button key={key} variant="outlined">
+                                                    {key.charAt(0).toUpperCase() + key.slice(1)}: {vitaminInfo.amount}
+                                                </Button>
+                                            );
+                                        }
+                                    }
+                                    return null;
+                                })}
                             </Box>
-                            <Button variant="contained" color="success" href={vitamin.general_info.url} target="_blank">
-                                ${vitamin.general_info.price} At {extractFirstWordFromUrl(vitamin.general_info.url)}
-                            </Button>
-
                         </Box>
                     </Grid>
                     <Grid item xs={6} >
