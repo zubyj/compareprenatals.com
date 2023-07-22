@@ -17,8 +17,9 @@ function HomePage() {
         iron: false,
         folate: false,
     });
-    const [pillType, setPillType] = useState(''); // New state for pill type selection
-    const [showFilterBar, setShowFilterBar] = useState(false); // New state
+    const [pillType, setPillType] = useState('');
+    const [showFilterBar, setShowFilterBar] = useState(false);
+    const [servingSize, setServingSize] = useState([1, 3]);
     const page = parseInt(searchParams.get('page')) || 1;
     const vitaminsPerPage = 5;
 
@@ -38,6 +39,14 @@ function HomePage() {
         if (searchTerm) {
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
                 vitamin.general_info.brand.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+        }
+
+        // apply filter based on serving size
+        if (servingSize) {
+            newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
+                vitamin.general_info.serving_size >= servingSize[0] &&
+                vitamin.general_info.serving_size <= servingSize[1]
             );
         }
 
@@ -74,7 +83,7 @@ function HomePage() {
 
         // Reset the page to 1 when a filter changes
         setSearchParams({ page: 1 }, "push");
-    }, [vitamins, searchTerm, vitaminSwitches, pillType]);
+    }, [vitamins, searchTerm, vitaminSwitches, pillType, servingSize]); // add servingSize
 
     useEffect(() => {
         setSearchParams({ page: 1 }, "push");
@@ -115,8 +124,9 @@ function HomePage() {
                         onSwitchChange={handleSwitchChange} // Passed handleSwitchChange to FilterBar
                         pillType={pillType} // Passed pillType to FilterBar
                         onPillTypeChange={(e) => setPillType(e)} // Passed a function that sets pillType based on event value
+                        servingSize={servingSize} // Passed servingSize to FilterBar
+                        onServingSizeChange={(value) => setServingSize(value)}
                     />
-                    {/* <VitaminSwitches switches={vitaminSwitches} onSwitchChange={handleSwitchChange} /> */}
                 </>
             ) : null}
             <VitaminList vitamins={displayedVitamins} />

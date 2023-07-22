@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField, Box, FormGroup, FormControlLabel, Switch, FormControl, FormLabel, RadioGroup, Radio } from '@mui/material';
+import { TextField, Box, FormGroup, FormControlLabel, Switch, FormLabel, FormControl, Slider, RadioGroup, Radio } from '@mui/material';
 
 function FilterBar({
     searchTerm,
@@ -8,6 +8,8 @@ function FilterBar({
     onSwitchChange, // New prop
     pillType, // New prop
     onPillTypeChange, // New prop
+    servingSize, // New prop
+    onServingSizeChange, // New prop
 }) {
     return (
         <Box sx={{
@@ -40,14 +42,29 @@ function FilterBar({
                 />
             </FormGroup>
 
-            {/* Added MUI radio group */}
-            <FormControl component="fieldset">
-                <RadioGroup row name="pillType" value={pillType} onChange={(e, value) => onPillTypeChange(value)}>
-                    <FormControlLabel value="pill" control={<Radio />} label="Pill" />
-                    <FormControlLabel value="gummy" control={<Radio />} label="Gummy" />
-                    <FormControlLabel value="powder" control={<Radio />} label="Powder" />
-                </RadioGroup>
-            </FormControl>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+                <FormControl component="fieldset" sx={{ width: '45%' }}>
+                    <FormLabel component="legend">Max Pills/Gummies per day</FormLabel>
+                    <Slider
+                        value={servingSize}
+                        min={1}
+                        max={3}
+                        step={1}
+                        onChange={(_, value) => onServingSizeChange(value)}
+                        valueLabelDisplay="auto"
+                        getAriaValueText={value => `${value[0]} - ${value[1]} servings`}
+                        sx={{ width: '60%' }} // Set width to 100%
+                    />
+                </FormControl>
+                <FormControl component="fieldset" sx={{ width: '45%' }}>
+                    <FormLabel component="legend">Pill Type</FormLabel>
+                    <RadioGroup row name="pillType" value={pillType} onChange={(e, value) => onPillTypeChange(value)}>
+                        <FormControlLabel value="pill" control={<Radio />} label="Pill" />
+                        <FormControlLabel value="gummy" control={<Radio />} label="Gummy" />
+                        <FormControlLabel value="powder" control={<Radio />} label="Powder" />
+                    </RadioGroup>
+                </FormControl>
+            </Box>
         </Box>
     );
 }
