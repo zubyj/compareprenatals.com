@@ -54,8 +54,22 @@ function HomePage() {
             return parseInt(vitamin.general_info.serving_size) === servingSize;
         });
 
+        // Sort vitamins by selected vitamin amount
+        if (selectedVitamin) {
+            newFilteredVitamins.sort((a, b) => {
+                const aVitaminInfo = a.vitamins.find(v => v.name === selectedVitamin);
+                const bVitaminInfo = b.vitamins.find(v => v.name === selectedVitamin);
+
+                const aAmount = aVitaminInfo ? parseFloat(aVitaminInfo.amount) : 0;
+                const bAmount = bVitaminInfo ? parseFloat(bVitaminInfo.amount) : 0;
+
+                return bAmount - aAmount; // sort in descending order
+            });
+        }
+
         setFilteredVitamins(newFilteredVitamins);
-    }, [vitamins, searchTerm, filters, servingSize]);
+    }, [vitamins, searchTerm, filters, servingSize, selectedVitamin]);
+
 
     const addFilter = () => {
         if (selectedVitamin && amount) {
