@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Box } from '@mui/material';
-import { Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 
 import VitaminList from './VitaminList';
 import Pagination from './Pagination';
 import FilterBar from './FilterBar';
-import VitaminSwitches from './VitaminSwitches'; // new component
 
 function HomePage() {
     const [vitamins, setVitamins] = useState([]);
@@ -19,6 +17,8 @@ function HomePage() {
         iron: false,
         folate: false,
     });
+    const [pillType, setPillType] = useState(''); // New state for pill type selection
+    const [showFilterBar, setShowFilterBar] = useState(false); // New state
     const page = parseInt(searchParams.get('page')) || 1;
     const vitaminsPerPage = 5;
 
@@ -63,8 +63,15 @@ function HomePage() {
             );
         }
 
+        // apply filter based on pill type
+        if (pillType) {
+            newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
+                vitamin.general_info.pill_type.toLowerCase() === pillType.toLowerCase()
+            );
+        }
+
         setFilteredVitamins(newFilteredVitamins);
-    }, [vitamins, searchTerm, vitaminSwitches]);
+    }, [vitamins, searchTerm, vitaminSwitches, pillType]);
 
     useEffect(() => {
         setSearchParams({ page: 1 }, "push");
@@ -93,11 +100,22 @@ function HomePage() {
             paddingBottom: '10vh',
         }}>
             <Typography variant="h4">Prenatal Vitamins</Typography>
-            <FilterBar
-                searchTerm={searchTerm}
-                onSearchChange={(e) => setSearchTerm(e.target.value)}
-            />
-            <VitaminSwitches switches={vitaminSwitches} onSwitchChange={handleSwitchChange} />
+            <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained">
+                {showFilterBar ? 'Hide Filters' : 'Show Filters'}
+            </Button>
+            {showFilterBar ? (
+                <>
+                    <FilterBar
+                        searchTerm={searchTerm}
+                        onSearchChange={(e) => setSearchTerm(e.target.value)}
+                        switches={vitaminSwitches} // Passed switches to FilterBar
+                        onSwitchChange={handleSwitchChange} // Passed handleSwitchChange to FilterBar
+                        pillType={pillType} // Passed pillType to FilterBar
+                        onPillTypeChange={(e) => setPillType(e)} // Passed a function that sets pillType based on event value
+                    />
+                    {/* <VitaminSwitches switches={vitaminSwitches} onSwitchChange={handleSwitchChange} /> */}
+                </>
+            ) : null}
             <VitaminList vitamins={displayedVitamins} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
         </Box>

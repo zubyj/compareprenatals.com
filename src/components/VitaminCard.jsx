@@ -32,7 +32,9 @@ function VitaminCard({ vitamin, selectedVitamin }) {
                             <Button variant="contained" color="success" href={vitamin.general_info.url} target="_blank">
                                 Buy for $
                                 {vitamin.general_info.price.map((price, index) => (
-                                    <Typography key={index} variant="body2" >{price} , </Typography >
+                                    <>
+                                        <Typography key={index} variant="body2" >{price} ..  </Typography >
+                                    </>
                                 ))}
                                 At {extractFirstWordFromUrl(vitamin.general_info.url)}
                             </Button>
