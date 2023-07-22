@@ -71,6 +71,9 @@ function HomePage() {
         }
 
         setFilteredVitamins(newFilteredVitamins);
+
+        // Reset the page to 1 when a filter changes
+        setSearchParams({ page: 1 }, "push");
     }, [vitamins, searchTerm, vitaminSwitches, pillType]);
 
     useEffect(() => {
