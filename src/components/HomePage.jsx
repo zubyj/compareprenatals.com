@@ -17,7 +17,7 @@ function HomePage() {
         'iron': false,
         'folate, dfe': false,
     });
-    const [format, setFormat] = useState('');
+    const [format, setFormat] = useState(['pill', 'gummy', 'powder']);
     const [servingSize, setServingSize] = useState(3);
     const [showFilterBar, setShowFilterBar] = useState(false);
     const page = parseInt(searchParams.get('page')) || 1;
@@ -70,10 +70,9 @@ function HomePage() {
             );
         }
 
-        // apply filter based on pill type
-        if (format) {
+        if (format.length) {
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
-                vitamin.general_info.format.toLowerCase() === format.toLowerCase()
+                format.some(f => vitamin.general_info.format.toLowerCase() === f)
             );
         }
 
@@ -98,6 +97,14 @@ function HomePage() {
         });
     };
 
+    const handleFormatChange = (event) => {
+        if (event.target.checked) {
+            setFormat(prevFormat => [...prevFormat, event.target.name]);
+        } else {
+            setFormat(prevFormat => prevFormat.filter(f => f !== event.target.name));
+        }
+    };
+
     return (
         <Box sx={{
             justifyContent: 'center',
@@ -119,7 +126,7 @@ function HomePage() {
                         switches={vitaminSwitches} // Passed switches to FilterBar
                         onSwitchChange={handleSwitchChange} // Passed handleSwitchChange to FilterBar
                         format={format} // Passed format to FilterBar
-                        onFormatChange={(e) => setFormat(e)} // Passed a function that sets format based on event value
+                        onFormatChange={handleFormatChange} // Passed handleFormatChange to FilterBar
                         servingSize={servingSize} // Passed servingSize to FilterBar
                         onServingSizeChange={(value) => setServingSize(value)}
                     />

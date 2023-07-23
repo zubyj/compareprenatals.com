@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField, Box, FormGroup, FormControlLabel, Switch, FormLabel, FormControl, Slider, RadioGroup, Radio } from '@mui/material';
+import { TextField, Box, FormGroup, FormControlLabel, Switch, FormLabel, FormControl, Checkbox, RadioGroup, Radio } from '@mui/material';
 
 function FilterBar({
     searchTerm,
@@ -43,11 +43,23 @@ function FilterBar({
                     justifyContent: 'center',
                     alignItems: 'center',
                 }}>
-                    <RadioGroup row name="format" value={format} onChange={(e, value) => onFormatChange(value)}>
-                        <FormControlLabel value="pill" control={<Radio />} label="Pill" />
-                        <FormControlLabel value="gummy" control={<Radio />} label="Gummy" />
-                        <FormControlLabel value="powder" control={<Radio />} label="Powder" />
-                    </RadioGroup>
+                    <FormControl component="fieldset">
+                        <FormLabel component="legend">Format</FormLabel>
+                        <FormGroup row>
+                            <FormControlLabel
+                                control={<Checkbox checked={format.includes('pill')} onChange={onFormatChange} name='pill' />}
+                                label="Pill"
+                            />
+                            <FormControlLabel
+                                control={<Checkbox checked={format.includes('gummy')} onChange={onFormatChange} name='gummy' />}
+                                label="Gummy"
+                            />
+                            <FormControlLabel
+                                control={<Checkbox checked={format.includes('powder')} onChange={onFormatChange} name='powder' />}
+                                label="Liquids & Powders"
+                            />
+                        </FormGroup>
+                    </FormControl>
                 </FormControl>
             </Box>
 
@@ -73,7 +85,6 @@ function FilterBar({
                     label="Folate > 600mcg DFE"
                 />
             </FormGroup>
-
             <TextField label="Search" variant="outlined" value={searchTerm} onChange={onSearchChange} fullWidth />
         </Box>
     );
