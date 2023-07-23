@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState } from 'react';
+
 import { Box, FormGroup, FormControlLabel, Switch, FormLabel, FormControl, Checkbox, RadioGroup, Radio, Button, Autocomplete, TextField } from '@mui/material';
 
 function FilterBar({
@@ -14,6 +16,19 @@ function FilterBar({
     vitamins,
     setFilteredVitamins,
 }) {
+
+    const [searchText, setSearchText] = useState(""); // Hold the current value of the search textfield
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            handleResetFilters();
+            setFilteredVitamins(vitamins.filter(vitamin =>
+                vitamin.general_info.brand_name.toLowerCase().includes(searchText.toLowerCase()) ||
+                vitamin.general_info.product_name.toLowerCase().includes(searchText.toLowerCase())
+            ));
+        }
+    };
+
     return (
         <Box sx={{
             display: 'flex',
@@ -97,14 +112,20 @@ function FilterBar({
                 options={vitamins}
                 getOptionLabel={(option) => option.general_info.brand_name + ' ' + option.general_info.product_name}
                 style={{ width: 300 }}
-                renderInput={(params) => <TextField {...params} label="Vitamin Search" variant="outlined" />}
+                renderInput={(params) => <TextField {...params} label="Vitamin Search" variant="outlined"
+                    onKeyDown={handleKeyDown}
+                    onChange={(event) => setSearchText(event.target.value)} // Update searchText when the textfield value changes
+                />}
                 onChange={(event, newValue) => {
                     // newValue is the selected vitamin
                     if (newValue) {
                         // clear any existing filters
                         handleResetFilters();
                         // filter vitamins by the selected vitamin's brand_name and product_name
-                        setFilteredVitamins(vitamins.filter(vitamin => vitamin.general_info.brand_name === newValue.general_info.brand_name && vitamin.general_info.product_name === newValue.general_info.product_name));
+                        setFilteredVitamins(vitamins.filter(vitamin =>
+                            vitamin.general_info.brand_name === newValue.general_info.brand_name &&
+                            vitamin.general_info.product_name === newValue.general_info.product_name
+                        ));
                     }
                 }}
             />
