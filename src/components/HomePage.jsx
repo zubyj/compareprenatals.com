@@ -105,6 +105,18 @@ function HomePage() {
         }
     };
 
+    const handleResetFilters = () => {
+        setSearchTerm('');
+        setVitaminSwitches({
+            'choline': false,
+            'omega-3': false,
+            'iron': false,
+            'folate, dfe': false,
+        });
+        setFormat(['pill', 'gummy', 'powder']);
+        setServingSize(3);
+    };
+
     return (
         <Box sx={{
             justifyContent: 'center',
@@ -129,6 +141,7 @@ function HomePage() {
                         onFormatChange={handleFormatChange} // Passed handleFormatChange to FilterBar
                         servingSize={servingSize} // Passed servingSize to FilterBar
                         onServingSizeChange={(value) => setServingSize(value)}
+                        onResetFilters={handleResetFilters} // Passed handleResetFilters to FilterBar
                     />
                 </>
             ) : null}

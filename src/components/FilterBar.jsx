@@ -1,15 +1,16 @@
 import React from 'react';
-import { TextField, Box, FormGroup, FormControlLabel, Switch, FormLabel, FormControl, Checkbox, RadioGroup, Radio } from '@mui/material';
+import { TextField, Box, FormGroup, FormControlLabel, Switch, FormLabel, FormControl, Checkbox, RadioGroup, Radio, Button } from '@mui/material';
 
 function FilterBar({
     searchTerm,
     onSearchChange,
-    switches, // New prop
-    onSwitchChange, // New prop
-    format, // New prop
-    onFormatChange, // New prop
-    servingSize, // New prop
-    onServingSizeChange, // New prop
+    switches,
+    onSwitchChange,
+    format,
+    onFormatChange,
+    servingSize,
+    onServingSizeChange,
+    onResetFilters, // New prop
 }) {
     return (
         <Box sx={{
@@ -20,50 +21,41 @@ function FilterBar({
             gap: 2,
             m: 2
         }}>
-
-            <Box sx={{
+            <Button onClick={onResetFilters} variant="contained" color="error">
+                Reset Filters
+            </Button>
+            <FormControl component="fieldset">
+                <FormLabel component="legend">Max Daily Serving Size</FormLabel>
+                <RadioGroup row name="servingSize" value={servingSize} onChange={(e, value) => onServingSizeChange(value)}>
+                    <FormControlLabel value={1} control={<Radio />} label="1" />
+                    <FormControlLabel value={2} control={<Radio />} label="2" />
+                    <FormControlLabel value={3} control={<Radio />} label="3" />
+                </RadioGroup>
+            </FormControl>
+            <FormControl component="fieldset" sx={{
                 display: 'flex',
-                flexDirection: { xs: 'column', md: 'row' },
-                justifyContent: { xs: 'center' },
-                alignItems: { xs: 'center', md: 'flex-start' },
-                width: '100%',
-                gap: 1,
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
             }}>
                 <FormControl component="fieldset">
-                    <FormLabel component="legend">Max Daily Serving Size</FormLabel>
-                    <RadioGroup row name="servingSize" value={servingSize} onChange={(e, value) => onServingSizeChange(value)}>
-                        <FormControlLabel value={1} control={<Radio />} label="1" />
-                        <FormControlLabel value={2} control={<Radio />} label="2" />
-                        <FormControlLabel value={3} control={<Radio />} label="3" />
-                    </RadioGroup>
+                    <FormLabel component="legend">Format</FormLabel>
+                    <FormGroup row>
+                        <FormControlLabel
+                            control={<Checkbox checked={format.includes('pill')} onChange={onFormatChange} name='pill' />}
+                            label="Pill"
+                        />
+                        <FormControlLabel
+                            control={<Checkbox checked={format.includes('gummy')} onChange={onFormatChange} name='gummy' />}
+                            label="Gummy"
+                        />
+                        <FormControlLabel
+                            control={<Checkbox checked={format.includes('powder')} onChange={onFormatChange} name='powder' />}
+                            label="Liquids & Powders"
+                        />
+                    </FormGroup>
                 </FormControl>
-                <FormControl component="fieldset" sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}>
-                    <FormControl component="fieldset">
-                        <FormLabel component="legend">Format</FormLabel>
-                        <FormGroup row>
-                            <FormControlLabel
-                                control={<Checkbox checked={format.includes('pill')} onChange={onFormatChange} name='pill' />}
-                                label="Pill"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox checked={format.includes('gummy')} onChange={onFormatChange} name='gummy' />}
-                                label="Gummy"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox checked={format.includes('powder')} onChange={onFormatChange} name='powder' />}
-                                label="Liquids & Powders"
-                            />
-                        </FormGroup>
-                    </FormControl>
-                </FormControl>
-            </Box>
-
-            {/* Added VitaminSwitches functionality */}
+            </FormControl>
             <FormGroup sx={{
                 display: 'flex',
                 flexDirection: { xs: 'column', md: 'row' }
@@ -86,7 +78,7 @@ function FilterBar({
                 />
             </FormGroup>
             <TextField label="Search" variant="outlined" value={searchTerm} onChange={onSearchChange} fullWidth />
-        </Box>
+        </Box >
     );
 }
 
