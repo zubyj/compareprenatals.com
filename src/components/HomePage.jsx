@@ -115,6 +115,7 @@ function HomePage() {
         });
         setFormat(['pill', 'gummy', 'powder']);
         setServingSize(3);
+        setShowFilterBar(false); // Hide the filter bar after resetting
     };
 
     return (
