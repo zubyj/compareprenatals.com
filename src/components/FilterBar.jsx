@@ -1,9 +1,7 @@
 import React from 'react';
-import { TextField, Box, FormGroup, FormControlLabel, Switch, FormLabel, FormControl, Checkbox, RadioGroup, Radio, Button } from '@mui/material';
+import { Box, FormGroup, FormControlLabel, Switch, FormLabel, FormControl, Checkbox, RadioGroup, Radio, Button, Autocomplete, TextField } from '@mui/material';
 
 function FilterBar({
-    searchTerm,
-    onSearchChange,
     switches,
     onSwitchChange,
     format,
@@ -11,7 +9,10 @@ function FilterBar({
     servingSize,
     onServingSizeChange,
     onSaveFilters,
-    onCancelChanges
+    onCancelChanges,
+    handleResetFilters,
+    vitamins,
+    setFilteredVitamins,
 }) {
     return (
         <Box sx={{
@@ -91,7 +92,22 @@ function FilterBar({
                     Cancel
                 </Button>
             </Box>
-            <TextField label="Search" variant="outlined" value={searchTerm} onChange={onSearchChange} fullWidth />
+            <Autocomplete
+                id="vitamin-search"
+                options={vitamins}
+                getOptionLabel={(option) => option.general_info.brand_name + ' ' + option.general_info.product_name}
+                style={{ width: 300 }}
+                renderInput={(params) => <TextField {...params} label="Vitamin Search" variant="outlined" />}
+                onChange={(event, newValue) => {
+                    // newValue is the selected vitamin
+                    if (newValue) {
+                        // clear any existing filters
+                        handleResetFilters();
+                        // filter vitamins by the selected vitamin's brand_name and product_name
+                        setFilteredVitamins(vitamins.filter(vitamin => vitamin.general_info.brand_name === newValue.general_info.brand_name && vitamin.general_info.product_name === newValue.general_info.product_name));
+                    }
+                }}
+            />
         </Box >
     );
 }

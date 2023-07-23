@@ -18,8 +18,7 @@ function HomePage() {
     });
     const [format, setFormat] = useState(['pill', 'gummy', 'powder']);
     const [servingSize, setServingSize] = useState(3);
-    const [searchTerm, setSearchTerm] = useState('');
-    const [savedFilters, setSavedFilters] = useState({ searchTerm, vitaminSwitches, format, servingSize });
+    const [savedFilters, setSavedFilters] = useState({ vitaminSwitches, format, servingSize });
 
     const [showFilterBar, setShowFilterBar] = useState(false);
     const page = parseInt(searchParams.get('page')) || 1;
@@ -27,7 +26,6 @@ function HomePage() {
 
     const handleSaveFilters = () => {
         setSavedFilters({
-            searchTerm: searchTerm,
             vitaminSwitches: { ...vitaminSwitches },
             format: [...format],
             servingSize: servingSize
@@ -36,8 +34,7 @@ function HomePage() {
     };
 
     const handleCancelChanges = () => {
-        const { searchTerm, vitaminSwitches, format, servingSize } = savedFilters;
-        setSearchTerm(searchTerm);
+        const { vitaminSwitches, format, servingSize } = savedFilters;
         setVitaminSwitches(vitaminSwitches);
         setFormat(format);
         setServingSize(servingSize);
@@ -45,7 +42,6 @@ function HomePage() {
     };
 
     const handleResetFilters = () => {
-        setSearchTerm('');
         setVitaminSwitches({
             'choline': false,
             'omega-3': false,
@@ -70,13 +66,7 @@ function HomePage() {
 
     useEffect(() => {
         let newFilteredVitamins = vitamins;
-        const { searchTerm, vitaminSwitches, format, servingSize } = savedFilters;
-
-        if (searchTerm) {
-            newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
-                vitamin.general_info.brand_name.toLowerCase().includes(searchTerm.toLowerCase())
-            );
-        }
+        const { vitaminSwitches, format, servingSize } = savedFilters;
 
         // apply filter based on serving size
         if (servingSize) {
@@ -159,17 +149,18 @@ function HomePage() {
             {showFilterBar ? (
                 <>
                     <FilterBar
-                        searchTerm={searchTerm}
-                        onSearchChange={(e) => setSearchTerm(e.target.value)}
                         switches={vitaminSwitches} // Passed switches to FilterBar
                         onSwitchChange={handleSwitchChange} // Passed handleSwitchChange to FilterBar
                         format={format} // Passed format to FilterBar
                         onFormatChange={handleFormatChange} // Passed handleFormatChange to FilterBar
                         servingSize={servingSize} // Passed servingSize to FilterBar
                         onServingSizeChange={(value) => setServingSize(value)}
-                        onResetFilters={handleResetFilters} // Passed handleResetFilters to FilterBar
+                        handleResetFilters={handleResetFilters} // Passed handleResetFilters to FilterBar
                         onSaveFilters={handleSaveFilters}
                         onCancelChanges={handleCancelChanges}
+                        vitamins={vitamins}
+                        setFilteredVitamins={setFilteredVitamins} // Newly added
+
                     />
                 </>
             ) : null}
