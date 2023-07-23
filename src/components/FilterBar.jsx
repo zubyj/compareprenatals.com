@@ -24,22 +24,18 @@ function FilterBar({
             <Box sx={{
                 display: 'flex',
                 flexDirection: { xs: 'column', md: 'row' },
-                justifyContent: { xs: 'center', md: 'space-between' },
+                justifyContent: { xs: 'center' },
                 alignItems: { xs: 'center', md: 'flex-start' },
-                width: '100%'
+                width: '100%',
+                gap: 1,
             }}>
-                <FormControl component="fieldset" sx={{ width: '45%' }}>
-                    <FormLabel component="legend">Max Vitamins per day</FormLabel>
-                    <Slider
-                        value={servingSize}
-                        min={1}
-                        max={3}
-                        step={1}
-                        onChange={(_, value) => onServingSizeChange(value)}
-                        valueLabelDisplay="auto"
-                        getAriaValueText={value => `${value[0]} - ${value[1]} servings`}
-                        sx={{ width: '100%' }}
-                    />
+                <FormControl component="fieldset">
+                    <FormLabel component="legend">Max Daily Serving Size</FormLabel>
+                    <RadioGroup row name="servingSize" value={servingSize} onChange={(e, value) => onServingSizeChange(value)}>
+                        <FormControlLabel value={1} control={<Radio />} label="1" />
+                        <FormControlLabel value={2} control={<Radio />} label="2" />
+                        <FormControlLabel value={3} control={<Radio />} label="3" />
+                    </RadioGroup>
                 </FormControl>
                 <FormControl component="fieldset" sx={{
                     display: 'flex',

@@ -19,8 +19,8 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
         return chunks;
     }
 
-    // Divide vitamin array into chunks of 3
-    const vitaminChunks = chunk(vitamin.vitamins, 3);
+    // Divide vitamin array into chunks of 2
+    const vitaminChunks = chunk(vitamin.vitamins, 2);
 
     return (
         <Card>

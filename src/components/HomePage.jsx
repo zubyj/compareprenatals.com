@@ -18,8 +18,8 @@ function HomePage() {
         'folate, dfe': false,
     });
     const [format, setFormat] = useState('');
+    const [servingSize, setServingSize] = useState(3);
     const [showFilterBar, setShowFilterBar] = useState(false);
-    const [servingSize, setServingSize] = useState([1, 3]);
     const page = parseInt(searchParams.get('page')) || 1;
     const vitaminsPerPage = 5;
 
@@ -45,9 +45,7 @@ function HomePage() {
         // apply filter based on serving size
         if (servingSize) {
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
-                vitamin.general_info.serving_size >= servingSize[0] &&
-                vitamin.general_info.serving_size <= servingSize[1]
-            );
+                vitamin.general_info.serving_size >= servingSize);
         }
 
         // apply filter based on vitamin switches
@@ -83,7 +81,7 @@ function HomePage() {
 
         // Reset the page to 1 when a filter changes
         setSearchParams({ page: 1 }, "push");
-    }, [vitamins, searchTerm, vitaminSwitches, format, servingSize]); // add servingSize
+    }, [vitamins, searchTerm, vitaminSwitches, format, servingSize]);
 
     useEffect(() => {
         setSearchParams({ page: 1 }, "push");
