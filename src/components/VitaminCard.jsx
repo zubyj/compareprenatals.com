@@ -23,9 +23,9 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
     const vitaminChunks = chunk(vitamin.vitamins, 2);
 
     return (
-        <Card>
+        <Card >
             <CardContent>
-                <Grid container width="400px">
+                <Grid container paddingY={3}>
                     <Grid item xs={6}>
                         <Box display="flex" flexDirection="column" height="100%">
                             <Box mb="auto">
@@ -77,7 +77,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                     </Card>
                 </Collapse>
             </CardContent>
-        </Card>
+        </Card >
     );
 }
 

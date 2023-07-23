@@ -10,7 +10,8 @@ function FilterBar({
     onFormatChange,
     servingSize,
     onServingSizeChange,
-    onResetFilters, // New prop
+    onSaveFilters,
+    onCancelChanges
 }) {
     return (
         <Box sx={{
@@ -18,12 +19,12 @@ function FilterBar({
             flexDirection: { xs: 'column' },
             alignItems: 'center',
             justifyContent: 'center',
-            gap: 2,
-            m: 2
+            textAlign: 'center',
+            paddingY: '30px',
+            marginY: '30px',
+            border: '1px solid black',
+
         }}>
-            <Button onClick={onResetFilters} variant="contained" color="error">
-                Reset Filters
-            </Button>
             <FormControl component="fieldset">
                 <FormLabel component="legend">Max Daily Serving Size</FormLabel>
                 <RadioGroup row name="servingSize" value={servingSize} onChange={(e, value) => onServingSizeChange(value)}>
@@ -39,8 +40,7 @@ function FilterBar({
                 alignItems: 'center',
             }}>
                 <FormControl component="fieldset">
-                    <FormLabel component="legend">Format</FormLabel>
-                    <FormGroup row>
+                    <FormGroup row >
                         <FormControlLabel
                             control={<Checkbox checked={format.includes('pill')} onChange={onFormatChange} name='pill' />}
                             label="Pill"
@@ -77,6 +77,20 @@ function FilterBar({
                     label="Folate > 600mcg DFE"
                 />
             </FormGroup>
+            <Box sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-evenly',
+                paddingY: '20px',
+            }}
+            >
+                <Button onClick={onSaveFilters} variant="contained" color="success">
+                    Save
+                </Button>
+                <Button onClick={onCancelChanges} variant="contained" color="error">
+                    Cancel
+                </Button>
+            </Box>
             <TextField label="Search" variant="outlined" value={searchTerm} onChange={onSearchChange} fullWidth />
         </Box >
     );

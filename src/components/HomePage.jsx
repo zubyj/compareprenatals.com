@@ -8,7 +8,6 @@ import FilterBar from './FilterBar';
 
 function HomePage() {
     const [vitamins, setVitamins] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('');
     const [filteredVitamins, setFilteredVitamins] = useState([]);
     const [searchParams, setSearchParams] = useSearchParams();
     const [vitaminSwitches, setVitaminSwitches] = useState({
@@ -19,9 +18,45 @@ function HomePage() {
     });
     const [format, setFormat] = useState(['pill', 'gummy', 'powder']);
     const [servingSize, setServingSize] = useState(3);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [savedFilters, setSavedFilters] = useState({ searchTerm, vitaminSwitches, format, servingSize });
+
     const [showFilterBar, setShowFilterBar] = useState(false);
     const page = parseInt(searchParams.get('page')) || 1;
     const vitaminsPerPage = 5;
+
+    const handleSaveFilters = () => {
+        setSavedFilters({
+            searchTerm: searchTerm,
+            vitaminSwitches: { ...vitaminSwitches },
+            format: [...format],
+            servingSize: servingSize
+        });
+        setShowFilterBar(false);
+    };
+
+    const handleCancelChanges = () => {
+        const { searchTerm, vitaminSwitches, format, servingSize } = savedFilters;
+        setSearchTerm(searchTerm);
+        setVitaminSwitches(vitaminSwitches);
+        setFormat(format);
+        setServingSize(servingSize);
+        setShowFilterBar(false);
+    };
+
+    const handleResetFilters = () => {
+        setSearchTerm('');
+        setVitaminSwitches({
+            'choline': false,
+            'omega-3': false,
+            'iron': false,
+            'folate, dfe': false,
+        });
+        setFormat(['pill', 'gummy', 'powder']);
+        setServingSize(3);
+        setFilteredVitamins(vitamins); // Reset the filteredVitamins to the original vitamins
+        setShowFilterBar(false);
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -35,6 +70,7 @@ function HomePage() {
 
     useEffect(() => {
         let newFilteredVitamins = vitamins;
+        const { searchTerm, vitaminSwitches, format, servingSize } = savedFilters;
 
         if (searchTerm) {
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
@@ -80,11 +116,7 @@ function HomePage() {
 
         // Reset the page to 1 when a filter changes
         setSearchParams({ page: 1 }, "push");
-    }, [vitamins, searchTerm, vitaminSwitches, format, servingSize]);
-
-    useEffect(() => {
-        setSearchParams({ page: 1 }, "push");
-    }, [searchTerm]);
+    }, [vitamins, savedFilters]);
 
     const startIndex = (page - 1) * vitaminsPerPage;
     const endIndex = startIndex + vitaminsPerPage;
@@ -105,18 +137,7 @@ function HomePage() {
         }
     };
 
-    const handleResetFilters = () => {
-        setSearchTerm('');
-        setVitaminSwitches({
-            'choline': false,
-            'omega-3': false,
-            'iron': false,
-            'folate, dfe': false,
-        });
-        setFormat(['pill', 'gummy', 'powder']);
-        setServingSize(3);
-        setShowFilterBar(false); // Hide the filter bar after resetting
-    };
+
 
     return (
         <Box sx={{
@@ -126,10 +147,14 @@ function HomePage() {
             margin: 'auto',
             marginTop: '5vh',
             marginBottom: '5vh',
+            fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif"
         }}>
             <Typography variant="h4" paddingBottom="20px">Prenatal Vitamins</Typography>
             <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained">
                 {showFilterBar ? 'Hide Filters' : 'Show Filters'}
+            </Button>
+            <Button onClick={handleResetFilters} variant="contained" color="error">
+                Reset
             </Button>
             {showFilterBar ? (
                 <>
@@ -143,6 +168,8 @@ function HomePage() {
                         servingSize={servingSize} // Passed servingSize to FilterBar
                         onServingSizeChange={(value) => setServingSize(value)}
                         onResetFilters={handleResetFilters} // Passed handleResetFilters to FilterBar
+                        onSaveFilters={handleSaveFilters}
+                        onCancelChanges={handleCancelChanges}
                     />
                 </>
             ) : null}
