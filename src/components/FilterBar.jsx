@@ -90,6 +90,7 @@ function FilterBar({
                     Cancel
                 </Button>
             </Box>
+
         </Box >
     );
 }

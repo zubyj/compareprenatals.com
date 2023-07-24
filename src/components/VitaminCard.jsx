@@ -29,7 +29,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                     <Grid item xs={6}>
                         <Box display="flex" flexDirection="column" height="100%">
                             <Box mb="auto">
-                                <Button variant="outlined" color="primary">{vitamin.general_info.brand_name}</Button>
+                                <Button variant="text" color="primary">{vitamin.general_info.brand_name}</Button>
                                 <Box sx={{
                                     display: 'flex',
                                     flexDirection: 'column',
@@ -56,15 +56,22 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                     <Grid item xs={6} >
                         <Box display="flex" flexDirection="column" height="100%" gap={1}>
                             <Box mb="auto" display="flex" flexDirection="column" gap={1}>
-                                <Button variant="outlined" color="secondary">{vitamin.general_info.product_name}</Button>
-                                <Button variant="text">Type: {vitamin.general_info.format}</Button>
-                                <Button variant="text">Serving Size: {vitamin.general_info.serving_size}</Button>
+                                <Button variant="text" color="secondary">{vitamin.general_info.product_name}</Button>
+                                <Button variant="outlined">Type: {vitamin.general_info.format}</Button>
+                                <Button variant="outlined">Serving Size: {vitamin.general_info.serving_size}</Button>
                             </Box>
                         </Box>
                     </Grid>
                 </Grid>
-                <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
-
+                <Box sx={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-evenly',
+                    paddingY: '10px',
+                }}>
+                    <Button variant="contained" color="success" href={vitamin.general_info.url} target='_blank'>Add to Cart</Button>
+                    <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
+                </Box>
                 <Collapse in={showVitamins}>
                     <Card sx={{ backgroundColor: 'white', border: '1px solid black', padding: '5px', marginTop: '10px' }}>
                         <Typography variant="h6" sx={{ textAlign: 'center', fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif" }}>Vitamins</Typography>
@@ -84,6 +91,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                         </Table>
                     </Card>
                 </Collapse>
+                <hr />
             </CardContent>
         </Card >
     );

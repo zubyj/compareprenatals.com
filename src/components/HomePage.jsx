@@ -150,15 +150,23 @@ function HomePage() {
             margin: 'auto',
             marginTop: '5vh',
             marginBottom: '5vh',
-            fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif"
+            fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif",
         }}>
             <Typography variant="h4" paddingBottom="20px">Prenatal Vitamins</Typography>
-            <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained">
-                {showFilterBar ? 'Hide Filters' : 'Show Filters'}
-            </Button>
-            <Button onClick={handleResetFilters} variant="contained" color="error">
-                Reset
-            </Button>
+            <Box sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-evenly',
+                paddingY: '20px',
+            }}>
+                <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained" >
+                    {showFilterBar ? 'Hide Filters' : 'Show Filters'}
+                </Button>
+                <Button onClick={handleResetFilters} variant="contained" color="error">
+                    Reset
+                </Button>
+
+            </Box>
             {showFilterBar ? (
                 <>
                     <FilterBar
