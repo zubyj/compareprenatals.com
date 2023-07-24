@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Typography, Autocomplete, TextField } from '@mui/material';
 
 import VitaminList from './VitaminList';
 import Pagination from './Pagination';
@@ -23,6 +23,9 @@ function HomePage() {
     const [showFilterBar, setShowFilterBar] = useState(false);
     const page = parseInt(searchParams.get('page')) || 1;
     const vitaminsPerPage = 5;
+
+    const [searchText, setSearchText] = useState(""); // Hold the current value of the search textfield
+
 
     const handleSaveFilters = () => {
         setSavedFilters({
@@ -52,6 +55,16 @@ function HomePage() {
         setServingSize(3);
         setFilteredVitamins(vitamins); // Reset the filteredVitamins to the original vitamins
         setShowFilterBar(false);
+    };
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            handleResetFilters();
+            setFilteredVitamins(vitamins.filter(vitamin =>
+                vitamin.general_info.brand_name.toLowerCase().includes(searchText.toLowerCase()) ||
+                vitamin.general_info.product_name.toLowerCase().includes(searchText.toLowerCase())
+            ));
+        }
     };
 
     useEffect(() => {
@@ -164,6 +177,28 @@ function HomePage() {
                     />
                 </>
             ) : null}
+            <Autocomplete
+                id="vitamin-search"
+                options={vitamins}
+                getOptionLabel={(option) => option.general_info.brand_name + ' ' + option.general_info.product_name}
+                style={{ width: '300px', textAlign: 'center', margin: 'auto', marginTop: '20px' }}
+                renderInput={(params) => <TextField {...params} label="Vitamin Search" variant="outlined"
+                    onKeyDown={handleKeyDown}
+                    onChange={(event) => setSearchText(event.target.value)} // Update searchText when the textfield value changes
+                />}
+                onChange={(event, newValue) => {
+                    // newValue is the selected vitamin
+                    if (newValue) {
+                        // clear any existing filters
+                        handleResetFilters();
+                        // filter vitamins by the selected vitamin's brand_name and product_name
+                        setFilteredVitamins(vitamins.filter(vitamin =>
+                            vitamin.general_info.brand_name === newValue.general_info.brand_name &&
+                            vitamin.general_info.product_name === newValue.general_info.product_name
+                        ));
+                    }
+                }}
+            />
             <VitaminList vitamins={displayedVitamins} vitaminSwitches={vitaminSwitches} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
         </Box>
