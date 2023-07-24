@@ -69,11 +69,11 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                     justifyContent: 'space-evenly',
                     paddingY: '10px',
                 }}>
-                    <Button variant="contained" color="success" href={vitamin.general_info.url} target='_blank'>Add to Cart</Button>
+                    <Button variant="contained" color="success" href={vitamin.general_info.url} target='_blank'>Buy for ${vitamin.general_info.price}</Button>
                     <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
                 </Box>
                 <Collapse in={showVitamins}>
-                    <Card sx={{ backgroundColor: 'white', border: '1px solid black', padding: '5px', marginTop: '10px' }}>
+                    <Card sx={{ backgroundColor: 'white', border: '1px solid black', marginTop: '10px' }}>
                         <Typography variant="h6" sx={{ textAlign: 'center', fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif" }}>Vitamins</Typography>
                         <Table>
                             <TableBody>
