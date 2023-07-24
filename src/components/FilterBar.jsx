@@ -81,6 +81,7 @@ function FilterBar({
                 flexDirection: 'row',
                 justifyContent: 'space-evenly',
                 paddingY: '20px',
+                width: '100%',
             }}
             >
                 <Button onClick={onSaveFilters} variant="contained" color="success">
