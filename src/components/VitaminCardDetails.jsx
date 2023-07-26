@@ -23,10 +23,8 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
             onClose={handleClose}
             sx={{
                 'display': 'flex',
-                'flexDirection': 'column',
                 'justifyContent': 'center',
                 'alignItems': 'center',
-                'borderRadius': '5px',
                 'backgroundColor': 'rgba(0,0,0,0.5)',
             }}
         >
@@ -36,16 +34,16 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'flexDirection': 'column',
                     'alignItems': 'center',
                     'justifyContent': 'center',
-                    'gap': '40px',
+                    'gap': '30px',
                     'width': '80vw',
                     'minHeight': '60vh',
                 }} >
-                    <Typography variant="h3" color="green">{vitamin.general_info.brand_name}</Typography>
+                    <Typography variant="h4" color="green">{vitamin.general_info.brand_name}</Typography>
                     <Typography variant="h5" color="secondary">{vitamin.general_info.product_name}</Typography>
                     <Grid item xs={6}>
                         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
                             <Typography variant="subtitle2" color="white">{vitamin.general_info.product_name}</Typography>
-                            <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start' }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: 3 }}>
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                     <Card><Typography variant="subtitle1" padding={1}>{vitamin.general_info.score || '-'}/10</Typography></Card>
                                     <Typography variant="caption">Score</Typography>
