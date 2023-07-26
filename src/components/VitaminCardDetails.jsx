@@ -37,28 +37,26 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'gap': '30px',
                     'width': '80vw',
                     'minHeight': '60vh',
+                    'backgroundColor': 'lightblue',
                 }} >
                     <Typography variant="h4" color="green">{vitamin.general_info.brand_name}</Typography>
                     <Typography variant="h5" color="secondary">{vitamin.general_info.product_name}</Typography>
-                    <Grid item xs={6}>
-                        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
-                            <Typography variant="subtitle2" color="white">{vitamin.general_info.product_name}</Typography>
-                            <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: 3 }}>
-                                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                    <Card><Typography variant="subtitle1" padding={1}>{vitamin.general_info.score || '-'}/10</Typography></Card>
-                                    <Typography variant="caption">Score</Typography>
-                                </Box>
-                                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                    <Card><Typography variant="subtitle1" padding={1}>{vitamin.general_info.format}</Typography></Card>
-                                    <Typography variant="caption">Format</Typography>
-                                </Box>
-                                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                    <Card><Typography variant="subtitle1" padding={1}>{vitamin.general_info.serving_size}</Typography></Card>
-                                    <Typography variant="caption">Serving Size</Typography>
-                                </Box>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '30px' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'row', gap: '30px' }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+                                <Card><Typography variant="h5" padding={2}>{vitamin.general_info.score || '-'}/10</Typography></Card>
+                                <Typography variant="subtitle1">Nutrition Score</Typography>
+                            </Box>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <Card><Typography variant="h5" padding={2}>{vitamin.general_info.format}</Typography></Card>
+                                <Typography variant="subtitle1">Format</Typography>
+                            </Box>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <Card><Typography variant="h5" padding={2} minWidth={30} textAlign={'center'}>{vitamin.general_info.serving_size}</Typography></Card>
+                                <Typography variant="subtitle1" textAlign={'center'}>Serving Size</Typography>
                             </Box>
                         </Box>
-                    </Grid>
+                    </Box>
                     <Button variant="contained" color="secondary" href={vitamin.general_info.url} target='_blank'>Buy for ${vitamin.general_info.price}</Button>
                     <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
                     <Collapse in={showVitamins}>
