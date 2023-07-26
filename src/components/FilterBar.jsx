@@ -11,7 +11,9 @@ function FilterBar({
     onServingSizeChange,
     onSaveFilters,
     onCancelChanges,
+    handleResetFilters,
 }) {
+
     return (
         <Box sx={{
             display: 'flex',
@@ -39,7 +41,9 @@ function FilterBar({
                 justifyContent: 'center',
                 alignItems: 'center',
             }}>
+
                 <FormControl component="fieldset">
+                    <FormLabel component="legend">Prenatal Format Filters</FormLabel>
                     <FormGroup row >
                         <FormControlLabel
                             control={<Checkbox checked={format.includes('pill')} onChange={onFormatChange} name='pill' />}
@@ -56,10 +60,12 @@ function FilterBar({
                     </FormGroup>
                 </FormControl>
             </FormControl>
+            <FormLabel component="legend">Prenatal Nutrient Filters</FormLabel>
             <FormGroup sx={{
                 display: 'flex',
                 flexDirection: { xs: 'column', md: 'row' }
             }}>
+
                 <FormControlLabel
                     control={<Switch checked={switches.choline} onChange={onSwitchChange} name="choline" />}
                     label="Choline > 300mg"
