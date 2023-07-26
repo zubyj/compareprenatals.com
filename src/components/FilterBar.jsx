@@ -22,7 +22,7 @@ function FilterBar({
             textAlign: 'center',
             paddingY: '30px',
             marginY: '30px',
-            border: '1px solid black',
+            backgroundColor: '#f5f5f5',
             gap: '20px',
 
         }}>
