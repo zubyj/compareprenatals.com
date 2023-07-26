@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Box, Button, Typography, Autocomplete, TextField } from '@mui/material';
+import { Box, Button, Typography, Autocomplete, TextField, IconButton } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 import VitaminList from './VitaminList';
 import Pagination from './Pagination';
@@ -140,9 +142,6 @@ function HomePage() {
             setFormat(prevFormat => prevFormat.filter(f => f !== event.target.name));
         }
     };
-
-
-
     return (
         <Box sx={{
             justifyContent: 'center',
@@ -151,6 +150,7 @@ function HomePage() {
             margin: 'auto',
             marginTop: '5vh',
             marginBottom: '5vh',
+            'paddingTop': '20px',
             fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif",
         }}>
             <Box sx={{
@@ -159,9 +159,23 @@ function HomePage() {
                 justifyContent: 'center',
                 gap: '10px',
             }}>
-                <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained">
-                    {showFilterBar ? 'Hide Filters' : 'Filter'}
-                </Button>
+                <Box>
+                    <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained">
+                        {showFilterBar ? 'Hide Filters' : 'Show Filters'}
+                        <IconButton
+                            onClick={() => setShowFilterBar(!showFilterBar)}
+                            sx={{
+                                transform: showFilterBar ? 'rotate(180deg)' : 'rotate(0deg)',
+                                marginLeft: '10px',
+                                transition: 'transform 0.3s',
+                                color: 'white'
+                            }}
+                        >
+                            <ExpandMoreIcon />
+                        </IconButton>
+                    </Button>
+
+                </Box>
                 {showFilterBar ? (
                     <Button onClick={handleCancelChanges} variant="outlined" color="error">
                         ❌
