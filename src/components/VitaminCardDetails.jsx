@@ -46,7 +46,10 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         <Typography variant="subtitle2" color="white" >{vitamin.general_info.product_name}</Typography>
                         <Box display="flex" flexDirection="row" gap="20px">
                             <Card >
-                                <Typography variant="h5">{vitamin.general_info.score || '-'}/10</Typography>
+                                <Typography variant="h5">
+                                    {vitamin.general_info.score || '-'}/10
+                                </Typography>
+
                             </Card>
                             <Card>
                                 <Typography variant="h5" >{vitamin.general_info.format}</Typography>
