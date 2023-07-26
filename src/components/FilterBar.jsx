@@ -95,7 +95,7 @@ function FilterBar({
                 gap: '20px',
             }}
             >
-                <Button onClick={onSaveFilters} variant="contained" color="success">
+                <Button onClick={onSaveFilters} variant="contained">
                     Save
                 </Button>
                 <Button onClick={handleResetFilters} variant="contained" color="error">
