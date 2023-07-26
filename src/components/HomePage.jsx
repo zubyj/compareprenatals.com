@@ -160,7 +160,7 @@ function HomePage() {
                 paddingY: '20px',
             }}>
                 <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained" >
-                    {showFilterBar ? 'Hide Filters' : 'Show Filters'}
+                    {showFilterBar ? 'Hide Filters' : 'Filter'}
                 </Button>
                 <Button onClick={handleResetFilters} variant="contained" color="error">
                     Reset
@@ -207,6 +207,7 @@ function HomePage() {
                     }
                 }}
             />
+            <br />
             <VitaminList vitamins={displayedVitamins} vitaminSwitches={vitaminSwitches} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
         </Box>
