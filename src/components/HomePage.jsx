@@ -28,6 +28,7 @@ function HomePage() {
     const vitaminsPerPage = 10;
 
     const [searchText, setSearchText] = useState(""); // Hold the current value of the search textfield
+    const [showDescription, setShowDescription] = useState(false);  // New state variable
 
 
     const handleSaveFilters = () => {
@@ -150,9 +151,20 @@ function HomePage() {
             margin: 'auto',
             marginTop: '5vh',
             marginBottom: '5vh',
-            'paddingTop': '20px',
+            paddingTop: '40px',
             fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif",
         }}>
+            <Typography variant="h5" paddingBottom={2}>
+                Prenatal Vitamin Chart
+                <Button variant={showDescription ? 'outlined' : 'text'} sx={{ marginLeft: '10px' }} onClick={() => setShowDescription(!showDescription)}>
+                    ❓
+                </Button>
+            </Typography>
+            {showDescription && (  // Conditionally render the description
+                <Typography variant="body1" color={'primary'} paddingBottom={2}>
+                    Top 10 prenatal vitamin website are all pay to play and filled with incomplete vitamins. We made an objective list, for you to find the best one for you
+                </Typography>
+            )}
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'row',
@@ -182,25 +194,27 @@ function HomePage() {
                     </Button>
                 ) : null}
             </Box>
-            {showFilterBar ? (
-                <>
+            {
+                showFilterBar ? (
+                    <>
 
-                    <FilterBar
-                        switches={vitaminSwitches} // Passed switches to FilterBar
-                        onSwitchChange={handleSwitchChange} // Passed handleSwitchChange to FilterBar
-                        format={format} // Passed format to FilterBar
-                        onFormatChange={handleFormatChange} // Passed handleFormatChange to FilterBar
-                        servingSize={servingSize} // Passed servingSize to FilterBar
-                        onServingSizeChange={(value) => setServingSize(value)}
-                        handleResetFilters={handleResetFilters} // Passed handleResetFilters to FilterBar
-                        onSaveFilters={handleSaveFilters}
-                        onCancelChanges={handleCancelChanges}
-                        vitamins={vitamins}
-                        setFilteredVitamins={setFilteredVitamins} // Newly added
+                        <FilterBar
+                            switches={vitaminSwitches} // Passed switches to FilterBar
+                            onSwitchChange={handleSwitchChange} // Passed handleSwitchChange to FilterBar
+                            format={format} // Passed format to FilterBar
+                            onFormatChange={handleFormatChange} // Passed handleFormatChange to FilterBar
+                            servingSize={servingSize} // Passed servingSize to FilterBar
+                            onServingSizeChange={(value) => setServingSize(value)}
+                            handleResetFilters={handleResetFilters} // Passed handleResetFilters to FilterBar
+                            onSaveFilters={handleSaveFilters}
+                            onCancelChanges={handleCancelChanges}
+                            vitamins={vitamins}
+                            setFilteredVitamins={setFilteredVitamins} // Newly added
 
-                    />
-                </>
-            ) : null}
+                        />
+                    </>
+                ) : null
+            }
             <Autocomplete
                 id="vitamin-search"
                 options={vitamins}
@@ -227,7 +241,7 @@ function HomePage() {
             <VitaminList vitamins={displayedVitamins} vitaminSwitches={vitaminSwitches} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
             <FAQ id="faq" />
-        </Box>
+        </Box >
     );
 }
 
