@@ -91,11 +91,13 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
 
     return (
         <>
-            <Card >
+            <Card>
                 <Button onClick={handleOpen} variant="contained" color="success" sx={{
+
+                    'width': '95vw',
+                    'paddingY': '10px',
                     'marginY': '10px',
-                    'width': '400px',
-                    'height': 'auto',
+                    'minHeight': '200px',
                     'borderRadius': '20px',
                 }}>
                     <CardContent >
@@ -105,14 +107,13 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                                 'flexDirection': 'row',
                                 'justifyContent': 'center',
                                 'alignItems': 'center',
-                                'textAlign': 'center',
                             }}>
                                 <Box>
-                                    <Button variant="contained" color="primary">{vitamin.general_info.brand_name}</Button>
+                                    <Typography variant="h5" fontSize={"30px"} >{vitamin.general_info.brand_name}</Typography>
                                 </Box>
                                 <Box display="flex" flexDirection="column" gap={5}>
-                                    <Button variant="contained" color="secondary">{vitamin.general_info.product_name}</Button>
-                                    <ButtonGroup variant="contained" color="primary">
+                                    <Typography variant="contained" color="white" size="large">{vitamin.general_info.product_name}</Typography>
+                                    <ButtonGroup variant="contained">
                                         <Box mb="auto">
                                             <Button variant="contained" size="small">{vitamin.general_info.score}</Button>
                                             <Typography variant="contained">Score</Typography>
@@ -132,15 +133,8 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                     </CardContent >
                 </Button>
                 {VitaminCardDetails}
-            </Card>
+            </Card >
         </>
     )
 }
 export default VitaminCard;
-
-
-// return (
-
-// );
-// }
-
