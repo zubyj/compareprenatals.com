@@ -134,8 +134,10 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                         <TableRow key={index}>
                                             {vitaminChunk.map((vitaminInfo, subIndex) => (
                                                 <>
-                                                    <TableCell sx={{ border: 'none', fontFamily: "'Arial Black','Helvetica Bold',sans-serif", fontSize: '10pt' }}>{vitaminInfo.name}</TableCell>
-                                                    <TableCell sx={{ border: 'none', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '10pt' }}>{vitaminInfo.amount}</TableCell>
+                                                    <TableCell sx={{ border: 'none', fontFamily: "'Arial Black','Helvetica Bold',sans-serif", fontSize: '8pt' }}>
+                                                        {vitaminInfo.name} {Number(vitaminInfo.amount) === 0 ? '❌' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? '⚠️' : ''}
+                                                    </TableCell>
+                                                    <TableCell sx={{ border: 'none', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '8pt' }}>{vitaminInfo.amount}</TableCell>
                                                 </>
                                             ))}
                                         </TableRow>
