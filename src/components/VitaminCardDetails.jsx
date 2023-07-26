@@ -88,7 +88,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             </Box>
                         </Box>
                     </Box>
-                    <Button variant="contained" color="success" href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price}</Button>
+                    <Button variant="contained" color="success" href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from Amazon</Button>
 
 
 
@@ -124,7 +124,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
 
 
 
-                    <Button variant="outlined" color="secondary" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
+                    <Button variant="outlined" color="success" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
                     <Collapse in={showVitamins}>
                         <Card sx={{ backgroundColor: 'white', border: '1px solid black', marginTop: '10px' }}>
                             <Typography variant="h6" sx={{ textAlign: 'center', fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif" }}>Vitamins</Typography>
