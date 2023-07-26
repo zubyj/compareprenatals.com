@@ -93,11 +93,10 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
         <>
             <Card>
                 <Button onClick={handleOpen} variant="contained" color="success" sx={{
-
                     'width': '95vw',
                     'paddingY': '10px',
                     'marginY': '10px',
-                    'minHeight': '200px',
+                    'height': '200px',
                     'borderRadius': '20px',
                 }}>
                     <CardContent >
@@ -107,31 +106,23 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                                 'flexDirection': 'row',
                                 'justifyContent': 'center',
                                 'alignItems': 'center',
+                                'gap': '20px',
                             }}>
-                                <Box>
-                                    <Typography variant="h5" fontSize={"30px"} >{vitamin.general_info.brand_name}</Typography>
-                                </Box>
-                                <Box display="flex" flexDirection="column" gap={5}>
-                                    <Typography variant="contained" color="white" size="large">{vitamin.general_info.product_name}</Typography>
-                                    <ButtonGroup variant="contained">
-                                        <Box mb="auto">
-                                            <Button variant="contained" size="small">{vitamin.general_info.score}</Button>
-                                            <Typography variant="contained">Score</Typography>
+                                <Typography variant="h5" fontSize={"25px"} >{vitamin.general_info.brand_name}</Typography>
+                                <Box display="flex" flexDirection="column" gap={1}>
+                                    <Typography variant="subtitle2" color="white" >{vitamin.general_info.product_name}</Typography>
+                                    <Card>
+                                        <Box display="flex" flexDirection="row" gap={2}>
+                                            <Typography variant="subtitle2" >{vitamin.general_info.score || '-'}</Typography>
+                                            <Typography variant="subtitle2" >{vitamin.general_info.format}</Typography>
+                                            <Typography variant="subtitle2">{vitamin.general_info.serving_size}</Typography>
                                         </Box>
-                                        <Box mb="auto">
-                                            <Button size="small">{vitamin.general_info.format}</Button>
-                                            <Typography variant="contained">Format</Typography>
-                                        </Box>
-                                        <Box mb="auto" variant="contained">
-                                            <Button size="small">{vitamin.general_info.serving_size}</Button>
-                                            <Typography variant="contained" >Size</Typography>
-                                        </Box>
-                                    </ButtonGroup>
+                                    </Card>
                                 </Box>
                             </Box>
                         </Grid>
                     </CardContent >
-                </Button>
+                </Button >
                 {VitaminCardDetails}
             </Card >
         </>
