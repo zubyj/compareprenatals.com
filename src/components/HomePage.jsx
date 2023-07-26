@@ -22,7 +22,7 @@ function HomePage() {
 
     const [showFilterBar, setShowFilterBar] = useState(false);
     const page = parseInt(searchParams.get('page')) || 1;
-    const vitaminsPerPage = 5;
+    const vitaminsPerPage = 10;
 
     const [searchText, setSearchText] = useState(""); // Hold the current value of the search textfield
 
