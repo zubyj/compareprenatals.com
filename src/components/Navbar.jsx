@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <AppBar position="static">
+        <AppBar position="fixed" color="secondary">
             <Toolbar>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    Prenatal Vitamins
+                    Compare Prenatals
                 </Typography>
                 <Button color="inherit" component={Link} to="/#faq">FAQ</Button>
                 <Button color="inherit" href="mailto:usersemail">Contact</Button> {/*Replace usersemail with actual email*/}
             </Toolbar>
-        </AppBar>
+        </AppBar >
     );
 };
 
