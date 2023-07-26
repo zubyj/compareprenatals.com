@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-import { Card, CardContent, Typography, Button, Collapse, Grid, Box, Table, TableRow, TableCell, TableBody } from '@mui/material';
+import { Card, CardContent, Typography, Button, Collapse, Grid, Box, Table, TableRow, TableCell, TableBody, ButtonGroup, Modal } from '@mui/material';
 
 function VitaminCard({ vitamin, vitaminSwitches }) {
     const [showVitamins, setShowVitamins] = useState(false);
+    const [open, setOpen] = useState(false);
 
     const handleToggleVitamins = () => {
         setShowVitamins(!showVitamins);
     };
+
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     // Function to divide an array into chunks of 3 vitamins
     const chunk = (arr, len) => {
@@ -22,80 +26,121 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
     // Divide vitamin array into chunks of 2
     const vitaminChunks = chunk(vitamin.vitamins, 2);
 
-    return (
-        <Card >
-            <CardContent>
-                <Grid container paddingY={3}>
-                    <Grid item xs={6}>
-                        <Box display="flex" flexDirection="column" height="100%">
-                            <Box mb="auto">
-                                <Button variant="text" color="primary">{vitamin.general_info.brand_name}</Button>
-                                <Box sx={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    justifyContent: 'center',
-
-                                }}>
-                                    {Object.keys(vitaminSwitches).map(key => {
-                                        if (vitaminSwitches[key]) {
-                                            const vitaminInfo = vitamin.vitamins.find(v => v.name.toLowerCase() === key);
-                                            if (vitaminInfo) {
-                                                return (
-                                                    <Button key={key} variant="text">
-                                                        {key.charAt(0).toUpperCase() + key.slice(1)}: {vitaminInfo.amount}
-                                                    </Button>
-                                                );
-                                            }
-                                        }
-                                        return null;
-                                    })}
+    const VitaminCardDetails = (
+        <Modal
+            open={open}
+            onClose={handleClose}
+            sx={{
+                'paddingY': 3,
+                'container': true,
+                'display': 'flex',
+                'flexDirection': 'column',
+                'justifyContent': 'center',
+                'alignItems': 'center',
+                'borderRadius': '5px',
+            }}
+        >
+            <Card  >
+                <Button variant="contained" color="primary">
+                    <CardContent >
+                        <Grid
+                        >
+                            <Box display="flex" flexDirection="row">
+                                <Box mb="auto">
+                                    <Button variant="contained" color="primary">{vitamin.general_info.brand_name}</Button>
+                                    <Button variant="contained" color="secondary">{vitamin.general_info.product_name}</Button>
                                 </Box>
                             </Box>
-                        </Box>
-                    </Grid>
-                    <Grid item xs={6} >
-                        <Box display="flex" flexDirection="column" height="100%" gap={1}>
-                            <Box mb="auto" display="flex" flexDirection="column" gap={1}>
-                                <Button variant="text" color="secondary">{vitamin.general_info.product_name}</Button>
-                                <Button variant="outlined">Score: {vitamin.general_info.score}</Button>
-                                <Button variant="outlined">Type: {vitamin.general_info.format}</Button>
-                                <Button variant="outlined">Serving Size: {vitamin.general_info.serving_size}</Button>
-                            </Box>
-                        </Box>
-                    </Grid>
-                </Grid>
-                <Box sx={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-evenly',
-                    paddingY: '10px',
-                }}>
-                    <Button variant="contained" color="success" href={vitamin.general_info.url} target='_blank'>Buy for ${vitamin.general_info.price}</Button>
-                    <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
-                </Box>
-                <Collapse in={showVitamins}>
-                    <Card sx={{ backgroundColor: 'white', border: '1px solid black', marginTop: '10px' }}>
-                        <Typography variant="h6" sx={{ textAlign: 'center', fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif" }}>Vitamins</Typography>
-                        <Table>
-                            <TableBody>
-                                {vitaminChunks.map((vitaminChunk, index) => (
-                                    <TableRow key={index}>
-                                        {vitaminChunk.map((vitaminInfo, subIndex) => (
-                                            <>
-                                                <TableCell sx={{ border: 'none', fontFamily: "'Arial Black','Helvetica Bold',sans-serif", fontSize: '10pt' }}>{vitaminInfo.name}</TableCell>
-                                                <TableCell sx={{ border: 'none', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '10pt' }}>{vitaminInfo.amount}</TableCell>
-                                            </>
-                                        ))}
-                                    </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
-                    </Card>
-                </Collapse>
-                <hr />
-            </CardContent>
-        </Card >
-    );
-}
+                        </Grid>
 
+                        <Box sx={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            justifyContent: 'space-evenly',
+                            paddingY: '10px',
+                        }}>
+
+                            <Button variant="contained" color="success" href={vitamin.general_info.url} target='_blank'>Buy for ${vitamin.general_info.price}</Button>
+                            <Button variant="contained" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
+                        </Box>
+                        <Collapse in={showVitamins}>
+                            <Card sx={{ backgroundColor: 'white', border: '1px solid black', marginTop: '10px' }}>
+                                <Typography variant="h6" sx={{ textAlign: 'center', fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif" }}>Vitamins</Typography>
+                                <Table>
+                                    <TableBody>
+                                        {vitaminChunks.map((vitaminChunk, index) => (
+                                            <TableRow key={index}>
+                                                {vitaminChunk.map((vitaminInfo, subIndex) => (
+                                                    <>
+                                                        <TableCell sx={{ border: 'none', fontFamily: "'Arial Black','Helvetica Bold',sans-serif", fontSize: '10pt' }}>{vitaminInfo.name}</TableCell>
+                                                        <TableCell sx={{ border: 'none', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '10pt' }}>{vitaminInfo.amount}</TableCell>
+                                                    </>
+                                                ))}
+                                            </TableRow>
+                                        ))}
+                                    </TableBody>
+                                </Table>
+                            </Card>
+                        </Collapse>
+                        <hr />
+                    </CardContent>
+                </Button>
+            </Card >
+        </Modal>
+    );
+
+    return (
+        <>
+            <Card >
+                <Button onClick={handleOpen} variant="contained" color="success" sx={{
+                    'marginY': '10px',
+                    'width': '400px',
+                    'height': 'auto',
+                    'borderRadius': '20px',
+                }}>
+                    <CardContent >
+                        <Grid>
+                            <Box sx={{
+                                'display': 'flex',
+                                'flexDirection': 'row',
+                                'justifyContent': 'center',
+                                'alignItems': 'center',
+                                'textAlign': 'center',
+                            }}>
+                                <Box>
+                                    <Button variant="contained" color="primary">{vitamin.general_info.brand_name}</Button>
+                                </Box>
+                                <Box display="flex" flexDirection="column" gap={5}>
+                                    <Button variant="contained" color="secondary">{vitamin.general_info.product_name}</Button>
+                                    <ButtonGroup variant="contained" color="primary">
+                                        <Box mb="auto">
+                                            <Button variant="contained" size="small">{vitamin.general_info.score}</Button>
+                                            <Typography variant="contained">Score</Typography>
+                                        </Box>
+                                        <Box mb="auto">
+                                            <Button size="small">{vitamin.general_info.format}</Button>
+                                            <Typography variant="contained">Format</Typography>
+                                        </Box>
+                                        <Box mb="auto" variant="contained">
+                                            <Button size="small">{vitamin.general_info.serving_size}</Button>
+                                            <Typography variant="contained" >Size</Typography>
+                                        </Box>
+                                    </ButtonGroup>
+                                </Box>
+                            </Box>
+                        </Grid>
+                    </CardContent >
+                </Button>
+                {VitaminCardDetails}
+            </Card>
+        </>
+    )
+}
 export default VitaminCard;
+
+
+// return (
+
+// );
+// }
+
