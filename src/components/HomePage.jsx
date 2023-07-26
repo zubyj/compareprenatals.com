@@ -162,7 +162,12 @@ function HomePage() {
             </Typography>
             {showDescription && (  // Conditionally render the description
                 <Typography variant="body1" color={'primary'} paddingBottom={2}>
-                    Top 10 prenatal vitamin website are all pay to play and filled with incomplete vitamins. We made an objective list, for you to find the best one for you
+                    Top 10 prenatal vitamin website are all pay to play and filled with incomplete vitamins.
+                    We made an objective list, for you to find the best one for you.
+                    <hr />
+                    <Typography color="secondary">
+                        Regardless of the score, any prenatal vitamin will always be better than no prenatal vitamin
+                    </Typography>
                 </Typography>
             )}
             <Box sx={{
@@ -178,7 +183,6 @@ function HomePage() {
                             onClick={() => setShowFilterBar(!showFilterBar)}
                             sx={{
                                 transform: showFilterBar ? 'rotate(180deg)' : 'rotate(0deg)',
-                                marginLeft: '10px',
                                 transition: 'transform 0.3s',
                                 color: 'white'
                             }}
