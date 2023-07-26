@@ -5,6 +5,7 @@ import { Box, Button, Typography, Autocomplete, TextField } from '@mui/material'
 import VitaminList from './VitaminList';
 import Pagination from './Pagination';
 import FilterBar from './FilterBar';
+import FAQ from './FAQ';
 
 function HomePage() {
     const [vitamins, setVitamins] = useState([]);
@@ -152,23 +153,24 @@ function HomePage() {
             marginBottom: '5vh',
             fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif",
         }}>
-            <Typography variant="h4" paddingBottom="20px">Prenatal Vitamins</Typography>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'row',
-                justifyContent: 'space-evenly',
-                paddingY: '20px',
+                justifyContent: 'center',
+                gap: '10px',
             }}>
-                <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained" >
+                <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained">
                     {showFilterBar ? 'Hide Filters' : 'Filter'}
                 </Button>
-                <Button onClick={handleResetFilters} variant="contained" color="error">
-                    Reset
-                </Button>
-
+                {showFilterBar ? (
+                    <Button onClick={handleCancelChanges} variant="outlined" color="error">
+                        ❌
+                    </Button>
+                ) : null}
             </Box>
             {showFilterBar ? (
                 <>
+
                     <FilterBar
                         switches={vitaminSwitches} // Passed switches to FilterBar
                         onSwitchChange={handleSwitchChange} // Passed handleSwitchChange to FilterBar
@@ -210,6 +212,7 @@ function HomePage() {
             <br />
             <VitaminList vitamins={displayedVitamins} vitaminSwitches={vitaminSwitches} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
+            <FAQ id="faq" />
         </Box>
     );
 }

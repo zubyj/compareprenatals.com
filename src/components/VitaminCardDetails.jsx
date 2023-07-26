@@ -121,9 +121,6 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         </DialogContent>
                     </Dialog>
 
-
-
-
                     <Button variant="outlined" color="success" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
                     <Collapse in={showVitamins}>
                         <Card sx={{ backgroundColor: 'white', border: '1px solid black', marginTop: '10px' }}>

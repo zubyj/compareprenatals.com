@@ -10,7 +10,6 @@ function FilterBar({
     servingSize,
     onServingSizeChange,
     onSaveFilters,
-    onCancelChanges,
     handleResetFilters,
 }) {
 
@@ -44,10 +43,13 @@ function FilterBar({
 
                 <FormControl component="fieldset">
                     <FormLabel component="legend">Prenatal Format Filters</FormLabel>
-                    <FormGroup row >
+                    <FormGroup row>
                         <FormControlLabel
                             control={<Checkbox checked={format.includes('pill')} onChange={onFormatChange} name='pill' />}
                             label="Pill"
+                            sx={{
+                                borderRadius: '15px',
+                            }}
                         />
                         <FormControlLabel
                             control={<Checkbox checked={format.includes('gummy')} onChange={onFormatChange} name='gummy' />}
@@ -63,12 +65,13 @@ function FilterBar({
             <FormLabel component="legend">Prenatal Nutrient Filters</FormLabel>
             <FormGroup sx={{
                 display: 'flex',
-                flexDirection: { xs: 'column', md: 'row' }
+                flexDirection: { xs: 'column', md: 'row' },
             }}>
 
                 <FormControlLabel
                     control={<Switch checked={switches.choline} onChange={onSwitchChange} name="choline" />}
                     label="Choline > 300mg"
+                    backgroundColor="red"
                 />
                 <FormControlLabel
                     control={<Switch checked={switches['omega-3']} onChange={onSwitchChange} name='omega-3' />}
@@ -86,16 +89,17 @@ function FilterBar({
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'row',
-                justifyContent: 'space-evenly',
+                justifyContent: 'center',
                 paddingY: '20px',
                 width: '100%',
+                gap: '20px',
             }}
             >
                 <Button onClick={onSaveFilters} variant="contained" color="success">
                     Save
                 </Button>
-                <Button onClick={onCancelChanges} variant="contained" color="error">
-                    Cancel
+                <Button onClick={handleResetFilters} variant="contained" color="error">
+                    Reset
                 </Button>
             </Box>
 
