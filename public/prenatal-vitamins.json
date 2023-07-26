@@ -7,7 +7,8 @@
             "format": "Pill",
             "price": "21",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -135,7 +136,8 @@
             "format": "Pill",
             "price": "27",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -263,7 +265,8 @@
             "format": "Gummy",
             "price": "22",
             "serving_size": "2",
-            "added_sugars": "2"
+            "added_sugars": "2",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -519,7 +522,8 @@
             "format": "Gummy",
             "price": "15",
             "serving_size": "2",
-            "added_sugars": "4"
+            "added_sugars": "4",
+            "score": "3"
         },
         "vitamins": [
             {
@@ -647,7 +651,8 @@
             "format": "Gummy",
             "price": "16",
             "serving_size": "2",
-            "added_sugars": "3"
+            "added_sugars": "3",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -775,7 +780,8 @@
             "format": "Gummy",
             "price": "14",
             "serving_size": "2",
-            "added_sugars": "4"
+            "added_sugars": "4",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -1159,7 +1165,8 @@
             "format": "Pill",
             "price": "14",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -1287,7 +1294,8 @@
             "format": "Pill",
             "price": "16",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -1415,7 +1423,8 @@
             "format": "Pill",
             "price": "5",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -1543,7 +1552,8 @@
             "format": "Gummy",
             "price": "9",
             "serving_size": "2",
-            "added_sugars": "5"
+            "added_sugars": "5",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -1671,7 +1681,8 @@
             "format": "Pill",
             "price": "22",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -1799,7 +1810,8 @@
             "format": "Pill",
             "price": "23",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -1927,7 +1939,8 @@
             "format": "Pill",
             "price": "22",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -2055,7 +2068,8 @@
             "format": "Pill",
             "price": "34",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "9"
         },
         "vitamins": [
             {
@@ -2183,7 +2197,8 @@
             "format": "Pill",
             "price": "20",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -2311,7 +2326,8 @@
             "format": "Pill",
             "price": "2",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -2439,7 +2455,8 @@
             "format": "Gummy",
             "price": "8",
             "serving_size": "2",
-            "added_sugars": "3"
+            "added_sugars": "3",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -2567,7 +2584,8 @@
             "format": "Pill",
             "price": "8",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -2695,7 +2713,8 @@
             "format": "Gummy",
             "price": "7",
             "serving_size": "2",
-            "added_sugars": "3"
+            "added_sugars": "3",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -2823,7 +2842,8 @@
             "format": "Pill",
             "price": "9",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -2951,7 +2971,8 @@
             "format": "Pill",
             "price": "18",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -3079,7 +3100,8 @@
             "format": "Pill",
             "price": "4",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -3207,7 +3229,8 @@
             "format": "Pill",
             "price": "13",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -3335,7 +3358,8 @@
             "format": "Pill",
             "price": "16",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -3463,7 +3487,8 @@
             "format": "Pill",
             "price": "11",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -3591,7 +3616,8 @@
             "format": "Pill",
             "price": "20",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -3719,7 +3745,8 @@
             "format": "Pill",
             "price": "2",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -3847,7 +3874,8 @@
             "format": "Pill",
             "price": "15",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -3975,7 +4003,8 @@
             "format": "Gummy",
             "price": "9",
             "serving_size": "2",
-            "added_sugars": "4"
+            "added_sugars": "4",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -4231,7 +4260,8 @@
             "format": "Pill",
             "price": "3",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -4359,7 +4389,8 @@
             "format": "Gummy",
             "price": "10",
             "serving_size": "2",
-            "added_sugars": "3"
+            "added_sugars": "3",
+            "score": "3"
         },
         "vitamins": [
             {
@@ -4487,7 +4518,8 @@
             "format": "Pill",
             "price": "3",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -4615,7 +4647,8 @@
             "format": "Gummy",
             "price": "9",
             "serving_size": "2",
-            "added_sugars": "3"
+            "added_sugars": "3",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -4743,7 +4776,8 @@
             "format": "Pill",
             "price": "2",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -4871,7 +4905,8 @@
             "format": "Pill",
             "price": "10",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -4999,7 +5034,8 @@
             "format": "Pill",
             "price": "9",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -5127,7 +5163,8 @@
             "format": "Gummy",
             "price": "6",
             "serving_size": "2",
-            "added_sugars": "3"
+            "added_sugars": "3",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -5255,7 +5292,8 @@
             "format": "Pill",
             "price": "7",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -5383,7 +5421,8 @@
             "format": "Gummy",
             "price": "17",
             "serving_size": "3",
-            "added_sugars": "5"
+            "added_sugars": "5",
+            "score": "3"
         },
         "vitamins": [
             {
@@ -5511,7 +5550,8 @@
             "format": "Pill",
             "price": "3",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -5639,7 +5679,8 @@
             "format": "Pill",
             "price": "29",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -5767,7 +5808,8 @@
             "format": "Gummy",
             "price": "26",
             "serving_size": "4",
-            "added_sugars": "4"
+            "added_sugars": "4",
+            "score": "3"
         },
         "vitamins": [
             {
@@ -5895,7 +5937,8 @@
             "format": "Pill",
             "price": "35",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "4"
         },
         "vitamins": [
             {
@@ -6023,7 +6066,8 @@
             "format": "Pill",
             "price": "27",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -6151,7 +6195,8 @@
             "format": "Pill",
             "price": "29",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -6279,7 +6324,8 @@
             "format": "Pill",
             "price": "60/50",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -6407,7 +6453,8 @@
             "format": "Pill",
             "price": "43",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -6535,7 +6582,8 @@
             "format": "Pill",
             "price": "50",
             "serving_size": "8",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -6663,7 +6711,8 @@
             "format": "Pill",
             "price": "35",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -6791,7 +6840,8 @@
             "format": "Pill",
             "price": "24",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -6919,7 +6969,8 @@
             "format": "Pill",
             "price": "55",
             "serving_size": "6",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -7047,7 +7098,8 @@
             "format": "Pill",
             "price": "35",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -7175,7 +7227,8 @@
             "format": "",
             "price": "45",
             "serving_size": "",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "4"
         },
         "vitamins": [
             {
@@ -7303,7 +7356,8 @@
             "format": "Pill",
             "price": "87",
             "serving_size": "7",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "10"
         },
         "vitamins": [
             {
@@ -7431,7 +7485,8 @@
             "format": "Pill",
             "price": "58",
             "serving_size": "5",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -7559,7 +7614,8 @@
             "format": "Pill",
             "price": "58",
             "serving_size": "5",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -7687,7 +7743,8 @@
             "format": "",
             "price": "42",
             "serving_size": "",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -7815,7 +7872,8 @@
             "format": "Pill",
             "price": "44",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -7943,7 +8001,8 @@
             "format": "Pill",
             "price": "40",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "4"
         },
         "vitamins": [
             {
@@ -8071,7 +8130,8 @@
             "format": "Pill",
             "price": "60",
             "serving_size": "8",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -8199,7 +8259,8 @@
             "format": "",
             "price": "70",
             "serving_size": "",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -8327,7 +8388,8 @@
             "format": "Pill",
             "price": "30",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -8455,7 +8517,8 @@
             "format": "Pill",
             "price": "60",
             "serving_size": "5",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -8583,7 +8646,8 @@
             "format": "Gummy",
             "price": "35",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "4"
         },
         "vitamins": [
             {
@@ -8711,7 +8775,8 @@
             "format": "Pill",
             "price": "50",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -8839,7 +8904,8 @@
             "format": "Pill",
             "price": "21",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "9"
         },
         "vitamins": [
             {
@@ -8967,7 +9033,8 @@
             "format": "Pill",
             "price": "15",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -9095,7 +9162,8 @@
             "format": "Pill",
             "price": "4",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -9223,7 +9291,8 @@
             "format": "Pill",
             "price": "43",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -9351,7 +9420,8 @@
             "format": "Pill",
             "price": "89",
             "serving_size": "6",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -9479,7 +9549,8 @@
             "format": "Pill",
             "price": "19",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -9607,7 +9678,8 @@
             "format": "Pill",
             "price": "65",
             "serving_size": "4",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -9735,7 +9807,8 @@
             "format": "Pill",
             "price": "27",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -9863,7 +9936,8 @@
             "format": "Pill",
             "price": "40",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -9991,7 +10065,8 @@
             "format": "Pill",
             "price": "24",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -10119,7 +10194,8 @@
             "format": "Pill",
             "price": "60",
             "serving_size": "8",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -10247,7 +10323,8 @@
             "format": "Pill",
             "price": "20",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -10375,7 +10452,8 @@
             "format": "Pill",
             "price": "65",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -10503,7 +10581,8 @@
             "format": "Pill",
             "price": "33",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -10631,7 +10710,8 @@
             "format": "Pill",
             "price": "55",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -10759,7 +10839,8 @@
             "format": "Pill",
             "price": "Prescrip.",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -10887,7 +10968,8 @@
             "format": "Pill",
             "price": "13",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -11015,7 +11097,8 @@
             "format": "Pill",
             "price": "20",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -11143,7 +11226,8 @@
             "format": "Pill",
             "price": "30",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "9"
         },
         "vitamins": [
             {
@@ -11271,7 +11355,8 @@
             "format": "Pill",
             "price": "25",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -11399,7 +11484,8 @@
             "format": "Pill",
             "price": "9",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -11527,7 +11613,8 @@
             "format": "Gummy",
             "price": "30",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "2"
         },
         "vitamins": [
             {
@@ -11655,7 +11742,8 @@
             "format": "Gummy",
             "price": "21",
             "serving_size": "2",
-            "added_sugars": "5"
+            "added_sugars": "5",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -11783,7 +11871,8 @@
             "format": "Pill",
             "price": "45",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -11911,7 +12000,8 @@
             "format": "Pill",
             "price": "7",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -12039,7 +12129,8 @@
             "format": "Pill",
             "price": "120",
             "serving_size": "8",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "10"
         },
         "vitamins": [
             {
@@ -12167,7 +12258,8 @@
             "format": "",
             "price": "17",
             "serving_size": "2",
-            "added_sugars": "2"
+            "added_sugars": "2",
+            "score": "6"
         },
         "vitamins": [
             {
@@ -12295,7 +12387,8 @@
             "format": "Gummy",
             "price": "6",
             "serving_size": "2",
-            "added_sugars": "3"
+            "added_sugars": "3",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -12423,7 +12516,8 @@
             "format": "Pill",
             "price": "14",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -12551,7 +12645,8 @@
             "format": "Pill",
             "price": "24",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -12679,7 +12774,8 @@
             "format": "Pill",
             "price": "21",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "6"
         },
         "vitamins": [
             {
@@ -12807,7 +12903,8 @@
             "format": "Gummy",
             "price": "12",
             "serving_size": "2",
-            "added_sugars": "6"
+            "added_sugars": "6",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -12935,7 +13032,8 @@
             "format": "Pill",
             "price": "49",
             "serving_size": "4",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -13063,7 +13161,8 @@
             "format": "Pill",
             "price": "38",
             "serving_size": "6",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "1"
         },
         "vitamins": [
             {
@@ -13191,7 +13290,8 @@
             "format": "Pill",
             "price": "16",
             "serving_size": "3",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -13319,7 +13419,8 @@
             "format": "Gummy",
             "price": "8",
             "serving_size": "2",
-            "added_sugars": "3"
+            "added_sugars": "3",
+            "score": "4"
         },
         "vitamins": [
             {
@@ -13447,7 +13548,8 @@
             "format": "Pill",
             "price": "35",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "5"
         },
         "vitamins": [
             {
@@ -13575,7 +13677,8 @@
             "format": "Pill",
             "price": "34",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -13703,7 +13806,8 @@
             "format": "Pill",
             "price": "26",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "7"
         },
         "vitamins": [
             {
@@ -13831,7 +13935,8 @@
             "format": "Pill",
             "price": "14",
             "serving_size": "2",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "8"
         },
         "vitamins": [
             {
@@ -13959,7 +14064,8 @@
             "format": "Pill",
             "price": "10",
             "serving_size": "1",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": "9"
         },
         "vitamins": [
             {
@@ -14087,7 +14193,8 @@
             "format": "",
             "price": "",
             "serving_size": "",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": ""
         },
         "vitamins": [
             {
@@ -14215,7 +14322,8 @@
             "format": "",
             "price": "",
             "serving_size": "",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": ""
         },
         "vitamins": [
             {
@@ -14343,7 +14451,8 @@
             "format": "",
             "price": "",
             "serving_size": "FDA DV",
-            "added_sugars": null
+            "added_sugars": null,
+            "score": ""
         },
         "vitamins": [
             {

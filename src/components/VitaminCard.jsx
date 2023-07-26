@@ -57,6 +57,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                         <Box display="flex" flexDirection="column" height="100%" gap={1}>
                             <Box mb="auto" display="flex" flexDirection="column" gap={1}>
                                 <Button variant="text" color="secondary">{vitamin.general_info.product_name}</Button>
+                                <Button variant="outlined">Score: {vitamin.general_info.score}</Button>
                                 <Button variant="outlined">Type: {vitamin.general_info.format}</Button>
                                 <Button variant="outlined">Serving Size: {vitamin.general_info.serving_size}</Button>
                             </Box>
