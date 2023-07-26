@@ -189,8 +189,8 @@ function HomePage() {
                 id="vitamin-search"
                 options={vitamins}
                 getOptionLabel={(option) => option.general_info.brand_name + ' ' + option.general_info.product_name}
-                style={{ width: '300px', textAlign: 'center', margin: 'auto', marginTop: '20px' }}
-                renderInput={(params) => <TextField {...params} label="Vitamin Search" variant="outlined"
+                style={{ width: '350px', textAlign: 'center', margin: 'auto', marginTop: '20px' }}
+                renderInput={(params) => <TextField {...params} label="Search for prenatals" variant="outlined"
                     onKeyDown={handleKeyDown}
                     onChange={(event) => setSearchText(event.target.value)} // Update searchText when the textfield value changes
                 />}

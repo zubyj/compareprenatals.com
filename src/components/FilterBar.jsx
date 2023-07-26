@@ -22,6 +22,7 @@ function FilterBar({
             paddingY: '30px',
             marginY: '30px',
             border: '1px solid black',
+            gap: '20px',
 
         }}>
             <FormControl component="fieldset">
