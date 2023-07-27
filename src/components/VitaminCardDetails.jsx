@@ -21,7 +21,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
             if (!fdaValue || Number(vitaminInfo.amount) === 0) {
                 missing.push(vitaminInfo.name);
             } else if (Number(vitaminInfo.amount) < fdaValue) {
-                low.push({ name: vitaminInfo.name, amount: vitaminInfo.amount });
+                low.push({ name: vitaminInfo.name, amount: vitaminInfo.amount, recommended: fdaValue });
             }
         });
 
@@ -78,7 +78,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'alignItems': 'center',
                     'justifyContent': 'center',
                     'gap': '25px',
-                    'width': '80vw',
+                    'width': '75vw',
                     'backgroundColor': '#a024b4',
                     'minHeight': '70vh',
 
@@ -141,7 +141,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 <TableBody>
                                     {missingNutrients.map((nutrient, index) => (
                                         <TableRow key={index}>
-                                            <TableCell sx={{ border: 'none', fontFamily: "'Arial Black','Helvetica Bold',sans-serif", fontSize: '8pt', padding: '5px' }}>
+                                            <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
                                                 {nutrient}
                                             </TableCell>
                                         </TableRow>
@@ -156,8 +156,8 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 <TableBody>
                                     {lowNutrients.map((nutrient, index) => (
                                         <TableRow key={index}>
-                                            <TableCell sx={{ border: 'none', fontFamily: "'Arial Black','Helvetica Bold',sans-serif", fontSize: '8pt', padding: '5px' }}>
-                                                {nutrient.name}: {nutrient.amount}
+                                            <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
+                                                Only {nutrient.amount} mg/mcg of {nutrient.name}. {nutrient.recommended} mg/mcg recommended by FDA.
                                             </TableCell>
                                         </TableRow>
                                     ))}
