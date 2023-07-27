@@ -14,6 +14,19 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
+    const formatToEmoji = (format) => {
+        switch (format) {
+            case 'Gummy':
+                return '🍬';
+            case 'Pill':
+                return '💊';
+            case 'Liquid':
+                return '🥤';
+            default:
+                return '';
+        }
+    };
+
     return (
         <>
             <Button onClick={handleOpen} variant="contained" color="primary" sx={{ 'width': '95vw', 'paddingY': '10px', 'marginY': '10px', 'height': '150px', 'borderRadius': '20px' }}>
@@ -44,7 +57,11 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                                     <Typography variant="caption">Score</Typography>
                                 </Box>
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
-                                    <Card><Typography variant="subtitle2" padding={.5}>{vitamin.general_info.format}</Typography></Card>
+                                    <Card>
+                                        <Typography variant="subtitle2" padding={.5}>
+                                            {vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}
+                                        </Typography>
+                                    </Card>
                                     <Typography variant="caption">Format</Typography>
                                 </Box>
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
