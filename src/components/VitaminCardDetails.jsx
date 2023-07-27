@@ -69,26 +69,25 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'backgroundColor': 'lightblue',
                 }} >
                     <Box sx={{
-                        'backgroundColor': 'lightcyan',
+                        'backgroundColor': '#fff',
                         'padding': '30px',
                         'borderRadius': '10px',
                         'width': '350px',
                         'textAlign': 'center'
 
                     }}>
-                        <Typography variant="h3" fontSize={30} color="primary">{vitamin.general_info.brand_name}</Typography>
+                        <Typography variant="h1" fontSize={30}>{vitamin.general_info.brand_name}</Typography>
                         <hr />
-                        <Typography variant="h6" color="secondary" fontWeight={700}>{vitamin.general_info.product_name}</Typography>
+                        <Typography variant="h2" fontSize={20} fontWeight={700}>{vitamin.general_info.product_name}</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#222', padding: '15px', borderRadius: '10px', color: 'white', width: '375px' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', color: '#222', padding: '15px', borderRadius: '10px', width: '375px' }}>
                             <MedicationIcon sx={{ fontSize: 60 }} />
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                                 <Card>
                                     <Typography
                                         variant="h6"
                                         padding={1}
-                                        fontWeight={700}
                                         style={{
                                             color: vitamin.general_info.score <= 3 ? 'red' :
                                                 vitamin.general_info.score <= 8 ? 'orange' :
@@ -97,25 +96,29 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                         }}
                                     >
                                         {vitamin.general_info.score} /10</Typography></Card>
-                                <Typography variant="subtitle2">Nutrition Score</Typography>
+                                <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Nutrition Score</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <Card><Typography variant="h6" padding={1}>{vitamin.general_info.format}</Typography></Card>
-                                <Typography variant="subtitle2">Format</Typography>
+                                <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Format</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <Card><Typography variant="h6" padding={1} minWidth={30} textAlign={'center'}>{vitamin.general_info.serving_size}</Typography></Card>
-                                <Typography variant="subtitle2" textAlign={'center'}>Serving Size</Typography>
+                                <Typography variant="subtitle2" marginTop={2} textAlign={'center'} fontWeight={700}>Serving Size</Typography>
                             </Box>
                         </Box>
                     </Box>
                     <Button variant="contained" color="primary" style={{ width: '300px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from Amazon</Button>
                     <Button variant="contained" color="primary" style={{ width: '300px' }} onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
-                    <Alert severity="warning" style={{ width: '300px', display: 'flex', flexDirection: 'row', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }} onClick={handleToggleMissingNutrients}>
-                        Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                    <Alert severity="error" onClick={handleToggleMissingNutrients}>
+                        <Typography style={{ width: '300px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                            Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                        </Typography>
                     </Alert>
-                    <Alert severity="warning" style={{ width: '300px', display: 'flex', flexDirection: 'row', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }} onClick={handleToggleLowNutrients}>
-                        Warning: {lowNutrients.length} Nutrients Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                    <Alert severity="warning" onClick={handleToggleLowNutrients}>
+                        <Typography style={{ width: '300px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                            Warning: {lowNutrients.length} Nutrients Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                        </Typography>
                     </Alert>
                     <Collapse in={openMissingNutrients}>
                         <Alert severity="error">

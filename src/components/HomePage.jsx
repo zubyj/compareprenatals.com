@@ -19,8 +19,8 @@ function HomePage() {
         'iron': false,
         'folate, dfe': false,
     });
-    const [format, setFormat] = useState(['pill', 'gummy', 'powder']);
-    const [servingSize, setServingSize] = useState(3);
+    const [format, setFormat] = useState([]);
+    const [servingSize, setServingSize] = useState(null);
     const [savedFilters, setSavedFilters] = useState({ vitaminSwitches, format, servingSize });
 
     const [showFilterBar, setShowFilterBar] = useState(false);
@@ -55,9 +55,9 @@ function HomePage() {
             'iron': false,
             'folate, dfe': false,
         });
-        setFormat(['pill', 'gummy', 'powder']);
-        setServingSize(3);
-        setFilteredVitamins(vitamins); // Reset the filteredVitamins to the original vitamins
+        setFormat([]);
+        setServingSize(null);
+        setFilteredVitamins(vitamins);
         setShowFilterBar(false);
     };
 
@@ -89,6 +89,12 @@ function HomePage() {
         if (servingSize) {
             newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
                 vitamin.general_info.serving_size >= servingSize);
+        }
+
+        if (format.length) {
+            newFilteredVitamins = newFilteredVitamins.filter(vitamin =>
+                format.some(f => vitamin.general_info.format.toLowerCase() === f)
+            );
         }
 
         // apply filter based on vitamin switches
