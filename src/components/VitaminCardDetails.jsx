@@ -32,6 +32,19 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
     const handleToggleMissingNutrients = () => setOpenMissingNutrients(!openMissingNutrients);
     const handleToggleLowNutrients = () => setOpenLowNutrients(!openLowNutrients);
 
+    const formatToEmoji = (format) => {
+        switch (format) {
+            case 'Gummy':
+                return '🍬';
+            case 'Pill':
+                return '💊';
+            case 'Liquid':
+                return '🥤';
+            default:
+                return '';
+        }
+    };
+
     // Function to divide an array into chunks of 3 vitamins
     const chunk = (arr, len) => {
         var chunks = [],
@@ -66,7 +79,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'gap': '25px',
                     'width': '80vw',
                     'minHeight': '60vh',
-                    'backgroundColor': 'lightblue',
+                    'backgroundColor': '#a024b4',
                 }} >
                     <Box sx={{
                         'backgroundColor': '#fff',
@@ -81,7 +94,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         <Typography variant="h2" fontSize={20} fontWeight={700}>{vitamin.general_info.product_name}</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', color: '#222', padding: '15px', borderRadius: '10px', width: '375px' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', color: 'white', padding: '15px', borderRadius: '10px', width: '375px' }}>
                             <MedicationIcon sx={{ fontSize: 60 }} />
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                                 <Card>
@@ -99,7 +112,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Nutrition Score</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <Card><Typography variant="h6" padding={1}>{vitamin.general_info.format}</Typography></Card>
+                                <Card><Typography variant="h6" padding={1}>{vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}</Typography></Card>
                                 <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Format</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
