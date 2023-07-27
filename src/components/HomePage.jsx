@@ -151,6 +151,8 @@ function HomePage() {
     };
     return (
         <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
             textAlign: 'center',
             padding: '0',
@@ -183,7 +185,7 @@ function HomePage() {
                 gap: '10px',
             }}>
                 <Box>
-                    <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained">
+                    <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained" color="secondary">
                         {showFilterBar ? 'Hide Filters' : 'Show Filters'}
                         <IconButton
                             onClick={() => setShowFilterBar(!showFilterBar)}

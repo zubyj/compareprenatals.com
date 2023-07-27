@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <AppBar position="fixed" >
-            <Toolbar>
+        <AppBar position="fixed" color="secondary" >
+            <Toolbar >
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} >
                     Compare Prenatals
                 </Typography>
