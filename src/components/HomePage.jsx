@@ -164,7 +164,7 @@ function HomePage() {
         }}>
             <Typography variant="h5" paddingBottom={2}>
                 Prenatal Vitamin Chart
-                <Button variant={showDescription ? 'outlined' : 'text'} sx={{ marginLeft: '10px' }} onClick={() => setShowDescription(!showDescription)}>
+                <Button variant={showDescription ? 'outlined' : 'text'} onClick={() => setShowDescription(!showDescription)}>
                     ❓
                 </Button>
             </Typography>
