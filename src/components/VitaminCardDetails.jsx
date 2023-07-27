@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, Typography, Button, Collapse, Grid, Box, Table, TableRow, TableCell, TableBody, Modal, Alert } from '@mui/material';
 import MedicationIcon from '@mui/icons-material/Medication';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import fdaVitaminValues from '../fda-rdv.json'
 
 function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open, handleClose }) {
@@ -70,7 +72,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         'backgroundColor': 'lightcyan',
                         'padding': '30px',
                         'borderRadius': '10px',
-                        'width': '300px',
+                        'width': '350px',
                         'textAlign': 'center'
 
                     }}>
@@ -79,7 +81,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         <Typography variant="h6" color="secondary" fontWeight={700}>{vitamin.general_info.product_name}</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#222', padding: '15px', borderRadius: '10px', color: 'white', width: '300px' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#222', padding: '15px', borderRadius: '10px', color: 'white', width: '375px' }}>
                             <MedicationIcon sx={{ fontSize: 60 }} />
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                                 <Card>
@@ -109,11 +111,11 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     </Box>
                     <Button variant="contained" color="primary" style={{ width: '300px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from Amazon</Button>
                     <Button variant="contained" color="primary" style={{ width: '300px' }} onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
-                    <Alert severity="warning" style={{ width: '300px' }} onClick={handleToggleMissingNutrients}>
-                        Warning: {missingNutrients.length} Nutrients Missing
+                    <Alert severity="warning" style={{ width: '300px', display: 'flex', flexDirection: 'row', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }} onClick={handleToggleMissingNutrients}>
+                        Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </Alert>
-                    <Alert severity="error" style={{ width: '300px' }} onClick={handleToggleLowNutrients}>
-                        Warning: {lowNutrients.length} Nutrients Low
+                    <Alert severity="warning" style={{ width: '300px', display: 'flex', flexDirection: 'row', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }} onClick={handleToggleLowNutrients}>
+                        Warning: {lowNutrients.length} Nutrients Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </Alert>
                     <Collapse in={openMissingNutrients}>
                         <Alert severity="error">
