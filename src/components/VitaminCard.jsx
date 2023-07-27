@@ -16,7 +16,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
 
     return (
         <>
-            <Button onClick={handleOpen} variant="contained" color="success" sx={{ 'width': '95vw', 'paddingY': '10px', 'marginY': '10px', 'height': '150px', 'borderRadius': '20px' }}>
+            <Button onClick={handleOpen} variant="contained" color="primary" sx={{ 'width': '95vw', 'paddingY': '10px', 'marginY': '10px', 'height': '150px', 'borderRadius': '20px' }}>
                 <Grid container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', margin: '0' }}>
                     <Grid item xs={6} paddingRight={10}>
                         <Typography variant="h6" color="lightcyan" fontWeight={700}>{vitamin.general_info.brand_name}</Typography>
