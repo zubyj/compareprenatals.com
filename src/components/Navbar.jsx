@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <AppBar position="fixed">
+        <AppBar position="fixed" >
             <Toolbar>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} >
                     Compare Prenatals
                 </Typography>
                 <Button color="inherit" component={Link} to="/#faq">FAQ</Button>

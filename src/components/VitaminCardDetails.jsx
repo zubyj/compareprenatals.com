@@ -61,7 +61,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'flexDirection': 'column',
                     'alignItems': 'center',
                     'justifyContent': 'center',
-                    'gap': '40px',
+                    'gap': '25px',
                     'width': '80vw',
                     'minHeight': '60vh',
                     'backgroundColor': 'lightblue',
@@ -74,8 +74,9 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         'textAlign': 'center'
 
                     }}>
-                        <Typography variant="h2" fontSize={30} color="primary">{vitamin.general_info.brand_name}</Typography>
-                        <Typography variant="h6" color="secondary">{vitamin.general_info.product_name}</Typography>
+                        <Typography variant="h3" fontSize={30} color="primary">{vitamin.general_info.brand_name}</Typography>
+                        <hr />
+                        <Typography variant="h6" color="secondary" fontWeight={700}>{vitamin.general_info.product_name}</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: 'darkgreen', padding: '15px', borderRadius: '10px', color: 'white', width: '375px' }}>
@@ -106,28 +107,44 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             </Box>
                         </Box>
                     </Box>
-                    <Button variant="contained" color="primary" style={{ width: '350px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from Amazon</Button>
-                    <Button variant="contained" color="error" style={{ width: '350px' }} onClick={handleToggleMissingNutrients}>Warning: {missingNutrients.length} Nutrients Missing</Button>
+                    <Button variant="contained" color="primary" style={{ width: '300px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from Amazon</Button>
+                    <hr />
+                    <Typography variant="body1">
+                        Vitamin Details
+                    </Typography>
+                    <Button variant="contained" color="error" style={{ width: '300px' }} onClick={handleToggleMissingNutrients}>Warning: {missingNutrients.length} Nutrients Missing</Button>
+                    <Button variant="contained" color="error" style={{ width: '300px' }} onClick={handleToggleLowNutrients}>Warning: {lowNutrients.length} Nutrients Low</Button>
+                    <Button variant="contained" color="primary" style={{ width: '300px' }} onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
                     <Collapse in={openMissingNutrients}>
                         <Alert severity="error">
-                            <ul>
-                                {missingNutrients.map((nutrient, index) => (
-                                    <li key={index}>{nutrient}</li>
-                                ))}
-                            </ul>
+                            <Table>
+                                <TableBody>
+                                    {missingNutrients.map((nutrient, index) => (
+                                        <TableRow key={index}>
+                                            <TableCell sx={{ border: 'none', fontFamily: "'Arial Black','Helvetica Bold',sans-serif", fontSize: '8pt', padding: '5px' }}>
+                                                {nutrient}
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
                         </Alert>
                     </Collapse>
-                    <Button variant="contained" color="warning" style={{ width: '350px' }} onClick={handleToggleLowNutrients}>Warning: {lowNutrients.length} Nutrients Low</Button>
                     <Collapse in={openLowNutrients}>
                         <Alert severity="warning">
-                            <ul>
-                                {lowNutrients.map((nutrient, index) => (
-                                    <li key={index}>{nutrient.name}: {nutrient.amount}</li>
-                                ))}
-                            </ul>
+                            <Table>
+                                <TableBody>
+                                    {lowNutrients.map((nutrient, index) => (
+                                        <TableRow key={index}>
+                                            <TableCell sx={{ border: 'none', fontFamily: "'Arial Black','Helvetica Bold',sans-serif", fontSize: '8pt', padding: '5px' }}>
+                                                {nutrient.name}: {nutrient.amount}
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
                         </Alert>
                     </Collapse>
-                    <Button variant="contained" color="primary" onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
                     <Collapse in={showVitamins}>
                         <Card sx={{ backgroundColor: 'white', border: '1px solid black', marginTop: '10px' }}>
                             <Typography variant="h6" sx={{ textAlign: 'center', fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif" }}>Vitamins</Typography>
