@@ -24,7 +24,6 @@ function FilterBar({
             marginY: '30px',
             backgroundColor: '#f5f5f5',
             gap: '20px',
-
         }}>
             <FormControl component="fieldset">
                 <FormLabel component="legend">Max Daily Serving Size</FormLabel>

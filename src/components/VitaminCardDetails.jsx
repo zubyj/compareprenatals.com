@@ -64,18 +64,40 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'flexDirection': 'column',
                     'alignItems': 'center',
                     'justifyContent': 'center',
-                    'gap': '30px',
+                    'gap': '20px',
                     'width': '80vw',
                     'minHeight': '60vh',
                     'backgroundColor': 'lightblue',
                 }} >
-                    <Typography variant="h5" color="darkgreen">{vitamin.general_info.brand_name}</Typography>
-                    <Typography variant="h6" color="secondary">{vitamin.general_info.product_name}</Typography>
-                    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
+                    <Box sx={{
+                        'backgroundColor': 'lightcyan',
+                        'padding': '20px',
+                        'borderRadius': '10px',
+                    }}>
+                        <Typography variant="h2" fontSize={30} color="primary">{vitamin.general_info.brand_name}</Typography>
+                        <Typography variant="h6" color="secondary">{vitamin.general_info.product_name}</Typography>
+                    </Box>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row', backgroundColor: 'green', padding: '15px', borderRadius: '10px', color: 'white' }}>
                             <MedicationIcon sx={{ fontSize: 60 }} />
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                                <Card><Typography variant="h6" padding={1}>{vitamin.general_info.score || '-'}/10</Typography></Card>
+                                <Card>
+                                    <Typography
+                                        variant="h6"
+                                        padding={1}
+                                        fontWeight={700}
+                                        style={{
+                                            color: vitamin.general_info.score <= 3 ? 'red' :
+                                                vitamin.general_info.score <= 8 ? 'yellow' :
+                                                    vitamin.general_info.score <= 10 ? 'green' :
+                                                        'black'
+                                        }}
+                                    >
+                                        {vitamin.general_info.score} /10</Typography></Card>
+                                <Box display="flex" flexDirection="column" alignItems="center">
+
+                                </Box>
+
                                 <Typography variant="subtitle2">Nutrition Score</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

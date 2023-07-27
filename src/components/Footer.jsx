@@ -18,9 +18,6 @@ const Footer = () => {
             <Typography variant="body2" color="text.secondary">
                 Please consult with your physician before starting any new dietary supplement, including prenatal vitamins.
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-                Regardless of the score, any prenatal vitamin will always be better than no prenatal vitamin
-            </Typography>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'row',

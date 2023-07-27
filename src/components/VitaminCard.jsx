@@ -19,14 +19,28 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
             <Button onClick={handleOpen} variant="contained" color="success" sx={{ 'width': '95vw', 'paddingY': '10px', 'marginY': '10px', 'height': '150px', 'borderRadius': '20px' }}>
                 <Grid container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', margin: '0' }}>
                     <Grid item xs={6} paddingRight={10}>
-                        <Typography variant="h6" color="lightcyan" fontWeight={800}>{vitamin.general_info.brand_name}</Typography>
+                        <Typography variant="h6" color="lightcyan" fontWeight={700}>{vitamin.general_info.brand_name}</Typography>
                     </Grid>
                     <Grid item xs={6}>
                         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
                             <Typography variant="body1" color="white">{vitamin.general_info.product_name}</Typography>
                             <Box sx={{ display: 'flex', flexDirection: 'row', gap: '10px' }}>
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
-                                    <Card><Typography variant="subtitle2" padding={.5}>{vitamin.general_info.score || '-'}/10</Typography></Card>
+                                    <Card>
+                                        <Typography
+                                            variant="subtitle2"
+                                            padding={.5}
+                                            fontWeight={700}
+                                            style={{
+                                                color: vitamin.general_info.score <= 3 ? 'red' :
+                                                    vitamin.general_info.score <= 8 ? '#ff8c00' :
+                                                        vitamin.general_info.score <= 10 ? 'green' :
+                                                            'black',
+                                            }}
+                                        >
+                                            {vitamin.general_info.score || '-'} / 10
+                                        </Typography>
+                                    </Card>
                                     <Typography variant="caption">Score</Typography>
                                 </Box>
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
