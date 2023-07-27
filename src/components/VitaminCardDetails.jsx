@@ -85,7 +85,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         'backgroundColor': '#fff',
                         'padding': '30px',
                         'borderRadius': '10px',
-                        'width': '350px',
+                        'width': '250px',
                         'textAlign': 'center'
 
                     }}>
@@ -94,7 +94,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         <Typography variant="h2" fontSize={20} fontWeight={700}>{vitamin.general_info.product_name}</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', color: 'white', padding: '15px', borderRadius: '10px', width: '375px' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', color: 'white', padding: '15px', borderRadius: '10px', width: '325px' }}>
                             <MedicationIcon sx={{ fontSize: 60 }} />
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                                 <Card>
@@ -124,12 +124,12 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     <Button variant="contained" color="primary" style={{ width: '300px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from Amazon</Button>
                     <Button variant="contained" color="primary" style={{ width: '300px' }} onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
                     <Alert severity="error" onClick={handleToggleMissingNutrients}>
-                        <Typography style={{ width: '300px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                        <Typography style={{ width: '250px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                             Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </Typography>
                     </Alert>
                     <Alert severity="warning" onClick={handleToggleLowNutrients}>
-                        <Typography style={{ width: '300px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                        <Typography style={{ width: '250px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                             Warning: {lowNutrients.length} Nutrients Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </Typography>
                     </Alert>

@@ -37,7 +37,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                     <Grid item xs={6}>
                         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
                             <Typography variant="body1" color="white">{vitamin.general_info.product_name}</Typography>
-                            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '10px' }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'row', gap: '5px' }}>
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
                                     <Card>
                                         <Typography
@@ -57,8 +57,8 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                                     <Typography variant="caption">Score</Typography>
                                 </Box>
                                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
-                                    <Card>
-                                        <Typography variant="subtitle2" padding={.5}>
+                                    <Card sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', minWidth: '90px' }}>
+                                        <Typography variant="subtitle2" padding={.5} >
                                             {vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}
                                         </Typography>
                                     </Card>
