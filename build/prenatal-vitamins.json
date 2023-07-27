@@ -1,7 +1,135 @@
 [
     {
         "general_info": {
-            "url": "https://www.example.com/one-a-day/prenatal-one",
+            "url": "https://www.example.com/",
+            "brand_name": "CareNatal",
+            "product_name": "Prenatal Vitamin Powder",
+            "format": "Powder",
+            "price": "",
+            "serving_size": "-",
+            "score": "10"
+        },
+        "vitamins": [
+            {
+                "name": "Omega-3",
+                "amount": "250",
+                "unit": "mg"
+            },
+            {
+                "name": "Choline",
+                "amount": "300",
+                "unit": "mg"
+            },
+            {
+                "name": "Iron",
+                "amount": "27",
+                "unit": "mg"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "60",
+                "unit": "mcg"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "100",
+                "unit": "mg"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "10",
+                "unit": "mg"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "30",
+                "unit": "mcg"
+            },
+            {
+                "name": "Vitamin A",
+                "amount": "1300",
+                "unit": "mcg"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "200",
+                "unit": "mg"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19",
+                "unit": "mg"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4",
+                "unit": "mg"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "2",
+                "unit": "mg"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18",
+                "unit": "mg"
+            },
+            {
+                "name": "Folate, DFE",
+                "amount": "1350",
+                "unit": "mcg"
+            },
+            {
+                "name": "Biotin",
+                "amount": "300",
+                "unit": "mg"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "10",
+                "unit": "mg"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0",
+                "unit": "mg"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290",
+                "unit": "mcg"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13",
+                "unit": "mg"
+            },
+            {
+                "name": "Selenium",
+                "amount": "70",
+                "unit": "mcg"
+            },
+            {
+                "name": "Manganese",
+                "amount": "2.6",
+                "unit": "mg"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90",
+                "unit": "mcg"
+            },
+            {
+                "name": "Added Sugars",
+                "amount": null,
+                "unit": "g"
+            }
+        ]
+    },
+    {
+        "general_info": {
+            "url": "https://www.cvs.com/shop/one-a-day-women-s-prenatal-1-multivitamin-softgels-prodid-967926",
             "brand_name": "One A Day",
             "product_name": "Prenatal One",
             "format": "Pill",
@@ -130,7 +258,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/one-a-day/advanced",
+            "url": "https://www.cvs.com/shop/one-a-day-prenatal-advanced-multivitamin-softgels-tablets-prodid-437078",
             "brand_name": "One A Day",
             "product_name": "Advanced",
             "format": "Pill",
@@ -259,7 +387,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/one-a-day/gummy",
+            "url": "https://www.cvs.com/shop/one-a-day-prenatal-multivitamin-gummies-prodid-1260460",
             "brand_name": "One A Day",
             "product_name": "Gummy",
             "format": "Gummy",
@@ -388,7 +516,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/vitafusion/prenatal-gummy-",
+            "url": "https://www.cvs.com/shop/vitafusion-prenatal-gummy-vitamins-assorted-flavor-prodid-800388",
             "brand_name": "Vitafusion",
             "product_name": "Prenatal Gummy ",
             "format": "Gummy",
@@ -516,7 +644,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/olly/prenatal-gummy",
+            "url": "https://www.cvs.com/shop/olly-the-essential-prenatal-multivitamin-60ct-vibrant-citrus-prodid-1020801",
             "brand_name": "Olly",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -645,7 +773,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/nature's-bounty/prenatal-gummy",
+            "url": "https://www.walgreens.com/store/c/nature%27s-bounty-optimal-solutions-essential-prenatal-gummies-mixed-berry/ID=300394699-product",
             "brand_name": "Nature's Bounty",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -774,7 +902,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/nature's-way-alive/gummy",
+            "url": "https://www.amazon.com/Natures-Way-Prenatal-Multivitamin-serving/dp/B01KGLIVCQ/ref=sr_1_7?crid=1Q3FSPQ5QFZV5&keywords=nature%27s+way+prenatal&qid=1676139320&rdc=1&sprefix=nature%27s+way+prenatal%2Caps%2C104&sr=8-7",
             "brand_name": "Nature's Way Alive",
             "product_name": "Gummy",
             "format": "Gummy",
@@ -903,7 +1031,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/smartypants/organics-prenatal-gummy-",
+            "url": "https://www.target.com/p/smartypants-organics-prenatal-formula-multivitamin-gummies-90ct/-/A-75665111#lnk=sametab",
             "brand_name": "Smartypants",
             "product_name": "Organics Prenatal Gummy ",
             "format": "Gummy",
@@ -1031,7 +1159,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/smartypants/prenatal-multi-gummy-",
+            "url": "https://www.target.com/p/smartypants-prenatal-formula-multivitamin-gummies/-/A-87694203?preselect=17387874#lnk=sametab",
             "brand_name": "Smartypants",
             "product_name": "Prenatal Multi Gummy ",
             "format": "Gummy",
@@ -1159,7 +1287,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/smartypants/capsules-prenatal",
+            "url": "https://www.amazon.com/SmartyPants-Prenatal-Multivitamin-Development-Immunity/dp/B08W3LY883/ref=sr_1_5?crid=27663GV9X12ZA&keywords=smarty+pants+prenatal&qid=1676139618&sprefix=smarty+pants+prenatal%2Caps%2C75&sr=8-5",
             "brand_name": "Smartypants",
             "product_name": "Capsules Prenatal",
             "format": "Pill",
@@ -1288,7 +1416,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/nature-made/prenatal-folic-acid-+-dha",
+            "url": "https://www.target.com/p/nature-made-prenatal-with-folic-acid-dha-prenatal-vitamin-and-mineral-supplement-softgels/-/A-15665982?preselect=13283521#lnk=sametab",
             "brand_name": "Nature Made",
             "product_name": "Prenatal Folic Acid + DHA",
             "format": "Pill",
@@ -1417,7 +1545,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/nature-made/prenatal-folic-acid",
+            "url": "https://www.amazon.com/Nature-Made-Multi-Prenatal-Tablets/dp/B001F1G6SI/ref=sr_1_1_sspa?crid=1DAICV2DBN9NG&keywords=nature%2Bmade%2Bprenatal&qid=1676139916&sprefix=nature%2Bmade%2Bprenatal%2Caps%2C85&sr=8-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzSDVPWEM4NEw1REM2JmVuY3J5cHRlZElkPUEwMjcxOTg2MloxNkZETkpJODRVOCZlbmNyeXB0ZWRBZElkPUEwNDU1MzczMVRCME9FVEM1R1NNJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1",
             "brand_name": "Nature Made",
             "product_name": "Prenatal Folic Acid",
             "format": "Pill",
@@ -1546,7 +1674,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/nature-made/prenatal-gummy",
+            "url": "https://www.target.com/p/nature-made-prenatal-gummies-with-dha-and-folic-acid-prenatal-vitamin-and-mineral-supplement-60ct/-/A-75665704#lnk=sametab",
             "brand_name": "Nature Made",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -1675,7 +1803,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/garden-of-life/prenatal-multi-+-dha",
+            "url": "https://www.target.com/p/garden-of-life-dr-formulated-prenatal-multi-dha-softgels-30ct/-/A-80317892#lnk=sametab",
             "brand_name": "Garden of Life",
             "product_name": "Prenatal Multi + DHA",
             "format": "Pill",
@@ -1804,7 +1932,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/garden-of-life/mykind-prenatal",
+            "url": "https://www.target.com/p/garden-of-life-my-kind-organic-vegan-prenatal-daily-multivitamin-tablets-30ct/-/A-53205427#lnk=sametab",
             "brand_name": "Garden of Life",
             "product_name": "MyKind Prenatal",
             "format": "Pill",
@@ -1933,7 +2061,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/rainbow-light/prenatal-one",
+            "url": "https://www.target.com/p/rainbow-light-prenatal-one-multivitamin-tablets-60ct/-/A-86906204#lnk=sametab",
             "brand_name": "Rainbow Light",
             "product_name": "Prenatal One",
             "format": "Pill",
@@ -2062,7 +2190,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/rainbow-light/prenatal-daily-duo",
+            "url": "https://www.target.com/p/rainbow-light-prenatal-daily-duo-multivitamin-dietary-supplement-tablets-and-softgels-60ct/-/A-50058877#lnk=sametab",
             "brand_name": "Rainbow Light",
             "product_name": "Prenatal Daily Duo",
             "format": "Pill",
@@ -2191,7 +2319,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/enfamom/prenatal",
+            "url": "https://www.cvs.com/shop/enfamom-prenatal-vitamin-mineral-supplement-softgels-for-women-30-ct-prodid-452917",
             "brand_name": "Enfamom",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -2320,7 +2448,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/target-up-&-up/prenatal-vitamins-tablet",
+            "url": "https://www.target.com/p/prenatal-vitamin-dietary-supplement-tablets-up-up/-/A-16292263?preselect=11004435#lnk=sametab",
             "brand_name": "Target Up & Up",
             "product_name": "Prenatal Vitamins Tablet",
             "format": "Pill",
@@ -2449,7 +2577,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/target-up-&-up/prenatal-multivitamins-gummy",
+            "url": "https://www.target.com/p/prenatal-multivitamin-gummies-fruit-flavors-90ct-up-38-up-8482/-/A-13579345#lnk=sametab",
             "brand_name": "Target Up & Up",
             "product_name": "Prenatal Multivitamins Gummy",
             "format": "Gummy",
@@ -2578,7 +2706,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/target-up-&-up/prenatal-duo",
+            "url": "https://www.target.com/p/women-39-s-daily-prenatal-combo-pack-dietary-supplement-tablets-38-softgels-60ct-up-38-up-8482/-/A-11868347#lnk=sametab",
             "brand_name": "Target Up & Up",
             "product_name": "Prenatal Duo",
             "format": "Pill",
@@ -2707,7 +2835,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/cvs/prenatal-gummy",
+            "url": "https://www.cvs.com/shop/cvs-health-prenatal-fruit-flavored-gummies-with-dha-folic-acid-150ct-prodid-238709",
             "brand_name": "CVS",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -2836,7 +2964,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/cvs/prenatal-multivitamin",
+            "url": "https://www.cvs.com/shop/cvs-health-prenatal-multivitamin-with-250mg-algal-dha-90-ct-prodid-428513",
             "brand_name": "CVS",
             "product_name": "Prenatal Multivitamin",
             "format": "Pill",
@@ -2965,7 +3093,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/cvs/once-daily-complete-prenatal",
+            "url": "https://www.cvs.com/shop/cvs-health-once-daily-prenatal-multi-dha-softgels-30ct-prodid-1020679",
             "brand_name": "CVS",
             "product_name": "Once Daily Complete Prenatal",
             "format": "Pill",
@@ -3094,7 +3222,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/cvs/prenatal-vitamins-tablet",
+            "url": "https://www.cvs.com/shop/cvs-health-prenatal-vitamin-with-minerals-tablets-prodid-252577",
             "brand_name": "CVS",
             "product_name": "Prenatal Vitamins Tablet",
             "format": "Pill",
@@ -3223,7 +3351,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/cvs/women's-prenatal-+-dha",
+            "url": "https://www.cvs.com/shop/cvs-health-prenatal-multi-dha-softgels-120ct-prodid-1020651",
             "brand_name": "CVS",
             "product_name": "Women's Prenatal + DHA",
             "format": "Pill",
@@ -3352,7 +3480,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/walgreens/once-daily-prenatal",
+            "url": "https://www.walgreens.com/store/c/walgreens-once-daily-prenatal-multivitamin/ID=300428269-product",
             "brand_name": "Walgreens",
             "product_name": "Once Daily Prenatal",
             "format": "Pill",
@@ -3481,7 +3609,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/walgreens/prenatal-muti.-+-algal-dha",
+            "url": "https://www.walgreens.com/store/c/walgreens-prenatal-multivitamin-plus-dha-softgels/ID=prod6255947-product",
             "brand_name": "Walgreens",
             "product_name": "Prenatal Muti. + Algal DHA",
             "format": "Pill",
@@ -3610,7 +3738,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/walgreens/complete-prenatal-mini",
+            "url": "https://www.walgreens.com/store/c/walgreens-easy-to-swallow-complete-prenatal-mini/ID=300432950-product",
             "brand_name": "Walgreens",
             "product_name": "Complete Prenatal Mini",
             "format": "Pill",
@@ -3739,7 +3867,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/walgreens/prenatal-multi.-+-folic-acid",
+            "url": "https://www.walgreens.com/store/c/walgreens-prenatal-multivitamin/ID=300414693-product",
             "brand_name": "Walgreens",
             "product_name": "Prenatal Multi. + Folic Acid",
             "format": "Pill",
@@ -3868,7 +3996,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/walgreens/two-step-prenatal",
+            "url": "https://www.walgreens.com/store/c/walgreens-two-step-prenatal-multivitamin-with-dha-%26-choline/ID=300425970-product",
             "brand_name": "Walgreens",
             "product_name": "Two Step Prenatal",
             "format": "Pill",
@@ -3997,7 +4125,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/walgreens/prenatal-gummy",
+            "url": "https://www.walgreens.com/store/c/walgreens-prenatal-gummy-raspberry-lemonade/ID=300408997-product",
             "brand_name": "Walgreens",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -4126,7 +4254,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/walgreens/prenatal-gummy-+-algal-dha-",
+            "url": "https://www.walgreens.com/store/c/walgreens-prenatal-gummies---algal-dha-raspberry,-lemon/ID=300407264-product",
             "brand_name": "Walgreens",
             "product_name": "Prenatal Gummy + Algal DHA ",
             "format": "Gummy",
@@ -4254,7 +4382,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/rite-aid/prenatal-formula",
+            "url": "https://www.riteaid.com/shop/rite-aid-prenatal-tablets-with-folic-acid-tablets-value-size-225-tablets-0308911",
             "brand_name": "Rite Aid",
             "product_name": "Prenatal Formula",
             "format": "Pill",
@@ -4383,7 +4511,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/rite-aid/prenatal-gummy",
+            "url": "https://www.riteaid.com/shop/rite-aid-pectin-based-prenatal-gummy-strawberry-raspberry-60-count",
             "brand_name": "Rite Aid",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -4512,7 +4640,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/signature-care/prenatal-vitamins",
+            "url": "https://www.safeway.com/shop/product-details.156010005.html",
             "brand_name": "Signature Care",
             "product_name": "Prenatal Vitamins",
             "format": "Pill",
@@ -4641,7 +4769,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/signature-care/prenatal-gummy",
+            "url": "https://www.safeway.com/shop/product-details.960309022.html",
             "brand_name": "Signature Care",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -4770,7 +4898,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/kroger/prenatal-vitamin-tablet",
+            "url": "https://www.kroger.com/p/kroger-prenatal-vitamin-tablets-100-count/0001111035353?fulfillment=SHIP&searchType=suggestions",
             "brand_name": "Kroger",
             "product_name": "Prenatal Vitamin Tablet",
             "format": "Pill",
@@ -4899,7 +5027,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/kroger/once-daily-complete-prenatal",
+            "url": "https://www.kroger.com/p/kroger-once-daily-complete-prenatal-vitamin-softgels/0004126001514?fulfillment=SHIP&searchType=suggestions",
             "brand_name": "Kroger",
             "product_name": "Once Daily Complete Prenatal",
             "format": "Pill",
@@ -5028,7 +5156,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/kroger/prenatal-multi-&-dha",
+            "url": "https://www.kroger.com/p/kroger-prenatal-multi-dha-vitamin-tablets-softgels/0004126038558?fulfillment=SHIP&searchType=suggestions",
             "brand_name": "Kroger",
             "product_name": "Prenatal Multi & DHA",
             "format": "Pill",
@@ -5157,7 +5285,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/kroger/prenatal-gummy",
+            "url": "https://www.kroger.com/p/kroger-prenatal-raspberry-lime-multivitamin-gummies/0004126001513?fulfillment=SHIP&searchType=suggestions",
             "brand_name": "Kroger",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -5286,7 +5414,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/kroger/one-per-day-prenatal",
+            "url": "https://www.kroger.com/p/kroger-one-per-day-prenatal-multi-with-omega-3-softgels/0004126036757?fulfillment=SHIP&searchType=suggestions",
             "brand_name": "Kroger",
             "product_name": "One Per Day Prenatal",
             "format": "Pill",
@@ -5415,7 +5543,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/oh-good!/prenatal-gummy-(12-day)",
+            "url": "https://www.dollargeneral.com/p/oh-good-prenatal-dha-gummies-ct/850037842179",
             "brand_name": "Oh Good!",
             "product_name": "Prenatal Gummy (12 day)",
             "format": "Gummy",
@@ -5544,7 +5672,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/meijer/prenatal-tablet",
+            "url": "https://www.meijer.com/shopping/product/meijer-prenatal-supplement-with-folic-acid-100-ct/70882055481.html",
             "brand_name": "Meijer",
             "product_name": "Prenatal Tablet",
             "format": "Pill",
@@ -5673,7 +5801,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/thorne/basic-prenatal",
+            "url": "https://www.amazon.com/Thorne-Research-Prenatal-Multivitamin-Lactating/dp/B00O59SH3E/ref=zg_bs_6936725011_sccl_5/131-0919695-5677337?psc=1",
             "brand_name": "Thorne",
             "product_name": "Basic Prenatal",
             "format": "Pill",
@@ -5802,7 +5930,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/garden-of-life/mykind-gummy",
+            "url": "https://www.amazon.com/Garden-Life-Organics-Prenatal-Vitamins/dp/B06XSD99V3/ref=zg_bs_6936725011_sccl_7/131-0919695-5677337?psc=1",
             "brand_name": "Garden of Life",
             "product_name": "MyKind Gummy",
             "format": "Gummy",
@@ -5931,7 +6059,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/eu-natural/conception-for-her",
+            "url": "https://www.amazon.com/Conception-Fertility-Prenatal-Vitamins-Myo-Inositol/dp/B013RMKCV4/ref=zg_bs_6936725011_sccl_8/131-0919695-5677337?psc=1",
             "brand_name": "Eu Natural",
             "product_name": "Conception For Her",
             "format": "Pill",
@@ -6060,7 +6188,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/baby-&-me-2/prenatal-multi",
+            "url": "https://www.amazon.com/MegaFood-Baby-Prenatal-Vitamins-Multivitamin/dp/B01CQ3E4AK/ref=zg_bs_6936725011_sccl_13/131-0919695-5677337?psc=1",
             "brand_name": "Baby & Me 2",
             "product_name": "Prenatal Multi",
             "format": "Pill",
@@ -6189,7 +6317,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/pink-stork/total-prenatal",
+            "url": "https://www.amazon.com/Pink-Stork-Recommended-Nutrition-Vegetarian/dp/B07G4C85XX/ref=zg_bs_6936725011_sccl_14/131-0919695-5677337?psc=1",
             "brand_name": "Pink Stork",
             "product_name": "Total Prenatal",
             "format": "Pill",
@@ -6318,7 +6446,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/garden-of-life/vitamin-code-raw",
+            "url": "https://www.amazon.com/Garden-Life-Vegetarian-Multivitamin-Supplement/dp/B005JAT3TU/ref=zg_bs_6936725011_sccl_15/131-0919695-5677337?psc=1",
             "brand_name": "Garden of Life",
             "product_name": "Vitamin Code Raw",
             "format": "Pill",
@@ -6447,7 +6575,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/ritual/prenatal",
+            "url": "https://ritual.com/products/essential-prenatal-multivitamin",
             "brand_name": "Ritual",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -6576,7 +6704,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/fullwell/prenatal",
+            "url": "https://fullwellfertility.com/products/fullwell-prenatal-multivitamin?selling_plan=495747145",
             "brand_name": "Fullwell",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -6705,7 +6833,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/alani-nu/prenatal",
+            "url": "https://www.alaninu.com/products/prenatal?variant=18834604752994",
             "brand_name": "Alani Nu",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -6834,7 +6962,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/olly/ultra-strength",
+            "url": "https://www.target.com/p/olly-ultra-strength-prenatal-multivitamin-softgels-with-folic-acid-dha-60ct/-/A-78296937?ref=tgt_adv_xsp&AFID=google&fndsrc=tmnv&DFA=71700000105853507&CPNG=PLA_DVM%2Ba064R000013nuwBQAQ-Olly_Google_2023_Flight-846883&adgroup=PLA_Olly&LID=700000001393753pgs&network=g&device=c&location=9008142&gclid=CjwKCAjw36GjBhAkEiwAKwIWyZeEjjH9rFA-5m3SaT7IKMQ4CjuoEIqsDZqtrdbrRKC7-fv0MjvraBoCwTMQAvD_BwE&gclsrc=aw.ds",
             "brand_name": "Olly",
             "product_name": "Ultra Strength",
             "format": "Pill",
@@ -6963,7 +7091,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/bird-&-be/power",
+            "url": "https://birdandbe.com/collections/vitamins-supplements/products/power-prenatal-vitamins-for-females",
             "brand_name": "Bird & Be",
             "product_name": "Power",
             "format": "Pill",
@@ -7092,7 +7220,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/bird-&-be/essentials",
+            "url": "https://birdandbe.com/collections/vitamins-supplements/products/prenatal-vitamins-for-females",
             "brand_name": "Bird & Be",
             "product_name": "Essentials",
             "format": "Pill",
@@ -7221,7 +7349,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/mary-ruth's/liquid-prenatal",
+            "url": "https://www.maryruthorganics.com/products/prenatal-postnatal-liquid-multivitamin-32-oz",
             "brand_name": "Mary Ruth's",
             "product_name": "Liquid Prenatal",
             "format": "",
@@ -7350,7 +7478,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/metagenics/plusone",
+            "url": "https://www.metagenics.com/plusone_daily_prenatal_packs",
             "brand_name": "Metagenics",
             "product_name": "PlusOne",
             "format": "Pill",
@@ -7479,7 +7607,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/perelel/conception-support",
+            "url": "https://perelelhealth.com/products/conception-support-pack",
             "brand_name": "Perelel",
             "product_name": "Conception Support",
             "format": "Pill",
@@ -7608,7 +7736,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/perelel/first-trimester",
+            "url": "https://perelelhealth.com/products/1st-trimester-prenatal-pack",
             "brand_name": "Perelel",
             "product_name": "First Trimester",
             "format": "Pill",
@@ -7737,7 +7865,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/pink-stork/liquid-prenatal",
+            "url": "https://pinkstork.com/collections/pregnancy/products/liquid-prenatal",
             "brand_name": "Pink Stork",
             "product_name": "Liquid Prenatal",
             "format": "",
@@ -7866,7 +7994,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/pink-stork/premium-prenatal",
+            "url": "https://pinkstork.com/collections/pregnancy/products/premium-prenatal",
             "brand_name": "Pink Stork",
             "product_name": "Premium Prenatal",
             "format": "Pill",
@@ -7995,7 +8123,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/needed/multi-essentials",
+            "url": "https://thisisneeded.com/products/prenatal-multi-essentials",
             "brand_name": "Needed",
             "product_name": "Multi Essentials",
             "format": "Pill",
@@ -8124,7 +8252,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/needed/multi-capsules",
+            "url": "https://thisisneeded.com/products/prenatal-multi-capsules",
             "brand_name": "Needed",
             "product_name": "Multi Capsules",
             "format": "Pill",
@@ -8253,7 +8381,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/needed/multi-powder",
+            "url": "https://thisisneeded.com/products/prenatal-multi-powder",
             "brand_name": "Needed",
             "product_name": "Multi Powder",
             "format": "",
@@ -8382,7 +8510,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/eu-natural/glow",
+            "url": "https://store.eunatural.com/products/glow-prenatal-vitamins?_pos=1&_sid=f679bb049&_ss=r",
             "brand_name": "Eu Natural",
             "product_name": "Glow",
             "format": "Pill",
@@ -8511,7 +8639,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/natalist/prenatal-daily-packets",
+            "url": "https://natalist.com/products/prenatal-daily-packets",
             "brand_name": "Natalist",
             "product_name": "Prenatal Daily Packets",
             "format": "Pill",
@@ -8640,7 +8768,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/natalist/prenatal-gummy",
+            "url": "https://natalist.com/products/prenatal-gummy-vitamins",
             "brand_name": "Natalist",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -8769,7 +8897,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/belli/women's-prenatal",
+            "url": "https://belibaby.com/products/beli-for-women",
             "brand_name": "Belli",
             "product_name": "Women's Prenatal",
             "format": "Pill",
@@ -8898,7 +9026,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/zahler/prenatal-+-dha",
+            "url": "https://www.amazon.com/Zahler-Prenatal-Vitamins-Vegetarian-Certified/dp/B01KYBTSQQ?ref_=ast_sto_dp&th=1",
             "brand_name": "Zahler",
             "product_name": "Prenatal + DHA",
             "format": "Pill",
@@ -9027,7 +9155,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/rae-wellness/prenatal",
+            "url": "https://raewellness.co/products/prenatal?_pos=1&_sid=5dce66b9c&_ss=r",
             "brand_name": "Rae Wellness",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -9156,7 +9284,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/spring-valley/prenatal-multivitamin",
+            "url": "https://www.amazon.com/Spring-Valley-Prenatal-Multivitamin-Multimineral/dp/B079Z9ZB7H?th=1",
             "brand_name": "Spring Valley",
             "product_name": "Prenatal Multivitamin",
             "format": "Pill",
@@ -9285,7 +9413,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/best-nest/mama-bird-prenatal",
+            "url": "https://www.amazon.com/Prenatal-Methylated-Vitamins-Methylfolate-Pregnancy/dp/B076G62QN8",
             "brand_name": "Best Nest",
             "product_name": "Mama Bird Prenatal",
             "format": "Pill",
@@ -9414,7 +9542,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/ovaterra/advanced-prenatal",
+            "url": "https://myovaterra.com/products/advanced-prenatal-vitamins-with-choline-and-folate",
             "brand_name": "Ovaterra",
             "product_name": "Advanced Prenatal",
             "format": "Pill",
@@ -9543,7 +9671,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/care/of/prenatal",
+            "url": "https://takecareof.com/products/prenatal_3",
             "brand_name": "Care/of",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -9672,7 +9800,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/ortho/complete-with-dha",
+            "url": "https://www.orthomolecularproducts.com/product/prenatal-complete-with-dha",
             "brand_name": "Ortho",
             "product_name": "Complete with DHA",
             "format": "Pill",
@@ -9801,7 +9929,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/pure-encapsulations/prenatal",
+            "url": "https://www.pureencapsulationspro.com/prenatal-nutrients-ref.html",
             "brand_name": "Pure Encapsulations",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -9930,7 +10058,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/obtrex/one-prenatal",
+            "url": "https://www.store.pronovacorp.com/pages/obtrex-one-about",
             "brand_name": "Obtrex",
             "product_name": "One Prenatal",
             "format": "Pill",
@@ -10059,7 +10187,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/theralogix/theranatal-one",
+            "url": "https://theralogix.com/products/theranatal-one-prenatal-vitamin?_pos=2&_sid=e15c97bf4&_ss=r",
             "brand_name": "Theralogix",
             "product_name": "Theranatal One",
             "format": "Pill",
@@ -10188,7 +10316,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/seeking-health/optimal-prenatal",
+            "url": "https://www.seekinghealth.com/collections/prenatal-vitamins/products/optimal-prenatal-240-capsules#what-in-tab",
             "brand_name": "Seeking Health",
             "product_name": "Optimal Prenatal",
             "format": "Pill",
@@ -10317,7 +10445,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/honest-company/love-the-bump",
+            "url": "https://www.honest.com/personal-care-products/wellness/all-supplements/love-the-bump-prenatal-once-daily/H04POD00V400S.html",
             "brand_name": "Honest Company",
             "product_name": "Love the Bump",
             "format": "Pill",
@@ -10446,7 +10574,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/wenatal/for-her",
+            "url": "https://wenatal.com/products/wenatal-for-her",
             "brand_name": "WeNatal",
             "product_name": "For Her",
             "format": "Pill",
@@ -10575,7 +10703,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/modern-fertility/prenatal",
+            "url": "https://www.amazon.com/Modern-Fertility-Multivitamin-Vegetarian-Gluten-Free/dp/B09KM8NDC8",
             "brand_name": "Modern Fertility",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -10704,7 +10832,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/mixhers/herbaby",
+            "url": "https://mixhers.com/products/herbaby?variant=42102195749043",
             "brand_name": "MixHers",
             "product_name": "HerBaby",
             "format": "Pill",
@@ -10833,7 +10961,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/vitafol/one",
+            "url": "https://vitafol.com/one/",
             "brand_name": "VitaFol",
             "product_name": "One",
             "format": "Pill",
@@ -10962,7 +11090,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/theralogix/theranatal-core",
+            "url": "https://theralogix.com/products/theranatal-core-preconception-vitamin?_pos=2&_sid=392bee863&_ss=r#daDetails",
             "brand_name": "Theralogix",
             "product_name": "Theranatal Core",
             "format": "Pill",
@@ -11091,7 +11219,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/theralogix/theranatal-one",
+            "url": "https://theralogix.com/products/theranatal-one-prenatal-vitamin?_pos=2&_sid=e15c97bf4&_ss=r",
             "brand_name": "Theralogix",
             "product_name": "Theranatal One",
             "format": "Pill",
@@ -11220,7 +11348,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/theralogix/theranatal-complete",
+            "url": "https://theralogix.com/products/theranatal-complete-prenatal-vitamin?_pos=1&_sid=e15c97bf4&_ss=r",
             "brand_name": "Theralogix",
             "product_name": "Theranatal Complete",
             "format": "Pill",
@@ -11349,7 +11477,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/bongeo/tendera-ob",
+            "url": "https://www.bongeopharma.net/tenderaob.html",
             "brand_name": "Bongeo",
             "product_name": "Tendera-OB",
             "format": "Pill",
@@ -11478,7 +11606,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/solaray/prenatal-multivitamin",
+            "url": "https://solaray.com/products/once-daily-prenatal-multi-vitamin",
             "brand_name": "Solaray",
             "product_name": "Prenatal Multivitamin",
             "format": "Pill",
@@ -11607,7 +11735,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/pink-stork/total-gummy",
+            "url": "https://pinkstork.com/products/total-prenatal-gummies?_pos=5&_sid=da6d28316&_ss=r",
             "brand_name": "Pink Stork",
             "product_name": "Total Gummy",
             "format": "Gummy",
@@ -11736,7 +11864,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/naturemade/prenatal-gummy",
+            "url": "https://www.naturemade.com/products/nature-made-prenatal-gummies?&queryID=c6ce8e3034535cd011e772ebda61600c&s=1&p=1",
             "brand_name": "NatureMade",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -11865,7 +11993,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/hum-brands/prenatal",
+            "url": "https://www.humnutrition.com/product/77/womb-service-prenatal/",
             "brand_name": "Hum Brands",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -11994,7 +12122,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/equate/one-daily-prenatal",
+            "url": "https://www.walmart.com/ip/Equate-One-Daily-Prenatal-Softgels-Multivitamin-Multimineral-Supplement-Value-Pack-60-Count/692501309?wmlspartner=wlpa&selectedSellerId=0&wl13=5936&gclsrc=aw.ds&adid=22222222237692501309_139697643250_19270721681&wl0=&wl1=g&wl2=c&wl3=641599879154&wl4=pla-1897190690588&wl5=9008142&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=692501309&veh=sem&gclid=CjwKCAjwyqWkBhBMEiwAp2yUFgRx98NSWlDwrRo7hONAUWPHfRJl6Y9fzywvZiVLHKmZd86GEtQBzxoCryMQAvD_BwE",
             "brand_name": "Equate",
             "product_name": "One Daily Prenatal",
             "format": "Pill",
@@ -12123,7 +12251,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/designs-for-health/prenatal",
+            "url": "https://www.designsforhealth.com/products/prenatal-pro-essential-packets",
             "brand_name": "Designs for Health",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -12252,7 +12380,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/nutrisupreme/prenatal-chews",
+            "url": "https://www.amazon.com/Chewable-Prenatal-Vitamins-Count-Multivitamin/dp/B007VCUT7Y/ref=sr_1_9?crid=22HY9WLYZP2GT&keywords=kosher%2Bprenatal%2Bgummies&qid=1685658030&sprefix=kosher%2Bprenata%2Caps%2C90&sr=8-9&th=1",
             "brand_name": "NutriSupreme",
             "product_name": "Prenatal Chews",
             "format": "",
@@ -12381,7 +12509,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/spring-valley/prenatal-gummy",
+            "url": "https://www.walmart.com/ip/Spring-Valley-Prenatal-Multivitamin-with-DHA-Folic-Acid-Dietary-Supplement-Gummies-190-Count-Value-Size/873641",
             "brand_name": "Spring Valley",
             "product_name": "Prenatal Gummy",
             "format": "Gummy",
@@ -12510,7 +12638,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/nature's-bounty/healthy-mom-prenatl",
+            "url": "https://www.amazon.com/Natures-Bounty-Solutions-Prenatal-Softgels/dp/B01C6WS8GC",
             "brand_name": "Nature's Bounty",
             "product_name": "Healthy Mom Prenatl",
             "format": "Pill",
@@ -12639,7 +12767,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/new-chapter/one-daily",
+            "url": "https://www.newchapter.com/multivitamins/one-daily-prenatal-multivitamin/",
             "brand_name": "New Chapter",
             "product_name": "One Daily",
             "format": "Pill",
@@ -12768,7 +12896,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/new-chapter/advanced-perfect",
+            "url": "https://www.newchapter.com/multivitamins/perfect-prenatal-multivitamin/",
             "brand_name": "New Chapter",
             "product_name": "Advanced Perfect",
             "format": "Pill",
@@ -12897,7 +13025,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/hello-bello/gummy",
+            "url": "https://hellobello.com/products/prenatal-dha?variant=21155931979835&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&attentive=no&utm_source=google&utm_medium=cpc&utm_campaign=&gc_id=19547612626&gclid=Cj0KCQjwnMWkBhDLARIsAHBOftrFIym3NIWzdpT2L8Ss54V1YjOtNGL4fy-xLIWzQA09ky1fCVyXe6UaAkbQEALw_wcB",
             "brand_name": "Hello Bello",
             "product_name": "Gummy",
             "format": "Gummy",
@@ -13026,7 +13154,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/biomeology/prenatal",
+            "url": "https://biomeology.co/collections/all-products/products/prenatal-vitamins?variant=40803634086053",
             "brand_name": "Biomeology",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -13284,7 +13412,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/central-market/heb---prenatal-w/-dha",
+            "url": "https://www.centralmarket.com/product/central-market-prenatal-with-dha-vegetarian-tablets-90-ct/1584289",
             "brand_name": "Central Market",
             "product_name": "HEB - Prenatal w/ DHA",
             "format": "Pill",
@@ -13413,7 +13541,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/amazon-basics/prenatal-gummy-(solimo)",
+            "url": "https://www.amazon.com/Solimo-Prenatal-DHA-90ct/dp/B08P7QMWTW",
             "brand_name": "Amazon Basics",
             "product_name": "Prenatal Gummy (Solimo)",
             "format": "Gummy",
@@ -13542,7 +13670,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/premama/prenatal-vitamin",
+            "url": "https://www.premamawellness.com/products/prenatal-vitamin",
             "brand_name": "Premama",
             "product_name": "Prenatal Vitamin",
             "format": "Pill",
@@ -13671,7 +13799,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/iwi/prenatal",
+            "url": "https://iwilife.com/products/prenatal-multivitamin-dha?variant=41979448459464",
             "brand_name": "Iwi",
             "product_name": "Prenatal",
             "format": "Pill",
@@ -13800,7 +13928,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/procare/prenatal-bariatric-multivitamins",
+            "url": "https://a.co/d/4XDJIQo",
             "brand_name": "ProCare",
             "product_name": "Prenatal Bariatric Multivitamins",
             "format": "Pill",
@@ -13929,7 +14057,7 @@
     },
     {
         "general_info": {
-            "url": "https://www.example.com/centrum/prenatal-+-dha-(canada)",
+            "url": "https://www.walmart.ca/en/ip/centrum-prenatal-dha-complete-multivitamin-and-mineral-supplement/6000196040859?cmpid=AF_CA_1680615_1&utm_source=rakuten&utm_medium=affiliate&utm_campaign=always_on&utm_content=10&utm_id=AF_CA_1680615_1&siteID=jo_pTdthTuc-cIU8IRruW54P8LVKk4vVVg&wmlspartner=jo%2FpTdthTuc",
             "brand_name": "Centrum",
             "product_name": "Prenatal + DHA (CANADA)",
             "format": "Pill",
