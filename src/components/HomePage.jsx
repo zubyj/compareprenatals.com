@@ -246,6 +246,9 @@ function HomePage() {
                             vitamin.general_info.brand_name === newValue.general_info.brand_name &&
                             vitamin.general_info.product_name === newValue.general_info.product_name
                         ));
+                    } else {  // In case the newValue is null or undefined (search bar is cleared)
+                        handleResetFilters();
+                        setFilteredVitamins(vitamins);
                     }
                 }}
             />
