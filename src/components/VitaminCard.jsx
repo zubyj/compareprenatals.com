@@ -44,6 +44,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                                             variant="subtitle2"
                                             padding={.5}
                                             fontWeight={700}
+                                            minWidth={50}
                                             style={{
                                                 color: vitamin.general_info.score <= 3 ? 'red' :
                                                     vitamin.general_info.score <= 8 ? '#ff8c00' :
