@@ -68,6 +68,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                 'justifyContent': 'center',
                 'alignItems': 'center',
                 'backgroundColor': 'rgba(0,0,0,0.5)',
+                'overflow': 'auto',
             }}
         >
             <Card  >
@@ -78,8 +79,9 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'justifyContent': 'center',
                     'gap': '25px',
                     'width': '80vw',
-                    'minHeight': '60vh',
                     'backgroundColor': '#a024b4',
+                    'minHeight': '70vh',
+
                 }} >
                     <Box sx={{
                         'backgroundColor': '#fff',
