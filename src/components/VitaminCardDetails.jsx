@@ -65,22 +65,24 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
             onClose={handleClose}
             sx={{
                 'display': 'flex',
+                'marginTop': '10vh',
                 'justifyContent': 'center',
-                'alignItems': 'center',
                 'backgroundColor': 'rgba(0,0,0,0.5)',
-                'overflow': 'auto',
+                'alignItems': 'center',
+                'height': '80vh',
+                'overflow': 'scroll',
+
             }}
         >
             <Card  >
                 <CardContent sx={{
                     'display': 'flex',
                     'flexDirection': 'column',
-                    'alignItems': 'center',
                     'justifyContent': 'center',
+                    'alignItems': 'center',
                     'gap': '25px',
-                    'width': '75vw',
-                    'backgroundColor': '#a024b4',
-                    'minHeight': '70vh',
+                    'width': '85vw',
+                    'backgroundColor': '#2074d4',
 
                 }} >
                     <Box sx={{
@@ -123,8 +125,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             </Box>
                         </Box>
                     </Box>
-                    <Button variant="contained" color="primary" style={{ width: '300px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from Amazon</Button>
-                    <Button variant="contained" color="primary" style={{ width: '300px' }} onClick={handleToggleVitamins}>{showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}</Button>
+                    <Button variant="contained" color="warning" style={{ width: '300px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from Amazon</Button>
                     <Alert severity="error" onClick={handleToggleMissingNutrients}>
                         <Typography style={{ width: '250px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                             Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
@@ -135,6 +136,11 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             Warning: {lowNutrients.length} Nutrients Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </Typography>
                     </Alert>
+                    <Button variant="contained" color="primary" style={{ width: '300px' }} onClick={handleToggleVitamins}>
+                        {showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}
+                        {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                    </Button>
+
                     <Collapse in={openMissingNutrients}>
                         <Alert severity="error">
                             <Table>
