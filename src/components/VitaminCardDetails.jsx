@@ -59,6 +59,13 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
     // Divide vitamin array into chunks of 2
     const vitaminChunks = chunk(vitamin.vitamins, 2);
 
+    // Parse the URL and extract the hostname
+    const url = new URL(vitamin.general_info.url);
+    const hostname = url.hostname;
+    // Split the hostname by dot "." and take the second part
+    const domain = hostname.split(".")[1];
+
+
     return (
         <Modal
             open={open}
@@ -125,7 +132,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             </Box>
                         </Box>
                     </Box>
-                    <Button variant="contained" color="warning" style={{ width: '300px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from Amazon</Button>
+                    <Button variant="contained" color="warning" style={{ width: '300px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from {domain}</Button>
                     <Alert severity="error" onClick={handleToggleMissingNutrients}>
                         <Typography style={{ width: '250px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                             Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
