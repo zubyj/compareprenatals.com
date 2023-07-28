@@ -10,8 +10,8 @@ const Footer = () => {
             textAlign: 'center',
             gap: '5px',
             justifyContent: 'center',
-            width: '100%',
-            padding: '20px',
+            width: '100',
+            paddingY: '20px',
             backgroundColor: '#f5f5f5',
             marginTop: 'auto',
         }}>
