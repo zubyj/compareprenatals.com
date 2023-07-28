@@ -135,9 +135,9 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             </Box>
                         </Box>
                     </Box>
-                    <Button variant="contained" color="success" style={{ width: '350px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from {domain}</Button>
+                    <Button variant="contained" color="success" style={{ width: '325px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from {domain}</Button>
                     <Box>
-                        <Button variant="contained" color="error" style={{ width: "350px" }} onClick={handleToggleMissingNutrients}>
+                        <Button variant="contained" color="error" style={{ width: "325px" }} onClick={handleToggleMissingNutrients}>
                             Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </Button>
                         <Collapse in={openMissingNutrients}>
@@ -157,7 +157,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         </Collapse>
                     </Box>
                     <Box sx={{ marginBottom: '20px' }}>
-                        <Button variant="contained" style={{ width: "350px" }} color="error" onClick={handleToggleLowNutrients}>
+                        <Button variant="contained" style={{ width: "325px" }} color="error" onClick={handleToggleLowNutrients}>
                             Warning: {lowNutrients.length} Nutrients Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </Button>
                         <Collapse in={openLowNutrients}>
@@ -176,7 +176,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             </Alert>
                         </Collapse>
                     </Box>
-                    <Button variant="contained" color="warning" style={{ width: '350px' }} onClick={handleToggleVitamins}>
+                    <Button variant="contained" color="warning" style={{ width: '325px' }} onClick={handleToggleVitamins}>
                         {showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}
                         {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </Button>
