@@ -59,11 +59,19 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
     // Divide vitamin array into chunks of 2
     const vitaminChunks = chunk(vitamin.vitamins, 2);
 
-    // Parse the URL and extract the hostname
     const url = new URL(vitamin.general_info.url);
     const hostname = url.hostname;
-    // Split the hostname by dot "." and take the second part
-    const domain = hostname.split(".")[1];
+    // Split the hostname by dot "."
+    const parts = hostname.split(".");
+
+    let domain;
+    if (parts[0] === 'www') {
+        // If the hostname starts with 'www', take the second part
+        domain = parts[1];
+    } else {
+        // Otherwise, take the first part
+        domain = parts[0];
+    }
 
 
     return (
