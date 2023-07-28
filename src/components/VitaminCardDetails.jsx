@@ -103,7 +103,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         'textAlign': 'center'
 
                     }}>
-                        <Typography variant="h1" fontSize={30}>{vitamin.general_info.brand_name}</Typography>
+                        <Typography variant="h4" fontSize={25}>{vitamin.general_info.brand_name}</Typography>
                         <hr />
                         <Typography variant="h2" fontSize={20} fontWeight={700}>{vitamin.general_info.product_name}</Typography>
                     </Box>
