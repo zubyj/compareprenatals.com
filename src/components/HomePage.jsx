@@ -237,7 +237,7 @@ function HomePage() {
                         ❌
                     </Button>
                 ) : null}
-                <Button variant={showDescription ? 'outlined' : 'text'} onClick={() => setShowDescription(!showDescription)} style={{ marginLeft: "10px" }}>
+                <Button variant="outlined" onClick={() => setShowDescription(!showDescription)} style={{ marginLeft: "10px" }}>
                     ❓
                 </Button>
             </Box>

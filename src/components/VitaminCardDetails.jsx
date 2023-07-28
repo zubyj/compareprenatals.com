@@ -175,11 +175,12 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 </Table>
                             </Alert>
                         </Collapse>
+                        <Button variant="contained" color="warning" style={{ width: '325px', marginTop: '20px' }} onClick={handleToggleVitamins}>
+                            {showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}
+                            {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                        </Button>
                     </Box>
-                    <Button variant="contained" color="warning" style={{ width: '325px' }} onClick={handleToggleVitamins}>
-                        {showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}
-                        {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-                    </Button>
+
 
                     <Collapse in={showVitamins} >
                         <Card>
