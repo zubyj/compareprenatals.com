@@ -8,6 +8,7 @@ import VitaminList from './VitaminList';
 import Pagination from './Pagination';
 import FilterBar from './FilterBar';
 import FAQ from './FAQ';
+import EmailPopup from './EmailPopup';
 
 function HomePage() {
     const [vitamins, setVitamins] = useState([]);
@@ -160,7 +161,6 @@ function HomePage() {
             flexDirection: 'column',
             justifyContent: 'center',
             textAlign: 'center',
-            padding: '0',
             margin: 'auto',
             marginTop: '5vh',
             marginBottom: '5vh',
@@ -168,10 +168,11 @@ function HomePage() {
             fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif",
         }}
         >
+            <EmailPopup />
             <Navbar scrollToFAQ={scrollToFAQ} />
-            <Typography variant="h5" paddingBottom={2}>
+            <Typography variant="h2" fontSize={25} paddingBottom={5}>
                 Prenatal Vitamin Chart
-                <Button variant={showDescription ? 'outlined' : 'text'} onClick={() => setShowDescription(!showDescription)}>
+                <Button variant={showDescription ? 'outlined' : 'text'} onClick={() => setShowDescription(!showDescription)} style={{ marginLeft: "20px" }}>
                     ❓
                 </Button>
             </Typography>

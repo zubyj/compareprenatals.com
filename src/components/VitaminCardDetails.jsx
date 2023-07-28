@@ -96,7 +96,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                 }} >
                     <Box sx={{
                         'backgroundColor': '#fff',
-                        'padding': '30px',
+                        'padding': '40px',
                         'borderRadius': '10px',
                         'width': '250px',
                         'textAlign': 'center'
