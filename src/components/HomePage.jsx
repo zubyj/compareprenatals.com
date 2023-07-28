@@ -196,9 +196,8 @@ function HomePage() {
         >
             <Navbar scrollToFAQ={scrollToFAQ} />
             <EmailPopup open={showEmailPopup} onClose={handleCloseEmailPopup} />
-            <Typography variant="title" fontSize={25} paddingY={2}>
+            <Typography variant="title" fontSize={25} paddingY={2} data-aos="zoom-out">
                 Prenatal Vitamin Chart
-
             </Typography>
             {showDescription && (  // Conditionally render the description
                 <Typography variant="body1" color={'primary'} paddingBottom={2}>
