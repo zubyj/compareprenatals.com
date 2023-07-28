@@ -1,7 +1,7 @@
 import React, { forwardRef, useState } from 'react';
 import { Typography, Box, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CloseIcon from '@mui/icons-material/Close';
+import AddIcon from '@mui/icons-material/Add';
 
 const FAQ = forwardRef((props, ref) => {
     const [expanded, setExpanded] = useState(null);
@@ -18,7 +18,7 @@ const FAQ = forwardRef((props, ref) => {
             </Typography>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} >
                 <AccordionSummary
-                    expandIcon={expanded === 'panel1' ? <CloseIcon /> : <ExpandMoreIcon />}
+                    expandIcon={expanded === 'panel1' ? <CloseIcon /> : <AddIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
@@ -32,7 +32,7 @@ const FAQ = forwardRef((props, ref) => {
             </Accordion>
             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                 <AccordionSummary
-                    expandIcon={expanded === 'panel2' ? <CloseIcon /> : <ExpandMoreIcon />}
+                    expandIcon={expanded === 'panel2' ? <CloseIcon /> : <AddIcon />}
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
@@ -46,7 +46,7 @@ const FAQ = forwardRef((props, ref) => {
             </Accordion>
             <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                 <AccordionSummary
-                    expandIcon={expanded === 'panel3' ? <CloseIcon /> : <ExpandMoreIcon />}
+                    expandIcon={expanded === 'panel3' ? <CloseIcon /> : <AddIcon />}
                     aria-controls="panel3a-content"
                     id="panel3a-header"
                 >
@@ -60,7 +60,7 @@ const FAQ = forwardRef((props, ref) => {
             </Accordion>
             <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                 <AccordionSummary
-                    expandIcon={expanded === 'panel4' ? <CloseIcon /> : <ExpandMoreIcon />}
+                    expandIcon={expanded === 'panel4' ? <CloseIcon /> : <AddIcon />}
                     aria-controls="panel4a-content"
                     id="panel4a-header"
                 >
