@@ -138,7 +138,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     <Button variant="contained" color="warning" style={{ width: '300px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from {domain}</Button>
                     <Box sx={{ marginBottom: '20px' }}>
                         <Alert severity="error" onClick={handleToggleMissingNutrients}>
-                            <Typography style={{ width: '250px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                            <Typography style={{ width: '300px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                                 Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                             </Typography>
                         </Alert>
@@ -180,7 +180,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             </Alert>
                         </Collapse>
                     </Box>
-                    <Button variant="contained" color="primary" style={{ width: '300px' }} onClick={handleToggleVitamins}>
+                    <Button variant="contained" color="secondary" style={{ width: '300px' }} onClick={handleToggleVitamins}>
                         {showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}
                         {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </Button>
