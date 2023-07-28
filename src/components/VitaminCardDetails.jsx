@@ -91,7 +91,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'flexDirection': 'column',
                     'alignItems': 'center',
                     'gap': '40px',
-                    'width': '75vw',
+                    'width': '80vw',
                     'height': '75vh',
                     'backgroundColor': '#2074d4',
                 }} >
