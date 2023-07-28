@@ -196,7 +196,7 @@ function HomePage() {
         >
             <Navbar scrollToFAQ={scrollToFAQ} />
             <EmailPopup open={showEmailPopup} onClose={handleCloseEmailPopup} />
-            <Typography variant="title" fontSize={25} paddingY={2} data-aos="zoom-out">
+            <Typography variant="caption" fontSize={25} paddingY={2} data-aos="zoom-out">
                 Prenatal Vitamin Chart
             </Typography>
             {showDescription && (  // Conditionally render the description
@@ -230,15 +230,16 @@ function HomePage() {
                             <ExpandMoreIcon />
                         </IconButton>
                     </Button>
-                    <Button variant={showDescription ? 'outlined' : 'text'} onClick={() => setShowDescription(!showDescription)} style={{ marginLeft: "10px" }}>
-                        ❓
-                    </Button>
+
                 </Box>
                 {showFilterBar ? (
                     <Button onClick={handleCancelChanges} variant="outlined" color="error">
                         ❌
                     </Button>
                 ) : null}
+                <Button variant={showDescription ? 'outlined' : 'text'} onClick={() => setShowDescription(!showDescription)} style={{ marginLeft: "10px" }}>
+                    ❓
+                </Button>
             </Box>
             {
                 showFilterBar ? (
