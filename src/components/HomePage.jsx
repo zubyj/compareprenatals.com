@@ -166,7 +166,8 @@ function HomePage() {
             marginBottom: '5vh',
             paddingTop: '40px',
             fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif",
-        }}>
+        }}
+        >
             <Navbar scrollToFAQ={scrollToFAQ} />
             <Typography variant="h5" paddingBottom={2}>
                 Prenatal Vitamin Chart
@@ -190,7 +191,8 @@ function HomePage() {
                 justifyContent: 'center',
                 gap: '10px',
             }}>
-                <Box>
+                <Box data-aos="flip-up"
+                    data-aos-duration="1000">
                     <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained" color="secondary">
                         {showFilterBar ? 'Hide Filters' : 'Show Filters'}
                         <IconButton
@@ -204,7 +206,6 @@ function HomePage() {
                             <ExpandMoreIcon />
                         </IconButton>
                     </Button>
-
                 </Box>
                 {showFilterBar ? (
                     <Button onClick={handleCancelChanges} variant="outlined" color="error">
