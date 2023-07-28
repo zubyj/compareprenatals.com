@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Box, Button, Typography, Autocomplete, TextField, IconButton } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-
+import Navbar from './Navbar';
 import VitaminList from './VitaminList';
 import Pagination from './Pagination';
 import FilterBar from './FilterBar';
@@ -69,6 +69,11 @@ function HomePage() {
                 vitamin.general_info.product_name.toLowerCase().includes(searchText.toLowerCase())
             ));
         }
+    };
+
+    const faqRef = useRef(null);
+    const scrollToFAQ = () => {
+        faqRef.current.scrollIntoView({ behavior: "smooth" });
     };
 
     useEffect(() => {
@@ -162,6 +167,7 @@ function HomePage() {
             paddingTop: '40px',
             fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif",
         }}>
+            <Navbar scrollToFAQ={scrollToFAQ} />
             <Typography variant="h5" paddingBottom={2}>
                 Prenatal Vitamin Chart
                 <Button variant={showDescription ? 'outlined' : 'text'} onClick={() => setShowDescription(!showDescription)}>
@@ -255,7 +261,7 @@ function HomePage() {
             <br />
             <VitaminList vitamins={displayedVitamins} vitaminSwitches={vitaminSwitches} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
-            <FAQ id="faq" />
+            <FAQ id="faq" ref={faqRef} />
         </Box >
     );
 }
