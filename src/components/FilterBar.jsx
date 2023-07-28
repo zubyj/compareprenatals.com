@@ -44,7 +44,7 @@ function FilterBar({
                     <FormLabel component="legend">Prenatal Format Filters</FormLabel>
                     <FormGroup row>
                         <FormControlLabel
-                            control={<Checkbox checked={format.includes('pill')} name='pill' />}
+                            control={<Checkbox checked={format.includes('pill')} onChange={onFormatChange} name='pill' />}
                             label="Pill"
                         />
                         <FormControlLabel
