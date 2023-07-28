@@ -80,25 +80,19 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
             onClose={handleClose}
             sx={{
                 'display': 'flex',
-                'marginTop': '10vh',
+                'marginTop': '20vh',
                 'justifyContent': 'center',
-                'backgroundColor': 'rgba(0,0,0,0.5)',
                 'alignItems': 'center',
-                'height': '80vh',
-                'overflow': 'scroll',
-
             }}
         >
-            <Card  >
+            <Card>
                 <CardContent sx={{
                     'display': 'flex',
                     'flexDirection': 'column',
-                    'justifyContent': 'center',
                     'alignItems': 'center',
-                    'gap': '25px',
-                    'width': '85vw',
+                    'gap': '40px',
+                    'width': '80vw',
                     'backgroundColor': '#2074d4',
-
                 }} >
                     <Box sx={{
                         'backgroundColor': '#fff',
