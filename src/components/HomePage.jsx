@@ -32,6 +32,13 @@ function HomePage() {
     const [showDescription, setShowDescription] = useState(false);  // New state variable
 
 
+    const [clickedCards, setClickedCards] = useState(0); // Add this line
+    const [showEmailPopup, setShowEmailPopup] = useState(false); // Add this line
+
+    const handleCardClick = () => {
+        setClickedCards(prevCount => prevCount + 1);
+    };
+
     const handleSaveFilters = () => {
         setSavedFilters({
             vitaminSwitches: { ...vitaminSwitches },
@@ -135,7 +142,26 @@ function HomePage() {
 
         // Reset the page to 1 when a filter changes
         setSearchParams({ page: 1 }, "push");
+
     }, [vitamins, savedFilters]);
+
+    useEffect(() => {
+        if (clickedCards >= 1) {
+            setShowEmailPopup(true); // Show the email popup
+        }
+    }, [clickedCards]);
+
+    const incrementClickedCards = () => {
+        setClickedCards(prev => prev + 1);
+    };
+
+    // Resets the clickedCards state to 0 and closes the email popup
+    const handleCloseEmailPopup = () => {
+        setClickedCards(0);
+        setShowEmailPopup(false);
+    };
+
+
 
     const startIndex = (page - 1) * vitaminsPerPage;
     const endIndex = startIndex + vitaminsPerPage;
@@ -168,13 +194,11 @@ function HomePage() {
             fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif",
         }}
         >
-            <EmailPopup />
             <Navbar scrollToFAQ={scrollToFAQ} />
-            <Typography variant="h2" fontSize={25} paddingBottom={5}>
+            <EmailPopup open={showEmailPopup} onClose={handleCloseEmailPopup} />
+            <Typography variant="title" fontSize={25} paddingY={2}>
                 Prenatal Vitamin Chart
-                <Button variant={showDescription ? 'outlined' : 'text'} onClick={() => setShowDescription(!showDescription)} style={{ marginLeft: "20px" }}>
-                    ❓
-                </Button>
+
             </Typography>
             {showDescription && (  // Conditionally render the description
                 <Typography variant="body1" color={'primary'} paddingBottom={2}>
@@ -206,6 +230,9 @@ function HomePage() {
                         >
                             <ExpandMoreIcon />
                         </IconButton>
+                    </Button>
+                    <Button variant={showDescription ? 'outlined' : 'text'} onClick={() => setShowDescription(!showDescription)} style={{ marginLeft: "10px" }}>
+                        ❓
                     </Button>
                 </Box>
                 {showFilterBar ? (
@@ -261,7 +288,7 @@ function HomePage() {
                 }}
             />
             <br />
-            <VitaminList vitamins={displayedVitamins} vitaminSwitches={vitaminSwitches} />
+            <VitaminList vitamins={displayedVitamins} vitaminSwitches={vitaminSwitches} handleCardClick={handleCardClick} />
             <Pagination totalVitamins={filteredVitamins.length} vitaminsPerPage={vitaminsPerPage} />
             <FAQ id="faq" ref={faqRef} />
         </Box >
