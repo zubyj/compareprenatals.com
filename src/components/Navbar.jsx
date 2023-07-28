@@ -4,9 +4,9 @@ import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 const Navbar = ({ scrollToFAQ }) => {
 
     return (
-        <AppBar position="fixed" color="secondary" >
+        <AppBar position="fixed" color="inherit">
             <Toolbar >
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} >
+                <Typography variant="caption" fontSize={20} component="div" sx={{ flexGrow: 1 }} >
                     Compare Prenatals
                 </Typography>
                 <Button color="inherit" onClick={scrollToFAQ}>FAQ</Button>
