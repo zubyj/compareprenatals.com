@@ -73,7 +73,6 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
         domain = parts[0];
     }
 
-
     return (
         <Modal
             open={open}
@@ -90,10 +89,11 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'display': 'flex',
                     'flexDirection': 'column',
                     'alignItems': 'center',
-                    'gap': '40px',
+                    'gap': '25px',
                     'width': '80vw',
                     'height': '75vh',
                     'backgroundColor': '#2074d4',
+                    'overflowY': 'auto',
                 }} >
                     <Box sx={{
                         'backgroundColor': '#fff',
@@ -136,51 +136,55 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         </Box>
                     </Box>
                     <Button variant="contained" color="warning" style={{ width: '300px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from {domain}</Button>
-                    <Alert severity="error" onClick={handleToggleMissingNutrients}>
-                        <Typography style={{ width: '250px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                            Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-                        </Typography>
-                    </Alert>
-                    <Alert severity="warning" onClick={handleToggleLowNutrients}>
-                        <Typography style={{ width: '250px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                            Warning: {lowNutrients.length} Nutrients Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-                        </Typography>
-                    </Alert>
+                    <Box sx={{ marginBottom: '20px' }}>
+                        <Alert severity="error" onClick={handleToggleMissingNutrients}>
+                            <Typography style={{ width: '250px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                            </Typography>
+                        </Alert>
+                        <Collapse in={openMissingNutrients}>
+                            <Alert severity="error">
+                                <Table>
+                                    <TableBody>
+                                        {missingNutrients.map((nutrient, index) => (
+                                            <TableRow key={index}>
+                                                <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
+                                                    {nutrient}
+                                                </TableCell>
+                                            </TableRow>
+                                        ))}
+                                    </TableBody>
+                                </Table>
+                            </Alert>
+                        </Collapse>
+                    </Box>
+                    <Box sx={{ marginBottom: '20px' }}>
+                        <Alert severity="warning" onClick={handleToggleLowNutrients}>
+                            <Typography style={{ width: '250px', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                Warning: {lowNutrients.length} Nutrients Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                            </Typography>
+                        </Alert>
+                        <Collapse in={openLowNutrients}>
+                            <Alert severity="warning">
+                                <Table>
+                                    <TableBody>
+                                        {lowNutrients.map((nutrient, index) => (
+                                            <TableRow key={index}>
+                                                <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
+                                                    Only {nutrient.amount} mg/mcg of {nutrient.name}. {nutrient.recommended} mg/mcg recommended by FDA.
+                                                </TableCell>
+                                            </TableRow>
+                                        ))}
+                                    </TableBody>
+                                </Table>
+                            </Alert>
+                        </Collapse>
+                    </Box>
                     <Button variant="contained" color="primary" style={{ width: '300px' }} onClick={handleToggleVitamins}>
                         {showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}
                         {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </Button>
 
-                    <Collapse in={openMissingNutrients}>
-                        <Alert severity="error">
-                            <Table>
-                                <TableBody>
-                                    {missingNutrients.map((nutrient, index) => (
-                                        <TableRow key={index}>
-                                            <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
-                                                {nutrient}
-                                            </TableCell>
-                                        </TableRow>
-                                    ))}
-                                </TableBody>
-                            </Table>
-                        </Alert>
-                    </Collapse>
-                    <Collapse in={openLowNutrients}>
-                        <Alert severity="warning">
-                            <Table>
-                                <TableBody>
-                                    {lowNutrients.map((nutrient, index) => (
-                                        <TableRow key={index}>
-                                            <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
-                                                Only {nutrient.amount} mg/mcg of {nutrient.name}. {nutrient.recommended} mg/mcg recommended by FDA.
-                                            </TableCell>
-                                        </TableRow>
-                                    ))}
-                                </TableBody>
-                            </Table>
-                        </Alert>
-                    </Collapse>
                     <Collapse in={showVitamins}>
                         <Card sx={{ backgroundColor: 'white', border: '1px solid black', marginTop: '10px' }}>
                             <Typography variant="h6" sx={{ textAlign: 'center', fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif" }}>Vitamins</Typography>
