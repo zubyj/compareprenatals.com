@@ -30,7 +30,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
     return (
         <>
             <Card
-                sx={{ minWidth: 275, marginTop: 2, marginBottom: 2, marginLeft: 'auto', marginRight: 'auto' }}
+                sx={{ width: '375px', marginTop: 2, marginBottom: 2, marginLeft: 'auto', marginRight: 'auto' }}
                 data-aos="fade-up"
                 data-aos-duration="1000"
             >

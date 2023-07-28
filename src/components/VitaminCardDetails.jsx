@@ -90,7 +90,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'flexDirection': 'column',
                     'alignItems': 'center',
                     'gap': '25px',
-                    'width': '80vw',
+                    'width': '375px',
                     'height': '75vh',
                     'backgroundColor': '#2074d4',
                     'overflowY': 'auto',
@@ -186,7 +186,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     </Button>
 
                     <Collapse in={showVitamins}>
-                        <Card sx={{ backgroundColor: 'white', border: '1px solid black', marginTop: '10px' }}>
+                        <Card sx={{ backgroundColor: 'white', border: '1px solid black' }}>
                             <Typography variant="h6" sx={{ textAlign: 'center', fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif" }}>Vitamins</Typography>
                             <Table>
                                 <TableBody>
@@ -194,10 +194,10 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                         <TableRow key={index}>
                                             {vitaminChunk.map((vitaminInfo, subIndex) => (
                                                 <>
-                                                    <TableCell sx={{ border: 'none', fontFamily: "'Arial Black','Helvetica Bold',sans-serif", fontSize: '8pt' }}>
+                                                    <TableCell sx={{ border: 'none', fontFamily: "'sans-serif", fontWeight: '700', fontSize: '12px' }}>
                                                         {vitaminInfo.name} {Number(vitaminInfo.amount) === 0 ? '❌' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? '⚠️' : ''}
                                                     </TableCell>
-                                                    <TableCell sx={{ border: 'none', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '8pt' }}>{vitaminInfo.amount}</TableCell>
+                                                    <TableCell sx={{ border: 'none', fontFamily: 'sans-serif', fontWeight: '700', fontSize: '10pt' }}>{vitaminInfo.amount}</TableCell>
                                                 </>
                                             ))}
                                         </TableRow>
