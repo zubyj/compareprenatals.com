@@ -34,9 +34,9 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                 data-aos="fade-up"
                 data-aos-duration="1000"
             >
-                <Button onClick={handleOpen} variant="contained" color="primary" sx={{ 'width': '95vw', 'height': '60vh', 'paddingY': '10px', 'marginY': '10px', 'height': '150px', 'borderRadius': '20px' }}>
+                <Button onClick={handleOpen} variant="contained" color="primary" sx={{ 'height': '60vh', 'paddingY': '10px', 'marginY': '10px', 'height': '150px', 'borderRadius': '20px' }}>
                     <Grid container sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '0' }}>
-                        <Grid item xs={6} paddingRight={5}>
+                        <Grid item xs={6} paddingRight={5} >
                             <Typography variant="h6" color="lightcyan" fontWeight={700} overflow={'hidden'}>{vitamin.general_info.brand_name}</Typography>
                         </Grid>
                         <Grid item xs={6} >
@@ -49,7 +49,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                                                 variant="subtitle2"
                                                 padding={.5}
                                                 fontWeight={700}
-                                                minWidth={50}
+                                                minWidth={45}
                                                 style={{
                                                     color: vitamin.general_info.score <= 3 ? 'red' :
                                                         vitamin.general_info.score <= 8 ? '#ff8c00' :
@@ -62,15 +62,15 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                                         </Card>
                                         <Typography variant="caption">Score</Typography>
                                     </Box>
-                                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-                                        <Card sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', minWidth: '90px' }}>
+                                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                                        <Card sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', minWidth: '80px' }}>
                                             <Typography variant="subtitle2" padding={.5} >
                                                 {vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}
                                             </Typography>
                                         </Card>
                                         <Typography variant="caption">Format</Typography>
                                     </Box>
-                                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px', justifyContent: 'center', width: '60px' }}>
+                                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px', justifyContent: 'center', width: '50px' }}>
                                         <Card sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                                             <Typography variant="subtitle2" padding={.5} >
                                                 {vitamin.general_info.serving_size}
