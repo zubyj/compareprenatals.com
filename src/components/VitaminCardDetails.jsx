@@ -18,13 +18,20 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
 
         vitamin.vitamins.forEach(vitaminInfo => {
             const fdaValue = fdaVitaminValues[vitaminInfo.name];
-            if (!fdaValue || Number(vitaminInfo.amount) === 0) {
+            let name = vitaminInfo.name.toLowerCase();
+            if ((!fdaValue || Number(vitaminInfo.amount) === 0) &&
+                name !== "magnesium" &&
+                name !== "calcium" &&
+                name !== "added sugars") {
                 missing.push({
                     name: vitaminInfo.name,
                     amount: vitaminInfo.amount,
                     unit: vitaminInfo.unit,
                 });
-            } else if (Number(vitaminInfo.amount) < fdaValue && vitaminInfo.name.toLowerCase() !== "magnesium" && vitaminInfo.name.toLowerCase() !== "calcium") {
+            } else if (Number(vitaminInfo.amount) < fdaValue &&
+                name !== "magnesium" &&
+                name !== "calcium" &&
+                name !== "added sugars") {
                 low.push({ name: vitaminInfo.name, amount: vitaminInfo.amount, unit: vitaminInfo.unit, recommended: fdaValue });
             }
         });
@@ -32,6 +39,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
         setMissingNutrients(missing);
         setLowNutrients(low);
     }, [vitamin]);
+
 
     const handleToggleMissingNutrients = () => setOpenMissingNutrients(!openMissingNutrients);
     const handleToggleLowNutrients = () => setOpenLowNutrients(!openLowNutrients);

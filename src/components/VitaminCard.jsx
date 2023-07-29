@@ -68,7 +68,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                                         </Card>
                                         <Typography variant="caption">Score</Typography>
                                     </Box>
-                                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
                                         <Card sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', minWidth: '90px' }}>
                                             <Typography variant="subtitle2" padding={.5} >
                                                 {vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}
