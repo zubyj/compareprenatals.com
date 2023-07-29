@@ -19,9 +19,13 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
         vitamin.vitamins.forEach(vitaminInfo => {
             const fdaValue = fdaVitaminValues[vitaminInfo.name];
             if (!fdaValue || Number(vitaminInfo.amount) === 0) {
-                missing.push(vitaminInfo.name);
-            } else if (Number(vitaminInfo.amount) < fdaValue) {
-                low.push({ name: vitaminInfo.name, amount: vitaminInfo.amount, recommended: fdaValue });
+                missing.push({
+                    name: vitaminInfo.name,
+                    amount: vitaminInfo.amount,
+                    unit: vitaminInfo.unit,
+                });
+            } else if (Number(vitaminInfo.amount) < fdaValue && vitaminInfo.name.toLowerCase() !== "magnesium" && vitaminInfo.name.toLowerCase() !== "calcium") {
+                low.push({ name: vitaminInfo.name, amount: vitaminInfo.amount, unit: vitaminInfo.unit, recommended: fdaValue });
             }
         });
 
@@ -91,7 +95,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'alignItems': 'center',
                     'gap': '25px',
                     'width': '300px',
-                    'height': '75vh',
+                    'maxHeight': '75vh',
                     'backgroundColor': '#2074d4',
                     'overflowY': 'auto',
                 }} >
@@ -151,7 +155,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                         {missingNutrients.map((nutrient, index) => (
                                             <TableRow key={index}>
                                                 <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
-                                                    {nutrient}
+                                                    {nutrient.name} is missing. {nutrient.amount} {nutrient.unit} recommended by FDA.
                                                 </TableCell>
                                             </TableRow>
                                         ))}
@@ -171,7 +175,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                         {lowNutrients.map((nutrient, index) => (
                                             <TableRow key={index}>
                                                 <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
-                                                    Only {nutrient.amount} mg/mcg of {nutrient.name}. {nutrient.recommended} mg/mcg recommended by FDA.
+                                                    Only {nutrient.amount} {nutrient.unit} of {nutrient.name}. {nutrient.recommended} {nutrient.unit} recommended by FDA.
                                                 </TableCell>
                                             </TableRow>
                                         ))}
@@ -179,8 +183,8 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 </Table>
                             </Alert>
                         </Collapse>
-                        <Button variant="outlined" color="primary" style={{ backgroundColor: '#fff', marginTop: '20px' }} onClick={handleToggleVitamins}>
-                            {showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}
+                        <Button variant="outlined" style={{ width: '300px', backgroundColor: '#fff', marginTop: '20px' }} onClick={handleToggleVitamins}>
+                            {showVitamins ? 'Hide Nutrient List' : 'Show Full Nutrient List'}
                             {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </Button>
                     </Box>
@@ -195,10 +199,10 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                         <TableRow key={index}>
                                             {vitaminChunk.map((vitaminInfo, subIndex) => (
                                                 <>
-                                                    <TableCell sx={{ border: 'none', fontSize: '11px' }}>
+                                                    <TableCell sx={{ border: 'none', fontSize: '12px' }}>
                                                         {vitaminInfo.name} {Number(vitaminInfo.amount) === 0 ? '❌' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? '⚠️' : ''}
                                                     </TableCell>
-                                                    <TableCell sx={{ border: 'none', fontWeight: '700', fontSize: '10pt' }}>{vitaminInfo.amount}</TableCell>
+                                                    <TableCell sx={{ border: 'none', fontWeight: '700', fontSize: '9pt' }}>{vitaminInfo.amount} {vitaminInfo.unit}</TableCell>
                                                 </>
                                             ))}
                                         </TableRow>
