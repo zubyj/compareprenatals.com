@@ -226,7 +226,7 @@ function HomePage() {
             }}>
                 <Box data-aos="flip-up"
                     data-aos-duration="1000">
-                    <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained" color="secondary" size='small'>
+                    <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained" sx={{ backgroundImage: "linear-gradient(to top, #00c6fb 0%, #005bea 100%)" }} size='small'>
                         {showFilterBar ? 'Hide Filters' : 'Show Filters'}
                         <IconButton
                             onClick={() => setShowFilterBar(!showFilterBar)}
