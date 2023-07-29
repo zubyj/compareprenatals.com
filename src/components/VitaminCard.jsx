@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Card, Typography, Button, Grid, Box } from '@mui/material';
 import VitaminCardDetails from './VitaminCardDetails';
 
-function VitaminCard({ vitamin, vitaminSwitches }) {
+function VitaminCard({ vitamin, index, vitaminSwitches }) {
     const [showVitamins, setShowVitamins] = useState(false);
     const [open, setOpen] = useState(false);
 
@@ -27,6 +27,14 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
         }
     };
 
+    const determineGradient = (index) => {
+        if (index % 2 === 0) {
+            return 'linear-gradient(to top, #c471f5 0%, #fa71cd 100%)';
+        } else {
+            return 'linear-gradient(to top, #00c6fb 0%, #005bea 100%)'; // Replace with your desired alternate gradient
+        }
+    };
+
     return (
         <>
             <Card
@@ -39,7 +47,7 @@ function VitaminCard({ vitamin, vitaminSwitches }) {
                     'marginY': '10px',
                     'height': '150px',
                     'borderRadius': '20px',
-                    'background-image': 'linear-gradient(to top, #30cfd0 0%, #330867 100%)'
+                    'backgroundImage': determineGradient(index)  // Use the function to set gradient
                 }}>
                     <Grid container sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '0' }}>
                         <Grid item xs={6} paddingRight={5} >

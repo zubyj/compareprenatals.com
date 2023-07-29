@@ -1,134 +1,6 @@
 [
     {
         "general_info": {
-            "url": "https://www.example.com/",
-            "brand_name": "CareNatal",
-            "product_name": "Prenatal Vitamin Powder",
-            "format": "Powder",
-            "price": "",
-            "serving_size": "-",
-            "score": "10"
-        },
-        "vitamins": [
-            {
-                "name": "Omega-3",
-                "amount": "250",
-                "unit": "mg"
-            },
-            {
-                "name": "Choline",
-                "amount": "300",
-                "unit": "mg"
-            },
-            {
-                "name": "Iron",
-                "amount": "27",
-                "unit": "mg"
-            },
-            {
-                "name": "Vitamin D",
-                "amount": "60",
-                "unit": "mcg"
-            },
-            {
-                "name": "Magnesium",
-                "amount": "100",
-                "unit": "mg"
-            },
-            {
-                "name": "Vitamin B6",
-                "amount": "10",
-                "unit": "mg"
-            },
-            {
-                "name": "Vitamin B12",
-                "amount": "30",
-                "unit": "mcg"
-            },
-            {
-                "name": "Vitamin A",
-                "amount": "1300",
-                "unit": "mcg"
-            },
-            {
-                "name": "Vitamin C",
-                "amount": "200",
-                "unit": "mg"
-            },
-            {
-                "name": "Vitamin E",
-                "amount": "19",
-                "unit": "mg"
-            },
-            {
-                "name": "Thiamin - B1",
-                "amount": "1.4",
-                "unit": "mg"
-            },
-            {
-                "name": "Riboflavin - B2",
-                "amount": "2",
-                "unit": "mg"
-            },
-            {
-                "name": "Niacinamide - B3",
-                "amount": "18",
-                "unit": "mg"
-            },
-            {
-                "name": "Folate, DFE",
-                "amount": "1350",
-                "unit": "mcg"
-            },
-            {
-                "name": "Biotin",
-                "amount": "300",
-                "unit": "mg"
-            },
-            {
-                "name": "Pantothenic",
-                "amount": "10",
-                "unit": "mg"
-            },
-            {
-                "name": "Calcium",
-                "amount": "0",
-                "unit": "mg"
-            },
-            {
-                "name": "Iodine",
-                "amount": "290",
-                "unit": "mcg"
-            },
-            {
-                "name": "Zinc",
-                "amount": "13",
-                "unit": "mg"
-            },
-            {
-                "name": "Selenium",
-                "amount": "70",
-                "unit": "mcg"
-            },
-            {
-                "name": "Manganese",
-                "amount": "2.6",
-                "unit": "mg"
-            },
-            {
-                "name": "Vitamin K",
-                "amount": "90",
-                "unit": "mcg"
-            },
-            {
-                "name": "Added Sugars",
-                "amount": null,
-                "unit": "g"
-            }
-        ]
-    },
-    {
-        "general_info": {
             "url": "https://www.cvs.com/shop/one-a-day-women-s-prenatal-1-multivitamin-softgels-prodid-967926",
             "brand_name": "One A Day",
             "product_name": "Prenatal One",
@@ -247,6 +119,134 @@
             {
                 "name": "Vitamin K",
                 "amount": "0",
+                "unit": "mcg"
+            },
+            {
+                "name": "Added Sugars",
+                "amount": null,
+                "unit": "g"
+            }
+        ]
+    },
+    {
+        "general_info": {
+            "url": "https://www.example.com/",
+            "brand_name": "CareNatal",
+            "product_name": "Prenatal Vitamin Powder",
+            "format": "Powder",
+            "price": "",
+            "serving_size": "-",
+            "score": "10"
+        },
+        "vitamins": [
+            {
+                "name": "Omega-3",
+                "amount": "250",
+                "unit": "mg"
+            },
+            {
+                "name": "Choline",
+                "amount": "300",
+                "unit": "mg"
+            },
+            {
+                "name": "Iron",
+                "amount": "27",
+                "unit": "mg"
+            },
+            {
+                "name": "Vitamin D",
+                "amount": "60",
+                "unit": "mcg"
+            },
+            {
+                "name": "Magnesium",
+                "amount": "100",
+                "unit": "mg"
+            },
+            {
+                "name": "Vitamin B6",
+                "amount": "10",
+                "unit": "mg"
+            },
+            {
+                "name": "Vitamin B12",
+                "amount": "30",
+                "unit": "mcg"
+            },
+            {
+                "name": "Vitamin A",
+                "amount": "1300",
+                "unit": "mcg"
+            },
+            {
+                "name": "Vitamin C",
+                "amount": "200",
+                "unit": "mg"
+            },
+            {
+                "name": "Vitamin E",
+                "amount": "19",
+                "unit": "mg"
+            },
+            {
+                "name": "Thiamin - B1",
+                "amount": "1.4",
+                "unit": "mg"
+            },
+            {
+                "name": "Riboflavin - B2",
+                "amount": "2",
+                "unit": "mg"
+            },
+            {
+                "name": "Niacinamide - B3",
+                "amount": "18",
+                "unit": "mg"
+            },
+            {
+                "name": "Folate, DFE",
+                "amount": "1350",
+                "unit": "mcg"
+            },
+            {
+                "name": "Biotin",
+                "amount": "300",
+                "unit": "mg"
+            },
+            {
+                "name": "Pantothenic",
+                "amount": "10",
+                "unit": "mg"
+            },
+            {
+                "name": "Calcium",
+                "amount": "0",
+                "unit": "mg"
+            },
+            {
+                "name": "Iodine",
+                "amount": "290",
+                "unit": "mcg"
+            },
+            {
+                "name": "Zinc",
+                "amount": "13",
+                "unit": "mg"
+            },
+            {
+                "name": "Selenium",
+                "amount": "70",
+                "unit": "mcg"
+            },
+            {
+                "name": "Manganese",
+                "amount": "2.6",
+                "unit": "mg"
+            },
+            {
+                "name": "Vitamin K",
+                "amount": "90",
                 "unit": "mcg"
             },
             {

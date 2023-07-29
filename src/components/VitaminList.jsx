@@ -5,7 +5,7 @@ function VitaminList({ vitamins, vitaminSwitches }) {
     return (
         <div>
             {vitamins.map((vitamin, index) => (
-                <VitaminCard key={index} vitamin={vitamin} vitaminSwitches={vitaminSwitches} />
+                <VitaminCard key={index} index={index} vitamin={vitamin} vitaminSwitches={vitaminSwitches} />
             ))}
         </div>
     );
