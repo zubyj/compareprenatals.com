@@ -90,6 +90,18 @@ function HomePage() {
             const jsonFilePath = process.env.NODE_ENV === 'development' ? 'test/prenatal-vitamins.json' : 'prenatal-vitamins.json';
             const response = await fetch(jsonFilePath);
             const data = await response.json();
+            // sort data 
+            data.sort((a, b) => {
+                const aBrandName = a.general_info.brand_name.toLowerCase();
+                const bBrandName = b.general_info.brand_name.toLowerCase();
+                if (aBrandName < bBrandName) {
+                    return -1;
+                }
+                if (aBrandName > bBrandName) {
+                    return 1;
+                }
+                return 0;
+            });
             setVitamins(data);
         };
         fetchData();
