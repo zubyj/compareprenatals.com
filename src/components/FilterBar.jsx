@@ -21,10 +21,12 @@ function FilterBar({
             justifyContent: 'center',
             textAlign: 'center',
             marginY: '30px',
-            border: '1px solid black',
-            padding: '20px 5px',
-            gap: '20px',
-        }}>
+            backgroundColor: '#f9f9f9',
+            padding: '30px 10px',
+            gap: '5px'
+        }}
+            data-aos="flip-up"
+        >
             <FormControl component="fieldset">
                 <FormLabel component="legend">Max Daily Serving Size</FormLabel>
                 <RadioGroup row name="servingSize" value={servingSize} onChange={(e, value) => onServingSizeChange(value)}>
@@ -60,7 +62,7 @@ function FilterBar({
             <FormLabel component="legend">Prenatal Nutrient Filters</FormLabel>
             <FormGroup sx={{
                 display: 'flex',
-                flexDirection: { xs: 'column', md: 'row' },
+                flexDirection: 'column'
             }}>
 
                 <FormControlLabel
