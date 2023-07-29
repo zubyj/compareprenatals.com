@@ -20,9 +20,9 @@ function FilterBar({
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
-            paddingY: '30px',
             marginY: '30px',
-            backgroundColor: '#f5f5f5',
+            border: '1px solid black',
+            padding: '20px 5px',
             gap: '20px',
         }}>
             <FormControl component="fieldset">
@@ -39,7 +39,6 @@ function FilterBar({
                 justifyContent: 'center',
                 alignItems: 'center',
             }}>
-
                 <FormControl component="fieldset">
                     <FormLabel component="legend">Prenatal Format Filters</FormLabel>
                     <FormGroup row>
@@ -86,8 +85,6 @@ function FilterBar({
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'center',
-                paddingY: '20px',
-                width: '100%',
                 gap: '20px',
             }}
             >

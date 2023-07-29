@@ -191,6 +191,7 @@ function HomePage() {
             marginTop: '5vh',
             marginBottom: '5vh',
             paddingTop: '40px',
+            width: '375px',
             fontFamily: "'Arial Black', 'Helvetica Bold', sans-serif",
         }}
         >
