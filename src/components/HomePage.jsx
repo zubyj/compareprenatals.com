@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Box, Button, Typography, Autocomplete, TextField, IconButton } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 import Navbar from './Navbar';
 import VitaminList from './VitaminList';
@@ -197,17 +198,24 @@ function HomePage() {
         >
             <Navbar scrollToFAQ={scrollToFAQ} />
             <EmailPopup open={showEmailPopup} onClose={handleCloseEmailPopup} />
-            <Typography variant="caption" fontSize={25} paddingY={2} data-aos="zoom-out">
-                Prenatal Vitamin Chart
-            </Typography>
+            <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                <Button variant="outlined" color="primary" size="small" onClick={() => setShowDescription(!showDescription)} style={{ fontSize: '10px', height: '30px', marginLeft: "15px" }}>
+                    Disclaimer
+                    {showDescription ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                </Button>
+            </Box>
+            <Box data-aos="zoom-out" paddingY={2}>
+                <Typography variant="h2" fontWeight={800} fontSize={25}>
+                    Prenatal Vitamin Chart
+                </Typography>
+            </Box>
             {showDescription && (  // Conditionally render the description
                 <Typography variant="body1" color={'primary'} paddingBottom={2}>
                     Top 10 prenatal vitamin website are all pay to play and filled with incomplete vitamins.
                     We made an objective list, for you to find the best one for you.
                     <hr />
                     <Typography color="secondary">
-                        Regardless of the score, any prenatal vitamin will always be better than no prenatal vitamin
-                    </Typography>
+                        Please remember, any prenatal vitamin will always be better than no prenatal vitamin                    </Typography>
                 </Typography>
             )}
             <Box sx={{
@@ -218,7 +226,7 @@ function HomePage() {
             }}>
                 <Box data-aos="flip-up"
                     data-aos-duration="1000">
-                    <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained" color="secondary">
+                    <Button onClick={() => setShowFilterBar(!showFilterBar)} variant="contained" color="secondary" size='small'>
                         {showFilterBar ? 'Hide Filters' : 'Show Filters'}
                         <IconButton
                             onClick={() => setShowFilterBar(!showFilterBar)}
@@ -238,9 +246,7 @@ function HomePage() {
                         ❌
                     </Button>
                 ) : null}
-                <Button variant="outlined" onClick={() => setShowDescription(!showDescription)} style={{ marginLeft: "10px" }}>
-                    ❓
-                </Button>
+
             </Box>
             {
                 showFilterBar ? (
