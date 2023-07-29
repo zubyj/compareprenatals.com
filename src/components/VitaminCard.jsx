@@ -47,7 +47,7 @@ function VitaminCard({ vitamin, index, vitaminSwitches }) {
                     'marginY': '10px',
                     'height': '150px',
                     'borderRadius': '20px',
-                    'backgroundImage': determineGradient(index)  // Use the function to set gradient
+                    'backgroundImage': determineGradient(index)
                 }}>
                     <Grid container sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '0' }}>
                         <Grid item xs={6} paddingRight={5} >
