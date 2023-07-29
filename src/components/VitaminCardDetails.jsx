@@ -97,6 +97,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'width': '300px',
                     'maxHeight': '75vh',
                     'backgroundColor': '#2074d4',
+                    'background-image': 'linear-gradient(to top, #30cfd0 0%, #330867 100%)',
                     'overflowY': 'auto',
                 }} >
                     <Box sx={{
