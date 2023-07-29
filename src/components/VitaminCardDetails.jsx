@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, Typography, Button, Collapse, Grid, Box, Table, TableRow, TableCell, TableBody, Modal, Alert } from '@mui/material';
 import MedicationIcon from '@mui/icons-material/Medication';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'; import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import fdaVitaminValues from '../fda-rdv.json'
 
@@ -90,16 +90,16 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'flexDirection': 'column',
                     'alignItems': 'center',
                     'gap': '25px',
-                    'width': '325px',
+                    'width': '300px',
                     'height': '75vh',
                     'backgroundColor': '#2074d4',
                     'overflowY': 'auto',
                 }} >
                     <Box sx={{
                         'backgroundColor': '#fff',
-                        'padding': '30px',
+                        'padding': '20px',
                         'borderRadius': '10px',
-                        'width': '250px',
+                        'width': '240px',
                         'textAlign': 'center'
 
                     }}>
@@ -108,12 +108,11 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         <Typography variant="h2" fontSize={20} fontWeight={700}>{vitamin.general_info.product_name}</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', color: 'white', padding: '15px', borderRadius: '10px', width: '325px' }}>
-                            <MedicationIcon sx={{ fontSize: 60 }} />
+                        <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', color: 'white', width: '300px' }}>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                                 <Card>
                                     <Typography
-                                        variant="h6"
+                                        variant="body1"
                                         padding={1}
                                         style={{
                                             color: vitamin.general_info.score <= 3 ? 'red' :
@@ -126,18 +125,23 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Nutrition Score</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <Card><Typography variant="h6" padding={1}>{vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}</Typography></Card>
+                                <Card><Typography variant="body1" padding={1}>{vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}</Typography></Card>
                                 <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Format</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <Card><Typography variant="h6" padding={1} minWidth={30} textAlign={'center'}>{vitamin.general_info.serving_size}</Typography></Card>
+                                <Card><Typography variant="body1" padding={1} minWidth={30} textAlign={'center'}>{vitamin.general_info.serving_size}</Typography></Card>
                                 <Typography variant="subtitle2" marginTop={2} textAlign={'center'} fontWeight={700}>Serving Size</Typography>
                             </Box>
                         </Box>
                     </Box>
-                    <Button variant="contained" color="success" style={{ width: '325px' }} href={vitamin.general_info.url} target='_blank'>Order for ${vitamin.general_info.price} from {domain}</Button>
-                    <Box>
-                        <Button variant="contained" color="error" style={{ width: "325px" }} onClick={handleToggleMissingNutrients}>
+                    <Button variant="contained" color="success" size='large' href={vitamin.general_info.url} target='_blank'>
+                        <ShoppingCartIcon />
+                        <Typography fontSize="small" marginLeft={2}>
+                            Shop Now
+                        </Typography>
+                    </Button>
+                    <Box sx={{ textAlign: 'center', marginTop: '50px' }}>
+                        <Button variant="contained" size="small" color="error" style={{ width: "300px" }} onClick={handleToggleMissingNutrients}>
                             Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </Button>
                         <Collapse in={openMissingNutrients}>
@@ -156,9 +160,9 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             </Alert>
                         </Collapse>
                     </Box>
-                    <Box sx={{ marginBottom: '20px' }}>
-                        <Button variant="contained" style={{ width: "325px" }} color="error" onClick={handleToggleLowNutrients}>
-                            Warning: {lowNutrients.length} Nutrients Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                    <Box sx={{ marginBottom: '20px', textAlign: 'center' }}>
+                        <Button variant="contained" size="small" color="error" style={{ width: "300px" }} onClick={handleToggleLowNutrients}>
+                            Warning: {lowNutrients.length} Nutrients Very Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </Button>
                         <Collapse in={openLowNutrients}>
                             <Alert severity="warning">
@@ -175,7 +179,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 </Table>
                             </Alert>
                         </Collapse>
-                        <Button variant="contained" color="warning" style={{ width: '325px', marginTop: '20px' }} onClick={handleToggleVitamins}>
+                        <Button variant="outlined" color="primary" style={{ backgroundColor: '#fff', marginTop: '20px' }} onClick={handleToggleVitamins}>
                             {showVitamins ? 'Hide Vitamins' : 'Show Vitamins'}
                             {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </Button>
