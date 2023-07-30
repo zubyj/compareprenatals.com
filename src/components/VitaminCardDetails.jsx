@@ -12,6 +12,10 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
     const [openMissingNutrients, setOpenMissingNutrients] = useState(false);
     const [openLowNutrients, setOpenLowNutrients] = useState(false);
 
+    const [showCholineWarning, setShowCholineWarning] = useState(false);
+    const [missingCholine, setMissingCholine] = useState(550);
+
+
     useEffect(() => {
         const missing = [];
         const low = [];
@@ -19,7 +23,11 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
         vitamin.vitamins.forEach(vitaminInfo => {
             const fdaValue = fdaVitaminValues[vitaminInfo.name];
             let name = vitaminInfo.name.toLowerCase();
-            if ((!fdaValue || Number(vitaminInfo.amount) === 0) &&
+            if (name === "choline" && Number(vitaminInfo.amount) < 550) {
+                setShowCholineWarning(true);
+                setMissingCholine(550 - Number(vitaminInfo.amount));
+            }
+            else if ((!fdaValue || Number(vitaminInfo.amount) === 0) &&
                 name !== "magnesium" &&
                 name !== "calcium" &&
                 name !== "added sugars") {
@@ -154,7 +162,12 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             Shop Now
                         </Typography>
                     </Button>
-                    <Box sx={{ textAlign: 'center', marginTop: '50px' }}>
+                    {showCholineWarning &&
+                        <Typography variant="body2" color="error" sx={{ backgroundColor: '#fff', padding: '10px', borderRadius: '10px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>
+                            Choline is {missingCholine} mg less than the recommended FDA amount.
+                        </Typography>
+                    }
+                    <Box sx={{ textAlign: 'center' }}>
                         <Button variant="contained" size="small" color="error" style={{ width: "300px" }} onClick={handleToggleMissingNutrients}>
                             Warning: {missingNutrients.length} Nutrients Missing {openMissingNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                         </Button>
