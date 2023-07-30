@@ -90,18 +90,15 @@ function HomePage() {
             const jsonFilePath = process.env.NODE_ENV === 'development' ? 'test/prenatal-vitamins.json' : 'prenatal-vitamins.json';
             const response = await fetch(jsonFilePath);
             const data = await response.json();
-            // sort data 
-            data.sort((a, b) => {
-                const aBrandName = a.general_info.brand_name.toLowerCase();
-                const bBrandName = b.general_info.brand_name.toLowerCase();
-                if (aBrandName < bBrandName) {
-                    return -1;
-                }
-                if (aBrandName > bBrandName) {
-                    return 1;
-                }
-                return 0;
-            });
+            // Randomly shuffle the array
+            data.sort(() => Math.random() - 0.5);
+            // Make sure "CareNatal" always stays at #2
+            let careNatalIndex = data.findIndex(vitamin => vitamin.general_info.brand_name === "CareNatal");
+            if (careNatalIndex !== -1) {
+                let careNatalData = data[careNatalIndex];
+                data.splice(careNatalIndex, 1); // remove "CareNatal" from its current position
+                data.splice(1, 0, careNatalData); // insert "CareNatal" at position #2
+            }
             setVitamins(data);
         };
         fetchData();
@@ -283,7 +280,7 @@ function HomePage() {
             }
             <Autocomplete
                 id="vitamin-search"
-                options={vitamins}
+                options={[...vitamins].sort((a, b) => a.general_info.brand_name.localeCompare(b.general_info.brand_name))}
                 getOptionLabel={(option) => option.general_info.brand_name + ' ' + option.general_info.product_name}
                 style={{ width: '350px', textAlign: 'center', margin: 'auto', marginTop: '20px' }}
                 renderInput={(params) => <TextField {...params} label="Search for prenatals" variant="outlined"
