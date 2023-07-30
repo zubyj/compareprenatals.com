@@ -215,6 +215,32 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             </>
                         }
                     </Box>
+                    <Button variant="outlined" style={{ width: '300px', backgroundColor: '#fff', marginTop: '20px' }} onClick={handleToggleVitamins}>
+                        {showVitamins ? 'Hide Nutrient List' : 'Show Full Nutrient List'}
+                        {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                    </Button>
+                    <Collapse in={showVitamins} >
+                        <Card>
+                            <Typography variant="h6" sx={{ textAlign: 'center', paddingY: '20px' }}>Vitamins</Typography>
+                            <Table>
+                                <TableBody>
+                                    {vitaminChunks.map((vitaminChunk, index) => (
+                                        <TableRow key={index}>
+                                            {vitaminChunk.map((vitaminInfo, subIndex) => (
+                                                <>
+                                                    <TableCell sx={{ border: 'none', fontSize: '12px' }}>
+                                                        {vitaminInfo.name} {Number(vitaminInfo.amount) === 0 ? '❌' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? '⚠️' : ''}
+                                                    </TableCell>
+                                                    <TableCell sx={{ border: 'none', fontWeight: '700', fontSize: '9pt' }}>{vitaminInfo.amount} {vitaminInfo.unit}</TableCell>
+                                                </>
+                                            ))}
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </Card>
+                    </Collapse>
+
                     <hr />
                 </CardContent>
             </Card >
