@@ -7,10 +7,9 @@ const Navbar = ({ scrollToFAQ }) => {
     return (
         <AppBar position="fixed" color="inherit" >
             <Box display={"flex"} textAlign={"center"} alignItems={"center"} justifyContent={"center"}>
-
                 <Toolbar>
-                    <Typography variant="caption" fontSize={20} component="div" >
-                        Compare Prenatals
+                    <Typography variant="caption" fontSize={16} paddingRight={2} component="div" >
+                        compareprenatals.com
                     </Typography>
                     <Button color="inherit" onClick={scrollToFAQ}>FAQ</Button>
                     <Button color="inherit" href="mailto:compareprenatals@gmail.com">Contact</Button>
