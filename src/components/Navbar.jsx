@@ -13,7 +13,7 @@ const Navbar = ({ scrollToFAQ }) => {
                         Compare Prenatals
                     </Typography>
                     <Button color="inherit" onClick={scrollToFAQ}>FAQ</Button>
-                    <Button color="inherit" href="mailto:usersemail">Contact</Button> {/*Replace usersemail with actual email*/}
+                    <Button color="inherit" href="mailto:compareprenatals@gmail.com">Contact</Button>
                 </Toolbar>
             </Box>
         </AppBar >

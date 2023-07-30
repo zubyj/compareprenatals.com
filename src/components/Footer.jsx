@@ -28,7 +28,7 @@ const Footer = () => {
                 <Link href="https://www.example.com" color="inherit">
                     Terms and Conditions
                 </Link>
-                <Link href="mailto:usersemail" color="inherit">
+                <Link href="mailto:compareprenatals@gmail.com" color="inherit">
                     Contact
                 </Link>
             </Box>
