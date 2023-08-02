@@ -140,7 +140,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 <Typography
                                     variant="body1"
                                     padding={1}
-                                    width={30}
+                                    minWidth={30}
                                     height={25}
                                     fontWeight={700}
                                     border={'3px solid white'}
@@ -158,7 +158,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 <Typography
                                     variant="body1"
                                     padding={1}
-                                    width={30}
+                                    minWidth={30}
                                     height={25}
                                     fontWeight={700}
                                     border={'2px solid lightcyan'}
@@ -166,11 +166,11 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                     {vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}</Typography>
                                 <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Format</Typography>
                             </Box>
-                            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', }}>
                                 <Typography
                                     variant="body1"
                                     padding={1}
-                                    width={30}
+                                    minWidth={30}
                                     height={25}
                                     fontWeight={700}
                                     border={'2px solid lightcyan'}

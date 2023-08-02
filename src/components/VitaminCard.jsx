@@ -68,7 +68,7 @@ function VitaminCard({ vitamin, index, vitaminSwitches, }) {
                                                 padding={.5}
                                                 fontWeight={700}
                                                 minWidth={45}
-                                                border={'2px solid black'}
+                                                border={'1px solid black'}
                                                 style={{
                                                     borderColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
                                                         vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
