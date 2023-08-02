@@ -236,8 +236,8 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 {vitaminChunks.map((vitaminChunk, index) => (
                                     <TableRow key={index} margin={0} padding={0}>
                                         {vitaminChunk.map((vitaminInfo, subIndex) => (
-                                            <TableCell sx={{ border: '1px solid lightcyan', padding: '2px' }}>
-                                                <Alert sx={{ width: '130px', height: '70px' }} severity={Number(vitaminInfo.amount) === 0 ? 'error' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? 'warning' : 'success'}>
+                                            <TableCell sx={{ border: '2px solid lightcyan', padding: '5px' }}>
+                                                <Alert sx={{ width: '120px', height: '50px', fontSize: '12px' }} severity={Number(vitaminInfo.amount) === 0 ? 'error' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? 'warning' : 'success'}>
                                                     {vitaminInfo.name}
                                                     <br />
                                                     {vitaminInfo.amount} {vitaminInfo.unit}
