@@ -32,12 +32,18 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     name: vitaminInfo.name,
                     amount: vitaminInfo.amount,
                     unit: vitaminInfo.unit,
+                    recommended: fdaValue
                 });
             } else if (vitaminInfo.amount && Number(vitaminInfo.amount) < fdaValue &&
                 name !== "magnesium" &&
                 name !== "calcium" &&
                 name !== "added sugars") {
-                low.push({ name: vitaminInfo.name, amount: vitaminInfo.amount, unit: vitaminInfo.unit, recommended: fdaValue });
+                low.push({
+                    name: vitaminInfo.name,
+                    amount: vitaminInfo.amount,
+                    unit: vitaminInfo.unit,
+                    recommended: fdaValue
+                });
             }
         });
 
@@ -195,7 +201,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                                         <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
                                                             {nutrient.name} is missing
                                                             <br />
-                                                            {nutrient.amount} {nutrient.unit} recommended by FDA.
+                                                            {nutrient.recommended} {nutrient.unit} recommended by FDA.
                                                         </TableCell>
                                                     </TableRow>
                                                 ))}
