@@ -9,7 +9,7 @@ const Navbar = ({ scrollToFAQ }) => {
             <Box display={"flex"} textAlign={"center"} alignItems={"center"} justifyContent={"center"}>
                 <Toolbar>
                     <Typography variant="caption" fontSize={16} paddingRight={2} component="div" >
-                        compareprenatals.com
+                        ComparePrenatals.com
                     </Typography>
                     <Button color="inherit" onClick={scrollToFAQ}>FAQ</Button>
                     <Button color="inherit" href="mailto:compareprenatals@gmail.com">Contact</Button>
