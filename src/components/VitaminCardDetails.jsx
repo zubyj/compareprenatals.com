@@ -143,7 +143,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                     minWidth={30}
                                     height={25}
                                     fontWeight={700}
-                                    border={'3px solid white'}
+                                    border={'2px solid white'}
                                     style={{
                                         borderColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
                                             vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
@@ -152,7 +152,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                     }}
                                 >
                                     {totalVitamins}</Typography>
-                                <Typography variant="subtitle2" marginTop={1.5} fontWeight={700}>Warnings</Typography>
+                                <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Warnings</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <Typography
@@ -170,7 +170,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                 <Typography
                                     variant="body1"
                                     padding={1}
-                                    minWidth={30}
+                                    minWidth={20}
                                     height={25}
                                     fontWeight={700}
                                     border={'2px solid lightcyan'}
@@ -262,7 +262,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                         {vitaminChunk.map((vitaminInfo, subIndex) => (
                                             vitaminInfo.amount !== null && vitaminInfo.amount !== undefined ?
                                                 (<TableCell sx={{ border: '2px solid lightcyan', padding: '5px' }}>
-                                                    <Alert sx={{ width: '120px', fontSize: '12px' }} severity={Number(vitaminInfo.amount) === 0 ? 'error' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? 'warning' : 'success'}>
+                                                    <Alert sx={{ width: '120px', minHeight: '65px', fontSize: '12px' }} severity={Number(vitaminInfo.amount) === 0 ? 'error' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? 'warning' : 'success'}>
                                                         {vitaminInfo.name}
                                                         <br />
                                                         {vitaminInfo.amount} {vitaminInfo.unit}
