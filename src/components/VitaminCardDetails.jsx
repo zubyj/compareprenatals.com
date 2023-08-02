@@ -93,6 +93,9 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
         domain = parts[0];
     }
 
+    const totalVitamins = parseInt(vitamin.general_info.num_low_vitamins) + parseInt(vitamin.general_info.num_missing_vitamins);
+
+
     return (
         <Modal
             open={open}
@@ -136,15 +139,22 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                     <Typography
                                         variant="body1"
                                         padding={1}
+                                        minWidth={30}
+                                        fontWeight={700}
+                                        border={'2px solid black'}
                                         style={{
-                                            color: vitamin.general_info.score <= 3 ? 'red' :
-                                                vitamin.general_info.score <= 8 ? 'orange' :
-                                                    vitamin.general_info.score <= 10 ? 'green' :
-                                                        'black'
+                                            borderColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
+                                                vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
+                                                    vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
+                                                        'red',
+                                            color: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
+                                                vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
+                                                    vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
+                                                        'red',
                                         }}
                                     >
-                                        {vitamin.general_info.score} /10</Typography></Card>
-                                <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Nutrition Score</Typography>
+                                        {totalVitamins}</Typography></Card>
+                                <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Warnings</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <Card><Typography variant="body1" padding={1}>{vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}</Typography></Card>

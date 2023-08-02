@@ -4,7 +4,7 @@ import { Card, Typography, Button, Grid, Box } from '@mui/material';
 import VitaminCardDetails from './VitaminCardDetails';
 import MedicationIcon from '@mui/icons-material/Medication';
 
-function VitaminCard({ vitamin, index, vitaminSwitches }) {
+function VitaminCard({ vitamin, index, vitaminSwitches, }) {
     const [showVitamins, setShowVitamins] = useState(false);
     const [open, setOpen] = useState(false);
 
@@ -36,6 +36,8 @@ function VitaminCard({ vitamin, index, vitaminSwitches }) {
         }
     };
 
+    const totalVitamins = parseInt(vitamin.general_info.num_low_vitamins) + parseInt(vitamin.general_info.num_missing_vitamins);
+
     return (
         <>
             <Card
@@ -66,27 +68,32 @@ function VitaminCard({ vitamin, index, vitaminSwitches }) {
                                                 padding={.5}
                                                 fontWeight={700}
                                                 minWidth={45}
+                                                border={'2px solid black'}
                                                 style={{
-                                                    color: vitamin.general_info.score <= 3 ? 'red' :
-                                                        vitamin.general_info.score <= 8 ? '#ff8c00' :
-                                                            vitamin.general_info.score <= 10 ? 'green' :
-                                                                'black',
+                                                    borderColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
+                                                        vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
+                                                            vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
+                                                                'red',
+                                                    color: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
+                                                        vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
+                                                            vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
+                                                                'red',
                                                 }}
                                             >
-                                                {vitamin.general_info.score || '-'} / 10
+                                                {totalVitamins}
                                             </Typography>
                                         </Card>
-                                        <Typography variant="caption">Score</Typography>
+                                        <Typography variant="caption">Warnings</Typography>
                                     </Box>
                                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-                                        <Card sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', minWidth: '90px' }}>
+                                        <Card sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', minWidth: '90px', minHeight: '30px' }}>
                                             <Typography variant="subtitle2" padding={.5} >
                                                 {vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}
                                             </Typography>
                                         </Card>
                                         <Typography variant="caption">Format</Typography>
                                     </Box>
-                                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px', justifyContent: 'center', width: '50px' }}>
+                                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px', justifyContent: 'center', width: '50px', minHeight: '30px' }}>
                                         <Card sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                                             <Typography variant="subtitle2" padding={.5} >
                                                 {vitamin.general_info.serving_size}
