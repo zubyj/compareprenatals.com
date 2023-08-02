@@ -1,20 +1,21 @@
 // VitaminCardDetails.jsx
 import React, { useState, useEffect } from 'react';
+
+// MaterialUI imports
 import { Card, CardContent, Typography, Button, Collapse, Grid, Box, Table, TableRow, TableCell, TableBody, Modal, Alert } from '@mui/material';
-import MedicationIcon from '@mui/icons-material/Medication';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'; import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+
+// Load the json of FDA vitamin values
 import fdaVitaminValues from '../fda-rdv.json'
+
 
 function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open, handleClose }) {
     const [missingNutrients, setMissingNutrients] = useState([]);
     const [lowNutrients, setLowNutrients] = useState([]);
     const [openMissingNutrients, setOpenMissingNutrients] = useState(false);
     const [openLowNutrients, setOpenLowNutrients] = useState(false);
-
-    const [showCholineWarning, setShowCholineWarning] = useState(false);
-    const [missingCholine, setMissingCholine] = useState(550);
-
 
     useEffect(() => {
         const missing = [];
@@ -23,11 +24,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
         vitamin.vitamins.forEach(vitaminInfo => {
             const fdaValue = fdaVitaminValues[vitaminInfo.name];
             let name = vitaminInfo.name.toLowerCase();
-            if (name === "choline" && Number(vitaminInfo.amount) < 550) {
-                setShowCholineWarning(true);
-                setMissingCholine(550 - Number(vitaminInfo.amount));
-            }
-            else if ((!fdaValue || Number(vitaminInfo.amount) === 0) &&
+            if ((!fdaValue || Number(vitaminInfo.amount) === 0) &&
                 name !== "magnesium" &&
                 name !== "calcium" &&
                 name !== "added sugars") {
@@ -115,9 +112,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'gap': '25px',
                     'width': '300px',
                     'maxHeight': '75vh',
-                    'backgroundColor': '#2074d4',
-                    'background-image': 'linear-gradient(to top, #00c6fb 0%, #005bea 100%)',
-
+                    'background-image': 'linear-gradient(to top, #0250c5 0%, #d43f8d 100%)',
                     'overflowY': 'auto',
                 }} >
                     <Box sx={{
@@ -172,11 +167,6 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             Shop Now
                         </Typography>
                     </Button>
-                    {showCholineWarning &&
-                        <Typography variant="body2" color="error" sx={{ backgroundColor: '#fff', padding: '10px', borderRadius: '10px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>
-                            Choline is {missingCholine} mg less than the recommended FDA amount.
-                        </Typography>
-                    }
                     <Box sx={{ textAlign: 'center' }}>
                         {missingNutrients.length > 0 &&
                             <>
@@ -190,7 +180,9 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                                 {missingNutrients.map((nutrient, index) => (
                                                     <TableRow key={index}>
                                                         <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
-                                                            {nutrient.name} is missing. {nutrient.amount} {nutrient.unit} recommended by FDA.
+                                                            {nutrient.name} is missing
+                                                            <br />
+                                                            {nutrient.amount} {nutrient.unit} recommended by FDA.
                                                         </TableCell>
                                                     </TableRow>
                                                 ))}
@@ -214,10 +206,23 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                                 {lowNutrients.map((nutrient, index) => (
                                                     <TableRow key={index}>
                                                         <TableCell sx={{ border: 'none', fontSize: '8pt', padding: '5px' }}>
-                                                            Only {nutrient.amount} {nutrient.unit} of {nutrient.name}. {nutrient.recommended} {nutrient.unit} recommended by FDA.
+                                                            {nutrient.name.toLowerCase() === 'choline' ? (
+                                                                <>
+                                                                    Only {nutrient.amount} {nutrient.unit} of {nutrient.name}.
+                                                                    <br />
+                                                                    We are looking for 231 {nutrient.unit} of {nutrient.name} as the FDA recommends 550 {nutrient.unit} of {nutrient.name} per day, but studies show that pregnant women already consume 319 {nutrient.unit} via diet.
+                                                                </>
+                                                            ) : (
+                                                                <>
+                                                                    Only {nutrient.amount} {nutrient.unit} of {nutrient.name}.
+                                                                    <br />
+                                                                    {nutrient.recommended} {nutrient.unit} recommended by FDA.
+                                                                </>
+                                                            )}
                                                         </TableCell>
                                                     </TableRow>
                                                 ))}
+
                                             </TableBody>
                                         </Table>
                                     </Alert>
