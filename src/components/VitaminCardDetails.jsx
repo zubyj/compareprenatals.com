@@ -24,7 +24,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
         vitamin.vitamins.forEach(vitaminInfo => {
             const fdaValue = fdaVitaminValues[vitaminInfo.name];
             let name = vitaminInfo.name.toLowerCase();
-            if ((!fdaValue || Number(vitaminInfo.amount) === 0) &&
+            if ((vitaminInfo.amount && Number(vitaminInfo.amount) === 0) &&
                 name !== "magnesium" &&
                 name !== "calcium" &&
                 name !== "added sugars") {
@@ -33,7 +33,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     amount: vitaminInfo.amount,
                     unit: vitaminInfo.unit,
                 });
-            } else if (Number(vitaminInfo.amount) < fdaValue &&
+            } else if (vitaminInfo.amount && Number(vitaminInfo.amount) < fdaValue &&
                 name !== "magnesium" &&
                 name !== "calcium" &&
                 name !== "added sugars") {
@@ -116,47 +116,43 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'overflowY': 'auto',
                 }} >
                     <Box sx={{
-                        'backgroundColor': '#fff',
                         'padding': '20px',
                         'borderRadius': '10px',
                         'width': '240px',
                         'textAlign': 'center'
 
                     }}>
-                        <Typography fontSize={20}>{vitamin.general_info.brand_name}</Typography>
-                        <hr />
-                        <Typography fontSize={20} fontWeight={700}>{vitamin.general_info.product_name}</Typography>
+                        <Typography variant="body2" fontSize={20} color={"white"} fontWeight={600}>
+                            {vitamin.general_info.brand_name}
+                            <hr />
+                            {vitamin.general_info.product_name}
+                        </Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', color: 'white', width: '300px' }}>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                                <Card>
-                                    <Typography
-                                        variant="body1"
-                                        padding={1}
-                                        minWidth={30}
-                                        fontWeight={700}
-                                        border={'2px solid black'}
-                                        style={{
-                                            borderColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
-                                                vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
-                                                    vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
-                                                        'red',
-                                            color: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
-                                                vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
-                                                    vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
-                                                        'red',
-                                        }}
-                                    >
-                                        {totalVitamins}</Typography></Card>
+                                <Typography
+                                    variant="body1"
+                                    padding={1}
+                                    minWidth={30}
+                                    fontWeight={700}
+                                    border={'3px solid black'}
+                                    style={{
+                                        borderColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
+                                            vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
+                                                vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
+                                                    'red',
+                                    }}
+                                >
+                                    {totalVitamins}</Typography>
                                 <Typography variant="subtitle2" marginTop={1.5} fontWeight={700}>Warnings</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <Card><Typography variant="body1" padding={1}>{vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}</Typography></Card>
+                                <Typography variant="body1" padding={1} border={'2px solid lightcyan'} fontWeight={600}>{vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}</Typography>
                                 <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Format</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <Card><Typography variant="body1" padding={1} minWidth={30} textAlign={'center'}>{vitamin.general_info.serving_size}</Typography></Card>
+                                <Typography variant="body1" border={'2px solid lightcyan'} padding={1} minWidth={30} textAlign={'center'} fontWeight={600} >{vitamin.general_info.serving_size}</Typography>
                                 <Typography variant="subtitle2" marginTop={2} textAlign={'center'} fontWeight={700}>Serving Size</Typography>
                             </Box>
                         </Box>
@@ -254,8 +250,6 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             </TableBody>
                         </Table>
                     </Collapse>
-
-                    <hr />
                 </CardContent >
             </Card >
         </Modal >
