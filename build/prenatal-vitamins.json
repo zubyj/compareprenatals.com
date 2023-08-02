@@ -8,7 +8,9 @@
             "price": "21",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 6,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -136,7 +138,9 @@
             "format": "Powder",
             "price": "",
             "serving_size": "-",
-            "score": "10"
+            "score": "10",
+            "num_low_vitamins": 1,
+            "num_missing_vitamins": 1
         },
         "vitamins": [
             {
@@ -265,7 +269,9 @@
             "price": "27",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 6,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -394,7 +400,9 @@
             "price": "22",
             "serving_size": "2",
             "added_sugars": "2",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -522,7 +530,9 @@
             "format": "Gummy",
             "price": "12",
             "serving_size": "2",
-            "added_sugars": "4"
+            "added_sugars": "4",
+            "num_low_vitamins": 13,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -651,7 +661,9 @@
             "price": "15",
             "serving_size": "2",
             "added_sugars": "4",
-            "score": "3"
+            "score": "3",
+            "num_low_vitamins": 14,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -780,7 +792,9 @@
             "price": "16",
             "serving_size": "2",
             "added_sugars": "3",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -909,7 +923,9 @@
             "price": "14",
             "serving_size": "2",
             "added_sugars": "4",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 11,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -1037,7 +1053,9 @@
             "format": "Gummy",
             "price": "28",
             "serving_size": "4",
-            "added_sugars": "7"
+            "added_sugars": "7",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -1165,7 +1183,9 @@
             "format": "Gummy",
             "price": "31",
             "serving_size": "4",
-            "added_sugars": "6"
+            "added_sugars": "6",
+            "num_low_vitamins": 13,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -1294,7 +1314,9 @@
             "price": "14",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -1423,7 +1445,9 @@
             "price": "16",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 11,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -1552,7 +1576,9 @@
             "price": "5",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -1681,7 +1707,9 @@
             "price": "9",
             "serving_size": "2",
             "added_sugars": "5",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 13,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -1810,7 +1838,9 @@
             "price": "22",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 5,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -1939,7 +1969,9 @@
             "price": "23",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 9,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -2068,7 +2100,9 @@
             "price": "22",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 4,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -2197,7 +2231,9 @@
             "price": "34",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "9"
+            "score": "9",
+            "num_low_vitamins": 3,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -2326,7 +2362,9 @@
             "price": "20",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -2455,7 +2493,9 @@
             "price": "2",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -2584,7 +2624,9 @@
             "price": "8",
             "serving_size": "2",
             "added_sugars": "3",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -2713,7 +2755,9 @@
             "price": "8",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 9,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -2842,7 +2886,9 @@
             "price": "7",
             "serving_size": "2",
             "added_sugars": "3",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -2971,7 +3017,9 @@
             "price": "9",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -3100,7 +3148,9 @@
             "price": "18",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -3229,7 +3279,9 @@
             "price": "4",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 11,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -3358,7 +3410,9 @@
             "price": "13",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -3487,7 +3541,9 @@
             "price": "16",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 5,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -3616,7 +3672,9 @@
             "price": "11",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -3745,7 +3803,9 @@
             "price": "20",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 5,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -3874,7 +3934,9 @@
             "price": "2",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -4003,7 +4065,9 @@
             "price": "15",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 6,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -4132,7 +4196,9 @@
             "price": "9",
             "serving_size": "2",
             "added_sugars": "4",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -4260,7 +4326,9 @@
             "format": "Gummy",
             "price": "16",
             "serving_size": "2",
-            "added_sugars": "2"
+            "added_sugars": "2",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -4389,7 +4457,9 @@
             "price": "3",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -4518,7 +4588,9 @@
             "price": "10",
             "serving_size": "2",
             "added_sugars": "3",
-            "score": "3"
+            "score": "3",
+            "num_low_vitamins": 13,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -4647,7 +4719,9 @@
             "price": "3",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -4776,7 +4850,9 @@
             "price": "9",
             "serving_size": "2",
             "added_sugars": "3",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -4905,7 +4981,9 @@
             "price": "2",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -5034,7 +5112,9 @@
             "price": "10",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 5,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -5163,7 +5243,9 @@
             "price": "9",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 6,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -5292,7 +5374,9 @@
             "price": "6",
             "serving_size": "2",
             "added_sugars": "3",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -5421,7 +5505,9 @@
             "price": "7",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -5550,7 +5636,9 @@
             "price": "17",
             "serving_size": "3",
             "added_sugars": "5",
-            "score": "3"
+            "score": "3",
+            "num_low_vitamins": 14,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -5679,7 +5767,9 @@
             "price": "3",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -5808,7 +5898,9 @@
             "price": "29",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 4,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -5937,7 +6029,9 @@
             "price": "26",
             "serving_size": "4",
             "added_sugars": "4",
-            "score": "3"
+            "score": "3",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -6066,7 +6160,9 @@
             "price": "35",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -6195,7 +6291,9 @@
             "price": "27",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 8,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -6324,7 +6422,9 @@
             "price": "29",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 4,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -6453,7 +6553,9 @@
             "price": "60/50",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 3,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -6582,7 +6684,9 @@
             "price": "43",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -6711,7 +6815,9 @@
             "price": "50",
             "serving_size": "8",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 4,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -6840,7 +6946,9 @@
             "price": "35",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 6,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -6969,7 +7077,9 @@
             "price": "24",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 8,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -7098,7 +7208,9 @@
             "price": "55",
             "serving_size": "6",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -7227,7 +7339,9 @@
             "price": "35",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 8,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -7356,7 +7470,9 @@
             "price": "45",
             "serving_size": "",
             "added_sugars": null,
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 8,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -7485,7 +7601,9 @@
             "price": "87",
             "serving_size": "7",
             "added_sugars": null,
-            "score": "10"
+            "score": "10",
+            "num_low_vitamins": 3,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -7614,7 +7732,9 @@
             "price": "58",
             "serving_size": "5",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -7743,7 +7863,9 @@
             "price": "58",
             "serving_size": "5",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -7872,7 +7994,9 @@
             "price": "42",
             "serving_size": "",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 5,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -8001,7 +8125,9 @@
             "price": "44",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 2,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -8130,7 +8256,9 @@
             "price": "40",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 11,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -8259,7 +8387,9 @@
             "price": "60",
             "serving_size": "8",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 3,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -8388,7 +8518,9 @@
             "price": "70",
             "serving_size": "",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 3,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -8517,7 +8649,9 @@
             "price": "30",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -8646,7 +8780,9 @@
             "price": "60",
             "serving_size": "5",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 9,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -8775,7 +8911,9 @@
             "price": "35",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 13,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -8904,7 +9042,9 @@
             "price": "50",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -9033,7 +9173,9 @@
             "price": "21",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "9"
+            "score": "9",
+            "num_low_vitamins": 4,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -9162,7 +9304,9 @@
             "price": "15",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -9291,7 +9435,9 @@
             "price": "4",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -9420,7 +9566,9 @@
             "price": "43",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 8,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -9549,7 +9697,9 @@
             "price": "89",
             "serving_size": "6",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 3,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -9678,7 +9828,9 @@
             "price": "19",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 15,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -9807,7 +9959,9 @@
             "price": "65",
             "serving_size": "4",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 6,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -9936,7 +10090,9 @@
             "price": "27",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 8,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -10065,7 +10221,9 @@
             "price": "40",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 11,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -10194,7 +10352,9 @@
             "price": "24",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -10323,7 +10483,9 @@
             "price": "60",
             "serving_size": "8",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 4,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -10452,7 +10614,9 @@
             "price": "20",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -10581,7 +10745,9 @@
             "price": "65",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 5,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -10710,7 +10876,9 @@
             "price": "33",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 13,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -10839,7 +11007,9 @@
             "price": "55",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 8,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -10968,7 +11138,9 @@
             "price": "Prescrip.",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -11097,7 +11269,9 @@
             "price": "13",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 9,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -11226,7 +11400,9 @@
             "price": "20",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -11355,7 +11531,9 @@
             "price": "30",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "9"
+            "score": "9",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -11484,7 +11662,9 @@
             "price": "25",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 10,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -11613,7 +11793,9 @@
             "price": "9",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 6,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -11742,7 +11924,9 @@
             "price": "30",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "2"
+            "score": "2",
+            "num_low_vitamins": 16,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -11871,7 +12055,9 @@
             "price": "21",
             "serving_size": "2",
             "added_sugars": "5",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 13,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -12000,7 +12186,9 @@
             "price": "45",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -12129,7 +12317,9 @@
             "price": "7",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -12258,7 +12448,9 @@
             "price": "120",
             "serving_size": "8",
             "added_sugars": null,
-            "score": "10"
+            "score": "10",
+            "num_low_vitamins": 3,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -12387,7 +12579,9 @@
             "price": "17",
             "serving_size": "2",
             "added_sugars": "2",
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -12516,7 +12710,9 @@
             "price": "6",
             "serving_size": "2",
             "added_sugars": "3",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -12645,7 +12841,9 @@
             "price": "14",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -12774,7 +12972,9 @@
             "price": "24",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 8,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -12903,7 +13103,9 @@
             "price": "21",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "6"
+            "score": "6",
+            "num_low_vitamins": 5,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -13032,7 +13234,9 @@
             "price": "12",
             "serving_size": "2",
             "added_sugars": "6",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 14,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -13161,7 +13365,9 @@
             "price": "49",
             "serving_size": "4",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 4,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -13290,7 +13496,9 @@
             "price": "38",
             "serving_size": "6",
             "added_sugars": null,
-            "score": "1"
+            "score": "1",
+            "num_low_vitamins": 15,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -13419,7 +13627,9 @@
             "price": "16",
             "serving_size": "3",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 7,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -13548,7 +13758,9 @@
             "price": "8",
             "serving_size": "2",
             "added_sugars": "3",
-            "score": "4"
+            "score": "4",
+            "num_low_vitamins": 11,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -13677,7 +13889,9 @@
             "price": "35",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "5"
+            "score": "5",
+            "num_low_vitamins": 12,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -13806,7 +14020,9 @@
             "price": "34",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 9,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -13935,7 +14151,9 @@
             "price": "26",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "7"
+            "score": "7",
+            "num_low_vitamins": 4,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -14064,7 +14282,9 @@
             "price": "14",
             "serving_size": "2",
             "added_sugars": null,
-            "score": "8"
+            "score": "8",
+            "num_low_vitamins": 11,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
@@ -14193,7 +14413,9 @@
             "price": "10",
             "serving_size": "1",
             "added_sugars": null,
-            "score": "9"
+            "score": "9",
+            "num_low_vitamins": 4,
+            "num_missing_vitamins": 2
         },
         "vitamins": [
             {
