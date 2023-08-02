@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Box, Button, Typography, Autocomplete, TextField, IconButton } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import InfoIcon from '@mui/icons-material/Info';
 
 import Navbar from './Navbar';
 import VitaminList from './VitaminList';
@@ -209,14 +210,8 @@ function HomePage() {
             <EmailPopup open={showEmailPopup} onClose={handleCloseEmailPopup} />
             <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <Button variant="outlined" color="primary" size="small" onClick={() => setShowDescription(!showDescription)} style={{ fontSize: '10px', height: '30px', marginLeft: "15px" }}>
-                    Disclaimer
-                    {showDescription ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                    <InfoIcon />
                 </Button>
-            </Box>
-            <Box data-aos="zoom-out" paddingY={2}>
-                <Typography variant="h2" fontWeight={800} fontSize={25}>
-                    Prenatal Vitamin Chart
-                </Typography>
             </Box>
             {showDescription && (  // Conditionally render the description
                 <Typography variant="body1" color={'primary'} paddingBottom={2}>
@@ -227,6 +222,12 @@ function HomePage() {
                         Please remember, any prenatal vitamin will always be better than no prenatal vitamin                    </Typography>
                 </Typography>
             )}
+            <Box data-aos="zoom-out" paddingY={2}>
+                <Typography variant="h2" fontWeight={800} fontSize={25}>
+                    Prenatal Vitamin Chart
+                </Typography>
+            </Box>
+
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'row',
