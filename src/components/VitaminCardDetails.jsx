@@ -128,9 +128,9 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         'textAlign': 'center'
 
                     }}>
-                        <Typography variant="h4" fontSize={25}>{vitamin.general_info.brand_name}</Typography>
+                        <Typography fontSize={20}>{vitamin.general_info.brand_name}</Typography>
                         <hr />
-                        <Typography variant="h2" fontSize={20} fontWeight={700}>{vitamin.general_info.product_name}</Typography>
+                        <Typography fontSize={20} fontWeight={700}>{vitamin.general_info.product_name}</Typography>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', color: 'white', width: '300px' }}>
@@ -154,7 +154,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                         }}
                                     >
                                         {totalVitamins}</Typography></Card>
-                                <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Warnings</Typography>
+                                <Typography variant="subtitle2" marginTop={1.5} fontWeight={700}>Warnings</Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <Card><Typography variant="body1" padding={1}>{vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}</Typography></Card>
@@ -230,14 +230,14 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </Button>
                     <Collapse in={showVitamins} >
-                        <Typography variant="h6" sx={{ textAlign: 'center', paddingY: '20px' }}>Vitamins</Typography>
+                        <Typography variant="h5" color="white" fontWeight={700} sx={{ textAlign: 'center', paddingY: '20px' }}>Vitamins</Typography>
                         <Table sx={{ display: 'flex', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>
                             <TableBody>
                                 {vitaminChunks.map((vitaminChunk, index) => (
-                                    <TableRow key={index}>
+                                    <TableRow key={index} margin={0} padding={0}>
                                         {vitaminChunk.map((vitaminInfo, subIndex) => (
-                                            <TableCell sx={{ border: 'none' }}>
-                                                <Alert severity={Number(vitaminInfo.amount) === 0 ? 'error' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? 'warning' : 'success'}>
+                                            <TableCell sx={{ border: '1px solid lightcyan', padding: '2px' }}>
+                                                <Alert sx={{ width: '130px', height: '70px' }} severity={Number(vitaminInfo.amount) === 0 ? 'error' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? 'warning' : 'success'}>
                                                     {vitaminInfo.name}
                                                     <br />
                                                     {vitaminInfo.amount} {vitaminInfo.unit}
