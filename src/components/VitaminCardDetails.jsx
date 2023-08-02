@@ -204,7 +204,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     <Box sx={{ marginBottom: '20px', textAlign: 'center' }}>
                         {lowNutrients.length > 0 &&
                             <>
-                                <Button variant="contained" size="small" color="error" style={{ width: "300px" }} onClick={handleToggleLowNutrients}>
+                                <Button variant="contained" size="small" color="warning" style={{ width: "300px" }} onClick={handleToggleLowNutrients}>
                                     Warning: {lowNutrients.length} Nutrients Very Low {openLowNutrients ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                                 </Button>
                                 <Collapse in={openLowNutrients}>
@@ -230,29 +230,28 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </Button>
                     <Collapse in={showVitamins} >
-                        <Card>
-                            <Typography variant="h6" sx={{ textAlign: 'center', paddingY: '20px' }}>Vitamins</Typography>
-                            <Table>
-                                <TableBody>
-                                    {vitaminChunks.map((vitaminChunk, index) => (
-                                        <TableRow key={index}>
-                                            {vitaminChunk.map((vitaminInfo, subIndex) => (
-                                                <>
-                                                    <TableCell sx={{ border: 'none', fontSize: '12px' }}>
-                                                        {vitaminInfo.name} {Number(vitaminInfo.amount) === 0 ? '❌' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? '⚠️' : ''}
-                                                    </TableCell>
-                                                    <TableCell sx={{ border: 'none', fontWeight: '700', fontSize: '9pt' }}>{vitaminInfo.amount} {vitaminInfo.unit}</TableCell>
-                                                </>
-                                            ))}
-                                        </TableRow>
-                                    ))}
-                                </TableBody>
-                            </Table>
-                        </Card>
+                        <Typography variant="h6" sx={{ textAlign: 'center', paddingY: '20px' }}>Vitamins</Typography>
+                        <Table sx={{ display: 'flex', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>
+                            <TableBody>
+                                {vitaminChunks.map((vitaminChunk, index) => (
+                                    <TableRow key={index}>
+                                        {vitaminChunk.map((vitaminInfo, subIndex) => (
+                                            <TableCell sx={{ border: 'none' }}>
+                                                <Alert severity={Number(vitaminInfo.amount) === 0 ? 'error' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? 'warning' : 'success'}>
+                                                    {vitaminInfo.name}
+                                                    <br />
+                                                    {vitaminInfo.amount} {vitaminInfo.unit}
+                                                </Alert>
+                                            </TableCell >
+                                        ))}
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
                     </Collapse>
 
                     <hr />
-                </CardContent>
+                </CardContent >
             </Card >
         </Modal >
     );
