@@ -93,8 +93,8 @@ function VitaminCard({ vitamin, index, vitaminSwitches, }) {
                                         </Card>
                                         <Typography variant="caption">Format</Typography>
                                     </Box>
-                                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px', justifyContent: 'center', width: '50px', minHeight: '30px' }}>
-                                        <Card sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '5px', justifyContent: 'center' }}>
+                                        <Card sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', width: '50px', minHeight: '30px' }}>
                                             <Typography variant="subtitle2" padding={.5} >
                                                 {vitamin.general_info.serving_size}
                                             </Typography>
