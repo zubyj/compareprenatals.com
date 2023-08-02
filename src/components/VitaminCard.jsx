@@ -50,10 +50,10 @@ function VitaminCard({ vitamin, index, vitaminSwitches }) {
                     'backgroundImage': determineGradient(index)
                 }}>
                     <Grid container sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '0' }}>
-                        <Grid item xs={6} paddingRight={5} >
+                        <Grid item xs={6} paddingRight={6} >
                             <Typography variant="h6" color="lightcyan" fontWeight={700} overflow={'hidden'}>{vitamin.general_info.brand_name}</Typography>
                         </Grid>
-                        <Grid item xs={6} >
+                        <Grid item xs={6} paddingRight={3}>
                             <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
                                 <Typography variant="body1" color="white">{vitamin.general_info.product_name}</Typography>
                                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '5px', marginRight: '30px' }}>
