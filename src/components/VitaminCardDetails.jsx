@@ -112,7 +112,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'gap': '25px',
                     'width': '300px',
                     'maxHeight': '75vh',
-                    'background-image': 'linear-gradient(to top, #0250c5 0%, #d43f8d 100%)',
+                    'background-image': 'linear-gradient(to top, #d43f8d 0%, #0250c5 100%)',
                     'overflowY': 'auto',
                 }} >
                     <Box sx={{
@@ -167,7 +167,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                             Shop Now
                         </Typography>
                     </Button>
-                    <Box sx={{ textAlign: 'center' }}>
+                    <Box>
                         {missingNutrients.length > 0 &&
                             <>
                                 <Button variant="contained" size="small" color="error" style={{ width: "300px" }} onClick={handleToggleMissingNutrients}>
@@ -236,13 +236,13 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     </Button>
                     <Collapse in={showVitamins} >
                         <Typography variant="h5" color="white" fontWeight={700} sx={{ textAlign: 'center', paddingY: '20px' }}>Vitamins</Typography>
-                        <Table sx={{ display: 'flex', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>
+                        <Table>
                             <TableBody>
                                 {vitaminChunks.map((vitaminChunk, index) => (
                                     <TableRow key={index} margin={0} padding={0}>
                                         {vitaminChunk.map((vitaminInfo, subIndex) => (
                                             <TableCell sx={{ border: '2px solid lightcyan', padding: '5px' }}>
-                                                <Alert sx={{ width: '120px', height: '50px', fontSize: '12px' }} severity={Number(vitaminInfo.amount) === 0 ? 'error' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? 'warning' : 'success'}>
+                                                <Alert sx={{ width: '120px', fontSize: '12px' }} severity={Number(vitaminInfo.amount) === 0 ? 'error' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? 'warning' : 'success'}>
                                                     {vitaminInfo.name}
                                                     <br />
                                                     {vitaminInfo.amount} {vitaminInfo.unit}
