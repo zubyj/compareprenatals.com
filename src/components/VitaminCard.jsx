@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Card, Typography, Button, Grid, Box } from '@mui/material';
 import VitaminCardDetails from './VitaminCardDetails';
+import MedicationIcon from '@mui/icons-material/Medication';
 
 function VitaminCard({ vitamin, index, vitaminSwitches }) {
     const [showVitamins, setShowVitamins] = useState(false);
@@ -51,12 +52,13 @@ function VitaminCard({ vitamin, index, vitaminSwitches }) {
                 }}>
                     <Grid container sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '0' }}>
                         <Grid item xs={6} paddingRight={6} >
-                            <Typography variant="h6" color="lightcyan" fontWeight={700} overflow={'hidden'}>{vitamin.general_info.brand_name}</Typography>
+                            <MedicationIcon sx={{ color: 'lightcyan', fontSize: '60px' }} />
                         </Grid>
                         <Grid item xs={6} paddingRight={3}>
-                            <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
-                                <Typography variant="body1" color="white">{vitamin.general_info.product_name}</Typography>
-                                <Box sx={{ display: 'flex', flexDirection: 'row', gap: '5px', marginRight: '30px' }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '10px', marginRight: '30px' }}>
+                                <Typography variant="caption" fontSize="15px" color="lightcyan" width={'300px'} fontWeight={700} overflow={'hidden'}>{vitamin.general_info.brand_name}</Typography>
+                                <Typography variant="body1" color="white" width={'300px'}>{vitamin.general_info.product_name}</Typography>
+                                <Box sx={{ display: 'flex', flexDirection: 'row', gap: '5px' }}>
                                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
                                         <Card>
                                             <Typography
