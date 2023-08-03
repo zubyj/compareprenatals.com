@@ -3,16 +3,12 @@ import React, { useState } from 'react';
 import { Card, Typography, Button, Grid, Box } from '@mui/material';
 import VitaminCardDetails from './VitaminCardDetails';
 import MedicationIcon from '@mui/icons-material/Medication';
-import { useMemo } from 'react';
 
 function VitaminCard({ vitamin, index, vitaminSwitches, }) {
     const [showVitamins, setShowVitamins] = useState(false);
     const [open, setOpen] = useState(false);
 
-    // Filter the vitamins that have null or undefined amount.
-    const realValueVitamins = useMemo(() => {
-        return vitamin.vitamins.filter(v => v.amount);
-    }, [vitamin]);
+
 
     const handleToggleVitamins = () => {
         setShowVitamins(!showVitamins);
@@ -42,16 +38,17 @@ function VitaminCard({ vitamin, index, vitaminSwitches, }) {
         }
     };
 
-    const totalVitamins = parseInt(vitamin.general_info.num_low_vitamins) + parseInt(vitamin.general_info.num_missing_vitamins);
+    let totalVitamins = parseInt(vitamin.general_info.num_low_vitamins) + parseInt(vitamin.general_info.num_missing_vitamins) - 1;
+    if (totalVitamins < 0) totalVitamins = 0;
 
     const getWarningsColor = () => {
         if (totalVitamins <= 3) {
             return 'green';
         }
-        else if (vitamin.general_info.num_low_vitamins <= 8) {
+        else if (totalVitamins <= 8) {
             return '#ff8c00';
         }
-        else if (vitamin.general_info.num_low_vitamins <= 10) {
+        else if (totalVitamins <= 10) {
             return 'red';
         }
         else {

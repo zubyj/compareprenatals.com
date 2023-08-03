@@ -87,8 +87,8 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
         domain = parts[0];
     }
 
-    const totalVitamins = parseInt(vitamin.general_info.num_low_vitamins) + parseInt(vitamin.general_info.num_missing_vitamins);
-
+    let totalVitamins = parseInt(vitamin.general_info.num_low_vitamins) + parseInt(vitamin.general_info.num_missing_vitamins) - 1;
+    totalVitamins = totalVitamins < 0 ? 0 : totalVitamins;
 
     return (
         <Modal
