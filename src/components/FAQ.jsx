@@ -12,8 +12,10 @@ const FAQ = forwardRef((props, ref) => {
 
     return (
         <Box id="faqSection" paddingTop="100px" display="flex" flexDirection="column" ref={ref}>
-            <Typography variant="button" fontSize={30} marginBottom={3}>FAQ</Typography>
-            <Typography variant="caption">
+            <Typography variant="h2" fontWeight={800} fontSize={25}>
+                FAQ
+            </Typography>
+            <Typography variant="caption" padding={3}>
                 Here are some frequently asked questions about prenatal vitamins.
             </Typography>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} >
