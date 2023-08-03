@@ -1,5 +1,5 @@
 // VitaminCardDetails.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 
 // MaterialUI imports
 import { Card, CardContent, Typography, Button, Collapse, Grid, Box, Table, TableRow, TableCell, TableBody, Modal, Alert } from '@mui/material';
@@ -16,6 +16,11 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
     const [lowNutrients, setLowNutrients] = useState([]);
     const [openMissingNutrients, setOpenMissingNutrients] = useState(false);
     const [openLowNutrients, setOpenLowNutrients] = useState(false);
+
+    // Filter the vitamins that have null or undefined amount.
+    const realValueVitamins = useMemo(() => {
+        return vitamin.vitamins.filter(v => v.amount);
+    }, [vitamin]);
 
     useEffect(() => {
         const missing = [];
@@ -67,20 +72,6 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                 return '';
         }
     };
-
-    // Function to divide an array into chunks of 3 vitamins
-    const chunk = (arr, len) => {
-        var chunks = [],
-            i = 0,
-            n = arr.length;
-        while (i < n) {
-            chunks.push(arr.slice(i, i += len));
-        }
-        return chunks;
-    }
-
-    // Divide vitamin array into chunks of 2
-    const vitaminChunks = chunk(vitamin.vitamins, 2);
 
     const url = new URL(vitamin.general_info.url);
     const hostname = url.hostname;
@@ -261,27 +252,39 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                         {showVitamins ? 'Hide Nutrient List' : 'Show Full Nutrient List'}
                         {showVitamins ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </Button>
-                    <Collapse in={showVitamins} >
+                    <Collapse in={showVitamins}>
                         <Typography variant="h5" color="white" fontWeight={700} sx={{ textAlign: 'center', paddingY: '20px' }}>Vitamins</Typography>
                         <Table>
                             <TableBody>
-                                {vitaminChunks.map((vitaminChunk, index) => (
-                                    <TableRow key={index} margin={0} padding={0}>
-                                        {vitaminChunk.map((vitaminInfo, subIndex) => (
-                                            vitaminInfo.amount !== null && vitaminInfo.amount !== undefined ?
-                                                (<TableCell sx={{ border: '2px solid lightcyan', padding: '5px' }}>
-                                                    <Alert sx={{ width: '120px', minHeight: '65px', fontSize: '12px' }} severity={Number(vitaminInfo.amount) === 0 ? 'error' : Number(vitaminInfo.amount) < fdaVitaminValues[vitaminInfo.name] ? 'warning' : 'success'}>
-                                                        {vitaminInfo.name}
+                                {realValueVitamins.map((vitamin, index) => {
+                                    if (index % 2 !== 0) {
+                                        return null;
+                                    }
+                                    return (
+                                        <TableRow key={index}>
+                                            <TableCell sx={{ border: '2px solid lightcyan', padding: '5px' }}>
+                                                <Alert sx={{ width: '100px', minHeight: '80px', fontSize: '12px' }} severity={Number(vitamin.amount) === 0 ? 'error' : Number(vitamin.amount) < fdaVitaminValues[vitamin.name] ? 'warning' : 'success'}>
+                                                    {vitamin.name}
+                                                    <br />
+                                                    {vitamin.amount} {vitamin.unit}
+                                                </Alert>
+                                            </TableCell>
+                                            {realValueVitamins[index + 1] &&
+                                                <TableCell sx={{ border: '2px solid lightcyan', padding: '5px' }}>
+                                                    <Alert sx={{ width: '100px', minHeight: '80px', fontSize: '12px' }} severity={Number(realValueVitamins[index + 1].amount) === 0 ? 'error' : Number(realValueVitamins[index + 1].amount) < fdaVitaminValues[realValueVitamins[index + 1].name] ? 'warning' : 'success'}>
+                                                        {realValueVitamins[index + 1].name}
                                                         <br />
-                                                        {vitaminInfo.amount} {vitaminInfo.unit}
+                                                        {realValueVitamins[index + 1].amount} {realValueVitamins[index + 1].unit}
                                                     </Alert>
-                                                </TableCell >) : null
-                                        ))}
-                                    </TableRow>
-                                ))}
+                                                </TableCell>
+                                            }
+                                        </TableRow>
+                                    );
+                                })}
                             </TableBody>
                         </Table>
                     </Collapse>
+
                 </CardContent >
             </Card >
         </Modal >

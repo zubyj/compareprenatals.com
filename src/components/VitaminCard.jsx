@@ -3,10 +3,16 @@ import React, { useState } from 'react';
 import { Card, Typography, Button, Grid, Box } from '@mui/material';
 import VitaminCardDetails from './VitaminCardDetails';
 import MedicationIcon from '@mui/icons-material/Medication';
+import { useMemo } from 'react';
 
 function VitaminCard({ vitamin, index, vitaminSwitches, }) {
     const [showVitamins, setShowVitamins] = useState(false);
     const [open, setOpen] = useState(false);
+
+    // Filter the vitamins that have null or undefined amount.
+    const realValueVitamins = useMemo(() => {
+        return vitamin.vitamins.filter(v => v.amount);
+    }, [vitamin]);
 
     const handleToggleVitamins = () => {
         setShowVitamins(!showVitamins);
