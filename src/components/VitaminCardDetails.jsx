@@ -118,7 +118,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                     'gap': '25px',
                     'width': '300px',
                     'maxHeight': '75vh',
-                    'background-image': 'linear-gradient(to top, #d43f8d 0%, #0250c5 100%)',
+                    'background-image': 'linear-gradient(to top, #00c6fb 0%, #005bea 100%)',
                     'overflowY': 'auto',
                 }} >
                     <Box sx={{
@@ -143,9 +143,14 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                     minWidth={30}
                                     height={25}
                                     fontWeight={700}
+                                    backgroundColor={'#f9f9f9'}
                                     border={'2px solid white'}
                                     style={{
                                         borderColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
+                                            vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
+                                                vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
+                                                    'red',
+                                        backgroundColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
                                             vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
                                                 vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
                                                     'red',
@@ -161,18 +166,21 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                     minWidth={30}
                                     height={25}
                                     fontWeight={700}
+                                    backgroundColor={'#f9f9f9'}
+                                    color={'black'}
                                     border={'2px solid lightcyan'}
                                 >
                                     {vitamin.general_info.format} {formatToEmoji(vitamin.general_info.format)}</Typography>
                                 <Typography variant="subtitle2" marginTop={2} fontWeight={700}>Format</Typography>
                             </Box>
-                            <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center', }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', minWidth: '20px', textAlign: 'center' }}>
                                 <Typography
                                     variant="body1"
                                     padding={1}
-                                    minWidth={20}
                                     height={25}
                                     fontWeight={700}
+                                    backgroundColor={'#f9f9f9'}
+                                    color={'black'}
                                     border={'2px solid lightcyan'}
                                 >
                                     {vitamin.general_info.serving_size}</Typography>

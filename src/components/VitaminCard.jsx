@@ -38,6 +38,21 @@ function VitaminCard({ vitamin, index, vitaminSwitches, }) {
 
     const totalVitamins = parseInt(vitamin.general_info.num_low_vitamins) + parseInt(vitamin.general_info.num_missing_vitamins);
 
+    const getWarningsColor = () => {
+        if (totalVitamins <= 3) {
+            return 'green';
+        }
+        else if (vitamin.general_info.num_low_vitamins <= 8) {
+            return '#ff8c00';
+        }
+        else if (vitamin.general_info.num_low_vitamins <= 10) {
+            return 'red';
+        }
+        else {
+            return 'red';
+        }
+    }
+
     return (
         <>
             <Card
@@ -62,23 +77,19 @@ function VitaminCard({ vitamin, index, vitaminSwitches, }) {
                                 <Typography variant="body1" color="white" width={'300px'}>{vitamin.general_info.product_name}</Typography>
                                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '5px' }}>
                                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
-                                        <Card>
+                                        <Card
+                                            sx={{
+                                                backgroundColor: getWarningsColor(),
+                                            }}
+                                        >
                                             <Typography
                                                 variant="subtitle2"
                                                 padding={.5}
                                                 fontWeight={700}
+                                                fontSize={'1.1'}
                                                 minWidth={45}
                                                 border={'1px solid black'}
-                                                style={{
-                                                    borderColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
-                                                        vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
-                                                            vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
-                                                                'red',
-                                                    color: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
-                                                        vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
-                                                            vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
-                                                                'red',
-                                                }}
+                                                color={'white'}
                                             >
                                                 {totalVitamins}
                                             </Typography>
