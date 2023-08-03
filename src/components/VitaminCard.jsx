@@ -89,9 +89,7 @@ function VitaminCard({ vitamin, index, vitaminSwitches, }) {
                                                 variant="subtitle2"
                                                 padding={.5}
                                                 fontWeight={700}
-                                                fontSize={'1.1'}
                                                 minWidth={45}
-                                                border={'1px solid black'}
                                                 color={'white'}
                                             >
                                                 {totalVitamins}

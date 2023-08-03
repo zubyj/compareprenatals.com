@@ -135,12 +135,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                     height={25}
                                     fontWeight={700}
                                     backgroundColor={'#f9f9f9'}
-                                    border={'2px solid white'}
                                     style={{
-                                        borderColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
-                                            vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
-                                                vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
-                                                    'red',
                                         backgroundColor: vitamin.general_info.num_low_vitamins <= 3 ? 'green' :
                                             vitamin.general_info.num_low_vitamins <= 8 ? '#ff8c00' :
                                                 vitamin.general_info.num_low_vitamins <= 10 ? 'red' :
@@ -263,7 +258,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                     return (
                                         <TableRow key={index}>
                                             <TableCell sx={{ border: '2px solid lightcyan', padding: '5px' }}>
-                                                <Alert sx={{ width: '100px', minHeight: '80px', fontSize: '12px' }} severity={Number(vitamin.amount) === 0 ? 'error' : Number(vitamin.amount) < fdaVitaminValues[vitamin.name] ? 'warning' : 'success'}>
+                                                <Alert sx={{ width: '100px', height: '60px', fontSize: '12px', justifyContent: 'center', alignItems: 'center' }} severity={Number(vitamin.amount) === 0 ? 'error' : Number(vitamin.amount) < fdaVitaminValues[vitamin.name] ? 'warning' : 'success'}>
                                                     {vitamin.name}
                                                     <br />
                                                     {vitamin.amount} {vitamin.unit}
@@ -271,7 +266,7 @@ function VitaminCardDetails({ vitamin, showVitamins, handleToggleVitamins, open,
                                             </TableCell>
                                             {realValueVitamins[index + 1] &&
                                                 <TableCell sx={{ border: '2px solid lightcyan', padding: '5px' }}>
-                                                    <Alert sx={{ width: '100px', minHeight: '80px', fontSize: '12px' }} severity={Number(realValueVitamins[index + 1].amount) === 0 ? 'error' : Number(realValueVitamins[index + 1].amount) < fdaVitaminValues[realValueVitamins[index + 1].name] ? 'warning' : 'success'}>
+                                                    <Alert sx={{ width: '100px', height: '60px', fontSize: '12px', justifyContent: 'center', alignItems: 'center' }} severity={Number(realValueVitamins[index + 1].amount) === 0 ? 'error' : Number(realValueVitamins[index + 1].amount) < fdaVitaminValues[realValueVitamins[index + 1].name] ? 'warning' : 'success'}>
                                                         {realValueVitamins[index + 1].name}
                                                         <br />
                                                         {realValueVitamins[index + 1].amount} {realValueVitamins[index + 1].unit}
