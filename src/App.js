@@ -7,8 +7,6 @@ import Footer from './components/Footer';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-
-
 function App() {
 
   useEffect(() => {

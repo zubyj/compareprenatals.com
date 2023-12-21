@@ -32,9 +32,9 @@ function VitaminCard({ vitamin, index, vitaminSwitches, }) {
 
     const determineGradient = (index) => {
         if (index % 2 === 0) {
-            return 'linear-gradient(to top, #c471f5 0%, #fa71cd 100%)';
+            return 'linear-gradient(to top, #0F2027 0%, #2C5364 100%)';
         } else {
-            return 'linear-gradient(to top, #00c6fb 0%, #005bea 100%)'; // Replace with your desired alternate gradient
+            return 'linear-gradient(to top, #0f0c29 0%, #24243e 100%)';
         }
     };
 
@@ -67,7 +67,6 @@ function VitaminCard({ vitamin, index, vitaminSwitches, }) {
                     'paddingY': '10px',
                     'marginY': '10px',
                     'height': '150px',
-                    'borderRadius': '20px',
                     'backgroundImage': determineGradient(index)
                 }}>
                     <Grid container sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '0' }}>
